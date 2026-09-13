@@ -1,0 +1,13 @@
+"""Blind external-validity authoring and admission for Stage 4."""
+
+from __future__ import annotations
+
+
+EXPERIMENT_ID = "EXP-S4-008_RQ1_BLIND_EXTERNAL_VALIDITY"
+FREEZE_STATUS = "FREEZE_ONLY_NOT_FORMAL_STAGE4_EVIDENCE"
+CONTRACT_RELATIVE = (
+    "03_experiments/contracts/"
+    "EXP-S4-008_RQ1_BLIND_EXTERNAL_VALIDITY_FREEZE_ONLY"
+)
+RAW_RELATIVE = "03_experiments/raw/EXP-S4-008_RQ1_BLIND_EXTERNAL_VALIDITY"
+DERIVED_RELATIVE = "03_experiments/derived/EXP-S4-008_RQ1_BLIND_EXTERNAL_VALIDITY"

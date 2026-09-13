@@ -1,0 +1,16 @@
+"""RQ1 baseline independence and metadata-blind replication.
+
+PREP_ONLY_NOT_FORMAL_STAGE4_EVIDENCE
+"""
+
+EXPERIMENT_ID = "EXP-S4-007_RQ1_BASELINE_INDEPENDENCE_REPLICATION"
+CONTRACT_RELATIVE = f"03_experiments/contracts/{EXPERIMENT_ID}"
+SOURCE_EXPERIMENT = "EXP-S4-002_CONTROLLED_UNSEEN_PROGRAM_CORRECTNESS"
+SOURCE_RAW_RELATIVE = f"03_experiments/raw/{SOURCE_EXPERIMENT}"
+RAW_RELATIVE = f"03_experiments/raw/{EXPERIMENT_ID}"
+DERIVED_RELATIVE = f"03_experiments/derived/{EXPERIMENT_ID}"
+
+METHOD_RANDOM = "independent_random_dynamic_testing_v3"
+METHOD_LLM = "gpt55_full_context_metadata_blind_v3"
+METHOD_IDS = (METHOD_RANDOM, METHOD_LLM)
+
