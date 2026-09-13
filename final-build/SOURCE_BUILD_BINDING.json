@@ -1,0 +1,51 @@
+{
+  "record_role": "Sanitized retained Ubuntu build record; the compact recount verifies this record and the included source bytes but does not compile them.",
+  "recorded_clean_release_build": {
+    "build": {
+      "build_tree_bytes": 1324778,
+      "elapsed_seconds": 5.54,
+      "exit_code": 0,
+      "peak_rss_kib": 752616
+    },
+    "configure": {
+      "elapsed_seconds": 1.64,
+      "exit_code": 0,
+      "peak_rss_kib": 29168
+    },
+    "environment_path": "environment/ubuntu/ENVIRONMENT.json",
+    "public_release_one_shot_output": {
+      "role": "recorded clean Release output; not the private accepted C115 binary identity",
+      "sha256": "5b0e4141ed20f4649ca3e8d7d3f42072a6e80d5a69e328b7e20dcc77160dc88e"
+    },
+    "server_output": {
+      "byte_identical_to_all_30_table_iii_executed_binary_identities": true,
+      "bytes": 157880,
+      "sha256": "a82194d39f0223380bdabddda0f532ab3225e9aaf041072f1670b7a8ea4fce20"
+    }
+  },
+  "redistribution": {
+    "compiled_binary_included": false,
+    "object_files_included": false,
+    "system_libraries_included": false
+  },
+  "schema": "bisafecode.public.native-source-build-binding/v1",
+  "source_files": [
+    {
+      "bytes": 916,
+      "path": "final-build/native-probe-source/CMakeLists.txt",
+      "sha256": "9a390c21a8a70e3a931985faf2069ea3406dd8cb24a07f83d54ca99dcf559b97"
+    },
+    {
+      "bytes": 15299,
+      "path": "final-build/native-probe-source/openarm_fcl_pair_probe.cpp",
+      "sha256": "20556f76fa61d3f8925f267bb8de439653a2f22a9e0f9160178406b14412450b"
+    },
+    {
+      "bytes": 7067,
+      "path": "final-build/native-probe-source/openarm_fcl_pair_probe_server.cpp",
+      "sha256": "8a149032b12f190d3ce1d96669d873dd17468fc1f60d7e77f140f753decc5fbc"
+    }
+  ],
+  "status": "VERIFIED_RECORDED_SOURCE_TO_BINARY_BINDING",
+  "validation_boundary": "The recorded Ubuntu clean Release build reproduced the Table III server binary byte-for-byte. A different toolchain may produce different binary bytes."
+}

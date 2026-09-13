@@ -1,0 +1,141 @@
+{
+  "byte_exact_candidate_file_count": 109,
+  "candidate_file_count": 114,
+  "candidate_redactions": [
+    {
+      "byte_length_preserved": true,
+      "kind": "authorization_metadata_literal",
+      "locations": [
+        {
+          "field": "reviewer",
+          "kind": "authorization_metadata_literal",
+          "line": 105
+        }
+      ],
+      "path": "src/bisafecode/stage4_baseline_correction/pipeline.py",
+      "public_sha256": "017469661a21b1140841801462a55cfbf30d8d522dffc9aaeca5f99d90f20753",
+      "semantic_boundary": "Authorization/reviewer provenance label only. Control flow, inputs, budgets, oracle logic, and verdict computation are unchanged; newly emitted provenance text and its downstream digest may differ.",
+      "size_bytes": 14996
+    },
+    {
+      "byte_length_preserved": true,
+      "kind": "authorization_metadata_literal",
+      "locations": [
+        {
+          "field": "reviewer",
+          "kind": "authorization_metadata_literal",
+          "line": 93
+        }
+      ],
+      "path": "src/bisafecode/stage4_baseline_replication/pipeline.py",
+      "public_sha256": "c703eeef7bec01ec94273cc6e45fa7f73f205fb89ca928f48997e083aff293c8",
+      "semantic_boundary": "Authorization/reviewer provenance label only. Control flow, inputs, budgets, oracle logic, and verdict computation are unchanged; newly emitted provenance text and its downstream digest may differ.",
+      "size_bytes": 16696
+    },
+    {
+      "byte_length_preserved": true,
+      "kind": "documentation_filename_literal",
+      "locations": [
+        {
+          "field": "HUMAN_COLLECTION_GUIDES entry",
+          "kind": "documentation_filename_literal",
+          "line": 27
+        }
+      ],
+      "path": "src/bisafecode/stage4_external_blind/contracts.py",
+      "public_sha256": "a10be8ad03cbbd304b309d0f7065e9991fbe4dd656993b570984c70c3deaaa00",
+      "semantic_boundary": "Private documentation filename reference only. The referenced guide is not included; verifier control flow, inputs, oracle logic, and verdict computation are unchanged.",
+      "size_bytes": 4810
+    },
+    {
+      "byte_length_preserved": true,
+      "kind": "authorization_metadata_literal",
+      "locations": [
+        {
+          "field": "reviewer",
+          "kind": "authorization_metadata_literal",
+          "line": 93
+        }
+      ],
+      "path": "src/bisafecode/stage4_rare_schedule/pipeline.py",
+      "public_sha256": "c66ca7b31a8404044b3b816639aaafc0b66f9379c276d686c774dcf7f2c3ab6a",
+      "semantic_boundary": "Authorization/reviewer provenance label only. Control flow, inputs, budgets, oracle logic, and verdict computation are unchanged; newly emitted provenance text and its downstream digest may differ.",
+      "size_bytes": 19334
+    },
+    {
+      "byte_length_preserved": true,
+      "kind": "multiple_privacy_metadata_literals",
+      "locations": [
+        {
+          "field": "reviewer",
+          "kind": "authorization_metadata_literal",
+          "line": 106
+        },
+        {
+          "field": "authorization_source",
+          "kind": "private_communication_reference",
+          "line": 108
+        }
+      ],
+      "path": "src/bisafecode/stage4_rq3_stress/pipeline.py",
+      "public_sha256": "29019250260e3474c6040e1078ea779b866a9b12bc8ced18e0e6cfcec6185812",
+      "semantic_boundary": "Authorization/reviewer provenance metadata only. Control flow, inputs, budgets, oracle logic, and verdict computation are unchanged; newly emitted provenance text and its downstream digest may differ.",
+      "size_bytes": 23298
+    }
+  ],
+  "candidate_replacement_instance_count": 6,
+  "mac_r2_actual_import_boundary": {
+    "all_candidate_redaction_paths_intersection": [],
+    "authorization_metadata_pipeline_intersection": [],
+    "authorization_metadata_pipeline_paths": [
+      "src/bisafecode/stage4_baseline_correction/pipeline.py",
+      "src/bisafecode/stage4_baseline_replication/pipeline.py",
+      "src/bisafecode/stage4_rare_schedule/pipeline.py",
+      "src/bisafecode/stage4_rq3_stress/pipeline.py"
+    ],
+    "module_count": 19,
+    "statement": "None of the four authorization-metadata pipeline modules was among the 19 modules actually imported by the Mac R2 cohort revalidation. The documentation-reference module was also absent. This establishes non-import for that run only; it is not a general semantic-equivalence proof."
+  },
+  "policy": "Only the anonymous public projection is identified in this review artifact. Identifying strings and all undistributed pre-redaction identities are omitted.",
+  "privacy_redacted_candidate_file_count": 5,
+  "public_projection_root_sha256": "28866e84438e8e72e46b5a8a0724587aaea2b6f46bbb37450c0860c38fd7d419",
+  "published_duplicate_redaction_file_count": 2,
+  "published_duplicate_replacement_instance_count": 2,
+  "published_duplicates": [
+    {
+      "artifact_path": "baselines/ir-sampler/source/pipeline.py",
+      "byte_length_preserved": true,
+      "duplicates_candidate_path": "src/bisafecode/stage4_rare_schedule/pipeline.py",
+      "kind": "authorization_metadata_literal",
+      "locations": [
+        {
+          "field": "reviewer",
+          "kind": "authorization_metadata_literal",
+          "line": 93
+        }
+      ],
+      "public_sha256": "c66ca7b31a8404044b3b816639aaafc0b66f9379c276d686c774dcf7f2c3ab6a",
+      "semantic_boundary": "Published convenience copy of the same privacy-redacted source module; no additional scientific change.",
+      "size_bytes": 19334
+    },
+    {
+      "artifact_path": "baselines/rq1-runtime-and-gpt/source/pipeline.py",
+      "byte_length_preserved": true,
+      "duplicates_candidate_path": "src/bisafecode/stage4_baseline_replication/pipeline.py",
+      "kind": "authorization_metadata_literal",
+      "locations": [
+        {
+          "field": "reviewer",
+          "kind": "authorization_metadata_literal",
+          "line": 93
+        }
+      ],
+      "public_sha256": "c703eeef7bec01ec94273cc6e45fa7f73f205fb89ca928f48997e083aff293c8",
+      "semantic_boundary": "Published convenience copy of the same privacy-redacted source module; no additional scientific change.",
+      "size_bytes": 16696
+    }
+  ],
+  "schema": "bisafecode.anonymous-public-privacy-redactions/v2",
+  "semantic_summary": "Five candidate files contain six disclosed privacy-literal replacements: four reviewer/authorization labels, one private authorization-source description, and one documentation filename. No executable branch, input, budget, oracle rule, or verdict formula was edited. Pipelines executed from the public projection may emit different provenance text and therefore different output-record digests.",
+  "status": "PASS_WITH_DISCLOSED_PRIVACY_PROJECTION"
+}
