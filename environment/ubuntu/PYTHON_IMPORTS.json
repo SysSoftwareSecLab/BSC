@@ -1,0 +1,117 @@
+{
+  "boundary": "Only modules whose public bytes are included and byte-verified are listed.",
+  "module_count": 13,
+  "modules": [
+    {
+      "module": "bisafecode",
+      "observed_lanes": [
+        "table-iii"
+      ],
+      "public_relative_path": "final-build/src/bisafecode/__init__.py",
+      "sha256": "3b975c46b4a5d604e6c6e0fc7d4dc3230035295fdfa2daaff2ee5c81a6ce4e7d"
+    },
+    {
+      "module": "bisafecode.continuous_collision",
+      "observed_lanes": [
+        "table-iii"
+      ],
+      "public_relative_path": "final-build/src/bisafecode/continuous_collision.py",
+      "sha256": "6e6f32a65aa6dfb1ef06e3297a1651e2a8a9ec63d32b44115de75233616081e6"
+    },
+    {
+      "module": "bisafecode.entity_speed_envelope",
+      "observed_lanes": [
+        "table-iii"
+      ],
+      "public_relative_path": "final-build/src/bisafecode/entity_speed_envelope.py",
+      "sha256": "02ecc4fbf46199aa85834218fd460c91c43a87899148707f747e8bf1a3899bcf"
+    },
+    {
+      "module": "bisafecode.explicit_state",
+      "observed_lanes": [
+        "table-iii",
+        "c115-controlled"
+      ],
+      "public_relative_path": "final-build/src/bisafecode/explicit_state.py",
+      "sha256": "0bb4292a313b49566dd5f00b821d66408fcbab1539612958d0393f3427ba26f3"
+    },
+    {
+      "module": "bisafecode.geometry_contract",
+      "observed_lanes": [
+        "table-iii"
+      ],
+      "public_relative_path": "final-build/src/bisafecode/geometry_contract.py",
+      "sha256": "cc261f7fe5a9fd9b1a849054813652b0c6335f9024239d19c784ad188cae829f"
+    },
+    {
+      "module": "bisafecode.model_checking",
+      "observed_lanes": [
+        "c115-controlled"
+      ],
+      "public_relative_path": "final-build/src/bisafecode/model_checking.py",
+      "sha256": "e1bd7a0d39a628e093fdeea1c807d0b8f353539455dc0b6bf6dfd1c544712ff6"
+    },
+    {
+      "module": "bisafecode.motion_bounds",
+      "observed_lanes": [
+        "table-iii"
+      ],
+      "public_relative_path": "final-build/src/bisafecode/motion_bounds.py",
+      "sha256": "133fa1fd10cb113840e8adeaff24ad75e2aa83f6e095fb9520824f758e2680e2"
+    },
+    {
+      "module": "bisafecode.openarm_fcl_query",
+      "observed_lanes": [
+        "table-iii"
+      ],
+      "public_relative_path": "final-build/src/bisafecode/openarm_fcl_query.py",
+      "sha256": "3eea44f521857be4b487fc6a5b6d49270f78a8f3d1c12054aeb0cbe33cbc22af"
+    },
+    {
+      "module": "bisafecode.resource_monitor",
+      "observed_lanes": [
+        "table-iii"
+      ],
+      "public_relative_path": "final-build/src/bisafecode/resource_monitor.py",
+      "sha256": "a5205e9e1fe761d25bb8eb661e73e81e1a7f0ca4a7129d49f002655480a6987f"
+    },
+    {
+      "module": "bisafecode.restricted_python",
+      "observed_lanes": [
+        "table-iii",
+        "c115-controlled"
+      ],
+      "public_relative_path": "final-build/src/bisafecode/restricted_python.py",
+      "sha256": "f7db4a4890602cf0e78f7b4b7cf74feffed9127a049858ca403d998a556310e9"
+    },
+    {
+      "module": "bisafecode.timed_ir",
+      "observed_lanes": [
+        "table-iii",
+        "c115-controlled"
+      ],
+      "public_relative_path": "final-build/src/bisafecode/timed_ir.py",
+      "sha256": "fe6289f30b5d3b00608ad916627f43ca365218ab38afb400cdd1dd29e3e16c20"
+    },
+    {
+      "module": "bisafecode.trajectory",
+      "observed_lanes": [
+        "table-iii",
+        "c115-controlled"
+      ],
+      "public_relative_path": "final-build/src/bisafecode/trajectory.py",
+      "sha256": "4a9011fd4385e9cc9adfdde039132a7847bfc1c46aa70bb33702a9883cd2b0ff"
+    },
+    {
+      "module": "bisafecode.verdicts",
+      "observed_lanes": [
+        "table-iii",
+        "c115-controlled"
+      ],
+      "public_relative_path": "final-build/src/bisafecode/verdicts.py",
+      "sha256": "911be219c52e08d92530bb07ca8fb456b9eecfe40d468e6407fdf939e4011dda"
+    }
+  ],
+  "recorded_python": "CPython 3.10.12",
+  "schema": "bisafecode.public.python-imports/v1"
+}

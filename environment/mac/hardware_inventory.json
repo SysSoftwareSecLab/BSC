@@ -1,0 +1,14 @@
+{
+  "schema": "bisafecode.public.mac-hardware-inventory/v1",
+  "role": "portable-165-case-final-build-revalidation",
+  "chip": "Apple M1 Pro",
+  "cpu_cores": {
+    "total": 8,
+    "performance": 6,
+    "efficiency": 2
+  },
+  "installed_memory_bytes": 17179869184,
+  "architecture": "arm64",
+  "relationship_to_accepted_run_record": "Descriptive hardware inventory supplied separately; it does not alter the byte-identified accepted environment record in environment.json.",
+  "privacy_boundary": "Serial number, hardware UUID, provisioning identifier, hostname, network address, personal paths, and institutional identifiers are omitted."
+}

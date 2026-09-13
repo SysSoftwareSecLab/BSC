@@ -1,0 +1,13 @@
+{
+  "schema": "bisafecode.public.mac-environment/v1",
+  "architecture": "arm64",
+  "compiler": "Clang 17.0.0 (clang-1700.0.13.5)",
+  "cpu_brand": "NOT_RECORDED",
+  "darwin_build": "24G90",
+  "darwin_release": "24.6.0",
+  "operating_system": "macOS 15.6.1",
+  "python_implementation": "CPython",
+  "python_version": "3.9.6",
+  "robot_or_ros_contact": false,
+  "scope": "portable-165-case-final-build-revalidation"
+}

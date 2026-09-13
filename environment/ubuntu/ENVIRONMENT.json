@@ -1,0 +1,23 @@
+{
+  "hardware": {
+    "architecture": "x86_64",
+    "cpu": "Intel Core i9-14900HX",
+    "logical_cpu_count": 32,
+    "ram_bytes": 16451567616
+  },
+  "privacy_boundary": "Serial numbers, UUIDs, hostnames, network addresses, absolute paths, and hardware account identifiers are not released.",
+  "schema": "bisafecode.public.ubuntu-environment/v1",
+  "scope": "Table III and C115 accepted native final revalidation",
+  "software": {
+    "compiler": "GCC/G++ 11.4.0",
+    "fcl": "0.7.0",
+    "glibc": "2.35",
+    "kernel": "6.8.0-138-generic",
+    "moveit": "2.5.9",
+    "operating_system": "Ubuntu 22.04.5 LTS",
+    "python": "CPython 3.10.12",
+    "rclpy": "3.3.21",
+    "ros": "ROS 2 Humble"
+  },
+  "timing_boundary": "Table III wall time and RSS are descriptive measurements from this host; they are not cross-machine identity requirements."
+}

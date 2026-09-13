@@ -1,0 +1,28 @@
+{
+  "identity_boundary": "Package versions and sonames are recorded; omitted system-library hashes and absolute paths are not published.",
+  "principal_sonames": [
+    "libfcl.so.0.7",
+    "libmoveit_collision_detection.so.2.5.9",
+    "libmoveit_collision_detection_fcl.so.2.5.9",
+    "libmoveit_robot_model.so.2.5.9",
+    "libmoveit_robot_state.so.2.5.9",
+    "liboctomap.so.1.9",
+    "libassimp.so.5",
+    "libccd.so.2"
+  ],
+  "recorded_environment": {
+    "architecture": "x86_64",
+    "compiler": "GCC/G++ 11.4.0",
+    "cpu": "Intel Core i9-14900HX",
+    "fcl": "FCL 0.7.0",
+    "glibc": "2.35",
+    "kernel": "6.8.0-138-generic",
+    "logical_cpu_count": 32,
+    "moveit": "MoveIt 2.5.9",
+    "os": "Ubuntu 22.04.5 LTS",
+    "ram_bytes": 16451567616,
+    "ros": "ROS 2 Humble; rclpy 3.3.21"
+  },
+  "redistribution": "No compiled probe or system shared-library payload is included.",
+  "schema": "bisafecode.public.native-dependencies/v2"
+}
