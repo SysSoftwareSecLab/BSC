@@ -1,4 +1,4 @@
-# BSC: Anonymous Review Artifact
+# Anonymous Review Artifact
 
 BSC performs bounded explicit-state verification of timed bimanual
 robot programs written in a restricted Python subset. It checks concurrent
