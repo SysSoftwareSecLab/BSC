@@ -1,0 +1,11 @@
+{
+  "cohort": "Rare-40",
+  "deterministically_generated": 40,
+  "generator_sha256": "baf60c0a62e81aaa33b680fabf542427dded7ea06168602ce4e96db2f640440b",
+  "method_input_contains_role_or_stratum": false,
+  "replacement_or_resampling": false,
+  "safe_control": 8,
+  "schema": "bisafecode.artifact.admission-funnel/v1",
+  "scored": 40,
+  "unsafe_challenge": 32
+}
