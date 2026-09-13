@@ -1,0 +1,205 @@
+{
+  "condition_binding": {
+    "kind": "exact_slot_specific_frozen_C_trajectory",
+    "slot_specific_dense_state_count": 254,
+    "slot_specific_phase_count": 5
+  },
+  "family": "C",
+  "final_explicit_collision_comparator": {
+    "all_bound_phases_passed": true,
+    "bound_phases": [
+      {
+        "dense_state_count": 64,
+        "effective_required_clearance_m": 0.010750000001000005,
+        "family": "C",
+        "gate_passed": true,
+        "minimum_self": {
+          "distance_m": 0.010797686456537885,
+          "family": "C",
+          "finger_policy": "both grippers at closed-stop model value",
+          "pair": [
+            "openarm_left_link0",
+            "openarm_left_link2"
+          ],
+          "phase": "C-05_C_TO_HOME_LEFT",
+          "scenario": "C-05_C_TO_HOME_LEFT__d0025"
+        },
+        "phase": "C-05_C_TO_HOME_LEFT"
+      },
+      {
+        "dense_state_count": 58,
+        "effective_required_clearance_m": 0.010750000001000005,
+        "family": "C",
+        "gate_passed": true,
+        "minimum_self": {
+          "distance_m": 0.010797686456474779,
+          "family": "C",
+          "finger_policy": "both grippers at closed-stop model value",
+          "pair": [
+            "openarm_right_link0",
+            "openarm_right_link2"
+          ],
+          "phase": "C-05_C_TO_HOME_RIGHT",
+          "scenario": "C-05_C_TO_HOME_RIGHT__d0025"
+        },
+        "phase": "C-05_C_TO_HOME_RIGHT"
+      },
+      {
+        "dense_state_count": 64,
+        "effective_required_clearance_m": 0.010750000001000005,
+        "family": "C",
+        "gate_passed": true,
+        "minimum_self": {
+          "distance_m": 0.010797719125309711,
+          "family": "C",
+          "finger_policy": "both grippers at closed-stop model value",
+          "pair": [
+            "openarm_left_link0",
+            "openarm_left_link2"
+          ],
+          "phase": "C-05_HOME_TO_C_LEFT",
+          "scenario": "C-05_HOME_TO_C_LEFT__d0035"
+        },
+        "phase": "C-05_HOME_TO_C_LEFT"
+      },
+      {
+        "dense_state_count": 58,
+        "effective_required_clearance_m": 0.010750000001000005,
+        "family": "C",
+        "gate_passed": true,
+        "minimum_self": {
+          "distance_m": 0.010797770215445217,
+          "family": "C",
+          "finger_policy": "both grippers at closed-stop model value",
+          "pair": [
+            "openarm_right_link0",
+            "openarm_right_link2"
+          ],
+          "phase": "C-05_HOME_TO_C_RIGHT",
+          "scenario": "C-05_HOME_TO_C_RIGHT__d0034"
+        },
+        "phase": "C-05_HOME_TO_C_RIGHT"
+      },
+      {
+        "dense_state_count": 10,
+        "effective_required_clearance_m": 0.010750000001000005,
+        "family": "C",
+        "gate_passed": true,
+        "minimum_self": {
+          "distance_m": 0.011633554640236372,
+          "family": "C",
+          "finger_policy": "both grippers at closed-stop model value",
+          "pair": [
+            "openarm_right_link0",
+            "openarm_right_link2"
+          ],
+          "phase": "C-05_P044_DUAL_J3",
+          "scenario": "C-05_P044_DUAL_J3__d0000"
+        },
+        "phase": "C-05_P044_DUAL_J3"
+      }
+    ],
+    "collision_error_bound_m": 1e-12,
+    "collision_error_evidence_ref": "geometry-policy:d3c52aaaacadffb2615c8f59b6feec18b23a1db4879c2ba3c801b8e0128a46a1",
+    "minimum_bound_phase": {
+      "dense_state_count": 58,
+      "effective_required_clearance_m": 0.010750000001000005,
+      "family": "C",
+      "gate_passed": true,
+      "minimum_self": {
+        "distance_m": 0.010797686456474779,
+        "family": "C",
+        "finger_policy": "both grippers at closed-stop model value",
+        "pair": [
+          "openarm_right_link0",
+          "openarm_right_link2"
+        ],
+        "phase": "C-05_C_TO_HOME_RIGHT",
+        "scenario": "C-05_C_TO_HOME_RIGHT__d0025"
+      },
+      "phase": "C-05_C_TO_HOME_RIGHT"
+    }
+  },
+  "final_offline_revalidation": "PASS",
+  "frozen_condition_variant": {
+    "joint3_relative_action_rad": 0.04,
+    "mirrored_joint2_offset_rad": 0.52,
+    "nominal_action_minimum_clearance_m": 0.011633554640236372,
+    "payload": "NONE"
+  },
+  "frozen_schedule_status_at_freeze": "NOT_STARTED_FROZEN",
+  "historical_physical_execution_evidence": {
+    "controller_execution": "COMPLETE",
+    "direct_pre_dispatch_verdict_to_send_binding": "TRACE_INCOMPLETE",
+    "non_vwb_release_evidence_found": false,
+    "not_retroactively_repaired_by_current_revalidation": true,
+    "post_run_disposition": "UNKNOWN_INTERVAL_COVERAGE"
+  },
+  "official_slot_id": "C-05",
+  "program_and_final_verdict": {
+    "geometry_scope": "separately bound to the slot-specific frozen OpenArm dense trajectory below",
+    "logical_scope": "controlled analytic program semantics",
+    "safe": {
+      "deployment_decision": "RELEASE",
+      "program_id": "EXP-S4-002-P044",
+      "states": 240,
+      "transitions": 244,
+      "verdict": "verified-within-bounds"
+    }
+  },
+  "robot_boundary": {
+    "action_client_created": false,
+    "can_contacted": false,
+    "goal_send_count": 0,
+    "hardware_trial_count": 0,
+    "motion_command_count": 0,
+    "rclpy_imported": false,
+    "ros_graph_contacted": false
+  },
+  "run_instance_id": "C115-PROSPECTIVE-R2-C-05-Q2P520",
+  "schema": "bisafecode.public.c115-compact-slot/v2",
+  "semantic_identity_boundary": "Fields named *_content_id are retained verifier-emitted experiment joins, not public file-byte digests. Included sources and models have separate SHA-256 fields.",
+  "sequence": 5,
+  "unsafe_controls": {
+    "c115_controlled_negatives": [
+      {
+        "deployment_decision": "BLOCK",
+        "program_id": "EXP-S4-002-P053",
+        "states": 133,
+        "transitions": 137,
+        "verdict": "violated"
+      },
+      {
+        "deployment_decision": "BLOCK",
+        "program_id": "EXP-S4-002-P060",
+        "states": 133,
+        "transitions": 137,
+        "verdict": "violated"
+      }
+    ],
+    "hardware_execution": "FORBIDDEN_ZERO_SEND",
+    "native_final_build_negative": {
+      "case_id": "I4F-C-UNSAFE-T0",
+      "deployment_decision_counts": {
+        "BLOCK": 5
+      },
+      "deterministic_structural_counters": {
+        "cache_hits": 4,
+        "complete_pair_sweeps": 2,
+        "interval_checks": 1,
+        "interval_subdivisions": 0,
+        "pair_distance_calls": 450,
+        "point_checks": 5,
+        "states": 5,
+        "transitions": 6
+      },
+      "n": 5,
+      "program_content_id": "7cc6cf3b0303ada80ccdabdda8314b05fdf3f198225493885c797467028a8f95",
+      "source_sha256": "0882d7a0d2a769088352003494534f34552b8eb7c5397f2dc228db9e0ff3861e",
+      "verdict_counts": {
+        "violated": 5
+      }
+    },
+    "outcome": "ALL_VIOLATED_AND_BLOCKED"
+  }
+}

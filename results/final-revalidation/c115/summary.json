@@ -1,0 +1,153 @@
+{
+  "campaign_revision": "C115-PROSPECTIVE-R2",
+  "claim_boundaries": [
+    "This is final-build offline revalidation, not a new hardware experiment.",
+    "The offline result does not fill the incomplete historical C per-dispatch trace.",
+    "The dense check is finite and model-relative; it is not an absolute continuous-motion or physical-safety proof.",
+    "Model-relative numeric margins are not independent physical-clearance measurements."
+  ],
+  "dense_final_comparator": {
+    "all_distance_row_count": 479136,
+    "collision_error_bound_m": 1e-12,
+    "dense_state_count": 1932,
+    "negative_self_distance_count": 0,
+    "negative_world_distance_count": 0,
+    "path": "dense-summary/summary.json",
+    "self_distance_row_count": 434700,
+    "world_distance_row_count": 44436
+  },
+  "evidence_status": "VERIFIED_15_OF_15_SCHEDULED_IDENTITIES__2_CONTROLLED_AND_15_NATIVE_NEGATIVES_BLOCKED",
+  "family_slot_counts": {
+    "C": 5,
+    "H": 5,
+    "R": 5
+  },
+  "final_offline_slot_results": {
+    "FAIL": 0,
+    "PASS": 15,
+    "UNKNOWN": 0
+  },
+  "fixed_slot_denominator": 15,
+  "historical_deployment_evidence_not_recomputed_here": {
+    "C": {
+      "FAIL": 0,
+      "PASS": 3,
+      "UNKNOWN": 2
+    },
+    "C_dispatch_chain": {
+      "claim_boundary": "Do not claim historical per-slot pre-dispatch VWB. A new final-build offline recomputation can establish present-day verdict reproduction but cannot retroactively repair this trace.",
+      "direct_pre_dispatch_verdict_to_send_bindings_found": 0,
+      "not_retroactively_repaired": true,
+      "retained_non_vwb_or_block_to_send_records_found": 0,
+      "status": "TRACE_INCOMPLETE__NO_NON_VWB_RELEASE_EVIDENCE_FOUND"
+    },
+    "C_retained_coverage_gaps": {
+      "C-04": {
+        "coverage_rule_ms": 25.0,
+        "maximum_motion_sample_gap_ms": 41.547412,
+        "post_run_disposition": "UNKNOWN_INTERVAL_COVERAGE"
+      },
+      "C-05": {
+        "coverage_rule_ms": 25.0,
+        "maximum_motion_sample_gap_ms": 61.317265,
+        "post_run_disposition": "UNKNOWN_INTERVAL_COVERAGE"
+      }
+    },
+    "H": {
+      "FAIL": 0,
+      "PASS": 5,
+      "UNKNOWN": 0
+    },
+    "R": {
+      "FAIL": 0,
+      "PASS": 5,
+      "UNKNOWN": 0
+    },
+    "classification_note": "Historical post-run PASS/UNKNOWN labels are deployment-evidence outcomes, not verifier verdicts."
+  },
+  "robot_boundary": {
+    "action_client_created": false,
+    "can_contacted": false,
+    "goal_send_count": 0,
+    "hardware_trial_count": 0,
+    "motion_command_count": 0,
+    "rclpy_imported": false,
+    "ros_graph_contacted": false,
+    "unsafe_hardware_trial_count": 0
+  },
+  "schema": "bisafecode.public.c115-final-offline-summary/v2",
+  "slot_files": [
+    {
+      "path": "slots/C-01.json",
+      "slot_id": "C-01"
+    },
+    {
+      "path": "slots/C-02.json",
+      "slot_id": "C-02"
+    },
+    {
+      "path": "slots/C-03.json",
+      "slot_id": "C-03"
+    },
+    {
+      "path": "slots/C-04.json",
+      "slot_id": "C-04"
+    },
+    {
+      "path": "slots/C-05.json",
+      "slot_id": "C-05"
+    },
+    {
+      "path": "slots/H-01.json",
+      "slot_id": "H-01"
+    },
+    {
+      "path": "slots/H-02.json",
+      "slot_id": "H-02"
+    },
+    {
+      "path": "slots/H-03.json",
+      "slot_id": "H-03"
+    },
+    {
+      "path": "slots/H-04.json",
+      "slot_id": "H-04"
+    },
+    {
+      "path": "slots/H-05.json",
+      "slot_id": "H-05"
+    },
+    {
+      "path": "slots/R-01.json",
+      "slot_id": "R-01"
+    },
+    {
+      "path": "slots/R-02.json",
+      "slot_id": "R-02"
+    },
+    {
+      "path": "slots/R-03.json",
+      "slot_id": "R-03"
+    },
+    {
+      "path": "slots/R-04.json",
+      "slot_id": "R-04"
+    },
+    {
+      "path": "slots/R-05.json",
+      "slot_id": "R-05"
+    }
+  ],
+  "slot_identity_boundary": "These are 15 scheduled slot identities, not 15 guaranteed-distinct programs; frozen inputs are reused across condition-specific repetitions.",
+  "unsafe_controls": {
+    "control_design": "Two controlled C programs plus 15 family-matched formal Table III negative repetitions; these are not 17 one-to-one controls paired with the 15 C115 slots.",
+    "controlled_program_negative_count": 2,
+    "native_negative_formal_run_count": 15,
+    "paths": [
+      "unsafe-controls/summary.json",
+      "unsafe-controls/controlled-core.json",
+      "unsafe-controls/native-negative-controls.json"
+    ],
+    "status": "ALL_RETAINED_UNSAFE_CONTROLS_BLOCKED_ZERO_SEND"
+  }
+}

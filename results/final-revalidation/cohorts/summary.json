@@ -1,0 +1,133 @@
+{
+  "cohorts": {
+    "Controlled-60": {
+      "deployment_counts": {
+        "BLOCK": 30,
+        "RELEASE": 30
+      },
+      "executed_N": 60,
+      "expected_N": 60,
+      "oracle_matches": 60,
+      "qualified_violation_counterexamples": 30,
+      "search_exhausted": 30,
+      "status": "PASS",
+      "stop_case_id": null,
+      "trace_evidence_records": 30,
+      "unresolved_diagnostic_traces": 0,
+      "verdict_counts": {
+        "verified-within-bounds": 30,
+        "violated": 30
+      },
+      "verdict_matches": 60,
+      "wall_runtime_ms": {
+        "max": 69.370791,
+        "mean": 19.96733881666667,
+        "min": 12.365083,
+        "total": 1198.0403290000002
+      }
+    },
+    "External-25": {
+      "deployment_counts": {
+        "BLOCK": 18,
+        "RELEASE": 7
+      },
+      "executed_N": 25,
+      "expected_N": 25,
+      "oracle_matches": 23,
+      "qualified_violation_counterexamples": 16,
+      "search_exhausted": 9,
+      "status": "PASS",
+      "stop_case_id": null,
+      "trace_evidence_records": 18,
+      "unresolved_diagnostic_traces": 2,
+      "verdict_counts": {
+        "unknown": 2,
+        "verified-within-bounds": 7,
+        "violated": 16
+      },
+      "verdict_matches": 25,
+      "wall_runtime_ms": {
+        "max": 124.032708,
+        "mean": 24.496746719999997,
+        "min": 9.701625,
+        "total": 612.4186679999999
+      }
+    },
+    "External-40": {
+      "deployment_counts": {
+        "BLOCK": 8,
+        "RELEASE": 32
+      },
+      "executed_N": 40,
+      "expected_N": 40,
+      "oracle_matches": 40,
+      "qualified_violation_counterexamples": 8,
+      "search_exhausted": 32,
+      "status": "PASS",
+      "stop_case_id": null,
+      "trace_evidence_records": 8,
+      "unresolved_diagnostic_traces": 0,
+      "verdict_counts": {
+        "verified-within-bounds": 32,
+        "violated": 8
+      },
+      "verdict_matches": 40,
+      "wall_runtime_ms": {
+        "max": 46.834958,
+        "mean": 21.751564624999997,
+        "min": 9.050833,
+        "total": 870.0625849999999
+      }
+    },
+    "Rare-40": {
+      "deployment_counts": {
+        "BLOCK": 32,
+        "RELEASE": 8
+      },
+      "executed_N": 40,
+      "expected_N": 40,
+      "oracle_matches": 40,
+      "qualified_violation_counterexamples": 32,
+      "search_exhausted": 8,
+      "status": "PASS",
+      "stop_case_id": null,
+      "trace_evidence_records": 32,
+      "unresolved_diagnostic_traces": 0,
+      "verdict_counts": {
+        "verified-within-bounds": 8,
+        "violated": 32
+      },
+      "verdict_matches": 40,
+      "wall_runtime_ms": {
+        "max": 51.262375,
+        "mean": 19.46781355,
+        "min": 9.945375,
+        "total": 778.712542
+      }
+    }
+  },
+  "experiment_id": "EXP-M5-MAC-FINAL-COHORT-REVALIDATION-20260913-R2",
+  "public_environment_sha256": "bbc15e793f845552cd189ff55b3ac791188120f9b475607272703dcb95347ae7",
+  "public_projection_root_sha256": "28866e84438e8e72e46b5a8a0724587aaea2b6f46bbb37450c0860c38fd7d419",
+  "schema": "bisafecode.mentor5.mac-final-cohort-revalidation-summary/v2",
+  "scope_boundary": {
+    "external25_reconstructed": false,
+    "historical_evidence_overwritten": false,
+    "native_openarm_fcl_reclassified": false,
+    "paper_modified": false,
+    "robot_or_ros_contact": false,
+    "runtime_and_verdict_reported_separately": true
+  },
+  "status": "PASS_ALL_SELECTED_COHORTS",
+  "totals": {
+    "executed_N": 165,
+    "oracle_matches": 163,
+    "selected_N": 165,
+    "verdict_counts": {
+      "unknown": 2,
+      "verified-within-bounds": 77,
+      "violated": 86
+    },
+    "verdict_matches": 165
+  }
+}

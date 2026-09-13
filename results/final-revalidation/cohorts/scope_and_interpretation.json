@@ -1,0 +1,29 @@
+{
+  "experiment_id": "EXP-M5-MAC-FINAL-COHORT-REVALIDATION-20260913-R2",
+  "interpretation": {
+    "binary_oracle_agreement": "163/165; the two nonmatches are unsafe External-25 cases conservatively returned UNK and BLOCK",
+    "native_openarm_scope": "not part of these four Mac formal-source cohorts; native evidence is reported separately",
+    "verdict_agreement": "165/165 against the frozen corrected reference verdicts"
+  },
+  "schema": "bisafecode.artifact.mac-final-cohort-scope/v1",
+  "scope_boundary": {
+    "external25_reconstructed": false,
+    "historical_evidence_overwritten": false,
+    "native_openarm_fcl_reclassified": false,
+    "paper_modified": false,
+    "robot_or_ros_contact": false,
+    "runtime_and_verdict_reported_separately": true
+  },
+  "status": "PASS_ALL_SELECTED_COHORTS",
+  "totals": {
+    "executed_N": 165,
+    "oracle_matches": 163,
+    "selected_N": 165,
+    "verdict_counts": {
+      "unknown": 2,
+      "verified-within-bounds": 77,
+      "violated": 86
+    },
+    "verdict_matches": 165
+  }
+}

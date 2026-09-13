@@ -1,0 +1,444 @@
+{
+  "case_summaries": [
+    {
+      "actual_deployment_decision_counts": {
+        "RELEASE": 5
+      },
+      "actual_structural_counters": {
+        "cache_hits": 8,
+        "complete_pair_sweeps": 59,
+        "interval_checks": 1,
+        "interval_subdivisions": 56,
+        "pair_distance_calls": 13275,
+        "point_checks": 7,
+        "states": 7,
+        "transitions": 8
+      },
+      "actual_verdict_counts": {
+        "verified-within-bounds": 5
+      },
+      "case_id": "I4F-C-SAFE-T1",
+      "family": "C",
+      "n": 5,
+      "peak_rss_bytes": {
+        "maximum": 133365760,
+        "median": 132980736,
+        "minimum": 132911104,
+        "values_by_repetition": [
+          132911104,
+          133132288,
+          132980736,
+          132976640,
+          133365760
+        ]
+      },
+      "primary_wall_ns": {
+        "maximum": 8999274335,
+        "median": 8612287820,
+        "minimum": 8540756130,
+        "values_by_repetition": [
+          8880720025,
+          8999274335,
+          8585803910,
+          8540756130,
+          8612287820
+        ]
+      },
+      "retained_program_content_id": "b5fb8387e8a65bdc69ba62ec70e57eacc65ad8fec4b901d32ee1c27e53b12b0a",
+      "source_sha256": "7f1c898e9f0dd69172b0e4f1ce984bd06877fcedd953abe2e6ab4c8471818fa3",
+      "structural_counters_constant_across_repetitions": true
+    },
+    {
+      "actual_deployment_decision_counts": {
+        "BLOCK": 5
+      },
+      "actual_structural_counters": {
+        "cache_hits": 4,
+        "complete_pair_sweeps": 2,
+        "interval_checks": 1,
+        "interval_subdivisions": 0,
+        "pair_distance_calls": 450,
+        "point_checks": 5,
+        "states": 5,
+        "transitions": 6
+      },
+      "actual_verdict_counts": {
+        "violated": 5
+      },
+      "case_id": "I4F-C-UNSAFE-T0",
+      "family": "C",
+      "n": 5,
+      "peak_rss_bytes": {
+        "maximum": 133009408,
+        "median": 132333568,
+        "minimum": 131764224,
+        "values_by_repetition": [
+          133009408,
+          132333568,
+          131764224,
+          132317184,
+          132440064
+        ]
+      },
+      "primary_wall_ns": {
+        "maximum": 600147980,
+        "median": 483586966,
+        "minimum": 456035717,
+        "values_by_repetition": [
+          483586966,
+          600147980,
+          489681353,
+          456035717,
+          470775716
+        ]
+      },
+      "retained_program_content_id": "7cc6cf3b0303ada80ccdabdda8314b05fdf3f198225493885c797467028a8f95",
+      "source_sha256": "0882d7a0d2a769088352003494534f34552b8eb7c5397f2dc228db9e0ff3861e",
+      "structural_counters_constant_across_repetitions": true
+    },
+    {
+      "actual_deployment_decision_counts": {
+        "RELEASE": 5
+      },
+      "actual_structural_counters": {
+        "cache_hits": 98,
+        "complete_pair_sweeps": 5242,
+        "interval_checks": 92,
+        "interval_subdivisions": 5054,
+        "pair_distance_calls": 1300016,
+        "point_checks": 102,
+        "states": 102,
+        "transitions": 101
+      },
+      "actual_verdict_counts": {
+        "verified-within-bounds": 5
+      },
+      "case_id": "I4F-H-SAFE-T3",
+      "family": "H",
+      "n": 5,
+      "peak_rss_bytes": {
+        "maximum": 1157906432,
+        "median": 1157513216,
+        "minimum": 1156333568,
+        "values_by_repetition": [
+          1156333568,
+          1156820992,
+          1157513216,
+          1157906432,
+          1157890048
+        ]
+      },
+      "primary_wall_ns": {
+        "maximum": 909182598588,
+        "median": 797218192445,
+        "minimum": 747904865625,
+        "values_by_repetition": [
+          888481508706,
+          797218192445,
+          909182598588,
+          749596338337,
+          747904865625
+        ]
+      },
+      "retained_program_content_id": "f1f1351cb7da26502eca9ac3ba2336d8f36dfaf00417e0620a80e681cecc0689",
+      "source_sha256": "077b286ca3af15ed074210c7aa836b848348770f6ac79ebea17af945f39152ab",
+      "structural_counters_constant_across_repetitions": true
+    },
+    {
+      "actual_deployment_decision_counts": {
+        "BLOCK": 5
+      },
+      "actual_structural_counters": {
+        "cache_hits": 46,
+        "complete_pair_sweeps": 2461,
+        "interval_checks": 43,
+        "interval_subdivisions": 2374,
+        "pair_distance_calls": 610328,
+        "point_checks": 47,
+        "states": 47,
+        "transitions": 47
+      },
+      "actual_verdict_counts": {
+        "violated": 5
+      },
+      "case_id": "I4F-H-UNSAFE-T2",
+      "family": "H",
+      "n": 5,
+      "peak_rss_bytes": {
+        "maximum": 609619968,
+        "median": 609112064,
+        "minimum": 607666176,
+        "values_by_repetition": [
+          607666176,
+          609112064,
+          609005568,
+          609300480,
+          609619968
+        ]
+      },
+      "primary_wall_ns": {
+        "maximum": 398074201232,
+        "median": 351718131358,
+        "minimum": 350840969769,
+        "values_by_repetition": [
+          398074201232,
+          395034548469,
+          351718131358,
+          351035341867,
+          350840969769
+        ]
+      },
+      "retained_program_content_id": "67c0b9dfd95b114ef5e12c0a0d3ae0221d32851e7b2b6835554ae3347e53d9a8",
+      "source_sha256": "2a86d17029ebccd3964b121d5d04ea5374bba21205e7b960a7af598a32f132e9",
+      "structural_counters_constant_across_repetitions": true
+    },
+    {
+      "actual_deployment_decision_counts": {
+        "RELEASE": 5
+      },
+      "actual_structural_counters": {
+        "cache_hits": 182,
+        "complete_pair_sweeps": 8111,
+        "interval_checks": 102,
+        "interval_subdivisions": 7976,
+        "pair_distance_calls": 2011528,
+        "point_checks": 113,
+        "states": 113,
+        "transitions": 112
+      },
+      "actual_verdict_counts": {
+        "verified-within-bounds": 5
+      },
+      "case_id": "I4F-R-SAFE-T4",
+      "family": "R",
+      "n": 5,
+      "peak_rss_bytes": {
+        "maximum": 1734012928,
+        "median": 1733525504,
+        "minimum": 1726226432,
+        "values_by_repetition": [
+          1733525504,
+          1732886528,
+          1726226432,
+          1734012928,
+          1733976064
+        ]
+      },
+      "primary_wall_ns": {
+        "maximum": 1457815137616,
+        "median": 1308147208913,
+        "minimum": 1285444854236,
+        "values_by_repetition": [
+          1457815137616,
+          1431805829390,
+          1308147208913,
+          1285444854236,
+          1286735877114
+        ]
+      },
+      "retained_program_content_id": "3a590b6b969ca084811747a1404a612e384af711b4dcd17e2066a32262a1277f",
+      "source_sha256": "2f14193f75bf1d32a0c0868731ae1901b47b72fa79d42756116b0088fb8a223d",
+      "structural_counters_constant_across_repetitions": true
+    },
+    {
+      "actual_deployment_decision_counts": {
+        "BLOCK": 5
+      },
+      "actual_structural_counters": {
+        "cache_hits": 0,
+        "complete_pair_sweeps": 1,
+        "interval_checks": 0,
+        "interval_subdivisions": 0,
+        "pair_distance_calls": 248,
+        "point_checks": 1,
+        "states": 1,
+        "transitions": 0
+      },
+      "actual_verdict_counts": {
+        "violated": 5
+      },
+      "case_id": "I4F-R-UNSAFE-T0",
+      "family": "R",
+      "n": 5,
+      "peak_rss_bytes": {
+        "maximum": 133046272,
+        "median": 132866048,
+        "minimum": 132567040,
+        "values_by_repetition": [
+          132808704,
+          133046272,
+          132960256,
+          132866048,
+          132567040
+        ]
+      },
+      "primary_wall_ns": {
+        "maximum": 597587934,
+        "median": 435552075,
+        "minimum": 429656827,
+        "values_by_repetition": [
+          448892646,
+          597587934,
+          429656827,
+          434912350,
+          435552075
+        ]
+      },
+      "retained_program_content_id": "693add26fa754a9d3490185eff247347c4a0b7bf24a96792582b4db7898cfe43",
+      "source_sha256": "f7b8d25e209f5d2640da409a38510ac0067b445450275949c402950225cc31c9",
+      "structural_counters_constant_across_repetitions": true
+    }
+  ],
+  "claim_boundary": "These are offline software measurements, not robot trials. Timing and RSS are descriptive measurements from the recorded Ubuntu machine.",
+  "collision_error_bound_m": 1e-12,
+  "completed_slots": 30,
+  "deployment_decision_counts": {
+    "BLOCK": 15,
+    "RELEASE": 15
+  },
+  "evidence_status": "VERIFIED_COMPLETE_FIXED_DENOMINATOR_REFERENCE_EVIDENCE",
+  "fixed_formal_denominator": 30,
+  "formal_cases": 6,
+  "formal_repetitions_per_case": 5,
+  "fresh_process_per_slot": true,
+  "identity_boundary": "The accepted reference run used the corrected native implementation. Compact records bind the byte-exact verifier modules and the accepted server binary; public path locators and model files use the anonymous projection.",
+  "primary_metric": "end_to_end_including_model_load_wall_ns",
+  "replacement_slots": 0,
+  "rss_definition": "per-workload median of peak_rss_bytes over five measured formal runs",
+  "runner_error_slots": 0,
+  "schema": "bisafecode.public.table-iii-reference-summary/v2",
+  "scope": "offline native OpenArm/MoveIt/FCL accepted reference run",
+  "slot_files": [
+    {
+      "path": "slots/slot-001__rep-1__I4F-R-SAFE-T4.json",
+      "slot_id": "TIII-001"
+    },
+    {
+      "path": "slots/slot-002__rep-1__I4F-H-SAFE-T3.json",
+      "slot_id": "TIII-002"
+    },
+    {
+      "path": "slots/slot-003__rep-1__I4F-C-UNSAFE-T0.json",
+      "slot_id": "TIII-003"
+    },
+    {
+      "path": "slots/slot-004__rep-1__I4F-C-SAFE-T1.json",
+      "slot_id": "TIII-004"
+    },
+    {
+      "path": "slots/slot-005__rep-1__I4F-R-UNSAFE-T0.json",
+      "slot_id": "TIII-005"
+    },
+    {
+      "path": "slots/slot-006__rep-1__I4F-H-UNSAFE-T2.json",
+      "slot_id": "TIII-006"
+    },
+    {
+      "path": "slots/slot-007__rep-2__I4F-H-UNSAFE-T2.json",
+      "slot_id": "TIII-007"
+    },
+    {
+      "path": "slots/slot-008__rep-2__I4F-R-SAFE-T4.json",
+      "slot_id": "TIII-008"
+    },
+    {
+      "path": "slots/slot-009__rep-2__I4F-H-SAFE-T3.json",
+      "slot_id": "TIII-009"
+    },
+    {
+      "path": "slots/slot-010__rep-2__I4F-R-UNSAFE-T0.json",
+      "slot_id": "TIII-010"
+    },
+    {
+      "path": "slots/slot-011__rep-2__I4F-C-UNSAFE-T0.json",
+      "slot_id": "TIII-011"
+    },
+    {
+      "path": "slots/slot-012__rep-2__I4F-C-SAFE-T1.json",
+      "slot_id": "TIII-012"
+    },
+    {
+      "path": "slots/slot-013__rep-3__I4F-H-SAFE-T3.json",
+      "slot_id": "TIII-013"
+    },
+    {
+      "path": "slots/slot-014__rep-3__I4F-R-SAFE-T4.json",
+      "slot_id": "TIII-014"
+    },
+    {
+      "path": "slots/slot-015__rep-3__I4F-C-UNSAFE-T0.json",
+      "slot_id": "TIII-015"
+    },
+    {
+      "path": "slots/slot-016__rep-3__I4F-C-SAFE-T1.json",
+      "slot_id": "TIII-016"
+    },
+    {
+      "path": "slots/slot-017__rep-3__I4F-R-UNSAFE-T0.json",
+      "slot_id": "TIII-017"
+    },
+    {
+      "path": "slots/slot-018__rep-3__I4F-H-UNSAFE-T2.json",
+      "slot_id": "TIII-018"
+    },
+    {
+      "path": "slots/slot-019__rep-4__I4F-H-SAFE-T3.json",
+      "slot_id": "TIII-019"
+    },
+    {
+      "path": "slots/slot-020__rep-4__I4F-C-SAFE-T1.json",
+      "slot_id": "TIII-020"
+    },
+    {
+      "path": "slots/slot-021__rep-4__I4F-C-UNSAFE-T0.json",
+      "slot_id": "TIII-021"
+    },
+    {
+      "path": "slots/slot-022__rep-4__I4F-H-UNSAFE-T2.json",
+      "slot_id": "TIII-022"
+    },
+    {
+      "path": "slots/slot-023__rep-4__I4F-R-UNSAFE-T0.json",
+      "slot_id": "TIII-023"
+    },
+    {
+      "path": "slots/slot-024__rep-4__I4F-R-SAFE-T4.json",
+      "slot_id": "TIII-024"
+    },
+    {
+      "path": "slots/slot-025__rep-5__I4F-H-UNSAFE-T2.json",
+      "slot_id": "TIII-025"
+    },
+    {
+      "path": "slots/slot-026__rep-5__I4F-C-UNSAFE-T0.json",
+      "slot_id": "TIII-026"
+    },
+    {
+      "path": "slots/slot-027__rep-5__I4F-H-SAFE-T3.json",
+      "slot_id": "TIII-027"
+    },
+    {
+      "path": "slots/slot-028__rep-5__I4F-R-SAFE-T4.json",
+      "slot_id": "TIII-028"
+    },
+    {
+      "path": "slots/slot-029__rep-5__I4F-C-SAFE-T1.json",
+      "slot_id": "TIII-029"
+    },
+    {
+      "path": "slots/slot-030__rep-5__I4F-R-UNSAFE-T0.json",
+      "slot_id": "TIII-030"
+    }
+  ],
+  "timeout_slots": 0,
+  "total_primary_wall_ns": 12757501275449,
+  "total_primary_wall_s": 12757.501275449,
+  "unknown_slots": 0,
+  "verdict_counts": {
+    "verified-within-bounds": 15,
+    "violated": 15
+  },
+  "vio_block_slots": 15,
+  "vwb_release_slots": 15,
+  "warmups_excluded": true
+}

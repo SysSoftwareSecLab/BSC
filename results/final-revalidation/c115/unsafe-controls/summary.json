@@ -1,0 +1,18 @@
+{
+  "claim_boundary": "No unsafe control was sent to physical hardware.",
+  "control_design": "Two controlled C programs plus 15 family-matched formal Table III negative repetitions; these are not 17 one-to-one controls paired with the 15 C115 slots.",
+  "controlled_program_negative_count": 2,
+  "controlled_program_negative_ids": [
+    "EXP-S4-002-P053",
+    "EXP-S4-002-P060"
+  ],
+  "hardware_execution": "FORBIDDEN_ZERO_SEND",
+  "native_negative_family_counts": {
+    "C": 5,
+    "H": 5,
+    "R": 5
+  },
+  "native_negative_formal_run_count": 15,
+  "schema": "bisafecode.public.c115-unsafe-controls-summary/v1",
+  "status": "PASS_ALL_RETAINED_UNSAFE_CONTROLS_BLOCKED_ZERO_SEND"
+}

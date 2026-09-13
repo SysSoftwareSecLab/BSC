@@ -1,0 +1,27 @@
+# Claim-to-Evidence Index
+
+This table maps each paper-facing evidence claim to the smallest released
+record that checks it.
+
+- `READY`: the public files are present and the stated check passes.
+- `READY-WITH-BOUNDARY`: the evidence is present and passes its public check,
+  while the named scope or packaging boundary remains part of the conclusion.
+
+| ID | Paper-facing evidence | Status | Reviewer-facing path | Result and boundary |
+|---|---|---|---|---|
+| E01 | Identity of the final verifier used in the named revalidations | READY-WITH-BOUNDARY | `final-build/BUILD_MANIFEST.json`, `final-build/PAYLOAD.sha256`, `final-build/PRIVACY_REDACTIONS.json`, `final-build/tools/verify_candidate_projection.py` | The 114-file anonymous root is fixed: 109 byte-exact files and five disclosed identity-only projections. The 33-file final core is byte-exact. |
+| E02 | Frozen Controlled-60, External-40, External-25, and Rare-40 programs and oracle labels | READY | `datasets/` | All four finite cohorts, including the two External-25 unsafe-to-UNK cases, are included. They are correction-aware benchmarks, not untouched population samples. |
+| E03 | Accepted final-build portable revalidation of all 165 programs | READY-WITH-BOUNDARY | `results/final-revalidation/cohorts/`, `results/final-revalidation/tools/recount_public_results.py` | The included records recount to 165/165 frozen-verdict agreement and 163/165 binary-oracle agreement; every non-VWB result maps to BLOCK. The public tool does not execute the 165 cases. |
+| E04 | Controlled contracts and trajectory identities used by the portable lane | READY | `contracts-and-trajectories/mac-controlled-freeze/` | The 18-file mirror is byte-checked. It does not substitute for native OpenArm inputs. |
+| E05 | Oracle implementations and qualification boundaries | READY-WITH-BOUNDARY | `oracles/ORACLE_INDEX.json`, `oracles/native/`, `oracles/qualification/` | Accepted qualification records report all final qualifiers admitted and their negative controls fail closed. The public native recount validates the distance-comparator record; the complete qualification is integrity-bound but not re-executed. No blinded annotation team or independent physical sensor is claimed. |
+| E06 | LLM prompts, task cards, outputs/failures, and selection funnels used in reported cohorts | READY | `llm-generation/`, `results/final-revalidation/generated-cohorts/`, `results/final-revalidation/tools/recount_generated_cohorts.py` | Selected experiment-relevant provenance is included. Provider snapshots and sampling controls were not recorded. The Q4 prompt conflict and retained target miss remain visible. |
+| E07 | Runtime, sampling, ablation, finite-budget, GPT, and SPIN shared-subset baselines | READY-WITH-BOUNDARY | `baselines/`, `results/final-revalidation/tools/recount_baselines.py` | Included rows recount. Rare-40 sampling and wall-clock slices remain aggregate-only; 20 separated-state RQ2 sources are not shipped; the GPT control retains 299/300 completed judgments and one timeout. SPIN is a translation-consistency check. |
+| E08 | Table III six-workload by five-run final native reference evidence | READY-WITH-BOUNDARY | `results/final-revalidation/table-iii/`, `contracts-and-trajectories/table-iii/`, `results/final-revalidation/tools/recount_native_results.py` | 30/30 fixed slots: 15 VWB/RELEASE, 15 VIO/BLOCK, zero UNK/timeout/error/replacement. Five-run median RSS values are recomputed from all accepted slot records. The public tool recounts those records; it does not execute the native campaign. |
+| E09 | C115 15-slot final offline revalidation, unsafe controls, and dense comparator | READY-WITH-BOUNDARY | `results/final-revalidation/c115/`, `contracts-and-trajectories/c115/`, `oracles/qualification/`, `results/final-revalidation/tools/recount_native_results.py` | 15/15 scheduled identities PASS; two controlled-program negatives and 15 family-matched native negative repetitions BLOCK. The accepted dense report covers 479,136 distances; the public tool checks 20 aggregate chunks, not the individual rows or native campaign execution. |
+| E10 | Ubuntu CPU, RAM, OS, Python, compiler, ROS, MoveIt, FCL, package, and native-library facts | READY | `environment/ubuntu/`, `final-build/SOURCE_BUILD_BINDING.json` | Recorded environment is complete for interpreting accepted timing, RSS, and the recorded-environment source-to-server-binary match. System-library binaries and path-bearing hashes are deliberately omitted. |
+| E11 | Historical OpenArm H/R/C deployment evidence | READY-WITH-BOUNDARY | `hardware-evidence/` | H 5/5 PASS, R 5/5 PASS, C 3 PASS + 2 coverage UNKNOWN. C04/C05 gaps remain. The R model-relative minimum is structurally recorded as 0.007825518167755598 mm and displayed as 0.00783 mm; it is not a physical-clearance certificate. Collision is supported at campaign level; the complete per-slot verdict/release/send join was not retained. |
+| E12 | Public chronology and interpretation of corrections | READY | `correction-ledger.md`, `results/final-revalidation/generated-cohorts/controlled-extension-q4/oracle-corrections.json` | Corrections, unfavorable outcomes, and changed interpretations are retained; no historical result is overwritten. |
+
+Optional hardware video is not part of this release. It may be added only after
+its scientific wording, anonymity, audio, ownership, and redistribution review
+has completed.

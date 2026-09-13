@@ -1,0 +1,200 @@
+{
+  "condition_binding": {
+    "claim_limit": "model-relative frozen-protocol coverage; not arbitrary placement or physical generalization",
+    "kind": "shared_frozen_R_program_and_trajectory_plus_exact_predeclared_translation_bound",
+    "oversized_foam_gate": {
+      "effective_required_clearance_m": 0.0010000000010000005,
+      "gate_passed": true,
+      "nominal_minimum_m": 0.08302007036030645,
+      "raw_margin_over_effective_threshold_m": 0.08202007035930645,
+      "scope": "hash-bound frozen oversized-foam R full-path screen covering all five +/-3 mm placements"
+    },
+    "placement_variant": {
+      "nominal_robot_foam_lower_bound_m": 0.0824302609368821,
+      "offset_x_mm": -3,
+      "offset_y_mm": 0,
+      "slot": "R-02",
+      "translation_norm_m": 0.003
+    },
+    "shared_dense_state_count": 238,
+    "shared_phase_count": 4
+  },
+  "family": "R",
+  "final_explicit_collision_comparator": {
+    "all_bound_phases_passed": true,
+    "bound_phases": [
+      {
+        "dense_state_count": 115,
+        "effective_required_clearance_m": 0.0010000000010000005,
+        "family": "R",
+        "gate_passed": true,
+        "minimum_self": {
+          "distance_m": 0.005880534290261585,
+          "family": "R",
+          "finger_policy": "both grippers open; grippers are not R actuators",
+          "pair": [
+            "openarm_left_link5",
+            "openarm_left_link7"
+          ],
+          "phase": "HOME_TO_R_LEFT",
+          "scenario": "HOME_TO_R_LEFT__d0114"
+        },
+        "phase": "HOME_TO_R_LEFT"
+      },
+      {
+        "dense_state_count": 4,
+        "effective_required_clearance_m": 0.0010000000010000005,
+        "family": "R",
+        "gate_passed": true,
+        "minimum_self": {
+          "distance_m": 0.010893344577187054,
+          "family": "R",
+          "finger_policy": "both grippers open; grippers are not R actuators",
+          "pair": [
+            "openarm_left_link0",
+            "openarm_left_link2"
+          ],
+          "phase": "HOME_TO_R_RIGHT",
+          "scenario": "HOME_TO_R_RIGHT__d0000"
+        },
+        "phase": "HOME_TO_R_RIGHT"
+      },
+      {
+        "dense_state_count": 115,
+        "effective_required_clearance_m": 0.0010000000010000005,
+        "family": "R",
+        "gate_passed": true,
+        "minimum_self": {
+          "distance_m": 0.005880100712494785,
+          "family": "R",
+          "finger_policy": "both grippers open; grippers are not R actuators",
+          "pair": [
+            "openarm_left_link5",
+            "openarm_left_link7"
+          ],
+          "phase": "R_TO_HOME_LEFT",
+          "scenario": "R_TO_HOME_LEFT__d0000"
+        },
+        "phase": "R_TO_HOME_LEFT"
+      },
+      {
+        "dense_state_count": 4,
+        "effective_required_clearance_m": 0.0010000000010000005,
+        "family": "R",
+        "gate_passed": true,
+        "minimum_self": {
+          "distance_m": 0.010892528106680698,
+          "family": "R",
+          "finger_policy": "both grippers open; grippers are not R actuators",
+          "pair": [
+            "openarm_left_link0",
+            "openarm_left_link2"
+          ],
+          "phase": "R_TO_HOME_RIGHT",
+          "scenario": "R_TO_HOME_RIGHT__d0000"
+        },
+        "phase": "R_TO_HOME_RIGHT"
+      }
+    ],
+    "collision_error_bound_m": 1e-12,
+    "collision_error_evidence_ref": "geometry-policy:d3c52aaaacadffb2615c8f59b6feec18b23a1db4879c2ba3c801b8e0128a46a1",
+    "minimum_bound_phase": {
+      "dense_state_count": 115,
+      "effective_required_clearance_m": 0.0010000000010000005,
+      "family": "R",
+      "gate_passed": true,
+      "minimum_self": {
+        "distance_m": 0.005880100712494785,
+        "family": "R",
+        "finger_policy": "both grippers open; grippers are not R actuators",
+        "pair": [
+          "openarm_left_link5",
+          "openarm_left_link7"
+        ],
+        "phase": "R_TO_HOME_LEFT",
+        "scenario": "R_TO_HOME_LEFT__d0000"
+      },
+      "phase": "R_TO_HOME_LEFT"
+    }
+  },
+  "final_offline_revalidation": "PASS",
+  "frozen_condition_variant": {
+    "foam_identity": "75x75x45-mm__10.0-g",
+    "placement_offset_x_mm": -3,
+    "placement_offset_y_mm": 0,
+    "proposed_inner_polygon_mm": [
+      85,
+      85
+    ]
+  },
+  "frozen_schedule_status_at_freeze": "NOT_STARTED_FROZEN",
+  "historical_physical_execution_evidence": {
+    "condition_match": true,
+    "final_disposition": "PASS",
+    "historical_slot_id": "R-02"
+  },
+  "official_slot_id": "R-02",
+  "program_and_final_verdict": {
+    "safe": {
+      "case_id": "I4F-R-SAFE-T4",
+      "deployment_decision_counts": {
+        "RELEASE": 5
+      },
+      "deterministic_structural_counters": {
+        "cache_hits": 182,
+        "complete_pair_sweeps": 8111,
+        "interval_checks": 102,
+        "interval_subdivisions": 7976,
+        "pair_distance_calls": 2011528,
+        "point_checks": 113,
+        "states": 113,
+        "transitions": 112
+      },
+      "n": 5,
+      "program_content_id": "3a590b6b969ca084811747a1404a612e384af711b4dcd17e2066a32262a1277f",
+      "source_sha256": "2f14193f75bf1d32a0c0868731ae1901b47b72fa79d42756116b0088fb8a223d",
+      "verdict_counts": {
+        "verified-within-bounds": 5
+      }
+    }
+  },
+  "robot_boundary": {
+    "action_client_created": false,
+    "can_contacted": false,
+    "goal_send_count": 0,
+    "hardware_trial_count": 0,
+    "motion_command_count": 0,
+    "rclpy_imported": false,
+    "ros_graph_contacted": false
+  },
+  "run_instance_id": "C115-PROSPECTIVE-R2-R-02-XM3",
+  "schema": "bisafecode.public.c115-compact-slot/v2",
+  "semantic_identity_boundary": "Fields named *_content_id are retained verifier-emitted experiment joins, not public file-byte digests. Included sources and models have separate SHA-256 fields.",
+  "sequence": 12,
+  "unsafe_controls": {
+    "hardware_execution": "FORBIDDEN_ZERO_SEND",
+    "native_final_build_negative": {
+      "case_id": "I4F-R-UNSAFE-T0",
+      "deployment_decision_counts": {
+        "BLOCK": 5
+      },
+      "deterministic_structural_counters": {
+        "cache_hits": 0,
+        "complete_pair_sweeps": 1,
+        "interval_checks": 0,
+        "interval_subdivisions": 0,
+        "pair_distance_calls": 248,
+        "point_checks": 1,
+        "states": 1,
+        "transitions": 0
+      },
+      "n": 5,
+      "program_content_id": "693add26fa754a9d3490185eff247347c4a0b7bf24a96792582b4db7898cfe43",
+      "source_sha256": "f7b8d25e209f5d2640da409a38510ac0067b445450275949c402950225cc31c9",
+      "verdict_counts": {
+        "violated": 5
+      }
+    },
+    "outcome": "VIOLATED_AND_BLOCKED"
+  }
+}

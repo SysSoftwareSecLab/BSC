@@ -1,0 +1,329 @@
+{
+  "family_counts": {
+    "C": 5,
+    "H": 5,
+    "R": 5
+  },
+  "schema": "bisafecode.public.c115-native-negative-controls/v1",
+  "scope_boundary": "formal offline Table III negative workloads reused as the native C/H/R controls",
+  "semantic_identity_boundary": "program_content_id is the retained accepted-run semantic join; source_sha256 identifies an included Table III source file.",
+  "slot_count": 15,
+  "slots": [
+    {
+      "actual_verdict": "violated",
+      "case_id": "I4F-C-UNSAFE-T0",
+      "deployment_decision": "BLOCK",
+      "expected_verdict": "violated",
+      "program_content_id": "7cc6cf3b0303ada80ccdabdda8314b05fdf3f198225493885c797467028a8f95",
+      "repetition": 1,
+      "returncode": 0,
+      "robot_boundary": {
+        "action_client_created": false,
+        "can_contacted": false,
+        "goal_send_count": 0,
+        "motion_command_count": 0,
+        "rclpy_imported": false,
+        "ros_graph_contacted": false
+      },
+      "sequence": 3,
+      "source_sha256": "0882d7a0d2a769088352003494534f34552b8eb7c5397f2dc228db9e0ff3861e",
+      "table_iii_slot_id": "TIII-003",
+      "timed_out": false
+    },
+    {
+      "actual_verdict": "violated",
+      "case_id": "I4F-R-UNSAFE-T0",
+      "deployment_decision": "BLOCK",
+      "expected_verdict": "violated",
+      "program_content_id": "693add26fa754a9d3490185eff247347c4a0b7bf24a96792582b4db7898cfe43",
+      "repetition": 1,
+      "returncode": 0,
+      "robot_boundary": {
+        "action_client_created": false,
+        "can_contacted": false,
+        "goal_send_count": 0,
+        "motion_command_count": 0,
+        "rclpy_imported": false,
+        "ros_graph_contacted": false
+      },
+      "sequence": 5,
+      "source_sha256": "f7b8d25e209f5d2640da409a38510ac0067b445450275949c402950225cc31c9",
+      "table_iii_slot_id": "TIII-005",
+      "timed_out": false
+    },
+    {
+      "actual_verdict": "violated",
+      "case_id": "I4F-H-UNSAFE-T2",
+      "deployment_decision": "BLOCK",
+      "expected_verdict": "violated",
+      "program_content_id": "67c0b9dfd95b114ef5e12c0a0d3ae0221d32851e7b2b6835554ae3347e53d9a8",
+      "repetition": 1,
+      "returncode": 0,
+      "robot_boundary": {
+        "action_client_created": false,
+        "can_contacted": false,
+        "goal_send_count": 0,
+        "motion_command_count": 0,
+        "rclpy_imported": false,
+        "ros_graph_contacted": false
+      },
+      "sequence": 6,
+      "source_sha256": "2a86d17029ebccd3964b121d5d04ea5374bba21205e7b960a7af598a32f132e9",
+      "table_iii_slot_id": "TIII-006",
+      "timed_out": false
+    },
+    {
+      "actual_verdict": "violated",
+      "case_id": "I4F-H-UNSAFE-T2",
+      "deployment_decision": "BLOCK",
+      "expected_verdict": "violated",
+      "program_content_id": "67c0b9dfd95b114ef5e12c0a0d3ae0221d32851e7b2b6835554ae3347e53d9a8",
+      "repetition": 2,
+      "returncode": 0,
+      "robot_boundary": {
+        "action_client_created": false,
+        "can_contacted": false,
+        "goal_send_count": 0,
+        "motion_command_count": 0,
+        "rclpy_imported": false,
+        "ros_graph_contacted": false
+      },
+      "sequence": 7,
+      "source_sha256": "2a86d17029ebccd3964b121d5d04ea5374bba21205e7b960a7af598a32f132e9",
+      "table_iii_slot_id": "TIII-007",
+      "timed_out": false
+    },
+    {
+      "actual_verdict": "violated",
+      "case_id": "I4F-R-UNSAFE-T0",
+      "deployment_decision": "BLOCK",
+      "expected_verdict": "violated",
+      "program_content_id": "693add26fa754a9d3490185eff247347c4a0b7bf24a96792582b4db7898cfe43",
+      "repetition": 2,
+      "returncode": 0,
+      "robot_boundary": {
+        "action_client_created": false,
+        "can_contacted": false,
+        "goal_send_count": 0,
+        "motion_command_count": 0,
+        "rclpy_imported": false,
+        "ros_graph_contacted": false
+      },
+      "sequence": 10,
+      "source_sha256": "f7b8d25e209f5d2640da409a38510ac0067b445450275949c402950225cc31c9",
+      "table_iii_slot_id": "TIII-010",
+      "timed_out": false
+    },
+    {
+      "actual_verdict": "violated",
+      "case_id": "I4F-C-UNSAFE-T0",
+      "deployment_decision": "BLOCK",
+      "expected_verdict": "violated",
+      "program_content_id": "7cc6cf3b0303ada80ccdabdda8314b05fdf3f198225493885c797467028a8f95",
+      "repetition": 2,
+      "returncode": 0,
+      "robot_boundary": {
+        "action_client_created": false,
+        "can_contacted": false,
+        "goal_send_count": 0,
+        "motion_command_count": 0,
+        "rclpy_imported": false,
+        "ros_graph_contacted": false
+      },
+      "sequence": 11,
+      "source_sha256": "0882d7a0d2a769088352003494534f34552b8eb7c5397f2dc228db9e0ff3861e",
+      "table_iii_slot_id": "TIII-011",
+      "timed_out": false
+    },
+    {
+      "actual_verdict": "violated",
+      "case_id": "I4F-C-UNSAFE-T0",
+      "deployment_decision": "BLOCK",
+      "expected_verdict": "violated",
+      "program_content_id": "7cc6cf3b0303ada80ccdabdda8314b05fdf3f198225493885c797467028a8f95",
+      "repetition": 3,
+      "returncode": 0,
+      "robot_boundary": {
+        "action_client_created": false,
+        "can_contacted": false,
+        "goal_send_count": 0,
+        "motion_command_count": 0,
+        "rclpy_imported": false,
+        "ros_graph_contacted": false
+      },
+      "sequence": 15,
+      "source_sha256": "0882d7a0d2a769088352003494534f34552b8eb7c5397f2dc228db9e0ff3861e",
+      "table_iii_slot_id": "TIII-015",
+      "timed_out": false
+    },
+    {
+      "actual_verdict": "violated",
+      "case_id": "I4F-R-UNSAFE-T0",
+      "deployment_decision": "BLOCK",
+      "expected_verdict": "violated",
+      "program_content_id": "693add26fa754a9d3490185eff247347c4a0b7bf24a96792582b4db7898cfe43",
+      "repetition": 3,
+      "returncode": 0,
+      "robot_boundary": {
+        "action_client_created": false,
+        "can_contacted": false,
+        "goal_send_count": 0,
+        "motion_command_count": 0,
+        "rclpy_imported": false,
+        "ros_graph_contacted": false
+      },
+      "sequence": 17,
+      "source_sha256": "f7b8d25e209f5d2640da409a38510ac0067b445450275949c402950225cc31c9",
+      "table_iii_slot_id": "TIII-017",
+      "timed_out": false
+    },
+    {
+      "actual_verdict": "violated",
+      "case_id": "I4F-H-UNSAFE-T2",
+      "deployment_decision": "BLOCK",
+      "expected_verdict": "violated",
+      "program_content_id": "67c0b9dfd95b114ef5e12c0a0d3ae0221d32851e7b2b6835554ae3347e53d9a8",
+      "repetition": 3,
+      "returncode": 0,
+      "robot_boundary": {
+        "action_client_created": false,
+        "can_contacted": false,
+        "goal_send_count": 0,
+        "motion_command_count": 0,
+        "rclpy_imported": false,
+        "ros_graph_contacted": false
+      },
+      "sequence": 18,
+      "source_sha256": "2a86d17029ebccd3964b121d5d04ea5374bba21205e7b960a7af598a32f132e9",
+      "table_iii_slot_id": "TIII-018",
+      "timed_out": false
+    },
+    {
+      "actual_verdict": "violated",
+      "case_id": "I4F-C-UNSAFE-T0",
+      "deployment_decision": "BLOCK",
+      "expected_verdict": "violated",
+      "program_content_id": "7cc6cf3b0303ada80ccdabdda8314b05fdf3f198225493885c797467028a8f95",
+      "repetition": 4,
+      "returncode": 0,
+      "robot_boundary": {
+        "action_client_created": false,
+        "can_contacted": false,
+        "goal_send_count": 0,
+        "motion_command_count": 0,
+        "rclpy_imported": false,
+        "ros_graph_contacted": false
+      },
+      "sequence": 21,
+      "source_sha256": "0882d7a0d2a769088352003494534f34552b8eb7c5397f2dc228db9e0ff3861e",
+      "table_iii_slot_id": "TIII-021",
+      "timed_out": false
+    },
+    {
+      "actual_verdict": "violated",
+      "case_id": "I4F-H-UNSAFE-T2",
+      "deployment_decision": "BLOCK",
+      "expected_verdict": "violated",
+      "program_content_id": "67c0b9dfd95b114ef5e12c0a0d3ae0221d32851e7b2b6835554ae3347e53d9a8",
+      "repetition": 4,
+      "returncode": 0,
+      "robot_boundary": {
+        "action_client_created": false,
+        "can_contacted": false,
+        "goal_send_count": 0,
+        "motion_command_count": 0,
+        "rclpy_imported": false,
+        "ros_graph_contacted": false
+      },
+      "sequence": 22,
+      "source_sha256": "2a86d17029ebccd3964b121d5d04ea5374bba21205e7b960a7af598a32f132e9",
+      "table_iii_slot_id": "TIII-022",
+      "timed_out": false
+    },
+    {
+      "actual_verdict": "violated",
+      "case_id": "I4F-R-UNSAFE-T0",
+      "deployment_decision": "BLOCK",
+      "expected_verdict": "violated",
+      "program_content_id": "693add26fa754a9d3490185eff247347c4a0b7bf24a96792582b4db7898cfe43",
+      "repetition": 4,
+      "returncode": 0,
+      "robot_boundary": {
+        "action_client_created": false,
+        "can_contacted": false,
+        "goal_send_count": 0,
+        "motion_command_count": 0,
+        "rclpy_imported": false,
+        "ros_graph_contacted": false
+      },
+      "sequence": 23,
+      "source_sha256": "f7b8d25e209f5d2640da409a38510ac0067b445450275949c402950225cc31c9",
+      "table_iii_slot_id": "TIII-023",
+      "timed_out": false
+    },
+    {
+      "actual_verdict": "violated",
+      "case_id": "I4F-H-UNSAFE-T2",
+      "deployment_decision": "BLOCK",
+      "expected_verdict": "violated",
+      "program_content_id": "67c0b9dfd95b114ef5e12c0a0d3ae0221d32851e7b2b6835554ae3347e53d9a8",
+      "repetition": 5,
+      "returncode": 0,
+      "robot_boundary": {
+        "action_client_created": false,
+        "can_contacted": false,
+        "goal_send_count": 0,
+        "motion_command_count": 0,
+        "rclpy_imported": false,
+        "ros_graph_contacted": false
+      },
+      "sequence": 25,
+      "source_sha256": "2a86d17029ebccd3964b121d5d04ea5374bba21205e7b960a7af598a32f132e9",
+      "table_iii_slot_id": "TIII-025",
+      "timed_out": false
+    },
+    {
+      "actual_verdict": "violated",
+      "case_id": "I4F-C-UNSAFE-T0",
+      "deployment_decision": "BLOCK",
+      "expected_verdict": "violated",
+      "program_content_id": "7cc6cf3b0303ada80ccdabdda8314b05fdf3f198225493885c797467028a8f95",
+      "repetition": 5,
+      "returncode": 0,
+      "robot_boundary": {
+        "action_client_created": false,
+        "can_contacted": false,
+        "goal_send_count": 0,
+        "motion_command_count": 0,
+        "rclpy_imported": false,
+        "ros_graph_contacted": false
+      },
+      "sequence": 26,
+      "source_sha256": "0882d7a0d2a769088352003494534f34552b8eb7c5397f2dc228db9e0ff3861e",
+      "table_iii_slot_id": "TIII-026",
+      "timed_out": false
+    },
+    {
+      "actual_verdict": "violated",
+      "case_id": "I4F-R-UNSAFE-T0",
+      "deployment_decision": "BLOCK",
+      "expected_verdict": "violated",
+      "program_content_id": "693add26fa754a9d3490185eff247347c4a0b7bf24a96792582b4db7898cfe43",
+      "repetition": 5,
+      "returncode": 0,
+      "robot_boundary": {
+        "action_client_created": false,
+        "can_contacted": false,
+        "goal_send_count": 0,
+        "motion_command_count": 0,
+        "rclpy_imported": false,
+        "ros_graph_contacted": false
+      },
+      "sequence": 30,
+      "source_sha256": "f7b8d25e209f5d2640da409a38510ac0067b445450275949c402950225cc31c9",
+      "table_iii_slot_id": "TIII-030",
+      "timed_out": false
+    }
+  ],
+  "status": "PASS_ALL_15_NATIVE_NEGATIVE_REPETITIONS_BLOCKED"
+}

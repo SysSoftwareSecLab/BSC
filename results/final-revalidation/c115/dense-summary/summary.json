@@ -1,0 +1,734 @@
+{
+  "all_distance_row_count": 479136,
+  "campaign_revision": "C115-PROSPECTIVE-R2",
+  "chunk_count": 20,
+  "chunk_manifest": "chunks.jsonl",
+  "collision_error_bound_m": 1e-12,
+  "collision_error_evidence_sha256": "d3c52aaaacadffb2615c8f59b6feec18b23a1db4879c2ba3c801b8e0128a46a1",
+  "compact_evidence_boundary": "Twenty public chunk records account for aggregate state and row counts. The 479,136 individual distance rows are omitted, so their numeric values are not independently row-auditable from this compact package.",
+  "dense_state_count": 1932,
+  "evidence_status": "ACCEPTED_FINITE_MODEL_RELATIVE_DENSE_REFERENCE",
+  "families": {
+    "C": {
+      "collision_error_bound_m": 1e-12,
+      "collision_error_evidence_ref": "geometry-policy:d3c52aaaacadffb2615c8f59b6feec18b23a1db4879c2ba3c801b8e0128a46a1",
+      "dense_state_count": 1234,
+      "effective_required_clearance_m": 0.010750000001000005,
+      "frozen_residual_m": 0.00075,
+      "minimum_self": {
+        "distance_m": 0.010797686063175237,
+        "family": "C",
+        "finger_policy": "both grippers at closed-stop model value",
+        "pair": [
+          "openarm_left_link0",
+          "openarm_left_link2"
+        ],
+        "phase": "C-03_HOME_TO_C_LEFT",
+        "scenario": "C-03_HOME_TO_C_LEFT__d0035"
+      },
+      "raw_margin_over_effective_threshold_m": 4.7686062175231886e-05,
+      "required_clearance_m": 0.01,
+      "residual_inflated_required_clearance_m": 0.010750000000000003,
+      "self_gate_passed": true
+    },
+    "H": {
+      "collision_error_bound_m": 1e-12,
+      "collision_error_evidence_ref": "geometry-policy:d3c52aaaacadffb2615c8f59b6feec18b23a1db4879c2ba3c801b8e0128a46a1",
+      "dense_state_count": 460,
+      "effective_required_clearance_m": 0.0010000000010000005,
+      "frozen_residual_m": 0.001,
+      "minimum_self": {
+        "distance_m": 0.005403543151862089,
+        "family": "H",
+        "finger_policy": "receiver-only carry",
+        "pair": [
+          "openarm_right_link5",
+          "openarm_right_link7"
+        ],
+        "phase": "H_RECEIVER_ONLY_CARRY_10MM",
+        "scenario": "H_RECEIVER_ONLY_CARRY_10MM__d0000"
+      },
+      "payload": {
+        "effective_required_clearance_m": 0.0010000000010000005,
+        "gate_passed": true,
+        "nominal_minimum_m": 0.0033848063126562748,
+        "raw_margin_over_effective_threshold_m": 0.0023848063116562743,
+        "scope": "hash-bound frozen H payload phase and carry screens"
+      },
+      "raw_margin_over_effective_threshold_m": 0.004403543150862089,
+      "required_clearance_m": 0.0,
+      "residual_inflated_required_clearance_m": 0.0010000000000000002,
+      "self_gate_passed": true
+    },
+    "R": {
+      "collision_error_bound_m": 1e-12,
+      "collision_error_evidence_ref": "geometry-policy:d3c52aaaacadffb2615c8f59b6feec18b23a1db4879c2ba3c801b8e0128a46a1",
+      "dense_state_count": 238,
+      "effective_required_clearance_m": 0.0010000000010000005,
+      "foam": {
+        "effective_required_clearance_m": 0.0010000000010000005,
+        "gate_passed": true,
+        "nominal_minimum_m": 0.08302007036030645,
+        "raw_margin_over_effective_threshold_m": 0.08202007035930645,
+        "scope": "hash-bound frozen oversized-foam R full-path screen covering all five +/-3 mm placements"
+      },
+      "frozen_residual_m": 0.001,
+      "minimum_self": {
+        "distance_m": 0.005880100712494785,
+        "family": "R",
+        "finger_policy": "both grippers open; grippers are not R actuators",
+        "pair": [
+          "openarm_left_link5",
+          "openarm_left_link7"
+        ],
+        "phase": "R_TO_HOME_LEFT",
+        "scenario": "R_TO_HOME_LEFT__d0000"
+      },
+      "raw_margin_over_effective_threshold_m": 0.004880100711494784,
+      "required_clearance_m": 0.0,
+      "residual_inflated_required_clearance_m": 0.0010000000000000002,
+      "self_gate_passed": true
+    }
+  },
+  "final_collision_certificate_policy_module": {
+    "public_path": "final-build/src/bisafecode/continuous_collision.py",
+    "sha256": "6e6f32a65aa6dfb1ef06e3297a1651e2a8a9ec63d32b44115de75233616081e6",
+    "size_bytes": 20450
+  },
+  "negative_self_distance_count": 0,
+  "negative_world_distance_count": 0,
+  "phases": [
+    {
+      "dense_state_count": 58,
+      "effective_required_clearance_m": 0.010750000001000005,
+      "family": "C",
+      "gate_passed": true,
+      "minimum_self": {
+        "distance_m": 0.010797749197576749,
+        "family": "C",
+        "finger_policy": "both grippers at closed-stop model value",
+        "pair": [
+          "openarm_left_link0",
+          "openarm_left_link2"
+        ],
+        "phase": "C-01_C_TO_HOME_LEFT",
+        "scenario": "C-01_C_TO_HOME_LEFT__d0023"
+      },
+      "phase": "C-01_C_TO_HOME_LEFT"
+    },
+    {
+      "dense_state_count": 58,
+      "effective_required_clearance_m": 0.010750000001000005,
+      "family": "C",
+      "gate_passed": true,
+      "minimum_self": {
+        "distance_m": 0.010797749198089266,
+        "family": "C",
+        "finger_policy": "both grippers at closed-stop model value",
+        "pair": [
+          "openarm_right_link0",
+          "openarm_right_link2"
+        ],
+        "phase": "C-01_C_TO_HOME_RIGHT",
+        "scenario": "C-01_C_TO_HOME_RIGHT__d0023"
+      },
+      "phase": "C-01_C_TO_HOME_RIGHT"
+    },
+    {
+      "dense_state_count": 58,
+      "effective_required_clearance_m": 0.010750000001000005,
+      "family": "C",
+      "gate_passed": true,
+      "minimum_self": {
+        "distance_m": 0.010797710043392493,
+        "family": "C",
+        "finger_policy": "both grippers at closed-stop model value",
+        "pair": [
+          "openarm_left_link0",
+          "openarm_left_link2"
+        ],
+        "phase": "C-01_HOME_TO_C_LEFT",
+        "scenario": "C-01_HOME_TO_C_LEFT__d0035"
+      },
+      "phase": "C-01_HOME_TO_C_LEFT"
+    },
+    {
+      "dense_state_count": 58,
+      "effective_required_clearance_m": 0.010750000001000005,
+      "family": "C",
+      "gate_passed": true,
+      "minimum_self": {
+        "distance_m": 0.010798050615380526,
+        "family": "C",
+        "finger_policy": "both grippers at closed-stop model value",
+        "pair": [
+          "openarm_right_link0",
+          "openarm_right_link2"
+        ],
+        "phase": "C-01_HOME_TO_C_RIGHT",
+        "scenario": "C-01_HOME_TO_C_RIGHT__d0034"
+      },
+      "phase": "C-01_HOME_TO_C_RIGHT"
+    },
+    {
+      "dense_state_count": 10,
+      "effective_required_clearance_m": 0.010750000001000005,
+      "family": "C",
+      "gate_passed": true,
+      "minimum_self": {
+        "distance_m": 0.011553175011052083,
+        "family": "C",
+        "finger_policy": "both grippers at closed-stop model value",
+        "pair": [
+          "openarm_right_link0",
+          "openarm_right_link2"
+        ],
+        "phase": "C-01_P044_DUAL_J3",
+        "scenario": "C-01_P044_DUAL_J3__d0000"
+      },
+      "phase": "C-01_P044_DUAL_J3"
+    },
+    {
+      "dense_state_count": 58,
+      "effective_required_clearance_m": 0.010750000001000005,
+      "family": "C",
+      "gate_passed": true,
+      "minimum_self": {
+        "distance_m": 0.010797968911862292,
+        "family": "C",
+        "finger_policy": "both grippers at closed-stop model value",
+        "pair": [
+          "openarm_left_link0",
+          "openarm_left_link2"
+        ],
+        "phase": "C-02_C_TO_HOME_LEFT",
+        "scenario": "C-02_C_TO_HOME_LEFT__d0023"
+      },
+      "phase": "C-02_C_TO_HOME_LEFT"
+    },
+    {
+      "dense_state_count": 58,
+      "effective_required_clearance_m": 0.010750000001000005,
+      "family": "C",
+      "gate_passed": true,
+      "minimum_self": {
+        "distance_m": 0.010797968910877705,
+        "family": "C",
+        "finger_policy": "both grippers at closed-stop model value",
+        "pair": [
+          "openarm_right_link0",
+          "openarm_right_link2"
+        ],
+        "phase": "C-02_C_TO_HOME_RIGHT",
+        "scenario": "C-02_C_TO_HOME_RIGHT__d0023"
+      },
+      "phase": "C-02_C_TO_HOME_RIGHT"
+    },
+    {
+      "dense_state_count": 58,
+      "effective_required_clearance_m": 0.010750000001000005,
+      "family": "C",
+      "gate_passed": true,
+      "minimum_self": {
+        "distance_m": 0.010797690150394022,
+        "family": "C",
+        "finger_policy": "both grippers at closed-stop model value",
+        "pair": [
+          "openarm_left_link0",
+          "openarm_left_link2"
+        ],
+        "phase": "C-02_HOME_TO_C_LEFT",
+        "scenario": "C-02_HOME_TO_C_LEFT__d0035"
+      },
+      "phase": "C-02_HOME_TO_C_LEFT"
+    },
+    {
+      "dense_state_count": 58,
+      "effective_required_clearance_m": 0.010750000001000005,
+      "family": "C",
+      "gate_passed": true,
+      "minimum_self": {
+        "distance_m": 0.010797956511171842,
+        "family": "C",
+        "finger_policy": "both grippers at closed-stop model value",
+        "pair": [
+          "openarm_right_link0",
+          "openarm_right_link2"
+        ],
+        "phase": "C-02_HOME_TO_C_RIGHT",
+        "scenario": "C-02_HOME_TO_C_RIGHT__d0034"
+      },
+      "phase": "C-02_HOME_TO_C_RIGHT"
+    },
+    {
+      "dense_state_count": 10,
+      "effective_required_clearance_m": 0.010750000001000005,
+      "family": "C",
+      "gate_passed": true,
+      "minimum_self": {
+        "distance_m": 0.01159016728013871,
+        "family": "C",
+        "finger_policy": "both grippers at closed-stop model value",
+        "pair": [
+          "openarm_left_link0",
+          "openarm_left_link2"
+        ],
+        "phase": "C-02_P044_DUAL_J3",
+        "scenario": "C-02_P044_DUAL_J3__d0000"
+      },
+      "phase": "C-02_P044_DUAL_J3"
+    },
+    {
+      "dense_state_count": 58,
+      "effective_required_clearance_m": 0.010750000001000005,
+      "family": "C",
+      "gate_passed": true,
+      "minimum_self": {
+        "distance_m": 0.010797705275530776,
+        "family": "C",
+        "finger_policy": "both grippers at closed-stop model value",
+        "pair": [
+          "openarm_left_link0",
+          "openarm_left_link2"
+        ],
+        "phase": "C-03_C_TO_HOME_LEFT",
+        "scenario": "C-03_C_TO_HOME_LEFT__d0024"
+      },
+      "phase": "C-03_C_TO_HOME_LEFT"
+    },
+    {
+      "dense_state_count": 58,
+      "effective_required_clearance_m": 0.010750000001000005,
+      "family": "C",
+      "gate_passed": true,
+      "minimum_self": {
+        "distance_m": 0.010797705275460001,
+        "family": "C",
+        "finger_policy": "both grippers at closed-stop model value",
+        "pair": [
+          "openarm_right_link0",
+          "openarm_right_link2"
+        ],
+        "phase": "C-03_C_TO_HOME_RIGHT",
+        "scenario": "C-03_C_TO_HOME_RIGHT__d0024"
+      },
+      "phase": "C-03_C_TO_HOME_RIGHT"
+    },
+    {
+      "dense_state_count": 58,
+      "effective_required_clearance_m": 0.010750000001000005,
+      "family": "C",
+      "gate_passed": true,
+      "minimum_self": {
+        "distance_m": 0.010797686063175237,
+        "family": "C",
+        "finger_policy": "both grippers at closed-stop model value",
+        "pair": [
+          "openarm_left_link0",
+          "openarm_left_link2"
+        ],
+        "phase": "C-03_HOME_TO_C_LEFT",
+        "scenario": "C-03_HOME_TO_C_LEFT__d0035"
+      },
+      "phase": "C-03_HOME_TO_C_LEFT"
+    },
+    {
+      "dense_state_count": 58,
+      "effective_required_clearance_m": 0.010750000001000005,
+      "family": "C",
+      "gate_passed": true,
+      "minimum_self": {
+        "distance_m": 0.0107978811727361,
+        "family": "C",
+        "finger_policy": "both grippers at closed-stop model value",
+        "pair": [
+          "openarm_right_link0",
+          "openarm_right_link2"
+        ],
+        "phase": "C-03_HOME_TO_C_RIGHT",
+        "scenario": "C-03_HOME_TO_C_RIGHT__d0034"
+      },
+      "phase": "C-03_HOME_TO_C_RIGHT"
+    },
+    {
+      "dense_state_count": 10,
+      "effective_required_clearance_m": 0.010750000001000005,
+      "family": "C",
+      "gate_passed": true,
+      "minimum_self": {
+        "distance_m": 0.011628369798720724,
+        "family": "C",
+        "finger_policy": "both grippers at closed-stop model value",
+        "pair": [
+          "openarm_right_link0",
+          "openarm_right_link2"
+        ],
+        "phase": "C-03_P044_DUAL_J3",
+        "scenario": "C-03_P044_DUAL_J3__d0000"
+      },
+      "phase": "C-03_P044_DUAL_J3"
+    },
+    {
+      "dense_state_count": 64,
+      "effective_required_clearance_m": 0.010750000001000005,
+      "family": "C",
+      "gate_passed": true,
+      "minimum_self": {
+        "distance_m": 0.010798100711311646,
+        "family": "C",
+        "finger_policy": "both grippers at closed-stop model value",
+        "pair": [
+          "openarm_left_link0",
+          "openarm_left_link2"
+        ],
+        "phase": "C-04_C_TO_HOME_LEFT",
+        "scenario": "C-04_C_TO_HOME_LEFT__d0024"
+      },
+      "phase": "C-04_C_TO_HOME_LEFT"
+    },
+    {
+      "dense_state_count": 58,
+      "effective_required_clearance_m": 0.010750000001000005,
+      "family": "C",
+      "gate_passed": true,
+      "minimum_self": {
+        "distance_m": 0.010798100713330054,
+        "family": "C",
+        "finger_policy": "both grippers at closed-stop model value",
+        "pair": [
+          "openarm_right_link0",
+          "openarm_right_link2"
+        ],
+        "phase": "C-04_C_TO_HOME_RIGHT",
+        "scenario": "C-04_C_TO_HOME_RIGHT__d0024"
+      },
+      "phase": "C-04_C_TO_HOME_RIGHT"
+    },
+    {
+      "dense_state_count": 64,
+      "effective_required_clearance_m": 0.010750000001000005,
+      "family": "C",
+      "gate_passed": true,
+      "minimum_self": {
+        "distance_m": 0.01079769663662105,
+        "family": "C",
+        "finger_policy": "both grippers at closed-stop model value",
+        "pair": [
+          "openarm_left_link0",
+          "openarm_left_link2"
+        ],
+        "phase": "C-04_HOME_TO_C_LEFT",
+        "scenario": "C-04_HOME_TO_C_LEFT__d0035"
+      },
+      "phase": "C-04_HOME_TO_C_LEFT"
+    },
+    {
+      "dense_state_count": 58,
+      "effective_required_clearance_m": 0.010750000001000005,
+      "family": "C",
+      "gate_passed": true,
+      "minimum_self": {
+        "distance_m": 0.010797818656931751,
+        "family": "C",
+        "finger_policy": "both grippers at closed-stop model value",
+        "pair": [
+          "openarm_right_link0",
+          "openarm_right_link2"
+        ],
+        "phase": "C-04_HOME_TO_C_RIGHT",
+        "scenario": "C-04_HOME_TO_C_RIGHT__d0034"
+      },
+      "phase": "C-04_HOME_TO_C_RIGHT"
+    },
+    {
+      "dense_state_count": 10,
+      "effective_required_clearance_m": 0.010750000001000005,
+      "family": "C",
+      "gate_passed": true,
+      "minimum_self": {
+        "distance_m": 0.011667781611737427,
+        "family": "C",
+        "finger_policy": "both grippers at closed-stop model value",
+        "pair": [
+          "openarm_right_link0",
+          "openarm_right_link2"
+        ],
+        "phase": "C-04_P044_DUAL_J3",
+        "scenario": "C-04_P044_DUAL_J3__d0000"
+      },
+      "phase": "C-04_P044_DUAL_J3"
+    },
+    {
+      "dense_state_count": 64,
+      "effective_required_clearance_m": 0.010750000001000005,
+      "family": "C",
+      "gate_passed": true,
+      "minimum_self": {
+        "distance_m": 0.010797686456537885,
+        "family": "C",
+        "finger_policy": "both grippers at closed-stop model value",
+        "pair": [
+          "openarm_left_link0",
+          "openarm_left_link2"
+        ],
+        "phase": "C-05_C_TO_HOME_LEFT",
+        "scenario": "C-05_C_TO_HOME_LEFT__d0025"
+      },
+      "phase": "C-05_C_TO_HOME_LEFT"
+    },
+    {
+      "dense_state_count": 58,
+      "effective_required_clearance_m": 0.010750000001000005,
+      "family": "C",
+      "gate_passed": true,
+      "minimum_self": {
+        "distance_m": 0.010797686456474779,
+        "family": "C",
+        "finger_policy": "both grippers at closed-stop model value",
+        "pair": [
+          "openarm_right_link0",
+          "openarm_right_link2"
+        ],
+        "phase": "C-05_C_TO_HOME_RIGHT",
+        "scenario": "C-05_C_TO_HOME_RIGHT__d0025"
+      },
+      "phase": "C-05_C_TO_HOME_RIGHT"
+    },
+    {
+      "dense_state_count": 64,
+      "effective_required_clearance_m": 0.010750000001000005,
+      "family": "C",
+      "gate_passed": true,
+      "minimum_self": {
+        "distance_m": 0.010797719125309711,
+        "family": "C",
+        "finger_policy": "both grippers at closed-stop model value",
+        "pair": [
+          "openarm_left_link0",
+          "openarm_left_link2"
+        ],
+        "phase": "C-05_HOME_TO_C_LEFT",
+        "scenario": "C-05_HOME_TO_C_LEFT__d0035"
+      },
+      "phase": "C-05_HOME_TO_C_LEFT"
+    },
+    {
+      "dense_state_count": 58,
+      "effective_required_clearance_m": 0.010750000001000005,
+      "family": "C",
+      "gate_passed": true,
+      "minimum_self": {
+        "distance_m": 0.010797770215445217,
+        "family": "C",
+        "finger_policy": "both grippers at closed-stop model value",
+        "pair": [
+          "openarm_right_link0",
+          "openarm_right_link2"
+        ],
+        "phase": "C-05_HOME_TO_C_RIGHT",
+        "scenario": "C-05_HOME_TO_C_RIGHT__d0034"
+      },
+      "phase": "C-05_HOME_TO_C_RIGHT"
+    },
+    {
+      "dense_state_count": 10,
+      "effective_required_clearance_m": 0.010750000001000005,
+      "family": "C",
+      "gate_passed": true,
+      "minimum_self": {
+        "distance_m": 0.011633554640236372,
+        "family": "C",
+        "finger_policy": "both grippers at closed-stop model value",
+        "pair": [
+          "openarm_right_link0",
+          "openarm_right_link2"
+        ],
+        "phase": "C-05_P044_DUAL_J3",
+        "scenario": "C-05_P044_DUAL_J3__d0000"
+      },
+      "phase": "C-05_P044_DUAL_J3"
+    },
+    {
+      "dense_state_count": 118,
+      "effective_required_clearance_m": 0.0010000000010000005,
+      "family": "H",
+      "gate_passed": true,
+      "minimum_self": {
+        "distance_m": 0.005685694381050488,
+        "family": "H",
+        "finger_policy": "both open during sender entry",
+        "pair": [
+          "openarm_left_link5",
+          "openarm_left_link7"
+        ],
+        "phase": "HOME_TO_H_LARGE_LEFT",
+        "scenario": "HOME_TO_H_LARGE_LEFT__d0117"
+      },
+      "phase": "HOME_TO_H_LARGE_LEFT"
+    },
+    {
+      "dense_state_count": 109,
+      "effective_required_clearance_m": 0.0010000000010000005,
+      "family": "H",
+      "gate_passed": true,
+      "minimum_self": {
+        "distance_m": 0.005404461978111619,
+        "family": "H",
+        "finger_policy": "sender closed; receiver open",
+        "pair": [
+          "openarm_right_link5",
+          "openarm_right_link7"
+        ],
+        "phase": "HOME_TO_H_LARGE_RIGHT",
+        "scenario": "HOME_TO_H_LARGE_RIGHT__d0108"
+      },
+      "phase": "HOME_TO_H_LARGE_RIGHT"
+    },
+    {
+      "dense_state_count": 106,
+      "effective_required_clearance_m": 0.0010000000010000005,
+      "family": "H",
+      "gate_passed": true,
+      "minimum_self": {
+        "distance_m": 0.005617949425530178,
+        "family": "H",
+        "finger_policy": "board unloaded; receiver open",
+        "pair": [
+          "openarm_right_link5",
+          "openarm_right_link7"
+        ],
+        "phase": "H_CARRY_TO_HOME_RIGHT_AFTER_UNLOAD",
+        "scenario": "H_CARRY_TO_HOME_RIGHT_AFTER_UNLOAD__d0000"
+      },
+      "phase": "H_CARRY_TO_HOME_RIGHT_AFTER_UNLOAD"
+    },
+    {
+      "dense_state_count": 118,
+      "effective_required_clearance_m": 0.0010000000010000005,
+      "family": "H",
+      "gate_passed": true,
+      "minimum_self": {
+        "distance_m": 0.005404461978111619,
+        "family": "H",
+        "finger_policy": "sender released; receiver closed",
+        "pair": [
+          "openarm_right_link5",
+          "openarm_right_link7"
+        ],
+        "phase": "H_LARGE_TO_HOME_LEFT",
+        "scenario": "H_LARGE_TO_HOME_LEFT__d0000"
+      },
+      "phase": "H_LARGE_TO_HOME_LEFT"
+    },
+    {
+      "dense_state_count": 9,
+      "effective_required_clearance_m": 0.0010000000010000005,
+      "family": "H",
+      "gate_passed": true,
+      "minimum_self": {
+        "distance_m": 0.005403543151862089,
+        "family": "H",
+        "finger_policy": "receiver-only carry",
+        "pair": [
+          "openarm_right_link5",
+          "openarm_right_link7"
+        ],
+        "phase": "H_RECEIVER_ONLY_CARRY_10MM",
+        "scenario": "H_RECEIVER_ONLY_CARRY_10MM__d0000"
+      },
+      "phase": "H_RECEIVER_ONLY_CARRY_10MM"
+    },
+    {
+      "dense_state_count": 115,
+      "effective_required_clearance_m": 0.0010000000010000005,
+      "family": "R",
+      "gate_passed": true,
+      "minimum_self": {
+        "distance_m": 0.005880534290261585,
+        "family": "R",
+        "finger_policy": "both grippers open; grippers are not R actuators",
+        "pair": [
+          "openarm_left_link5",
+          "openarm_left_link7"
+        ],
+        "phase": "HOME_TO_R_LEFT",
+        "scenario": "HOME_TO_R_LEFT__d0114"
+      },
+      "phase": "HOME_TO_R_LEFT"
+    },
+    {
+      "dense_state_count": 4,
+      "effective_required_clearance_m": 0.0010000000010000005,
+      "family": "R",
+      "gate_passed": true,
+      "minimum_self": {
+        "distance_m": 0.010893344577187054,
+        "family": "R",
+        "finger_policy": "both grippers open; grippers are not R actuators",
+        "pair": [
+          "openarm_left_link0",
+          "openarm_left_link2"
+        ],
+        "phase": "HOME_TO_R_RIGHT",
+        "scenario": "HOME_TO_R_RIGHT__d0000"
+      },
+      "phase": "HOME_TO_R_RIGHT"
+    },
+    {
+      "dense_state_count": 115,
+      "effective_required_clearance_m": 0.0010000000010000005,
+      "family": "R",
+      "gate_passed": true,
+      "minimum_self": {
+        "distance_m": 0.005880100712494785,
+        "family": "R",
+        "finger_policy": "both grippers open; grippers are not R actuators",
+        "pair": [
+          "openarm_left_link5",
+          "openarm_left_link7"
+        ],
+        "phase": "R_TO_HOME_LEFT",
+        "scenario": "R_TO_HOME_LEFT__d0000"
+      },
+      "phase": "R_TO_HOME_LEFT"
+    },
+    {
+      "dense_state_count": 4,
+      "effective_required_clearance_m": 0.0010000000010000005,
+      "family": "R",
+      "gate_passed": true,
+      "minimum_self": {
+        "distance_m": 0.010892528106680698,
+        "family": "R",
+        "finger_policy": "both grippers open; grippers are not R actuators",
+        "pair": [
+          "openarm_left_link0",
+          "openarm_left_link2"
+        ],
+        "phase": "R_TO_HOME_RIGHT",
+        "scenario": "R_TO_HOME_RIGHT__d0000"
+      },
+      "phase": "R_TO_HOME_RIGHT"
+    }
+  ],
+  "public_aggregate_recount_status": "PASS_20_OF_20_CHUNKS",
+  "reference_run_report": "ZERO_NEGATIVE_SELF_AND_WORLD_DISTANCES",
+  "robot_boundary": {
+    "action_client_created": false,
+    "can_contacted": false,
+    "goal_send_count": 0,
+    "gripper_command_count": 0,
+    "hardware_trial_count": 0,
+    "motion_command_count": 0,
+    "rclpy_imported": false,
+    "ros_graph_contacted": false,
+    "trajectory_published": false
+  },
+  "row_level_disclosure": "NOT_PUBLIC__COMPACT_AGGREGATES_ONLY",
+  "schema": "bisafecode.public.c115-dense-summary/v2",
+  "scope_note": "The 1,932 states are a finite dense, model-relative final-build check. They do not by themselves certify infinitely many positions along continuous physical motion. Historical between-sample interval certificates are separate evidence and are not replaced here.",
+  "self_distance_row_count": 434700,
+  "self_pairs_per_state": 225,
+  "status": "PASS_ALL_1932_DENSE_STATES_FINAL_EXPLICIT_ERROR_COMPARATOR",
+  "world_distance_row_count": 44436
+}

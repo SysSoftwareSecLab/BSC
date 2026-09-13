@@ -1,0 +1,21 @@
+{
+  "action_client_created": false,
+  "applies_to": [
+    "Table III final revalidation",
+    "C115 final offline revalidation",
+    "dense comparator"
+  ],
+  "boundary": "Local native libraries may be loaded, but no ROS graph, controller, CAN, action client, trajectory publication, goal, motion command, gripper command, or hardware trial is permitted.",
+  "can_contacted": false,
+  "controller_contacted": false,
+  "goal_send_count": 0,
+  "gripper_command_count": 0,
+  "hardware_trial_count": 0,
+  "motion_command_count": 0,
+  "offline_only": true,
+  "rclpy_imported": false,
+  "ros_graph_contacted": false,
+  "schema": "bisafecode.public.final-build-offline-zero-send/v1",
+  "status": "PASS_ZERO_SEND_OFFLINE_ONLY",
+  "trajectory_published": false
+}

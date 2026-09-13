@@ -1,0 +1,151 @@
+{
+  "actual": {
+    "deployment_decision": "RELEASE",
+    "minimum_raw_distance_m": 0.003149861512425134,
+    "reasons": [],
+    "release_iff_verified_gate_passed": true,
+    "verdict": "verified-within-bounds"
+  },
+  "expected": {
+    "deployment_decision": "RELEASE",
+    "deterministic_structural_counters": {
+      "cache_hits": 182,
+      "complete_pair_sweeps": 8111,
+      "interval_checks": 102,
+      "interval_subdivisions": 7976,
+      "pair_distance_calls": 2011528,
+      "point_checks": 113,
+      "states": 113,
+      "transitions": 112
+    },
+    "verdict": "verified-within-bounds"
+  },
+  "formal_identity": {
+    "case_id": "I4F-R-SAFE-T4",
+    "formal_denominator_member": true,
+    "fresh_process": true,
+    "phase": "formal",
+    "repetition": 2,
+    "replacement_allowed": false,
+    "sequence": 8,
+    "upstream_case_id": "R_SAFE"
+  },
+  "process_result": {
+    "returncode": 0,
+    "slot_status": "completed",
+    "timed_out": false
+  },
+  "public_binding": {
+    "collision_error_bound_m": 1e-12,
+    "collision_error_evidence_sha256": "d3c52aaaacadffb2615c8f59b6feec18b23a1db4879c2ba3c801b8e0128a46a1",
+    "effective_final_modules": [
+      {
+        "module": "bisafecode",
+        "sha256": "3b975c46b4a5d604e6c6e0fc7d4dc3230035295fdfa2daaff2ee5c81a6ce4e7d"
+      },
+      {
+        "module": "bisafecode.continuous_collision",
+        "sha256": "6e6f32a65aa6dfb1ef06e3297a1651e2a8a9ec63d32b44115de75233616081e6"
+      },
+      {
+        "module": "bisafecode.entity_speed_envelope",
+        "sha256": "02ecc4fbf46199aa85834218fd460c91c43a87899148707f747e8bf1a3899bcf"
+      },
+      {
+        "module": "bisafecode.explicit_state",
+        "sha256": "0bb4292a313b49566dd5f00b821d66408fcbab1539612958d0393f3427ba26f3"
+      },
+      {
+        "module": "bisafecode.geometry_contract",
+        "sha256": "cc261f7fe5a9fd9b1a849054813652b0c6335f9024239d19c784ad188cae829f"
+      },
+      {
+        "module": "bisafecode.motion_bounds",
+        "sha256": "133fa1fd10cb113840e8adeaff24ad75e2aa83f6e095fb9520824f758e2680e2"
+      },
+      {
+        "module": "bisafecode.openarm_fcl_query",
+        "sha256": "3eea44f521857be4b487fc6a5b6d49270f78a8f3d1c12054aeb0cbe33cbc22af"
+      },
+      {
+        "module": "bisafecode.resource_monitor",
+        "sha256": "a5205e9e1fe761d25bb8eb661e73e81e1a7f0ca4a7129d49f002655480a6987f"
+      },
+      {
+        "module": "bisafecode.restricted_python",
+        "sha256": "f7db4a4890602cf0e78f7b4b7cf74feffed9127a049858ca403d998a556310e9"
+      },
+      {
+        "module": "bisafecode.timed_ir",
+        "sha256": "fe6289f30b5d3b00608ad916627f43ca365218ab38afb400cdd1dd29e3e16c20"
+      },
+      {
+        "module": "bisafecode.trajectory",
+        "sha256": "4a9011fd4385e9cc9adfdde039132a7847bfc1c46aa70bb33702a9883cd2b0ff"
+      },
+      {
+        "module": "bisafecode.verdicts",
+        "sha256": "911be219c52e08d92530bb07ca8fb456b9eecfe40d468e6407fdf939e4011dda"
+      }
+    ],
+    "executed_probe_binary_identity": "accepted_frozen_reference_binary",
+    "executed_probe_binary_sha256": "a82194d39f0223380bdabddda0f532ab3225e9aaf041072f1670b7a8ea4fce20",
+    "public_probe_source_sha256": "8a149032b12f190d3ce1d96669d873dd17468fc1f60d7e77f140f753decc5fbc",
+    "public_srdf_file_sha256": "c9ff981f67c9ece3ae75c9b3bdde6c5e5c54ac916d89b65bc9a6f44d0c504582",
+    "public_urdf_file_sha256": "c2b12f61c76d528805ea533714744f4778d0c71e8111efe94fa9d1477e0713fe",
+    "retained_reference_semantic_ids": {
+      "interpretation": "Experiment-level join identifiers retained from the accepted run. They are not presented as digests recomputable from the reviewer-facing model-file projection. Public file digests are recorded separately.",
+      "program_content_id": "3a590b6b969ca084811747a1404a612e384af711b4dcd17e2066a32262a1277f",
+      "trajectory_content_ids": [
+        "0ee347462d224fae42637f8cc2046b9790edc2dece497b1760f85cb10fef4089",
+        "2c3f48e539e0a1718f402f36530100bfb824ba5eb7859ae634361eed32efa9b3",
+        "2f5344da91166064178a4e57f96b9dde56340acb95f3ecb43bf0931107e89bef",
+        "31f2003ecb418fad3e4ad623fae158b862faf9d29329a310fa2271aa5a3343fc",
+        "333d6ad9e4bf882fdd9aa996b1e961b00d7f97b45f1b4941b35eb0619c23e148",
+        "3c34bd88f417f858cbc26e8f05300fee1f2dbf1a1d6c5aa80049dab211a4cd86",
+        "50de688ec88b670b446af7c855dccb83f532919357d7093abc645c87f0348fbe",
+        "7be3219fe03ea7f53f702f0c9bf1533fc2aadb1568f5b550622542f66ae360c8",
+        "b505012569779866e6998ab7338599385d3cbae17653f4e12172308a25df0957",
+        "cc63cadc732c6f8f4918647cb3deb8fae5f3e6976c7a355c2aac3bfbe6717971",
+        "e48f63cf62dc8bf74536a33549ce0d50aeadf13e81a05aac0f5878ae5b0ee6db",
+        "ecb0307d1a586b282480f5c29bd5dd9a2fe1386a96de8a4f3ec514fd8ab097a3",
+        "ee0ff2a5f831c20515ba2476420872dd681a0d4a23d842b76463e88737f8fc04",
+        "fead2a8a06ce9a4a42669f4ae6f8effd0af36c2b5d857b908a1d34d834e018aa"
+      ]
+    },
+    "source_projection_status": "PUBLIC_SOURCE_REBUILT_TO_REFERENCE_BINARY_IN_RECORDED_ENVIRONMENT",
+    "source_sha256": "2f14193f75bf1d32a0c0868731ae1901b47b72fa79d42756116b0088fb8a223d"
+  },
+  "robot_boundary": {
+    "action_client_created": false,
+    "can_contacted": false,
+    "goal_send_count": 0,
+    "motion_command_count": 0,
+    "rclpy_imported": false,
+    "ros_graph_contacted": false
+  },
+  "schema": "bisafecode.public.table-iii-compact-slot/v2",
+  "slot_id": "TIII-008",
+  "structural_and_resource_counters": {
+    "cache_hits": 182,
+    "complete_pair_sweeps": 8111,
+    "discovered_states": 113,
+    "interval_checks": 102,
+    "interval_subdivisions": 7976,
+    "native_server_peak_rss_bytes": 83996672,
+    "pair_distance_calls": 2011528,
+    "peak_rss_bytes": 1732886528,
+    "point_checks": 113,
+    "python_peak_rss_bytes": 1648889856,
+    "states": 113,
+    "transitions": 112
+  },
+  "timing_ns": {
+    "end_to_end_excluding_model_load_wall_ns": 1431719496492,
+    "end_to_end_including_model_load_cpu_ns": 1429488093497,
+    "end_to_end_including_model_load_wall_ns": 1431805829390,
+    "lowering_wall_ns": 276373,
+    "model_load_wall_ns": 86332898,
+    "parser_wall_ns": 63072
+  }
+}

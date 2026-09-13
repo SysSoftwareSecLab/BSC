@@ -1,0 +1,102 @@
+{
+  "records": [
+    {
+      "deployment_decision": "RELEASE",
+      "elapsed_wall_ns": 51293386,
+      "expected": {
+        "deployment_decision": "RELEASE",
+        "verdict": "verified-within-bounds"
+      },
+      "expected_outcome_passed": true,
+      "program_content_id": "4ade9eac63d2a22cc15dec0d277ed56da2190acb601318828b98fcb72fe73d2e",
+      "program_id": "EXP-S4-002-P044",
+      "reason_codes": [],
+      "release_iff_verified_gate_passed": true,
+      "robot_boundary": {
+        "action_client_created": false,
+        "can_contacted": false,
+        "goal_send_count": 0,
+        "hardware_trial_count": 0,
+        "motion_command_count": 0,
+        "rclpy_imported": false,
+        "ros_graph_contacted": false
+      },
+      "role": "C115_C01_C05_SAFE_PROGRAM",
+      "source_sha256": "ba63abadf25637123fca1bb6dd48f8517af777b2717b0aa7e65a1b16a690e81d",
+      "states": 240,
+      "transitions": 244,
+      "verdict": "verified-within-bounds"
+    },
+    {
+      "deployment_decision": "BLOCK",
+      "elapsed_wall_ns": 16154116,
+      "expected": {
+        "deployment_decision": "BLOCK",
+        "verdict": "violated"
+      },
+      "expected_outcome_passed": true,
+      "program_content_id": "29570b79a033f6bed619e7bfd98f87200522a69e03f19626aef8710b7fa70294",
+      "program_id": "EXP-S4-002-P053",
+      "reason_codes": [
+        "controlled-interval-endpoint-collision"
+      ],
+      "release_iff_verified_gate_passed": true,
+      "robot_boundary": {
+        "action_client_created": false,
+        "can_contacted": false,
+        "goal_send_count": 0,
+        "hardware_trial_count": 0,
+        "motion_command_count": 0,
+        "rclpy_imported": false,
+        "ros_graph_contacted": false
+      },
+      "role": "C115_C_UNSAFE_NEGATIVE_CONTROL",
+      "source_sha256": "e1c3832cf753c17e3819da63c78814f3ff679a055ca5e48a78f22489da52a786",
+      "states": 133,
+      "transitions": 137,
+      "verdict": "violated"
+    },
+    {
+      "deployment_decision": "BLOCK",
+      "elapsed_wall_ns": 15824393,
+      "expected": {
+        "deployment_decision": "BLOCK",
+        "verdict": "violated"
+      },
+      "expected_outcome_passed": true,
+      "program_content_id": "8c2dcf796e3ef8bd76a6a49bae44a87697fc52caa3871db0213509a3068c94ae",
+      "program_id": "EXP-S4-002-P060",
+      "reason_codes": [
+        "controlled-interval-endpoint-collision"
+      ],
+      "release_iff_verified_gate_passed": true,
+      "robot_boundary": {
+        "action_client_created": false,
+        "can_contacted": false,
+        "goal_send_count": 0,
+        "hardware_trial_count": 0,
+        "motion_command_count": 0,
+        "rclpy_imported": false,
+        "ros_graph_contacted": false
+      },
+      "role": "C115_C_UNSAFE_NEGATIVE_CONTROL",
+      "source_sha256": "bd0ae80c1a6d2e9f0613666ff1a0b983bf6f97b6e07bf47b09ed5c3412c62189",
+      "states": 133,
+      "transitions": 137,
+      "verdict": "violated"
+    }
+  ],
+  "robot_boundary": {
+    "action_client_created": false,
+    "can_contacted": false,
+    "goal_send_count": 0,
+    "hardware_trial_count": 0,
+    "motion_command_count": 0,
+    "rclpy_imported": false,
+    "ros_graph_contacted": false
+  },
+  "schema": "bisafecode.public.c115-controlled-core-summary/v2",
+  "scope_boundary": "P044/P053/P060 check controlled program semantics in the final core. Native OpenArm geometry is a separate dense-state revalidation.",
+  "semantic_identity_boundary": "program_content_id is a verifier-emitted semantic join; source_sha256 identifies the included program file.",
+  "status": "PASS_P044_VWB_AND_P053_P060_VIO_FINAL_CORE"
+}

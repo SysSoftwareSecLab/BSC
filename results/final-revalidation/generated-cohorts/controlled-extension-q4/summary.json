@@ -1,0 +1,53 @@
+{
+  "cohort_role": "controlled_generated_programs_post_discovery_corrected_oracle_reanalysis",
+  "first_method_replacements": 0,
+  "first_method_reruns": 0,
+  "fixed_programs": 24,
+  "generation_attempts_per_slot": 1,
+  "interpretation_boundary": "The corrected oracle was recomputed after the coverage/priority issue was discovered, on the same 24 sealed sources. It is regression/correction evidence, not an untouched holdout. Results are software-model evidence and do not establish physical safety or population reliability.",
+  "projection_kind": "anonymous_compact_count_recomputable",
+  "recomputed_from_included_rows": {
+    "corrected_oracle_counts_all_24": {
+      "invalid": 2,
+      "safe": 13,
+      "unsafe": 8,
+      "worker_failure_null": 1
+    },
+    "corrected_oracle_qualified_processes": 23,
+    "method_counts_all_24": {
+      "invalid": 2,
+      "unknown": 4,
+      "verified-within-bounds": 13,
+      "violated": 5
+    },
+    "method_counts_scored_21": {
+      "unknown": 4,
+      "verified-within-bounds": 13,
+      "violated": 4
+    },
+    "safe_or_unsafe_scored_rows": 21,
+    "source_action_target_met": 23,
+    "structural_target_met": 24,
+    "unsafe_releases": {
+      "corrected_oracle_unsafe": 8,
+      "released": 0
+    }
+  },
+  "retained_failure": {
+    "accepted_corrected_oracle_verdict": null,
+    "case_id": "Q4-SLOT-17",
+    "forensic_output_promoted_to_scored_result": false,
+    "forensic_raw_worker_file_in_public_projection": false,
+    "forensic_raw_worker_output_retained_in_private_source": true,
+    "forensic_raw_worker_reason_codes": [
+      "GEOMETRY_POINT_ROBUST_COLLISION"
+    ],
+    "forensic_raw_worker_status": "completed",
+    "forensic_raw_worker_verdict": "unsafe",
+    "included_in_fixed_24": true,
+    "included_in_scored_21": false,
+    "process_status": "rss_monitor_unavailable"
+  },
+  "retained_private_evidence_status": "WITHHELD_NOT_PUBLICLY_BOUND",
+  "schema": "bisafecode.public.generated-q4-corrected-oracle-summary/v1"
+}

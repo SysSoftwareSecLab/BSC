@@ -1,0 +1,141 @@
+{
+  "actual": {
+    "deployment_decision": "BLOCK",
+    "minimum_raw_distance_m": -0.00323629866460981,
+    "reasons": [
+      "negative-native-fcl-interval-prescan-distance"
+    ],
+    "release_iff_verified_gate_passed": true,
+    "verdict": "violated"
+  },
+  "expected": {
+    "deployment_decision": "BLOCK",
+    "deterministic_structural_counters": {
+      "cache_hits": 4,
+      "complete_pair_sweeps": 2,
+      "interval_checks": 1,
+      "interval_subdivisions": 0,
+      "pair_distance_calls": 450,
+      "point_checks": 5,
+      "states": 5,
+      "transitions": 6
+    },
+    "verdict": "violated"
+  },
+  "formal_identity": {
+    "case_id": "I4F-C-UNSAFE-T0",
+    "formal_denominator_member": true,
+    "fresh_process": true,
+    "phase": "formal",
+    "repetition": 5,
+    "replacement_allowed": false,
+    "sequence": 26,
+    "upstream_case_id": "I4C-UNSAFE-01"
+  },
+  "process_result": {
+    "returncode": 0,
+    "slot_status": "completed",
+    "timed_out": false
+  },
+  "public_binding": {
+    "collision_error_bound_m": 1e-12,
+    "collision_error_evidence_sha256": "d3c52aaaacadffb2615c8f59b6feec18b23a1db4879c2ba3c801b8e0128a46a1",
+    "effective_final_modules": [
+      {
+        "module": "bisafecode",
+        "sha256": "3b975c46b4a5d604e6c6e0fc7d4dc3230035295fdfa2daaff2ee5c81a6ce4e7d"
+      },
+      {
+        "module": "bisafecode.continuous_collision",
+        "sha256": "6e6f32a65aa6dfb1ef06e3297a1651e2a8a9ec63d32b44115de75233616081e6"
+      },
+      {
+        "module": "bisafecode.entity_speed_envelope",
+        "sha256": "02ecc4fbf46199aa85834218fd460c91c43a87899148707f747e8bf1a3899bcf"
+      },
+      {
+        "module": "bisafecode.explicit_state",
+        "sha256": "0bb4292a313b49566dd5f00b821d66408fcbab1539612958d0393f3427ba26f3"
+      },
+      {
+        "module": "bisafecode.geometry_contract",
+        "sha256": "cc261f7fe5a9fd9b1a849054813652b0c6335f9024239d19c784ad188cae829f"
+      },
+      {
+        "module": "bisafecode.motion_bounds",
+        "sha256": "133fa1fd10cb113840e8adeaff24ad75e2aa83f6e095fb9520824f758e2680e2"
+      },
+      {
+        "module": "bisafecode.openarm_fcl_query",
+        "sha256": "3eea44f521857be4b487fc6a5b6d49270f78a8f3d1c12054aeb0cbe33cbc22af"
+      },
+      {
+        "module": "bisafecode.resource_monitor",
+        "sha256": "a5205e9e1fe761d25bb8eb661e73e81e1a7f0ca4a7129d49f002655480a6987f"
+      },
+      {
+        "module": "bisafecode.restricted_python",
+        "sha256": "f7db4a4890602cf0e78f7b4b7cf74feffed9127a049858ca403d998a556310e9"
+      },
+      {
+        "module": "bisafecode.timed_ir",
+        "sha256": "fe6289f30b5d3b00608ad916627f43ca365218ab38afb400cdd1dd29e3e16c20"
+      },
+      {
+        "module": "bisafecode.trajectory",
+        "sha256": "4a9011fd4385e9cc9adfdde039132a7847bfc1c46aa70bb33702a9883cd2b0ff"
+      },
+      {
+        "module": "bisafecode.verdicts",
+        "sha256": "911be219c52e08d92530bb07ca8fb456b9eecfe40d468e6407fdf939e4011dda"
+      }
+    ],
+    "executed_probe_binary_identity": "accepted_frozen_reference_binary",
+    "executed_probe_binary_sha256": "a82194d39f0223380bdabddda0f532ab3225e9aaf041072f1670b7a8ea4fce20",
+    "public_probe_source_sha256": "8a149032b12f190d3ce1d96669d873dd17468fc1f60d7e77f140f753decc5fbc",
+    "public_srdf_file_sha256": "c9ff981f67c9ece3ae75c9b3bdde6c5e5c54ac916d89b65bc9a6f44d0c504582",
+    "public_urdf_file_sha256": "c2b12f61c76d528805ea533714744f4778d0c71e8111efe94fa9d1477e0713fe",
+    "retained_reference_semantic_ids": {
+      "interpretation": "Experiment-level join identifiers retained from the accepted run. They are not presented as digests recomputable from the reviewer-facing model-file projection. Public file digests are recorded separately.",
+      "program_content_id": "7cc6cf3b0303ada80ccdabdda8314b05fdf3f198225493885c797467028a8f95",
+      "trajectory_content_ids": [
+        "6214567b08f99b7c8337e2d76f3e3839fc5a9ffac68eb3c80748b4237a598d92",
+        "8542047265b7e94fd520ddcba9ef087739ac3e6cfd9444862fbd52c01954cafe"
+      ]
+    },
+    "source_projection_status": "PUBLIC_SOURCE_REBUILT_TO_REFERENCE_BINARY_IN_RECORDED_ENVIRONMENT",
+    "source_sha256": "0882d7a0d2a769088352003494534f34552b8eb7c5397f2dc228db9e0ff3861e"
+  },
+  "robot_boundary": {
+    "action_client_created": false,
+    "can_contacted": false,
+    "goal_send_count": 0,
+    "motion_command_count": 0,
+    "rclpy_imported": false,
+    "ros_graph_contacted": false
+  },
+  "schema": "bisafecode.public.table-iii-compact-slot/v2",
+  "slot_id": "TIII-026",
+  "structural_and_resource_counters": {
+    "cache_hits": 4,
+    "complete_pair_sweeps": 2,
+    "discovered_states": 5,
+    "interval_checks": 1,
+    "interval_subdivisions": 0,
+    "native_server_peak_rss_bytes": 84144128,
+    "pair_distance_calls": 450,
+    "peak_rss_bytes": 132440064,
+    "point_checks": 5,
+    "python_peak_rss_bytes": 48295936,
+    "states": 5,
+    "transitions": 6
+  },
+  "timing_ns": {
+    "end_to_end_excluding_model_load_wall_ns": 408277741,
+    "end_to_end_including_model_load_cpu_ns": 467766298,
+    "end_to_end_including_model_load_wall_ns": 470775716,
+    "lowering_wall_ns": 163677,
+    "model_load_wall_ns": 62497975,
+    "parser_wall_ns": 36022
+  }
+}

@@ -1,0 +1,7 @@
+case_id,n,verdict,decision,wall_median_s,rss_median_mib
+I4F-C-SAFE-T1,5,verified-within-bounds,RELEASE,8.612287820,126.8
+I4F-C-UNSAFE-T0,5,violated,BLOCK,0.483586966,126.2
+I4F-H-SAFE-T3,5,verified-within-bounds,RELEASE,797.218192445,1103.9
+I4F-H-UNSAFE-T2,5,violated,BLOCK,351.718131358,580.9
+I4F-R-SAFE-T4,5,verified-within-bounds,RELEASE,1308.147208913,1653.2
+I4F-R-UNSAFE-T0,5,violated,BLOCK,0.435552075,126.7

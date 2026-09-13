@@ -1,0 +1,40 @@
+{
+  "cohort_role": "one-shot_no-repair_generated-program_holdout",
+  "funnel": {
+    "admitted_including_duplicates": 30,
+    "generated": 36,
+    "mechanically_invalid": 6,
+    "oracle_invalid_retained_unscored": 1,
+    "oracle_valid_scored": 20,
+    "repair_count": 0,
+    "replacement_count": 0,
+    "unique_admitted_included_here": 21
+  },
+  "interpretation_boundary": "Finite one-shot generated-program evidence. The 20-row scoring denominator excludes the one retained oracle-invalid row; unknown method verdicts remain in the denominator. This cohort is not a population reliability estimate or an unbounded safety result.",
+  "projection_kind": "anonymous_compact_count_recomputable",
+  "recomputed_from_included_rows": {
+    "binary_label_denominator": 20,
+    "binary_label_matches": 14,
+    "method_counts_all_21": {
+      "unknown": 6,
+      "verified-within-bounds": 4,
+      "violated": 11
+    },
+    "method_counts_scored_20": {
+      "unknown": 6,
+      "verified-within-bounds": 4,
+      "violated": 10
+    },
+    "oracle_counts_all_21": {
+      "invalid": 1,
+      "safe": 4,
+      "unsafe": 16
+    },
+    "unsafe_releases": {
+      "oracle_unsafe": 16,
+      "released": 0
+    }
+  },
+  "retained_private_evidence_status": "WITHHELD_NOT_PUBLICLY_BOUND",
+  "schema": "bisafecode.public.generated-no-repair-summary/v1"
+}

@@ -1,0 +1,36 @@
+{
+  "method_outputs": {
+    "fixed_first_method_rows": 24,
+    "replacement": false,
+    "rerun": false,
+    "verdicts_unchanged": true
+  },
+  "records": [
+    {
+      "accepted_corrected_oracle_verdict": null,
+      "case_id": "Q4-SLOT-17",
+      "disposition": "retained_monitor_failure_unscored",
+      "forensic_output_promoted_to_scored_result": false,
+      "forensic_raw_worker_reason_codes": [
+        "GEOMETRY_POINT_ROBUST_COLLISION"
+      ],
+      "forensic_raw_worker_verdict": "unsafe",
+      "frozen_first_method_verdict": "violated",
+      "prior_oracle_verdict": "safe",
+      "process_status": "rss_monitor_unavailable"
+    },
+    {
+      "accepted_corrected_oracle_verdict": "unsafe",
+      "case_id": "Q4-SLOT-18",
+      "corrected_oracle_reason_codes": [
+        "RECEIVER_GRASP_OUTSIDE_HANDOVER_ZONE",
+        "LATER_INVALID_SUFFIX_RETAINED"
+      ],
+      "disposition": "earlier_valid_prefix_handover_violation_precedes_later_invalid_suffix",
+      "frozen_first_method_verdict": "violated",
+      "prior_oracle_verdict": "invalid"
+    }
+  ],
+  "retained_private_evidence_status": "WITHHELD_NOT_PUBLICLY_BOUND",
+  "schema": "bisafecode.public.generated-q4-oracle-corrections/v1"
+}

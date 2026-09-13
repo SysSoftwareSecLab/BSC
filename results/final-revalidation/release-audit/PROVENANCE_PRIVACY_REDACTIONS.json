@@ -1,0 +1,166 @@
+{
+  "purpose": "Strict double-anonymous release: linkable private provenance was removed while preserving the public files and claim-relevant records selected for review.",
+  "redactions": [
+    {
+      "field_removed": "historical_freeze_commit",
+      "path": "datasets/external-25/cohort_manifest.jsonl",
+      "record_count": 25,
+      "replacement_field": "freeze_id",
+      "retained_identity": "per-source SHA-256 and artifact-relative program path",
+      "scientific_effect": "none"
+    },
+    {
+      "field_removed": "c_verifier",
+      "path": "baselines/ir-sampler/results/ordinary65-per-program.jsonl",
+      "record_count": 65,
+      "replacement_field": "verifier_result_freeze_id",
+      "retained_identity": "per-source SHA-256 and corrected result records",
+      "scientific_effect": "none"
+    },
+    {
+      "literal_removed": "private Git object identifier",
+      "path": "baselines/spin-translation-consistency/source/run_spin_translation.py",
+      "record_count": 1,
+      "replacement": "non-resolving anonymous freeze reference",
+      "retained_identity": "translated model SHA-256, source SHA-256, and per-case outcomes",
+      "scientific_effect": "none; the historical runner requires private history and is not a turnkey public rerun command"
+    },
+    {
+      "field_removed": "tool_identity.translator_sha256",
+      "path": "baselines/spin-translation-consistency/results/summary.json",
+      "record_count": 1,
+      "replacement": "WITHHELD_DURING_DOUBLE_ANONYMOUS_REVIEW",
+      "replacement_field": "tool_identity.executed_translator_identity",
+      "retained_identity": "public projection SHA-256 in the regenerated manifest; translated model SHA-256, source SHA-256, and per-case outcomes",
+      "scientific_effect": "none; the unsalted digest of the pre-redaction runner could confirm a guessed private Git object identifier"
+    },
+    {
+      "field_removed": "contract_sha256",
+      "path": "baselines/spin-translation-consistency/results/summary.json",
+      "record_count": 1,
+      "replacement": "WITHHELD_DURING_DOUBLE_ANONYMOUS_REVIEW",
+      "replacement_field": "contract_identity",
+      "retained_identity": "public translated models, source SHA-256 values, per-case outcomes, and regenerated public manifests",
+      "scientific_effect": "none on the released 27-case recount; the omitted historical contract cannot be byte-checked from this compact package"
+    },
+    {
+      "fields_removed": [
+        "contract_sha256",
+        "input_identity.execution_script_sha256",
+        "input_identity.historical_cohort_sha256",
+        "input_identity.historical_per_program_sha256",
+        "input_identity.historical_rollouts_sha256"
+      ],
+      "path": "baselines/ir-sampler/results/summary.json",
+      "record_count": 1,
+      "replacement": "WITHHELD_DURING_DOUBLE_ANONYMOUS_REVIEW",
+      "retained_identity": "corrected public adapter SHA-256, public source projection in the regenerated manifest, per-program source SHA-256, corrected prefixes, and outcome counts",
+      "scientific_effect": "none on the released arithmetic; omitted historical inputs cannot be byte-checked from this compact package"
+    },
+    {
+      "field_removed": "oracle_record_sha256",
+      "path": "datasets/controlled-60/oracle_labels.jsonl",
+      "record_count": 60,
+      "replacement": "WITHHELD_DURING_DOUBLE_ANONYMOUS_REVIEW",
+      "replacement_field": "oracle_record_identity",
+      "retained_identity": "public program SHA-256, public oracle-source SHA-256, labels, and verdict mapping",
+      "scientific_effect": "none; the omitted raw oracle records contained private operator and machine provenance"
+    },
+    {
+      "fields_removed": [
+        "frozen_first_method_raw_sha256",
+        "prior_oracle_raw_sha256",
+        "corrected_oracle_raw_sha256",
+        "forensic_raw_worker_sha256"
+      ],
+      "paths": [
+        "results/final-revalidation/generated-cohorts/controlled-extension-q4/per-instance-results.jsonl",
+        "results/final-revalidation/generated-cohorts/controlled-extension-q4/oracle-corrections.json",
+        "results/final-revalidation/generated-cohorts/controlled-extension-q4/summary.json"
+      ],
+      "record_count": 24,
+      "replacement": "WITHHELD_NOT_PUBLICLY_BOUND",
+      "replacement_field": "retained_private_evidence_status",
+      "retained_identity": "public task cards, rendered prompts, generation outputs, program bytes and SHA-256 values, corrected outcome fields, failure disposition, and denominator recount",
+      "scientific_effect": "none; private raw method/oracle/monitor files are outside the selected disclosure and are not presented as publicly verifiable"
+    },
+    {
+      "field_removed": "missing_original_contract_sha256",
+      "path": "llm-generation/no-repair-36/cohort-summary.json",
+      "record_count": 1,
+      "replacement": "NOT_RECOVERED",
+      "replacement_field": "original_contract_status",
+      "retained_identity": "public generation prompt, task cards, outputs, programs, admission funnel, and result recount",
+      "scientific_effect": "none; an unavailable private contract is not reconstructed or presented as publicly hash-verifiable"
+    },
+    {
+      "field_removed": "private execution-candidate commitment and associated private identity fields",
+      "paths": [
+        "final-build/BUILD_MANIFEST.json",
+        "final-build/PRIVACY_REDACTIONS.json",
+        "results/final-revalidation/cohorts/method_imports.json",
+        "results/final-revalidation/cohorts/summary.json",
+        "contracts-and-trajectories/mac-controlled-freeze/MIRROR_MANIFEST.json",
+        "oracles/ORACLE_INDEX.json"
+      ],
+      "record_count": 6,
+      "replacement": "omitted from the selective reviewer disclosure",
+      "retained_identity": "anonymous public final-build root and per-file public hashes",
+      "scientific_effect": "none; the public build itself remains fully content-addressed and reviewer-verifiable"
+    },
+    {
+      "field_removed": "source_sha256 for EXP-S4-004-U001 through U020",
+      "path": "baselines/rq2-ablations/results/affected-pair-transitions.jsonl",
+      "record_count": 20,
+      "replacement": "WITHHELD_NOT_PUBLICLY_BOUND",
+      "replacement_field": "source_identity",
+      "retained_identity": "program IDs, families, oracle labels, paired categories, full and ablated verdicts, and correctness fields",
+      "scientific_effect": "the 20 transition rows remain recountable, but their omitted source bytes are not presented as publicly hash-verified"
+    },
+    {
+      "field_removed": "input_tree_sha256",
+      "path": "baselines/rq2-ablations/results/summary.json",
+      "record_count": 1,
+      "replacement": "WITHHELD_NOT_PUBLICLY_BOUND",
+      "replacement_field": "input_tree_identity",
+      "retained_identity": "all 90 public transition rows and affected-subset aggregate fields",
+      "scientific_effect": "none on the transition recount; the omitted private input tree is not publicly byte-verifiable"
+    },
+    {
+      "field_removed": "environment_identity_sha256",
+      "path": "results/final-revalidation/cohorts/summary.json",
+      "record_count": 1,
+      "replacement_field": "public_environment_sha256",
+      "retained_identity": "SHA-256 of environment/mac/environment.json included in the public artifact",
+      "scientific_effect": "none; the result now points to the reviewer-visible environment record instead of an omitted private environment object"
+    },
+    {
+      "field_removed": "environment_sha256",
+      "path": "baselines/finite-budget/results/fair_checker_budget_runs.jsonl",
+      "record_count": 2121,
+      "replacement": "WITHHELD_NOT_PUBLICLY_BOUND",
+      "replacement_field": "search_environment_identity",
+      "retained_identity": "included program bytes and hashes, seeds, budgets, per-run counters, outcomes, and the public recount",
+      "scientific_effect": "none; this field identified an omitted semantic search-environment object, not the Mac operating-system record, and was unnecessary for the reported count reconstruction"
+    },
+    {
+      "field_removed": "source_sha256 for three omitted independent-human oracle-invalid sources",
+      "path": "datasets/external-25/admission_funnel.json",
+      "record_count": 3,
+      "replacement": "WITHHELD_NOT_PUBLICLY_BOUND",
+      "replacement_field": "source_identity",
+      "retained_identity": "case ID, task card, origin, property, and oracle-invalid/not-scored disposition",
+      "scientific_effect": "none; the 36-to-29-to-25 funnel and scored denominator are unchanged"
+    },
+    {
+      "field_removed": "source_sha256 for one omitted independent-human prior duplicate",
+      "path": "datasets/external-40/admission_funnel.json",
+      "record_count": 1,
+      "replacement": "WITHHELD_NOT_PUBLICLY_BOUND",
+      "replacement_field": "source_identity",
+      "retained_identity": "attempt ID, task card, origin, exclusion stage, and exact-prior-duplicate disposition",
+      "scientific_effect": "none; the 43-to-41-to-40 funnel and scored denominator are unchanged"
+    }
+  ],
+  "schema": "bisafecode.artifact.provenance-privacy-redactions/v1"
+}

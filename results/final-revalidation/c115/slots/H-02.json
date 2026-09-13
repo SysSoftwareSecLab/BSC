@@ -1,0 +1,238 @@
+{
+  "condition_binding": {
+    "claim_limit": "offline geometry does not infer insertion depth from camera; historical operator/video evidence remains a separate condition-specific input",
+    "kind": "shared_frozen_H_program_and_trajectory_plus_condition_specific_categorical_evidence",
+    "shared_dense_state_count": 460,
+    "shared_phase_count": 5
+  },
+  "family": "H",
+  "final_explicit_collision_comparator": {
+    "all_bound_phases_passed": true,
+    "bound_phases": [
+      {
+        "dense_state_count": 118,
+        "effective_required_clearance_m": 0.0010000000010000005,
+        "family": "H",
+        "gate_passed": true,
+        "minimum_self": {
+          "distance_m": 0.005685694381050488,
+          "family": "H",
+          "finger_policy": "both open during sender entry",
+          "pair": [
+            "openarm_left_link5",
+            "openarm_left_link7"
+          ],
+          "phase": "HOME_TO_H_LARGE_LEFT",
+          "scenario": "HOME_TO_H_LARGE_LEFT__d0117"
+        },
+        "phase": "HOME_TO_H_LARGE_LEFT"
+      },
+      {
+        "dense_state_count": 109,
+        "effective_required_clearance_m": 0.0010000000010000005,
+        "family": "H",
+        "gate_passed": true,
+        "minimum_self": {
+          "distance_m": 0.005404461978111619,
+          "family": "H",
+          "finger_policy": "sender closed; receiver open",
+          "pair": [
+            "openarm_right_link5",
+            "openarm_right_link7"
+          ],
+          "phase": "HOME_TO_H_LARGE_RIGHT",
+          "scenario": "HOME_TO_H_LARGE_RIGHT__d0108"
+        },
+        "phase": "HOME_TO_H_LARGE_RIGHT"
+      },
+      {
+        "dense_state_count": 106,
+        "effective_required_clearance_m": 0.0010000000010000005,
+        "family": "H",
+        "gate_passed": true,
+        "minimum_self": {
+          "distance_m": 0.005617949425530178,
+          "family": "H",
+          "finger_policy": "board unloaded; receiver open",
+          "pair": [
+            "openarm_right_link5",
+            "openarm_right_link7"
+          ],
+          "phase": "H_CARRY_TO_HOME_RIGHT_AFTER_UNLOAD",
+          "scenario": "H_CARRY_TO_HOME_RIGHT_AFTER_UNLOAD__d0000"
+        },
+        "phase": "H_CARRY_TO_HOME_RIGHT_AFTER_UNLOAD"
+      },
+      {
+        "dense_state_count": 118,
+        "effective_required_clearance_m": 0.0010000000010000005,
+        "family": "H",
+        "gate_passed": true,
+        "minimum_self": {
+          "distance_m": 0.005404461978111619,
+          "family": "H",
+          "finger_policy": "sender released; receiver closed",
+          "pair": [
+            "openarm_right_link5",
+            "openarm_right_link7"
+          ],
+          "phase": "H_LARGE_TO_HOME_LEFT",
+          "scenario": "H_LARGE_TO_HOME_LEFT__d0000"
+        },
+        "phase": "H_LARGE_TO_HOME_LEFT"
+      },
+      {
+        "dense_state_count": 9,
+        "effective_required_clearance_m": 0.0010000000010000005,
+        "family": "H",
+        "gate_passed": true,
+        "minimum_self": {
+          "distance_m": 0.005403543151862089,
+          "family": "H",
+          "finger_policy": "receiver-only carry",
+          "pair": [
+            "openarm_right_link5",
+            "openarm_right_link7"
+          ],
+          "phase": "H_RECEIVER_ONLY_CARRY_10MM",
+          "scenario": "H_RECEIVER_ONLY_CARRY_10MM__d0000"
+        },
+        "phase": "H_RECEIVER_ONLY_CARRY_10MM"
+      }
+    ],
+    "collision_error_bound_m": 1e-12,
+    "collision_error_evidence_ref": "geometry-policy:d3c52aaaacadffb2615c8f59b6feec18b23a1db4879c2ba3c801b8e0128a46a1",
+    "minimum_bound_phase": {
+      "dense_state_count": 9,
+      "effective_required_clearance_m": 0.0010000000010000005,
+      "family": "H",
+      "gate_passed": true,
+      "minimum_self": {
+        "distance_m": 0.005403543151862089,
+        "family": "H",
+        "finger_policy": "receiver-only carry",
+        "pair": [
+          "openarm_right_link5",
+          "openarm_right_link7"
+        ],
+        "phase": "H_RECEIVER_ONLY_CARRY_10MM",
+        "scenario": "H_RECEIVER_ONLY_CARRY_10MM__d0000"
+      },
+      "phase": "H_RECEIVER_ONLY_CARRY_10MM"
+    }
+  },
+  "final_offline_revalidation": "PASS",
+  "frozen_condition_variant": {
+    "handover_order": "LEFT_SENDER__DUAL_GRASP__LEFT_RELEASE__RIGHT_CARRY",
+    "paperboard_identity": "237x170x1-mm__20.0-g",
+    "receiver_front_edge_depth_mm": 62,
+    "sender_front_edge_depth_mm": 34
+  },
+  "frozen_schedule_status_at_freeze": "NOT_STARTED_FROZEN",
+  "historical_physical_execution_evidence": {
+    "condition_match": true,
+    "final_disposition": "PASS",
+    "historical_slot_id": "H5-02",
+    "machine_evidence": "PASS",
+    "physical_staging": "OPERATOR_CONFIRMED",
+    "video_task_evidence": "PASS"
+  },
+  "official_slot_id": "H-02",
+  "program_and_final_verdict": {
+    "safe": {
+      "case_id": "I4F-H-SAFE-T3",
+      "deployment_decision_counts": {
+        "RELEASE": 5
+      },
+      "deterministic_structural_counters": {
+        "cache_hits": 98,
+        "complete_pair_sweeps": 5242,
+        "interval_checks": 92,
+        "interval_subdivisions": 5054,
+        "pair_distance_calls": 1300016,
+        "point_checks": 102,
+        "states": 102,
+        "transitions": 101
+      },
+      "n": 5,
+      "program_content_id": "f1f1351cb7da26502eca9ac3ba2336d8f36dfaf00417e0620a80e681cecc0689",
+      "source_sha256": "077b286ca3af15ed074210c7aa836b848348770f6ac79ebea17af945f39152ab",
+      "verdict_counts": {
+        "verified-within-bounds": 5
+      }
+    },
+    "source_rebind_sha256": "077b286ca3af15ed074210c7aa836b848348770f6ac79ebea17af945f39152ab",
+    "trajectory_rebind_artifacts": {
+      "HOME_TO_H_LARGE_LEFT": {
+        "duration_ns": 19272532409,
+        "point_count": 22,
+        "trajectory_content_id": "2f5344da91166064178a4e57f96b9dde56340acb95f3ecb43bf0931107e89bef"
+      },
+      "HOME_TO_H_LARGE_RIGHT": {
+        "duration_ns": 17704331557,
+        "point_count": 21,
+        "trajectory_content_id": "2c3f48e539e0a1718f402f36530100bfb824ba5eb7859ae634361eed32efa9b3"
+      },
+      "H_CARRY_TO_HOME_RIGHT_AFTER_UNLOAD": {
+        "duration_ns": 16479453554,
+        "point_count": 22,
+        "trajectory_content_id": "7be3219fe03ea7f53f702f0c9bf1533fc2aadb1568f5b550622542f66ae360c8"
+      },
+      "H_LARGE_TO_HOME_LEFT": {
+        "duration_ns": 19275061472,
+        "point_count": 22,
+        "trajectory_content_id": "ee0ff2a5f831c20515ba2476420872dd681a0d4a23d842b76463e88737f8fc04"
+      },
+      "H_RECEIVER_ONLY_CARRY_10MM": {
+        "duration_ns": 1509021526,
+        "point_count": 6,
+        "trajectory_content_id": "3c34bd88f417f858cbc26e8f05300fee1f2dbf1a1d6c5aa80049dab211a4cd86"
+      },
+      "H_RIGHT_CARRY_JOINED": {
+        "duration_ns": 17988475080,
+        "point_count": 27,
+        "trajectory_content_id": "31f2003ecb418fad3e4ad623fae158b862faf9d29329a310fa2271aa5a3343fc"
+      }
+    }
+  },
+  "robot_boundary": {
+    "action_client_created": false,
+    "can_contacted": false,
+    "goal_send_count": 0,
+    "hardware_trial_count": 0,
+    "motion_command_count": 0,
+    "rclpy_imported": false,
+    "ros_graph_contacted": false
+  },
+  "run_instance_id": "C115-PROSPECTIVE-R2-H-02-L34-R62",
+  "schema": "bisafecode.public.c115-compact-slot/v2",
+  "semantic_identity_boundary": "Fields named *_content_id are retained verifier-emitted experiment joins, not public file-byte digests. Included sources and models have separate SHA-256 fields.",
+  "sequence": 7,
+  "unsafe_controls": {
+    "hardware_execution": "FORBIDDEN_ZERO_SEND",
+    "native_final_build_negative": {
+      "case_id": "I4F-H-UNSAFE-T2",
+      "deployment_decision_counts": {
+        "BLOCK": 5
+      },
+      "deterministic_structural_counters": {
+        "cache_hits": 46,
+        "complete_pair_sweeps": 2461,
+        "interval_checks": 43,
+        "interval_subdivisions": 2374,
+        "pair_distance_calls": 610328,
+        "point_checks": 47,
+        "states": 47,
+        "transitions": 47
+      },
+      "n": 5,
+      "program_content_id": "67c0b9dfd95b114ef5e12c0a0d3ae0221d32851e7b2b6835554ae3347e53d9a8",
+      "source_sha256": "2a86d17029ebccd3964b121d5d04ea5374bba21205e7b960a7af598a32f132e9",
+      "verdict_counts": {
+        "violated": 5
+      }
+    },
+    "outcome": "VIOLATED_AND_BLOCKED",
+    "source_rebind_sha256": "2a86d17029ebccd3964b121d5d04ea5374bba21205e7b960a7af598a32f132e9"
+  }
+}

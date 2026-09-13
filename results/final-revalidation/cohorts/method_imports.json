@@ -1,0 +1,102 @@
+{
+  "experiment_id": "EXP-M5-MAC-FINAL-COHORT-REVALIDATION-20260913-R2",
+  "imports": [
+    {
+      "module": "bisafecode",
+      "path": "src/bisafecode/__init__.py",
+      "sha256": "3b975c46b4a5d604e6c6e0fc7d4dc3230035295fdfa2daaff2ee5c81a6ce4e7d"
+    },
+    {
+      "module": "bisafecode.explicit_state",
+      "path": "src/bisafecode/explicit_state.py",
+      "sha256": "0bb4292a313b49566dd5f00b821d66408fcbab1539612958d0393f3427ba26f3"
+    },
+    {
+      "module": "bisafecode.model_checking",
+      "path": "src/bisafecode/model_checking.py",
+      "sha256": "e1bd7a0d39a628e093fdeea1c807d0b8f353539455dc0b6bf6dfd1c544712ff6"
+    },
+    {
+      "module": "bisafecode.restricted_python",
+      "path": "src/bisafecode/restricted_python.py",
+      "sha256": "f7db4a4890602cf0e78f7b4b7cf74feffed9127a049858ca403d998a556310e9"
+    },
+    {
+      "module": "bisafecode.stage4_controlled",
+      "path": "src/bisafecode/stage4_controlled/__init__.py",
+      "sha256": "f22357e57cccdc3bbc9fdfe97c2b02a7abcebbb60511076383a17b414ea62c4c"
+    },
+    {
+      "module": "bisafecode.stage4_controlled.generator",
+      "path": "src/bisafecode/stage4_controlled/generator.py",
+      "sha256": "e6b503aae27f396cc17073db1b8e16e1da5a3ab116d194a0fc9545d0de26a78e"
+    },
+    {
+      "module": "bisafecode.stage4_controlled.identity",
+      "path": "src/bisafecode/stage4_controlled/identity.py",
+      "sha256": "63b04565fbe2d9e090569c14eb78484b74f21a285268f50d0df4d54eb5f71ebc"
+    },
+    {
+      "module": "bisafecode.stage4_controlled.isolation",
+      "path": "src/bisafecode/stage4_controlled/isolation.py",
+      "sha256": "a724fbec4295b15d9befc0b7dfab85d73eb3ddf6d168a77038cf90fad90e9a0e"
+    },
+    {
+      "module": "bisafecode.stage4_controlled.methods",
+      "path": "src/bisafecode/stage4_controlled/methods.py",
+      "sha256": "2d33a7421972c627a1ff8010765d381ef8b5d41dd3eeb29229d49b1fbae7fbc8"
+    },
+    {
+      "module": "bisafecode.stage4_controlled.property_adapters",
+      "path": "src/bisafecode/stage4_controlled/property_adapters.py",
+      "sha256": "f43456693e82e95c7663d649c14c787629bc0a772b68be4f732c5b7f6a2a5306"
+    },
+    {
+      "module": "bisafecode.stage4_controlled.schedule",
+      "path": "src/bisafecode/stage4_controlled/schedule.py",
+      "sha256": "db8dea92fc535a8d8ee0312235c56d6a9364f9454c32be5dd4b7829dfcb4e270"
+    },
+    {
+      "module": "bisafecode.stage4_rare_schedule",
+      "path": "src/bisafecode/stage4_rare_schedule/__init__.py",
+      "sha256": "2761319213ee447678bcaa78d1f46c5521191ac6a46f0f9cc61a898b0e73a44b"
+    },
+    {
+      "module": "bisafecode.stage4_rare_schedule.generator",
+      "path": "src/bisafecode/stage4_rare_schedule/generator.py",
+      "sha256": "baf60c0a62e81aaa33b680fabf542427dded7ea06168602ce4e96db2f640440b"
+    },
+    {
+      "module": "bisafecode.stage4_unseen",
+      "path": "src/bisafecode/stage4_unseen/__init__.py",
+      "sha256": "23dabf7360f71b66d8dd27405d327549efec6d7fb7748493194dbfd0171b9762"
+    },
+    {
+      "module": "bisafecode.stage4_unseen.canonicalize",
+      "path": "src/bisafecode/stage4_unseen/canonicalize.py",
+      "sha256": "c00b0e335ade15c95fa7486269a9fe86a606d9d362e950d88eeac42188b904ac"
+    },
+    {
+      "module": "bisafecode.stage4_unseen.time_bounds",
+      "path": "src/bisafecode/stage4_unseen/time_bounds.py",
+      "sha256": "9c125bb585ee5f7eb2e562beef89e12b77b466b882444c8d781779693a0760c8"
+    },
+    {
+      "module": "bisafecode.timed_ir",
+      "path": "src/bisafecode/timed_ir.py",
+      "sha256": "fe6289f30b5d3b00608ad916627f43ca365218ab38afb400cdd1dd29e3e16c20"
+    },
+    {
+      "module": "bisafecode.trajectory",
+      "path": "src/bisafecode/trajectory.py",
+      "sha256": "4a9011fd4385e9cc9adfdde039132a7847bfc1c46aa70bb33702a9883cd2b0ff"
+    },
+    {
+      "module": "bisafecode.verdicts",
+      "path": "src/bisafecode/verdicts.py",
+      "sha256": "911be219c52e08d92530bb07ca8fb456b9eecfe40d468e6407fdf939e4011dda"
+    }
+  ],
+  "public_projection_root_sha256": "28866e84438e8e72e46b5a8a0724587aaea2b6f46bbb37450c0860c38fd7d419",
+  "schema": "bisafecode.artifact.mac-final-cohort-imports/v1"
+}
