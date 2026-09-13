@@ -1,0 +1,22 @@
+def task():
+    for i in range(2):
+        acquire("left", "fixture_alpha")
+        wait("left", 20000000)
+        release("left", "fixture_alpha")
+        acquire("right", "tool_beta")
+        wait("right", 20000000)
+        release("right", "tool_beta")
+    move("left", "d2061067f4b66316e861e216e433941870034c1ef0d57baad7f533a3b9d5ca26")
+    close("left", "payload_alpha", 40000000)
+    move("right", "3e6910a45a223961ab95f4f5e8a63ac43f95c8270bb698234abaf687963ab609")
+    close("right", "payload_alpha", 40000000)
+    if mode == "fast":
+        transfer_authority("payload_alpha", "left", "right")
+        open("left", "payload_alpha", 20000000)
+    else:
+        wait("left", 80000000)
+        transfer_authority("payload_alpha", "left", "right")
+        open("left", "payload_alpha", 40000000)
+    move("left", "952b79dbc0b450154d6910502682bcb1bb62373808550d35da80c313aba41db6")
+    move("right", "1d58d45f58c932f071ca9641505e7a0a5abb03f7ed0d96b9aad5a93383fd32ea")
+    open("right", "payload_alpha", 40000000)

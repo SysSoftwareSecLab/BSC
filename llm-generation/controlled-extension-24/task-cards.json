@@ -1,0 +1,249 @@
+{
+  "schema": "bisafecode.e4.q4-task-cards/v1",
+  "date": "2026-09-07",
+  "status": "TECHNICAL_FREEZE_CANDIDATE_DO_NOT_GENERATE",
+  "design": {
+    "property_strata": ["H", "R", "C"],
+    "structural_families": ["long_sequence", "multi_branch", "bounded_loop", "mixed"],
+    "contexts_per_cell": 2,
+    "card_count": 24,
+    "requested_source_action_range": [12, 24],
+    "requested_range_is_generation_target_not_admission_filter": true,
+    "prospective_source_action_admission_range": [1, 24],
+    "maximum_expanded_actions_per_finite_input_trace": 96,
+    "neutrality_rule": "Cards specify tasks and structure only; they do not request a verdict or intentional defect."
+  },
+  "shared_environment": {
+    "finite_inputs": {
+      "mode": ["fast", "safe"],
+      "ready": [false, true]
+    },
+    "objects": ["payload_alpha", "payload_beta"],
+    "resources": ["fixture_alpha", "tool_beta"],
+    "max_loop_bound": 4,
+    "allowed_literal_durations_ns": [20000000, 40000000, 80000000],
+    "parallel_and_barrier_allowed": false,
+    "complete_path_universe": "four mode x ready finite-input traces under the no-parallel Q4 restriction",
+    "trajectory_identifiers_are_defined_only_by_the_public_authoring_manual": true
+  },
+  "cards": [
+    {
+      "card_id": "Q4-H-LS-C1",
+      "property_stratum": "H",
+      "structural_family": "long_sequence",
+      "context_id": 1,
+      "assignment": "Coordinate a handover of payload_alpha from the left arm to the right arm, including approach, grasp preparation, the authority transfer, departure, and orderly completion actions.",
+      "structure_requirements": ["Use a straight-line task body with no if, for, or parallel.", "Target 12-24 source API calls without padding."],
+      "semantic_focus": ["ownership continuity", "handover ordering", "both arms participate"]
+    },
+    {
+      "card_id": "Q4-H-LS-C2",
+      "property_stratum": "H",
+      "structural_family": "long_sequence",
+      "context_id": 2,
+      "assignment": "Coordinate a return handover of payload_beta from the right arm to the left arm, with explicit pre-transfer and post-transfer manipulation steps.",
+      "structure_requirements": ["Use a straight-line task body with no if, for, or parallel.", "Target 12-24 source API calls without padding."],
+      "semantic_focus": ["reverse-direction authority transfer", "gripper sequencing", "both arms participate"]
+    },
+    {
+      "card_id": "Q4-H-MB-C1",
+      "property_stratum": "H",
+      "structural_family": "multi_branch",
+      "context_id": 1,
+      "assignment": "Transfer payload_alpha from left to right, choosing a direct or staged handover procedure according to mode; both branches must complete the same requested handover task.",
+      "structure_requirements": ["Use one top-level if/else over mode.", "Give both branches multiple meaningful actions.", "Do not use for or parallel.", "Target 12-24 source API calls across the source."],
+      "semantic_focus": ["finite-input alternatives", "authority transfer in both branches", "branch-specific timing"]
+    },
+    {
+      "card_id": "Q4-H-MB-C2",
+      "property_stratum": "H",
+      "structural_family": "multi_branch",
+      "context_id": 2,
+      "assignment": "Perform a payload_beta handover from right to left when ready is true; otherwise execute a clearly bounded preparation-and-wait alternative that leaves the task in a defined state.",
+      "structure_requirements": ["Use one top-level if/else over ready.", "Give both branches multiple meaningful actions.", "Do not use for or parallel.", "Target 12-24 source API calls across the source."],
+      "semantic_focus": ["readiness branch", "conditional transfer", "defined non-transfer alternative"]
+    },
+    {
+      "card_id": "Q4-H-BL-C1",
+      "property_stratum": "H",
+      "structural_family": "bounded_loop",
+      "context_id": 1,
+      "assignment": "Prepare payload_alpha through a short repeated positioning routine, then perform a left-to-right handover and complete the departure sequence.",
+      "structure_requirements": ["Use exactly one for range(N) loop with literal N in 2-4.", "Do not use if or parallel.", "Target 12-24 source API calls in the source."],
+      "semantic_focus": ["bounded repetition before transfer", "single authority transfer", "post-loop handover"]
+    },
+    {
+      "card_id": "Q4-H-BL-C2",
+      "property_stratum": "H",
+      "structural_family": "bounded_loop",
+      "context_id": 2,
+      "assignment": "Use a repeated settling routine for payload_beta, then coordinate a right-to-left handover followed by final arm repositioning.",
+      "structure_requirements": ["Use exactly one for range(N) loop with literal N in 2-4.", "Do not use if or parallel.", "Target 12-24 source API calls in the source."],
+      "semantic_focus": ["bounded repeated settling", "reverse handover", "completion after transfer"]
+    },
+    {
+      "card_id": "Q4-H-MX-C1",
+      "property_stratum": "H",
+      "structural_family": "mixed",
+      "context_id": 1,
+      "assignment": "Coordinate a left-to-right payload_alpha handover whose preparation repeats for a bounded number of cycles and whose transfer procedure changes with mode.",
+      "structure_requirements": ["Use one if/else over mode and one for range(N) loop with literal N in 2-4.", "Do not use parallel.", "Target 12-24 source API calls."],
+      "semantic_focus": ["branch plus bounded repetition", "authority transfer", "mode-specific procedure"]
+    },
+    {
+      "card_id": "Q4-H-MX-C2",
+      "property_stratum": "H",
+      "structural_family": "mixed",
+      "context_id": 2,
+      "assignment": "Coordinate a right-to-left payload_beta handover with a bounded repeated approach and a readiness-dependent completion procedure.",
+      "structure_requirements": ["Use one if/else over ready and one for range(N) loop with literal N in 2-4.", "Do not use parallel.", "Target 12-24 source API calls."],
+      "semantic_focus": ["readiness branch plus loop", "reverse authority transfer", "bounded completion"]
+    },
+
+    {
+      "card_id": "Q4-R-LS-C1",
+      "property_stratum": "R",
+      "structural_family": "long_sequence",
+      "context_id": 1,
+      "assignment": "Have both arms use fixture_alpha in sequence while repositioning payload_alpha between the two resource-use phases, then release the fixture and finish the task.",
+      "structure_requirements": ["Use a straight-line task body with no if, for, or parallel.", "Target 12-24 source API calls without padding."],
+      "semantic_focus": ["fixture ownership", "sequential arm access", "resource release"]
+    },
+    {
+      "card_id": "Q4-R-LS-C2",
+      "property_stratum": "R",
+      "structural_family": "long_sequence",
+      "context_id": 2,
+      "assignment": "Coordinate a two-arm tool_beta inspection routine in which each arm has an explicit acquire-use-release phase and the task ends with both arms repositioned.",
+      "structure_requirements": ["Use a straight-line task body with no if, for, or parallel.", "Target 12-24 source API calls without padding."],
+      "semantic_focus": ["tool ownership", "two explicit resource phases", "balanced completion"]
+    },
+    {
+      "card_id": "Q4-R-MB-C1",
+      "property_stratum": "R",
+      "structural_family": "multi_branch",
+      "context_id": 1,
+      "assignment": "Coordinate fixture_alpha use under two mode-dependent procedures; both branches must involve both arms and complete the same fixture task.",
+      "structure_requirements": ["Use one top-level if/else over mode.", "Give both branches multiple meaningful actions.", "Do not use for or parallel.", "Target 12-24 source API calls."],
+      "semantic_focus": ["mode-dependent resource schedule", "both arms use one fixture", "release in each branch"]
+    },
+    {
+      "card_id": "Q4-R-MB-C2",
+      "property_stratum": "R",
+      "structural_family": "multi_branch",
+      "context_id": 2,
+      "assignment": "Use ready to choose between immediate and delayed two-arm use of tool_beta; both alternatives must have explicit resource lifecycle actions.",
+      "structure_requirements": ["Use one top-level if/else over ready.", "Give both branches multiple meaningful actions.", "Do not use for or parallel.", "Target 12-24 source API calls."],
+      "semantic_focus": ["readiness-dependent schedule", "tool lifecycle", "two-arm participation"]
+    },
+    {
+      "card_id": "Q4-R-BL-C1",
+      "property_stratum": "R",
+      "structural_family": "bounded_loop",
+      "context_id": 1,
+      "assignment": "Perform a bounded repeated fixture_alpha operation with the left arm, then hand resource use to the right arm for a final operation and release.",
+      "structure_requirements": ["Use exactly one for range(N) loop with literal N in 2-4.", "Do not use if or parallel.", "Target 12-24 source API calls."],
+      "semantic_focus": ["repeated resource use", "sequential ownership", "final release"]
+    },
+    {
+      "card_id": "Q4-R-BL-C2",
+      "property_stratum": "R",
+      "structural_family": "bounded_loop",
+      "context_id": 2,
+      "assignment": "Use tool_beta in a bounded repeated right-arm routine, followed by one left-arm finishing phase and explicit cleanup.",
+      "structure_requirements": ["Use exactly one for range(N) loop with literal N in 2-4.", "Do not use if or parallel.", "Target 12-24 source API calls."],
+      "semantic_focus": ["bounded tool routine", "change of resource user", "cleanup"]
+    },
+    {
+      "card_id": "Q4-R-MX-C1",
+      "property_stratum": "R",
+      "structural_family": "mixed",
+      "context_id": 1,
+      "assignment": "Coordinate mode-dependent fixture_alpha access with a bounded repeated positioning routine before the final resource phase.",
+      "structure_requirements": ["Use one if/else over mode and one for range(N) loop with literal N in 2-4.", "Do not use parallel.", "Target 12-24 source API calls."],
+      "semantic_focus": ["resource branch plus loop", "fixture lifecycle", "two-arm schedule"]
+    },
+    {
+      "card_id": "Q4-R-MX-C2",
+      "property_stratum": "R",
+      "structural_family": "mixed",
+      "context_id": 2,
+      "assignment": "Coordinate readiness-dependent tool_beta use with a bounded repeated inspection phase and explicit release by the final user.",
+      "structure_requirements": ["Use one if/else over ready and one for range(N) loop with literal N in 2-4.", "Do not use parallel.", "Target 12-24 source API calls."],
+      "semantic_focus": ["readiness branch plus repetition", "tool ownership", "explicit final release"]
+    },
+
+    {
+      "card_id": "Q4-C-LS-C1",
+      "property_stratum": "C",
+      "structural_family": "long_sequence",
+      "context_id": 1,
+      "assignment": "Move both arms through a coordinated payload_alpha pick, transport, placement, and retreat routine using only the frozen trajectories and manipulation actions.",
+      "structure_requirements": ["Use a straight-line task body with no if, for, or parallel.", "Target 12-24 source API calls without padding."],
+      "semantic_focus": ["multiple time-elapse edges", "payload attachment changes", "two-arm geometry"]
+    },
+    {
+      "card_id": "Q4-C-LS-C2",
+      "property_stratum": "C",
+      "structural_family": "long_sequence",
+      "context_id": 2,
+      "assignment": "Move both arms through a payload_beta retrieval, repositioning, placement, and retreat routine with several explicit motion phases.",
+      "structure_requirements": ["Use a straight-line task body with no if, for, or parallel.", "Target 12-24 source API calls without padding."],
+      "semantic_focus": ["long motion sequence", "payload-carrying geometry", "completion motion"]
+    },
+    {
+      "card_id": "Q4-C-MB-C1",
+      "property_stratum": "C",
+      "structural_family": "multi_branch",
+      "context_id": 1,
+      "assignment": "Use mode to choose between two coordinated motion procedures for picking and placing payload_alpha; both branches must execute multiple arm motions and finish the same task.",
+      "structure_requirements": ["Use one top-level if/else over mode.", "Give both branches multiple meaningful actions.", "Do not use for or parallel.", "Target 12-24 source API calls."],
+      "semantic_focus": ["branch-specific trajectories", "payload geometry", "complete alternatives"]
+    },
+    {
+      "card_id": "Q4-C-MB-C2",
+      "property_stratum": "C",
+      "structural_family": "multi_branch",
+      "context_id": 2,
+      "assignment": "Use ready to choose between immediate and staged coordinated repositioning of payload_beta; both alternatives must end with explicit arm retreat actions.",
+      "structure_requirements": ["Use one top-level if/else over ready.", "Give both branches multiple meaningful actions.", "Do not use for or parallel.", "Target 12-24 source API calls."],
+      "semantic_focus": ["readiness-dependent motion", "multiple geometry segments", "retreat in both branches"]
+    },
+    {
+      "card_id": "Q4-C-BL-C1",
+      "property_stratum": "C",
+      "structural_family": "bounded_loop",
+      "context_id": 1,
+      "assignment": "Use a bounded repeated two-arm positioning routine before picking, moving, placing, and retreating from payload_alpha.",
+      "structure_requirements": ["Use exactly one for range(N) loop with literal N in 2-4.", "Do not use if or parallel.", "Target 12-24 source API calls."],
+      "semantic_focus": ["repeated geometry segments", "payload manipulation", "bounded completion"]
+    },
+    {
+      "card_id": "Q4-C-BL-C2",
+      "property_stratum": "C",
+      "structural_family": "bounded_loop",
+      "context_id": 2,
+      "assignment": "Perform a bounded repeated repositioning pattern with payload_beta and then complete a placement-and-retreat sequence involving both arms.",
+      "structure_requirements": ["Use exactly one for range(N) loop with literal N in 2-4.", "Do not use if or parallel.", "Target 12-24 source API calls."],
+      "semantic_focus": ["loop-expanded motion", "payload attachment", "two-arm retreat"]
+    },
+    {
+      "card_id": "Q4-C-MX-C1",
+      "property_stratum": "C",
+      "structural_family": "mixed",
+      "context_id": 1,
+      "assignment": "Coordinate a payload_alpha motion task with a bounded repeated positioning phase and a mode-dependent placement-and-retreat procedure.",
+      "structure_requirements": ["Use one if/else over mode and one for range(N) loop with literal N in 2-4.", "Do not use parallel.", "Target 12-24 source API calls."],
+      "semantic_focus": ["branch plus loop geometry", "payload carrying", "mode-specific completion"]
+    },
+    {
+      "card_id": "Q4-C-MX-C2",
+      "property_stratum": "C",
+      "structural_family": "mixed",
+      "context_id": 2,
+      "assignment": "Coordinate a payload_beta retrieval task with bounded repeated motion and a readiness-dependent final placement-and-retreat procedure.",
+      "structure_requirements": ["Use one if/else over ready and one for range(N) loop with literal N in 2-4.", "Do not use parallel.", "Target 12-24 source API calls."],
+      "semantic_focus": ["readiness branch plus loop", "multi-edge collision obligations", "defined completion"]
+    }
+  ]
+}

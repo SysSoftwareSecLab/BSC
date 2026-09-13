@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "bisafecode.e4.q4-generation-output/v1",
+  "title": "Q4 one-shot generation output",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "program_source",
+    "brief_author_note"
+  ],
+  "properties": {
+    "program_source": {
+      "type": "string",
+      "minLength": 1
+    },
+    "brief_author_note": {
+      "type": "string",
+      "maxLength": 600
+    }
+  }
+}
