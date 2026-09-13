@@ -1,0 +1,1 @@
+{"program_source":"def task():\n    acquire(\"left\", \"tool_beta\")\n    wait(\"left\", 40000000)\n    release(\"left\", \"tool_beta\")\n    acquire(\"right\", \"tool_beta\")\n    wait(\"right\", 40000000)\n    release(\"right\", \"tool_beta\")\n","brief_author_note":"The left and right arms take separate timed turns with the shared tool and each releases it afterward."}

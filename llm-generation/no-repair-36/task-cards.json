@@ -1,0 +1,130 @@
+{
+  "schema": "bisafecode.stage4.property-stratified-task-cards/v1",
+  "evidence_status": "PREP_ONLY_NOT_FORMAL_STAGE4_EVIDENCE",
+  "assignment_rule": "Each card receives exactly one independent-human and one isolated-LLM attempt. Neutral cards do not disclose an expected verdict. Challenge cards disclose one intended defect family and are reported separately from natural cards.",
+  "cards": [
+    {
+      "card_id": "H-N-01",
+      "property": "H",
+      "mode": "neutral_natural",
+      "title": "Left-to-right payload handover",
+      "goal": "Implement a complete transfer of payload_alpha from the left arm to the right arm and finish with only the receiver responsible for the payload.",
+      "required_elements": ["payload_alpha", "left and right arms", "transfer_authority"],
+      "freedom": "Choose durations, synchronization and operation order naturally."
+    },
+    {
+      "card_id": "H-N-02",
+      "property": "H",
+      "mode": "neutral_natural",
+      "title": "Conditional collaborative transfer",
+      "goal": "When ready is true, transfer payload_beta between the two arms; otherwise perform a coherent one-arm payload_beta cycle.",
+      "required_elements": ["ready with both branches", "payload_beta", "one collaborative and one single-arm branch"],
+      "freedom": "Choose transfer direction, single-arm side, durations and synchronization."
+    },
+    {
+      "card_id": "R-N-01",
+      "property": "R",
+      "mode": "neutral_natural",
+      "title": "Shared tool in two turns",
+      "goal": "Let both arms use tool_beta in two distinct work turns and finish with the tool available.",
+      "required_elements": ["tool_beta", "left and right arms", "timed work in both turns"],
+      "freedom": "Choose ordering and whether synchronization is useful."
+    },
+    {
+      "card_id": "R-N-02",
+      "property": "R",
+      "mode": "neutral_natural",
+      "title": "Input-selected fixture user",
+      "goal": "Use ready to select which arm performs one timed fixture_alpha work cycle; both branches must terminate normally.",
+      "required_elements": ["fixture_alpha", "ready with both branches", "one arm per branch"],
+      "freedom": "Choose durations and branch-local API order."
+    },
+    {
+      "card_id": "C-N-01",
+      "property": "C",
+      "mode": "neutral_natural",
+      "title": "Carried payload with concurrent arm motion",
+      "goal": "Have one arm carry payload_alpha while both arms perform their matching approach or retreat motions in one parallel phase and rendezvous once.",
+      "required_elements": ["payload_alpha", "parallel", "both arms", "matching trajectory hashes", "one barrier"],
+      "freedom": "Choose the carrier, trajectory direction, timing and final payload action."
+    },
+    {
+      "card_id": "C-N-02",
+      "property": "C",
+      "mode": "neutral_natural",
+      "title": "Two-arm approach and regroup",
+      "goal": "Move both arms through their matching trajectories concurrently, rendezvous, and complete a short arm-local operation in each lane.",
+      "required_elements": ["parallel", "left and right trajectory hashes", "one barrier", "timed work in both lanes"],
+      "freedom": "Choose approach or retreat and the arm-local operations."
+    },
+    {
+      "card_id": "H-D-01",
+      "property": "H",
+      "mode": "declared_defect_challenge",
+      "title": "Premature sender release challenge",
+      "goal": "Write a plausible payload_alpha transfer workflow that intentionally releases the sender before a valid stationary dual-grasp authority transfer is complete.",
+      "required_elements": ["payload_alpha", "both arms", "sender release", "transfer_authority"],
+      "intended_defect": "handover protocol violation",
+      "freedom": "Choose direction, durations and the rest of the workflow."
+    },
+    {
+      "card_id": "H-D-02",
+      "property": "H",
+      "mode": "declared_defect_challenge",
+      "title": "Invalid receiver handover challenge",
+      "goal": "Write a plausible payload_beta transfer workflow that intentionally changes authority without first establishing a valid stationary dual grasp in the handover zone.",
+      "required_elements": ["payload_beta", "both arms", "transfer_authority"],
+      "intended_defect": "handover precondition violation",
+      "freedom": "Choose direction, durations and surrounding operations."
+    },
+    {
+      "card_id": "R-D-01",
+      "property": "R",
+      "mode": "declared_defect_challenge",
+      "title": "Competing shared-tool acquisition challenge",
+      "goal": "Write a plausible two-lane workflow in which both arms intentionally compete for tool_beta before the current owner releases it.",
+      "required_elements": ["tool_beta", "parallel", "both arms", "matching barrier structure"],
+      "intended_defect": "shared-resource ownership violation",
+      "freedom": "Choose timing, barriers and the remainder of each lane."
+    },
+    {
+      "card_id": "R-D-02",
+      "property": "R",
+      "mode": "declared_defect_challenge",
+      "title": "Wrong-owner release challenge",
+      "goal": "Write a plausible conditional fixture_alpha workflow with at least one reachable branch in which an arm intentionally releases or uses the resource without valid ownership.",
+      "required_elements": ["fixture_alpha", "ready or mode with both branches", "both arm names across the program"],
+      "intended_defect": "resource owner mismatch",
+      "freedom": "Choose branch structure, durations and surrounding valid-looking work."
+    },
+    {
+      "card_id": "C-D-01",
+      "property": "C",
+      "mode": "declared_defect_challenge",
+      "title": "Attached-payload collision challenge",
+      "goal": "Write a plausible parallel workflow intended to make a payload carried by one arm intersect the other arm during matching approach/retreat motions.",
+      "required_elements": ["payload_alpha or payload_beta", "close before motion", "parallel", "both trajectory hashes", "one barrier"],
+      "intended_defect": "attached-object collision propagation",
+      "freedom": "Choose carrier, trajectories, timing and final actions."
+    },
+    {
+      "card_id": "C-D-02",
+      "property": "C",
+      "mode": "declared_defect_challenge",
+      "title": "Cross-arm overlap challenge",
+      "goal": "Write a plausible two-lane motion workflow intended to create a cross-arm collision interval through unsafely synchronized approach/retreat motions.",
+      "required_elements": ["parallel", "left and right trajectory hashes", "matching barrier structure"],
+      "intended_defect": "cross-arm collision",
+      "freedom": "Choose trajectory directions, waits and barrier placement."
+    }
+  ],
+  "human_assignments": {
+    "AUTHOR-F": ["H-N-01", "R-N-02", "C-D-01", "H-D-02"],
+    "AUTHOR-G": ["R-N-01", "C-N-02", "H-D-01", "R-D-02"],
+    "AUTHOR-H": ["C-N-01", "H-N-02", "R-D-01", "C-D-02"]
+  },
+  "llm_assignments": [
+    "H-N-01", "H-N-02", "R-N-01", "R-N-02", "C-N-01", "C-N-02",
+    "H-D-01", "H-D-02", "R-D-01", "R-D-02", "C-D-01", "C-D-02"
+  ]
+}

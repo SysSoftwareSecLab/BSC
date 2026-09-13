@@ -1,0 +1,5 @@
+# No-repair multi-model generation slice
+
+All 36 one-shot outputs are retained: 12 task cards were each sent once to three model selectors. Every call completed; no source was repaired and no replacement was generated. The later funnel was 36 generated, 30 mechanically admitted, 21 unique, and 20 oracle-valid scored. Excluded, duplicate, and grammar-invalid attempts remain visible in `generation-records.jsonl` and `outputs/`.
+
+Selectors were `gpt-5.6-terra`, `gpt-5.5`, and `gpt-5.4`, all at reasoning effort `high`; the recorded client was `codex-cli 0.149.0-alpha.4.1`. The frozen prompts can be reconstructed with `reconstruct-prompts.py`; the same 12 prompt bytes were reused across model families. The original experiment contract file was not recovered. `cohort-summary.json` records `NOT_RECOVERED`; no digest of the unavailable private file is published and the contract is not silently reconstructed. Event streams, task/thread identifiers, network tracing values, full stderr, login state, application paths, and workstation paths were removed.
