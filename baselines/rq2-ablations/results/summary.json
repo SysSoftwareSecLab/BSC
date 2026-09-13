@@ -1,0 +1,158 @@
+{
+  "affected_pair_transitions_sha256": "846d37a2436173d04df225bee58644c5f62c842a815fee03087bf69d14c4394e",
+  "affected_subset_diagnostics": {
+    "ablation_no_attached_object_geometry": {
+      "N_pairs": 10,
+      "ablation_correct": 0,
+      "ablation_only_correct": 0,
+      "affected_families": [
+        "CTL_COLLISION_PARALLEL_MOVE_V1"
+      ],
+      "full_correct": 10,
+      "full_only_correct": 10,
+      "oracle_labels": {
+        "unsafe": 10
+      },
+      "paired_categories": {
+        "unsafe_false_safe_introduced": 10
+      },
+      "verdict_transitions": {
+        "unsafe:violated->verified-within-bounds": 10
+      }
+    },
+    "ablation_non_timed": {
+      "N_pairs": 60,
+      "ablation_correct": 20,
+      "ablation_only_correct": 0,
+      "affected_families": [
+        "CTL_COLLISION_GUARDED_MOVE_V1",
+        "CTL_COLLISION_PARALLEL_MOVE_V1",
+        "CTL_HANDOVER_BRANCH_SYNC_V1",
+        "CTL_HANDOVER_LOOP_SYNC_V1",
+        "CTL_RESOURCE_BRANCH_INTERLEAVE_V1",
+        "CTL_RESOURCE_PARALLEL_RELEASE_V1"
+      ],
+      "full_correct": 60,
+      "full_only_correct": 40,
+      "oracle_labels": {
+        "safe": 30,
+        "unsafe": 30
+      },
+      "paired_categories": {
+        "correctness_preserved": 20,
+        "safe_certificate_lost": 10,
+        "unsafe_diagnosis_lost_but_release_blocked": 20,
+        "unsafe_false_safe_introduced": 10
+      },
+      "verdict_transitions": {
+        "safe:verified-within-bounds->unknown": 10,
+        "safe:verified-within-bounds->verified-within-bounds": 20,
+        "unsafe:violated->unknown": 20,
+        "unsafe:violated->verified-within-bounds": 10
+      }
+    },
+    "ablation_separated_state_property": {
+      "N_pairs": 20,
+      "ablation_correct": 10,
+      "ablation_only_correct": 0,
+      "affected_families": [
+        "RQ2_GRASP_AUTH_CROSSCHECK_V1",
+        "RQ2_GRASP_AUTH_LOCAL_V1"
+      ],
+      "full_correct": 20,
+      "full_only_correct": 10,
+      "oracle_labels": {
+        "safe": 10,
+        "unsafe": 10
+      },
+      "paired_categories": {
+        "correctness_preserved": 10,
+        "unsafe_false_safe_introduced": 10
+      },
+      "verdict_transitions": {
+        "safe:verified-within-bounds->verified-within-bounds": 10,
+        "unsafe:violated->verified-within-bounds": 10
+      }
+    }
+  },
+  "all_frozen_80_descriptive_only": {
+    "ablation_no_attached_object_geometry": {
+      "N_pairs": 80,
+      "ablation_correct": 70,
+      "ablation_only_correct": 0,
+      "full_correct": 80,
+      "full_only_correct": 10,
+      "oracle_labels": {
+        "safe": 40,
+        "unsafe": 40
+      },
+      "paired_categories": {
+        "correctness_preserved": 70,
+        "unsafe_false_safe_introduced": 10
+      },
+      "verdict_transitions": {
+        "safe:verified-within-bounds->verified-within-bounds": 40,
+        "unsafe:violated->verified-within-bounds": 10,
+        "unsafe:violated->violated": 30
+      }
+    },
+    "ablation_non_timed": {
+      "N_pairs": 80,
+      "ablation_correct": 30,
+      "ablation_only_correct": 0,
+      "full_correct": 80,
+      "full_only_correct": 50,
+      "oracle_labels": {
+        "safe": 40,
+        "unsafe": 40
+      },
+      "paired_categories": {
+        "correctness_preserved": 30,
+        "safe_certificate_lost": 10,
+        "unsafe_diagnosis_lost_but_release_blocked": 30,
+        "unsafe_false_safe_introduced": 10
+      },
+      "verdict_transitions": {
+        "safe:verified-within-bounds->unknown": 10,
+        "safe:verified-within-bounds->verified-within-bounds": 30,
+        "unsafe:violated->unknown": 30,
+        "unsafe:violated->verified-within-bounds": 10
+      }
+    },
+    "ablation_separated_state_property": {
+      "N_pairs": 80,
+      "ablation_correct": 70,
+      "ablation_only_correct": 0,
+      "full_correct": 80,
+      "full_only_correct": 10,
+      "oracle_labels": {
+        "safe": 40,
+        "unsafe": 40
+      },
+      "paired_categories": {
+        "correctness_preserved": 70,
+        "unsafe_false_safe_introduced": 10
+      },
+      "verdict_transitions": {
+        "safe:verified-within-bounds->verified-within-bounds": 40,
+        "unsafe:violated->verified-within-bounds": 10,
+        "unsafe:violated->violated": 30
+      }
+    }
+  },
+  "date": "2026-08-27",
+  "experiment_id": "EXP-S4-026_MENTOR3_ABLATION_SEMANTIC_NECESSITY_MAC",
+  "frozen_verdicts_changed": false,
+  "input_record_count": 402,
+  "input_tree_identity": "WITHHELD_NOT_PUBLICLY_BOUND",
+  "interpretation": {
+    "all_80_warning": "The all-80 comparison is retained only as a reproducibility diagnostic. It mixes semantically applicable and inapplicable families and must not replace the pre-specified mechanism masks or be called an external effect size.",
+    "p_values": "The historical exact McNemar and Holm calculations are not numerically invalid, but they are weak evidence for external generalization because the tested families were constructed or selected to exercise the removed mechanism. C111 does not use them as a population-level claim.",
+    "primary": "The affected-family masks were declared for mechanistic applicability before the formal run. The absolute paired verdict transitions therefore diagnose what each coupling prevents on those purpose-built cases."
+  },
+  "new_experiment_required": false,
+  "paper_sync": "Later rename/describe RQ2 as semantic-necessity diagnostics; foreground N, full-to-ablation verdict transitions, false-safe introductions, and fail-closed unknowns; remove or visually subordinate Exact p/Holm columns.",
+  "schema": "bisafecode.mentor3.item9-ablation-semantic-necessity/v1",
+  "source_experiment": "EXP-S4-004_RQ2_ABLATION",
+  "status": "EVIDENCE_LOCKED_SEMANTIC_NECESSITY_DIAGNOSTIC"
+}

@@ -1,0 +1,114 @@
+{
+  "boundary": {
+    "negative_is_certificate": false,
+    "new_correctness_oracle": false,
+    "paired_historical_seeds_reused": true,
+    "paper_numbers_updated": false,
+    "rare_schedule_counts_changed": false
+  },
+  "changed_cases": [
+    {
+      "case_id": "CASE-8B87F581EB9DD7779336",
+      "prefix_category_delta": {
+        "10": {
+          "corrected": "no_violation_observed_not_certificate",
+          "old": "violation_observed"
+        },
+        "100": {
+          "corrected": "no_violation_observed_not_certificate",
+          "old": "violation_observed"
+        },
+        "1000": {
+          "corrected": "no_violation_observed_not_certificate",
+          "old": "violation_observed"
+        },
+        "30": {
+          "corrected": "no_violation_observed_not_certificate",
+          "old": "violation_observed"
+        },
+        "300": {
+          "corrected": "no_violation_observed_not_certificate",
+          "old": "violation_observed"
+        }
+      },
+      "release": {
+        "corrected": "verified-within-bounds",
+        "old": "violated"
+      }
+    },
+    {
+      "case_id": "CASE-E6285414E90166449FCA",
+      "prefix_category_delta": {
+        "10": {
+          "corrected": "no_violation_observed_not_certificate",
+          "old": "violation_observed"
+        },
+        "100": {
+          "corrected": "no_violation_observed_not_certificate",
+          "old": "violation_observed"
+        },
+        "1000": {
+          "corrected": "no_violation_observed_not_certificate",
+          "old": "violation_observed"
+        },
+        "30": {
+          "corrected": "no_violation_observed_not_certificate",
+          "old": "violation_observed"
+        },
+        "300": {
+          "corrected": "no_violation_observed_not_certificate",
+          "old": "violation_observed"
+        }
+      },
+      "release": {
+        "corrected": "verified-within-bounds",
+        "old": "violated"
+      }
+    }
+  ],
+  "contract_identity": "WITHHELD_DURING_DOUBLE_ANONYMOUS_REVIEW",
+  "experiment_id": "EXP-S4-022_MENTOR3_CORRECTED_MATCHED_SAMPLING_MAC",
+  "input_identity": {
+    "corrected_adapter_sha256": "f43456693e82e95c7663d649c14c787629bc0a772b68be4f732c5b7f6a2a5306",
+    "execution_script_identity": "WITHHELD_DURING_DOUBLE_ANONYMOUS_REVIEW",
+    "historical_bundle_commit": "omitted_from_anonymous_release",
+    "historical_input_digests": "WITHHELD_DURING_DOUBLE_ANONYMOUS_REVIEW",
+    "historical_seed_c_verifier": "omitted_from_anonymous_release"
+  },
+  "ordinary_65_at_each_budget": {
+    "10": {
+      "no_violation_observed_not_certificate": 39,
+      "unresolved_and_blocked": 2,
+      "violation_observed": 24
+    },
+    "100": {
+      "no_violation_observed_not_certificate": 39,
+      "unresolved_and_blocked": 2,
+      "violation_observed": 24
+    },
+    "1000": {
+      "no_violation_observed_not_certificate": 39,
+      "unresolved_and_blocked": 2,
+      "violation_observed": 24
+    },
+    "30": {
+      "no_violation_observed_not_certificate": 39,
+      "unresolved_and_blocked": 2,
+      "violation_observed": 24
+    },
+    "300": {
+      "no_violation_observed_not_certificate": 39,
+      "unresolved_and_blocked": 2,
+      "violation_observed": 24
+    }
+  },
+  "population": {
+    "affected_replayed": 36,
+    "affected_rollouts": 36000,
+    "ordinary_total": 65,
+    "rare_40_unaffected_and_not_rerun": true,
+    "unaffected_reused": 29
+  },
+  "schema": "bisafecode.mentor3.corrected-matched-sampling/v1",
+  "status": "COMPLETE_PENDING_COUNTER_AUDIT"
+}

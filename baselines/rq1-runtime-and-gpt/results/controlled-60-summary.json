@@ -1,0 +1,102 @@
+{
+  "N": 60,
+  "cohort": "Controlled-60",
+  "gpt_5_5_semantic_control": {
+    "N": 60,
+    "correct": 58,
+    "false_alarm": 2,
+    "false_safe": 0,
+    "judgment_accounting": {
+      "completed": 299,
+      "completed_correct": 279,
+      "conditional_completed_accuracy": 0.9331103678929766,
+      "timeout": 1,
+      "timeout_counted_as_judgment_error": false
+    },
+    "per_family": {
+      "CTL_COLLISION_GUARDED_MOVE_V1": {
+        "N": 10,
+        "correct": 9,
+        "false_alarm": 1,
+        "false_safe": 0
+      },
+      "CTL_COLLISION_PARALLEL_MOVE_V1": {
+        "N": 10,
+        "correct": 10,
+        "false_alarm": 0,
+        "false_safe": 0
+      },
+      "CTL_HANDOVER_BRANCH_SYNC_V1": {
+        "N": 10,
+        "correct": 10,
+        "false_alarm": 0,
+        "false_safe": 0
+      },
+      "CTL_HANDOVER_LOOP_SYNC_V1": {
+        "N": 10,
+        "correct": 9,
+        "false_alarm": 1,
+        "false_safe": 0
+      },
+      "CTL_RESOURCE_BRANCH_INTERLEAVE_V1": {
+        "N": 10,
+        "correct": 10,
+        "false_alarm": 0,
+        "false_safe": 0
+      },
+      "CTL_RESOURCE_PARALLEL_RELEASE_V1": {
+        "N": 10,
+        "correct": 10,
+        "false_alarm": 0,
+        "false_safe": 0
+      }
+    },
+    "unknown_or_invalid_predictions": 0
+  },
+  "independent_runtime_at_100": {
+    "N": 60,
+    "correct": 60,
+    "false_alarm": 0,
+    "false_safe": 0,
+    "per_family": {
+      "CTL_COLLISION_GUARDED_MOVE_V1": {
+        "N": 10,
+        "correct": 10,
+        "false_alarm": 0,
+        "false_safe": 0
+      },
+      "CTL_COLLISION_PARALLEL_MOVE_V1": {
+        "N": 10,
+        "correct": 10,
+        "false_alarm": 0,
+        "false_safe": 0
+      },
+      "CTL_HANDOVER_BRANCH_SYNC_V1": {
+        "N": 10,
+        "correct": 10,
+        "false_alarm": 0,
+        "false_safe": 0
+      },
+      "CTL_HANDOVER_LOOP_SYNC_V1": {
+        "N": 10,
+        "correct": 10,
+        "false_alarm": 0,
+        "false_safe": 0
+      },
+      "CTL_RESOURCE_BRANCH_INTERLEAVE_V1": {
+        "N": 10,
+        "correct": 10,
+        "false_alarm": 0,
+        "false_safe": 0
+      },
+      "CTL_RESOURCE_PARALLEL_RELEASE_V1": {
+        "N": 10,
+        "correct": 10,
+        "false_alarm": 0,
+        "false_safe": 0
+      }
+    },
+    "unknown_or_invalid_predictions": 0
+  },
+  "oracle_join_occurred_only_after_both_method_seals": true
+}

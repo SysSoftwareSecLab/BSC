@@ -1,0 +1,49 @@
+{
+  "contract_identity": "WITHHELD_DURING_DOUBLE_ANONYMOUS_REVIEW",
+  "experiment_id": "EXP-S4-021_MENTOR3_SPIN_COMMON_SUBSET_BASELINE_MAC",
+  "interpretation_boundary": {
+    "collision_geometry_tested": false,
+    "cross_tool_runtime_claim_authorized": false,
+    "equivalent_to_bisafecode": false,
+    "four_valued_abstention_tested": false,
+    "timed_parallel_semantics_tested": false
+  },
+  "results": {
+    "confusion_matrix": {
+      "oracle_safe__spin_verified-within-bounds": 17,
+      "oracle_unsafe__spin_violated": 10
+    },
+    "correct": 27,
+    "corrected_bisafecode_counts": {
+      "verified-within-bounds": 17,
+      "violated": 10
+    }
+  },
+  "schema": "bisafecode.mentor3.spin-common-subset-baseline/v1",
+  "status": "COMPLETE_PENDING_COUNTER_AUDIT",
+  "subset": {
+    "N": 27,
+    "by_population": {
+      "External-25": 13,
+      "External-40": 14
+    },
+    "exclusions": {
+      "External-25:C-property": 5,
+      "External-25:move": 3,
+      "External-25:oracle-invalid": 4,
+      "External-25:parallel": 4,
+      "External-40:move": 21,
+      "External-40:parallel": 5
+    },
+    "oracle_counts": {
+      "safe": 17,
+      "unsafe": 10
+    }
+  },
+  "tool_identity": {
+    "executed_translator_identity": "WITHHELD_DURING_DOUBLE_ANONYMOUS_REVIEW",
+    "identity_boundary": "The executed historical translator differed from this privacy-redacted source projection only in private version-control provenance. Its unsalted pre-redaction file digest is withheld because it could confirm a guessed private Git object identifier.",
+    "spin_path": "spin",
+    "spin_version": "Spin Version 6.5.2 -- 6 December 2019"
+  }
+}

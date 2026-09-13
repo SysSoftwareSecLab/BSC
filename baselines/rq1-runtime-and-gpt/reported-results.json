@@ -1,0 +1,70 @@
+{
+  "Controlled-60": {
+    "gpt_5_5_semantic_control": {
+      "N": 60,
+      "correct": 58
+    },
+    "independent_runtime_at_100": {
+      "N": 60,
+      "correct": 60
+    }
+  },
+  "External-25": {
+    "gpt_5_5_semantic_control": {
+      "N": 25,
+      "correct": 24,
+      "prediction_counts": {
+        "verified-within-bounds": 6,
+        "violated": 19
+      }
+    },
+    "independent_runtime_at_100": {
+      "N": 25,
+      "correct": 25,
+      "prediction_counts": {
+        "safe": 7,
+        "unsafe": 18
+      }
+    },
+    "untimed_external": {
+      "N": 25,
+      "correct": 10,
+      "prediction_counts": {
+        "unknown": 13,
+        "verified-within-bounds": 7,
+        "violated": 5
+      }
+    }
+  },
+  "External-40": {
+    "gpt_5_5_semantic_control": {
+      "N": 40,
+      "correct": 36,
+      "prediction_counts": {
+        "verified-within-bounds": 28,
+        "violated": 12
+      }
+    },
+    "independent_runtime_at_100": {
+      "N": 40,
+      "correct": 40,
+      "prediction_counts": {
+        "verified-within-bounds": 32,
+        "violated": 8
+      }
+    },
+    "untimed_external": {
+      "N": 40,
+      "correct": 18,
+      "prediction_counts": {
+        "unknown": 22,
+        "verified-within-bounds": 17,
+        "violated": 1
+      }
+    }
+  },
+  "interpretation": {
+    "gpt": "semantic-diagnosis control, not a formal verifier",
+    "independent_runtime": "100 finite rollouts per program; negative sampling outcomes are not certificates"
+  }
+}

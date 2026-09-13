@@ -1,0 +1,100 @@
+{
+  "allowed_binary_files": [
+    {
+      "bytes": 13284,
+      "license": "Apache-2.0 OpenArm collision-model asset",
+      "path": "contracts-and-trajectories/c115/model/openarm_description/assets/end_effector/parallel_link/meshes/collision/finger.stl",
+      "sha256": "8e96e1314618cf434908f70df78f68dd2b049c03538964e8d41fc99abe41564d"
+    },
+    {
+      "bytes": 18284,
+      "license": "Apache-2.0 OpenArm collision-model asset",
+      "path": "contracts-and-trajectories/c115/model/openarm_description/assets/end_effector/parallel_link/meshes/collision/hand.stl",
+      "sha256": "8e5d373ebbd3fd001b506058644062ad71a68f1ced5ca5d5ed0f6de20137956b"
+    },
+    {
+      "bytes": 40284,
+      "license": "Apache-2.0 OpenArm collision-model asset",
+      "path": "contracts-and-trajectories/c115/model/openarm_description/assets/robot/openarm_v1.0/mesh/arm/collision/link0_symp.stl",
+      "sha256": "baf52578e1d9e6225f3818cae82b6074a0b948d3cef8e9a3e6dfafca78507590"
+    },
+    {
+      "bytes": 17784,
+      "license": "Apache-2.0 OpenArm collision-model asset",
+      "path": "contracts-and-trajectories/c115/model/openarm_description/assets/robot/openarm_v1.0/mesh/arm/collision/link1_symp.stl",
+      "sha256": "066113d13d5cc85098609003bc7ebb73c570015350877f5ed7162ef1b6601852"
+    },
+    {
+      "bytes": 13384,
+      "license": "Apache-2.0 OpenArm collision-model asset",
+      "path": "contracts-and-trajectories/c115/model/openarm_description/assets/robot/openarm_v1.0/mesh/arm/collision/link2_symp.stl",
+      "sha256": "382ab32e4ae0880e8a1512e7a6ca6ce1f478a6c125db4efa977429ffb1d6b02a"
+    },
+    {
+      "bytes": 156984,
+      "license": "Apache-2.0 OpenArm collision-model asset",
+      "path": "contracts-and-trajectories/c115/model/openarm_description/assets/robot/openarm_v1.0/mesh/arm/collision/link3_symp.stl",
+      "sha256": "00c908cefab152c00416a570a48bf9aafed1549085f19ff2d882dc3f355d9f59"
+    },
+    {
+      "bytes": 1139984,
+      "license": "Apache-2.0 OpenArm collision-model asset",
+      "path": "contracts-and-trajectories/c115/model/openarm_description/assets/robot/openarm_v1.0/mesh/arm/collision/link4_symp.stl",
+      "sha256": "b54883b8c7c96268a68a5879f95998a53ad0b0c4fe74325fad63a6caef669c73"
+    },
+    {
+      "bytes": 751484,
+      "license": "Apache-2.0 OpenArm collision-model asset",
+      "path": "contracts-and-trajectories/c115/model/openarm_description/assets/robot/openarm_v1.0/mesh/arm/collision/link5_symp.stl",
+      "sha256": "678a2802906eff7b45a836d2f34a2d8e51def50b6599376968f888e05c72739e"
+    },
+    {
+      "bytes": 30084,
+      "license": "Apache-2.0 OpenArm collision-model asset",
+      "path": "contracts-and-trajectories/c115/model/openarm_description/assets/robot/openarm_v1.0/mesh/arm/collision/link6_symp.stl",
+      "sha256": "95529bec23733476dfdbbb266c7db0d25a473a568de73c8337a82440fe4a9ac3"
+    },
+    {
+      "bytes": 23884,
+      "license": "Apache-2.0 OpenArm collision-model asset",
+      "path": "contracts-and-trajectories/c115/model/openarm_description/assets/robot/openarm_v1.0/mesh/arm/collision/link7_symp.stl",
+      "sha256": "434f207f21f75f5f0bd604e390b8e5bc7b62b619265222846770e06b3f9b5cfb"
+    },
+    {
+      "bytes": 293284,
+      "license": "Apache-2.0 OpenArm collision-model asset",
+      "path": "contracts-and-trajectories/c115/model/openarm_description/assets/robot/openarm_v1.0/mesh/body/collision/body_link0_symp.stl",
+      "sha256": "6c18bbf7e86b03e3faf802e61e8eb438b38dcbcf146d97cffe6e808c65e9a72a"
+    }
+  ],
+  "allowed_binary_scope_passed": true,
+  "appledouble_or_ds_store": [],
+  "extended_attribute_files": [],
+  "forbidden_media_or_archive_files": [],
+  "hit_count": 0,
+  "hits": [],
+  "json_or_jsonl_errors": [],
+  "note": "Targeted automated scan plus source-comparison and manual review. It is not a proof against every possible identifying clue in unrestricted prose.",
+  "scanned_utf8_files": 816,
+  "schema": "bisafecode.anonymous-review-artifact-privacy-scan/v2",
+  "scope": "global combined-artifact scan receipt mirrored under baselines/",
+  "status": "PASS",
+  "strict_old_private_digest_set": {
+    "count": 589,
+    "hits": 0,
+    "set_digest_sha256": "f7daa8533ba24997caa8c3a00138c101665f4e85e4911d408bca0089b43ab678"
+  },
+  "symlinks": [],
+  "targeted_pattern_classes": [
+    "credential_assignment",
+    "email_address",
+    "git_object_id_40hex",
+    "known_author_token",
+    "linux_personal_home_path",
+    "macos_personal_home_path",
+    "macos_private_temp_path",
+    "tailscale_or_private_ip",
+    "uuid"
+  ],
+  "unexpected_non_utf8_files": []
+}

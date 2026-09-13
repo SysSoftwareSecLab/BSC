@@ -1,0 +1,65 @@
+{
+  "schema": "bisafecode.public.baseline-recount-status/v1",
+  "overall_recount_status": "PARTIAL",
+  "row_recomputed_pass": [
+    {
+      "component": "RQ1 program-level controls",
+      "coverage": "Controlled-60, External-40, and the 25 valid External-25 rows"
+    },
+    {
+      "component": "IR sampler ordinary cohort",
+      "coverage": "65 programs at budgets 10, 30, 100, 300, and 1000"
+    },
+    {
+      "component": "SPIN translation-consistency subset",
+      "coverage": "27 result rows, 27 packaged models, and 27 source-program hashes"
+    },
+    {
+      "component": "RQ2 affected-subset transitions",
+      "coverage": "90 paired transition rows across all three ablations; 70 row-level source references are byte-verified from 60 packaged controlled programs, while 20 separated-state inputs are result-record-only"
+    },
+    {
+      "component": "finite checker-call comparison",
+      "coverage": "2121 rows across 42 workload/method/budget groups"
+    }
+  ],
+  "aggregate_only": [
+    {
+      "component": "IR sampler Rare-40",
+      "coverage": "40-program summary",
+      "reason": "The per-program rows and 36000 rollout rows are not included in the compact package."
+    },
+    {
+      "component": "finite wall-clock comparison",
+      "coverage": "30 summary groups and 1950 reported rows",
+      "reason": "The wall-clock raw rows are not included in the compact package."
+    }
+  ],
+  "retained_historical_boundaries": [
+    {
+      "component": "IR sampler ordinary cohort",
+      "boundary": "Two declared corrected cases retain stale historical first_detection_rollout and paired_result_at_1000 fields. Public recounting uses the corrected prefixes and bisafecode_release_verdict fields and does not rewrite the historical record."
+    },
+    {
+      "component": "SPIN translation consistency",
+      "boundary": "The packaged runner is a privacy-redacted historical source projection. Its pre-redaction identity is withheld during double-anonymous review; the 27 packaged models and all source-program identities are byte-verified. The frozen COMPLETE_PENDING_COUNTER_AUDIT field is a historical status, while the current public recount passes."
+    },
+    {
+      "component": "RQ1 GPT semantic control",
+      "boundary": "299 of 300 scheduled judgments completed. One retained timeout is not counted as a judgment error and is not hidden or replaced."
+    },
+    {
+      "component": "RQ2 separated-state ablation",
+      "boundary": "The 20 separated-state source files are not included as standalone public programs, and hashes of those undistributed private files are not published. Their transition fields remain recountable, but the source bytes cannot be independently checked from this compact package."
+    }
+  ],
+  "required_interpretation_boundaries": [
+    "Sampling nondetection is not a safety certificate.",
+    "SPIN is a translation-consistency check on a restricted shared subset, not an end-to-end superiority comparison.",
+    "RQ2 ablations are semantic-necessity diagnostics on pre-specified affected subsets, not population effect sizes.",
+    "The retained 299/300 GPT completion denominator and one timeout are part of the reported control evidence.",
+    "Twenty separated-state RQ2 inputs are result-record-only in this compact package.",
+    "Aggregate-only components can be arithmetic-checked but cannot be independently recomputed row by row from this compact package."
+  ],
+  "e07_recommendation": "READY-WITH-BOUNDARY"
+}

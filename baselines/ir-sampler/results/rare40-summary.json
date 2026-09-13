@@ -1,0 +1,17 @@
+{
+  "cohort": "Rare-40",
+  "exact_exploration": {
+    "N": 40,
+    "unknown": 0,
+    "verified_within_bounds": 8,
+    "violated": 32
+  },
+  "ir_sampler": {
+    "budgets": [10, 30, 100, 300, 1000],
+    "violation_observed": [15, 19, 23, 26, 29],
+    "violation_not_observed_at_1000": 11,
+    "exact_search_violations_not_observed_at_1000": 3,
+    "unresolved_at_1000": 0
+  },
+  "interpretation": "A sampled nondetection is not a safety certificate. The 36,000 corrected rollout rows and 40 per-program rows are omitted from this compact public slice, so the published aggregate cannot be independently hash-verified or rebuilt row by row from this package."
+}
