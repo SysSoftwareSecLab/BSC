@@ -1,0 +1,129 @@
+{
+  "controlled_rule_assets": [
+    {
+      "artifact_path": "contracts-and-trajectories/mac-controlled-freeze/ORACLE_AND_ASSET_CONTRACT.json",
+      "candidate_path": "03_experiments/contracts/EXP-S4-002_CONTROLLED_UNSEEN_FORMAL_FREEZE/ORACLE_AND_ASSET_CONTRACT.json",
+      "sha256": "82c2eb87c5a6cbe6bc8e5191fd4bfd728f2281f350ad2afdce50c186f8e6ffa0",
+      "size_bytes": 3546
+    },
+    {
+      "artifact_path": "contracts-and-trajectories/mac-controlled-freeze/assets/logical_oracle_rules.json",
+      "candidate_path": "03_experiments/contracts/EXP-S4-002_CONTROLLED_UNSEEN_FORMAL_FREEZE/assets/logical_oracle_rules.json",
+      "sha256": "2634b198d99bc8437c98727ced73887d3293c4a5e230de0cbf116702173850ee",
+      "size_bytes": 1065
+    },
+    {
+      "artifact_path": "contracts-and-trajectories/mac-controlled-freeze/assets/geometry_policy.json",
+      "candidate_path": "03_experiments/contracts/EXP-S4-002_CONTROLLED_UNSEEN_FORMAL_FREEZE/assets/geometry_policy.json",
+      "sha256": "d3c52aaaacadffb2615c8f59b6feec18b23a1db4879c2ba3c801b8e0128a46a1",
+      "size_bytes": 1440
+    },
+    {
+      "artifact_path": "contracts-and-trajectories/mac-controlled-freeze/assets/model.json",
+      "candidate_path": "03_experiments/contracts/EXP-S4-002_CONTROLLED_UNSEEN_FORMAL_FREEZE/assets/model.json",
+      "sha256": "681883708614c393f3372628bb399d1feab3af645135095b82ecbbebfe135a51",
+      "size_bytes": 1034
+    },
+    {
+      "artifact_path": "contracts-and-trajectories/mac-controlled-freeze/assets/scene.json",
+      "candidate_path": "03_experiments/contracts/EXP-S4-002_CONTROLLED_UNSEEN_FORMAL_FREEZE/assets/scene.json",
+      "sha256": "d2a3c53e7f1af887bfa3e633c280b017504c68f21fdd0289cb76ce5e841cfe97",
+      "size_bytes": 927
+    },
+    {
+      "artifact_path": "contracts-and-trajectories/mac-controlled-freeze/assets/object_resource_semantics.json",
+      "candidate_path": "03_experiments/contracts/EXP-S4-002_CONTROLLED_UNSEEN_FORMAL_FREEZE/assets/object_resource_semantics.json",
+      "sha256": "6f9833f6c5d6671ee0a6826f9e944a8f0bac6ac97cfa72a830ed256e5294410d",
+      "size_bytes": 767
+    }
+  ],
+  "implementations": [
+    {
+      "artifact_path": "final-build/src/bisafecode/reference_semantics.py",
+      "boundary": "Not the complete parser, successor generator, or bounded model checker.",
+      "id": "executable-reference-semantics",
+      "public_projection_root_sha256": "28866e84438e8e72e46b5a8a0724587aaea2b6f46bbb37450c0860c38fd7d419",
+      "purpose": "Executable small reference semantics for disputed event-ordering rules.",
+      "sha256": "a13ab3b002803adc43fc1756a0de4c53bb82a81daf63aa73d8d2b05247f4b322",
+      "size_bytes": 14640
+    },
+    {
+      "artifact_path": "final-build/src/bisafecode/handover_oracle.py",
+      "boundary": "Does not establish collision freedom, sensing validity, or continuous geometry.",
+      "id": "handover-event-oracle",
+      "public_projection_root_sha256": "28866e84438e8e72e46b5a8a0724587aaea2b6f46bbb37450c0860c38fd7d419",
+      "purpose": "Independent ordered-event oracle for handover protocol rules.",
+      "sha256": "79afb411342950589a0fb603408bbcb18196a94e8f3e956fda50c654e5423856",
+      "size_bytes": 11145
+    },
+    {
+      "artifact_path": "final-build/src/bisafecode/resource_oracle.py",
+      "boundary": "Consumes physical occupancy and BASE_SEATED observations; it does not generate them.",
+      "id": "resource-event-oracle",
+      "public_projection_root_sha256": "28866e84438e8e72e46b5a8a0724587aaea2b6f46bbb37450c0860c38fd7d419",
+      "purpose": "Independent ordered-event oracle for shared-fixture ownership/occupancy/seated properties.",
+      "sha256": "33240528cc0c6d4f2f79a14f0757b8a053932120c59515c369594978fafb434b",
+      "size_bytes": 6868
+    },
+    {
+      "artifact_path": "final-build/src/bisafecode/stage4_controlled/logical_oracle.py",
+      "boundary": "Shares the source language and frozen task semantics.",
+      "id": "controlled-logical-oracle",
+      "public_projection_root_sha256": "28866e84438e8e72e46b5a8a0724587aaea2b6f46bbb37450c0860c38fd7d419",
+      "purpose": "Complete-source logical oracle over frozen finite traces.",
+      "sha256": "0dc6c55271b327429df4edeb241c848325c141aefc5e463f0f1f21ae24462c35",
+      "size_bytes": 10424
+    },
+    {
+      "artifact_path": "final-build/src/bisafecode/stage4_controlled/geometry_oracle.py",
+      "boundary": "Shares frozen model, scene, and trajectories; not an independent physical sensor.",
+      "id": "controlled-geometry-oracle",
+      "public_projection_root_sha256": "28866e84438e8e72e46b5a8a0724587aaea2b6f46bbb37450c0860c38fd7d419",
+      "purpose": "Analytic continuous-geometry oracle with fixed numeric error bound.",
+      "sha256": "39e0096aadb1520471f0721477d6a548cc9f585e02f83d23ee8926bff399c46c",
+      "size_bytes": 22116
+    },
+    {
+      "artifact_path": "final-build/src/bisafecode/stage4_controlled/oracle.py",
+      "boundary": "Inherits both components\u2019 model and coverage assumptions.",
+      "id": "controlled-oracle-composition",
+      "public_projection_root_sha256": "28866e84438e8e72e46b5a8a0724587aaea2b6f46bbb37450c0860c38fd7d419",
+      "purpose": "Fail-closed composition of controlled logical and geometry evidence.",
+      "sha256": "ad7a1caf77c417e0e67f336e00693581a180f3b5d49e08bcf27a40b27fa4e07a",
+      "size_bytes": 5735
+    },
+    {
+      "artifact_path": "final-build/src/bisafecode/stage4_external_blind/oracle_r4.py",
+      "boundary": "Reuses frozen public assets and controlled-oracle components; not an untouched holdout oracle.",
+      "id": "external-handover-oracle-r4",
+      "public_projection_root_sha256": "28866e84438e8e72e46b5a8a0724587aaea2b6f46bbb37450c0860c38fd7d419",
+      "purpose": "Correction-aware external handover obligations and receiver-close geometry.",
+      "sha256": "3ae69020e2b3389789ae6335327308e1c9f54bcbc0791b0315c150a37e4c7170",
+      "size_bytes": 12035
+    },
+    {
+      "artifact_path": "final-build/src/bisafecode/stage4_rare_schedule/oracle.py",
+      "boundary": "Restricted to the registered rare-schedule program family.",
+      "id": "rare-schedule-exact-oracle",
+      "public_projection_root_sha256": "28866e84438e8e72e46b5a8a0724587aaea2b6f46bbb37450c0860c38fd7d419",
+      "purpose": "Standard-library exact enumeration of arm-preserving resource interleavings.",
+      "sha256": "0bc3452a16e237721877118cb94470ca3cf8d533617409d1fc3d65c2c4780a37",
+      "size_bytes": 7869
+    },
+    {
+      "artifact_path": "final-build/src/bisafecode/c3_v2_mujoco_oracle.py",
+      "boundary": "Actual MuJoCo execution and adjudication evidence are separate from this helper module.",
+      "id": "c3-v2-mujoco-oracle-helpers",
+      "public_projection_root_sha256": "28866e84438e8e72e46b5a8a0724587aaea2b6f46bbb37450c0860c38fd7d419",
+      "purpose": "Frozen preparation and pure predicates for the C3-v2 MuJoCo replay.",
+      "sha256": "c1d74b60751fb0a4ab655c9e5a72fd858c5f049fa7c5d153673468ae1515115d",
+      "size_bytes": 18161
+    }
+  ],
+  "independence_statement": "Separate software paths for the checked properties; shared task semantics and frozen assets remain explicit. No independently blinded annotation team is claimed.",
+  "output_location_policy": "Per-case frozen labels and execution outputs are stored with datasets and final-revalidation results, not inferred from this code index.",
+  "public_projection_root_sha256": "28866e84438e8e72e46b5a8a0724587aaea2b6f46bbb37450c0860c38fd7d419",
+  "redistribution_status": "REVIEW_ONLY_DISCLOSURE__NO_PROJECT_WIDE_LICENSE",
+  "schema": "bisafecode.anonymous-oracle-index/v1",
+  "status": "PASS"
+}

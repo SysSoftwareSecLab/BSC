@@ -1,0 +1,177 @@
+{
+  "admissions": {
+    "distance_error": {
+      "reasons": [],
+      "release_allowed": true,
+      "status": "admitted"
+    },
+    "observer_claim": {
+      "reasons": [],
+      "release_allowed": true,
+      "status": "admitted"
+    },
+    "pair_scope_C": {
+      "reasons": [],
+      "release_allowed": true,
+      "status": "admitted"
+    },
+    "pair_scope_H": {
+      "reasons": [],
+      "release_allowed": true,
+      "status": "admitted"
+    },
+    "pair_scope_R": {
+      "reasons": [],
+      "release_allowed": true,
+      "status": "admitted"
+    },
+    "speed_envelopes": {
+      "reasons": [],
+      "release_allowed": true,
+      "status": "admitted"
+    },
+    "trajectory_bindings": {
+      "reasons": [],
+      "release_allowed": true,
+      "status": "admitted"
+    }
+  },
+  "distance_error_contract": {
+    "candidate_and_reference_bound_m": 1e-12,
+    "evidence_path": "contracts-and-trajectories/qualification/reference-contract/geometry_policy.json",
+    "evidence_sha256": "d3c52aaaacadffb2615c8f59b6feec18b23a1db4879c2ba3c801b8e0128a46a1",
+    "worker_policy_field": "collision_error_bound_m"
+  },
+  "effective_final_modules": [
+    {
+      "module": "bisafecode",
+      "path": "final-build/src/bisafecode/__init__.py",
+      "sha256": "3b975c46b4a5d604e6c6e0fc7d4dc3230035295fdfa2daaff2ee5c81a6ce4e7d"
+    },
+    {
+      "module": "bisafecode.continuous_collision",
+      "path": "final-build/src/bisafecode/continuous_collision.py",
+      "sha256": "6e6f32a65aa6dfb1ef06e3297a1651e2a8a9ec63d32b44115de75233616081e6"
+    },
+    {
+      "module": "bisafecode.contract_qualification",
+      "path": "final-build/src/bisafecode/contract_qualification.py",
+      "sha256": "6dddfce7581992c413d793e4dbf476f127bb675778c2cba632e34c902c9a902b"
+    },
+    {
+      "module": "bisafecode.entity_speed_envelope",
+      "path": "final-build/src/bisafecode/entity_speed_envelope.py",
+      "sha256": "02ecc4fbf46199aa85834218fd460c91c43a87899148707f747e8bf1a3899bcf"
+    },
+    {
+      "module": "bisafecode.explicit_state",
+      "path": "final-build/src/bisafecode/explicit_state.py",
+      "sha256": "0bb4292a313b49566dd5f00b821d66408fcbab1539612958d0393f3427ba26f3"
+    },
+    {
+      "module": "bisafecode.geometry_contract",
+      "path": "final-build/src/bisafecode/geometry_contract.py",
+      "sha256": "cc261f7fe5a9fd9b1a849054813652b0c6335f9024239d19c784ad188cae829f"
+    },
+    {
+      "module": "bisafecode.motion_bounds",
+      "path": "final-build/src/bisafecode/motion_bounds.py",
+      "sha256": "133fa1fd10cb113840e8adeaff24ad75e2aa83f6e095fb9520824f758e2680e2"
+    },
+    {
+      "module": "bisafecode.openarm_fcl_query",
+      "path": "final-build/src/bisafecode/openarm_fcl_query.py",
+      "sha256": "3eea44f521857be4b487fc6a5b6d49270f78a8f3d1c12054aeb0cbe33cbc22af"
+    },
+    {
+      "module": "bisafecode.resource_monitor",
+      "path": "final-build/src/bisafecode/resource_monitor.py",
+      "sha256": "a5205e9e1fe761d25bb8eb661e73e81e1a7f0ca4a7129d49f002655480a6987f"
+    },
+    {
+      "module": "bisafecode.restricted_python",
+      "path": "final-build/src/bisafecode/restricted_python.py",
+      "sha256": "f7db4a4890602cf0e78f7b4b7cf74feffed9127a049858ca403d998a556310e9"
+    },
+    {
+      "module": "bisafecode.timed_ir",
+      "path": "final-build/src/bisafecode/timed_ir.py",
+      "sha256": "fe6289f30b5d3b00608ad916627f43ca365218ab38afb400cdd1dd29e3e16c20"
+    },
+    {
+      "module": "bisafecode.trajectory",
+      "path": "final-build/src/bisafecode/trajectory.py",
+      "sha256": "4a9011fd4385e9cc9adfdde039132a7847bfc1c46aa70bb33702a9883cd2b0ff"
+    },
+    {
+      "module": "bisafecode.verdicts",
+      "path": "final-build/src/bisafecode/verdicts.py",
+      "sha256": "911be219c52e08d92530bb07ca8fb456b9eecfe40d468e6407fdf939e4011dda"
+    }
+  ],
+  "failures": [],
+  "negative_controls": {
+    "distance_error_missing": {
+      "reasons": [
+        "distance-error-evidence-missing:moveit-fcl-signed-distance"
+      ],
+      "release_allowed": false,
+      "status": "unknown-contract-evidence"
+    },
+    "distance_error_underbound": {
+      "reasons": [
+        "distance-error-underbound:moveit-fcl-signed-distance"
+      ],
+      "release_allowed": false,
+      "status": "invalid-contract"
+    },
+    "observer_mismatch": {
+      "reasons": [
+        "observer-evidence-mismatch:R:base-seated-entire-interval:frozen-offline-contract"
+      ],
+      "release_allowed": false,
+      "status": "invalid-contract"
+    },
+    "observer_missing": {
+      "reasons": [
+        "observer-evidence-missing:R:base-seated-entire-interval:frozen-offline-contract"
+      ],
+      "release_allowed": false,
+      "status": "unknown-contract-evidence"
+    },
+    "pair_scope_weakened": {
+      "reasons": [
+        "checked-pair-weakened:openarm_body_link0:openarm_left_hand"
+      ],
+      "release_allowed": false,
+      "status": "invalid-contract"
+    },
+    "speed_envelope_underbound": {
+      "reasons": [
+        "speed-underbound:openarm_left_hand:left_joint_m_per_rad:0"
+      ],
+      "release_allowed": false,
+      "status": "invalid-contract"
+    },
+    "trajectory_drift": {
+      "reasons": [
+        "trajectory-hash-mismatch:I4F-C-SAFE-T1:joint-trajectory:00"
+      ],
+      "release_allowed": false,
+      "status": "invalid-contract"
+    },
+    "trajectory_missing": {
+      "reasons": [
+        "trajectory-evidence-missing:I4F-C-SAFE-T1:joint-trajectory:00"
+      ],
+      "release_allowed": false,
+      "status": "unknown-contract-evidence"
+    }
+  },
+  "public_projection_boundary": "This released record preserves the accepted final qualification and binds its included policy and module bytes. The qualification was not re-executed after review-only path and privacy projection.",
+  "public_projection_reexecution_status": "NOT_RUN__REFERENCE_RECORD_ONLY",
+  "public_record_role": "ACCEPTED_REFERENCE_QUALIFICATION",
+  "schema": "bisafecode.final-build-contract-qualification/v1",
+  "scope_boundary": "Qualification preserves frozen evidence-bound fields; it does not independently prove physical truth. The two paperboard attachment modes are qualified separately because runtime attachment side is state-dependent.",
+  "status": "PASS_ALL_FINAL_CONTRACT_QUALIFIERS_ADMITTED_AND_NEGATIVE_CONTROLS_FAIL_CLOSED"
+}

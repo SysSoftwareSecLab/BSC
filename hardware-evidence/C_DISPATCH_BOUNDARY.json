@@ -1,0 +1,83 @@
+{
+  "campaign_level_support": {
+    "interpretation": "The P044 VWB and hash-bound C-family freeze predate the P044-based five-slot C campaign.",
+    "program_id": "EXP-S4-002-P044",
+    "schedule_binding": "five repetitions of the frozen P044 C trajectory",
+    "verdict": "verified-within-bounds"
+  },
+  "claim_boundary": "One VWB result may scientifically support repeated execution of an immutable campaign input; the historical record nevertheless cannot support a claim of per-slot re-verification or tokenized release enforcement.",
+  "counts": {
+    "block_level_authorization_arguments_found": 4,
+    "campaign_level_provenance_pass": 5,
+    "controller_complete": 5,
+    "direct_per_slot_verdict_release_send_bindings_found": 0,
+    "execution_or_resume_invocations_reconstructed": 4,
+    "p044_zero_send_started_and_success_result_pairs_found": 5,
+    "post_run_pass": 3,
+    "post_run_unknown_coverage": 2,
+    "retained_non_vwb_or_block_to_send_records_found": 0,
+    "slots": 5
+  },
+  "direct_per_slot_runtime_enforcement": {
+    "absence_semantics": "NOT_LOCATED means a read-only search of retained experiment records did not find that record; it is not proof that an unrecorded action did not occur.",
+    "block_authorization_argument_record_retained": "FOUND_EXACT_FOR_ALL_FOUR_BLOCKS__VALUES_WITHHELD_FROM_PUBLIC_EXPORT",
+    "exact_serialized_goal_hash_bound_to_method_source_and_release_token": "NOT_LOCATED",
+    "interpretation": "The actual block/resume invocation chain and per-slot before/after P044 phase records are reconstructable. Do not upgrade that evidence to per-dispatch fresh method re-verification or per-slot tokenized enforcement. This traceability limitation does not negate the campaign-level provenance.",
+    "p044_method_or_source_fresh_rehash_immediately_before_each_dispatch": "NOT_LOCATED_IN_RETAINED_RECORDS",
+    "p044_method_source_oracle_hashes_embedded_in_each_prospective_r2_started_record": "NOT_LOCATED",
+    "p044_named_started_and_result_pair_per_formal_slot": "FOUND_5_OF_5",
+    "p044_result_controller_success": "FOUND_5_OF_5__both_arms_one_goal_each__status_4__error_code_0",
+    "p044_started_record_zero_send_field": "FOUND_5_OF_5__goal_send_count_at_record_time=0",
+    "per_slot_release_or_authorization_token": "NOT_LOCATED__FOUND_TOKENS_ARE_BLOCK_CONTINUATION_OR_RESUME_LEVEL",
+    "runner_actual_invocation_record_retained": "FOUND_FOR_ALL_FOUR_EXECUTION_OR_RESUME_BLOCKS",
+    "single_record_directly_joining_original_vwb_release_and_actual_slot_send": "NOT_LOCATED",
+    "status": "TRACE_INCOMPLETE"
+  },
+  "non_vwb_send_finding": "NO_RETAINED_NON_VWB_OR_BLOCK_TO_SEND_RECORD_FOUND",
+  "rows": [
+    {
+      "controller_execution": "COMPLETE",
+      "direct_pre_dispatch_verdict_to_send_binding": "TRACE_INCOMPLETE",
+      "official_slot_id": "C-01",
+      "p044_label_in_executed_phase": true,
+      "post_run_deployment_evidence_label": "PASS_MEASUREMENT_BOUND_C",
+      "run_instance_id": "C115-PROSPECTIVE-R2-C-01-Q2P500"
+    },
+    {
+      "controller_execution": "COMPLETE_SPLIT_ACROSS_RETAINED_RESUME_RECORDS",
+      "direct_pre_dispatch_verdict_to_send_binding": "TRACE_INCOMPLETE",
+      "official_slot_id": "C-02",
+      "p044_label_in_executed_phase": true,
+      "post_run_deployment_evidence_label": "PASS_MEASUREMENT_BOUND_C",
+      "run_instance_id": "C115-PROSPECTIVE-R2-C-02-Q2P505"
+    },
+    {
+      "controller_execution": "COMPLETE",
+      "direct_pre_dispatch_verdict_to_send_binding": "TRACE_INCOMPLETE",
+      "official_slot_id": "C-03",
+      "p044_label_in_executed_phase": true,
+      "post_run_deployment_evidence_label": "PASS_MEASUREMENT_BOUND_C",
+      "run_instance_id": "C115-PROSPECTIVE-R2-C-03-Q2P510"
+    },
+    {
+      "controller_execution": "COMPLETE",
+      "coverage_gap_ms": 41.547412,
+      "direct_pre_dispatch_verdict_to_send_binding": "TRACE_INCOMPLETE",
+      "official_slot_id": "C-04",
+      "p044_label_in_executed_phase": true,
+      "post_run_deployment_evidence_label": "UNKNOWN_INTERVAL_COVERAGE",
+      "run_instance_id": "C115-PROSPECTIVE-R2-C-04-Q2P515"
+    },
+    {
+      "controller_execution": "COMPLETE",
+      "coverage_gap_ms": 61.317265,
+      "direct_pre_dispatch_verdict_to_send_binding": "TRACE_INCOMPLETE",
+      "official_slot_id": "C-05",
+      "p044_label_in_executed_phase": true,
+      "post_run_deployment_evidence_label": "UNKNOWN_INTERVAL_COVERAGE",
+      "run_instance_id": "C115-PROSPECTIVE-R2-C-05-Q2P520"
+    }
+  ],
+  "schema": "bisafecode.public.c-dispatch-boundary/v1",
+  "status": "SUPPORTED_AT_CAMPAIGN_LEVEL__PER_DISPATCH_TRACEABILITY_INCOMPLETE"
+}

@@ -1,0 +1,64 @@
+{
+  "claim_boundary": "Model-relative and measurement-bounded evidence under frozen assumptions; not universal or absolute physical safety.",
+  "evidence_status": "SUPPORTED_WITH_DISCLOSED_HISTORICAL_BOUNDARIES",
+  "families": {
+    "C": {
+      "continuous_between_sample_pass_count": 3,
+      "controller_task_complete_count": 5,
+      "coverage_rule_ms": 25.0,
+      "fail_count": 0,
+      "pass_count": 3,
+      "sampled_actual_state_clearance_pass_count": 5,
+      "slot_count": 5,
+      "status": "3_PASS__2_COVERAGE_UNKNOWN",
+      "unknown_count": 2,
+      "unknown_slots": {
+        "C-04": {
+          "label": "UNKNOWN_INTERVAL_COVERAGE",
+          "maximum_motion_sample_gap_ms": 41.547412
+        },
+        "C-05": {
+          "label": "UNKNOWN_INTERVAL_COVERAGE",
+          "maximum_motion_sample_gap_ms": 61.317265
+        }
+      }
+    },
+    "H": {
+      "categorical_observer_pass_count": 5,
+      "fail_count": 0,
+      "machine_evidence_pass_count": 5,
+      "pass_count": 5,
+      "slot_count": 5,
+      "status": "5_PASS",
+      "unknown_count": 0
+    },
+    "R": {
+      "continuous_interval_count": 71828,
+      "continuous_unresolved_interval_count": 0,
+      "fail_count": 0,
+      "model_relative_clearance_record": {
+        "display_value_mm": 0.00783,
+        "interpretation": "positive frozen-rule evidence; not a physical-clearance certificate",
+        "minimum_continuous_residual_adjusted_lower_bound_m": 7.825518167755598e-06,
+        "path": "hardware-evidence/R_MODEL_RELATIVE_CLEARANCE_BOUND.json"
+      },
+      "pass_count": 5,
+      "slot_count": 5,
+      "status": "5_PASS",
+      "unknown_count": 0
+    }
+  },
+  "fixed_primary_denominator": 15,
+  "schema": "bisafecode.public.historical-deployment-summary/v2",
+  "scope": "historical physical experiments; separate from final-build offline revalidation",
+  "supplementary_C_evidence": {
+    "interval_count": 17043,
+    "not_part_of_primary_denominator": true,
+    "pass_count": 2,
+    "slot_ids": [
+      "C-S01",
+      "C-S02"
+    ],
+    "unresolved_interval_count": 0
+  }
+}

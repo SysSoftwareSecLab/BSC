@@ -1,0 +1,27 @@
+{
+  "boundary": {
+    "blind_annotation_team_documented": false,
+    "independent_physical_ground_truth": false,
+    "meaning_of_independence": "Observer rules and event adjudication are separate from the verifier implementation.",
+    "metric_camera_pose_claimed": false
+  },
+  "frozen_specification": {
+    "path": "contracts-and-trajectories/c115/inputs/campaign/H_R_INDEPENDENT_OBSERVER_SPEC.json",
+    "sha256": "a2558286733827fe89c7c27f4bf9676b7c4c0f56e0ea660c5bcc44308f644997"
+  },
+  "handover": {
+    "fail": 0,
+    "family": "H",
+    "pass": 5,
+    "slots": 5,
+    "unknown": 0
+  },
+  "resource": {
+    "fail": 0,
+    "family": "R",
+    "pass": 5,
+    "slots": 5,
+    "unknown": 0
+  },
+  "schema": "bisafecode.public-independent-observer-summary/v2"
+}

@@ -1,0 +1,14 @@
+{
+  "continuous_interval_count": 71828,
+  "continuous_unresolved_interval_count": 0,
+  "display_value_mm": 0.00783,
+  "frozen_residual_m": 0.001,
+  "interpretation": "This positive telemetry-derived, residual-adjusted, model-relative bound passes the frozen R rule. Assembly and object-pose errors were not calibrated, and no independent physical-clearance sensor was available; it is not a physical-clearance certificate.",
+  "minimum_continuous_residual_adjusted_lower_bound_m": 7.825518167755598e-06,
+  "minimum_continuous_residual_adjusted_lower_bound_mm": 0.007825518167755598,
+  "passed": true,
+  "retained_sample_count": 71848,
+  "schema": "bisafecode.public.r-model-relative-clearance-bound/v1",
+  "scope": "historical five-slot R campaign aggregate",
+  "status": "PASS_FROZEN_GREATER_THAN_ZERO_R_RULE_5_OF_5"
+}

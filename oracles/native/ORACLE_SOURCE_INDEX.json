@@ -1,0 +1,37 @@
+{
+  "boundary": "Separate software implementation; shared semantics/model assets; not blinded annotation and not physical ground truth.",
+  "modules": [
+    {
+      "path": "final-build/src/bisafecode/handover_oracle.py",
+      "role": "handover event oracle",
+      "sha256": "79afb411342950589a0fb603408bbcb18196a94e8f3e956fda50c654e5423856"
+    },
+    {
+      "path": "final-build/src/bisafecode/resource_oracle.py",
+      "role": "shared-resource event oracle",
+      "sha256": "33240528cc0c6d4f2f79a14f0757b8a053932120c59515c369594978fafb434b"
+    },
+    {
+      "path": "final-build/src/bisafecode/reference_semantics.py",
+      "role": "source-event reference semantics",
+      "sha256": "a13ab3b002803adc43fc1756a0de4c53bb82a81daf63aa73d8d2b05247f4b322"
+    },
+    {
+      "path": "final-build/src/bisafecode/continuous_collision.py",
+      "role": "continuous interval collision certificate and effective distance threshold",
+      "sha256": "6e6f32a65aa6dfb1ef06e3297a1651e2a8a9ec63d32b44115de75233616081e6"
+    },
+    {
+      "path": "final-build/src/bisafecode/contract_qualification.py",
+      "role": "candidate/reference contract qualification, including distance-error bounds",
+      "sha256": "6dddfce7581992c413d793e4dbf476f127bb675778c2cba632e34c902c9a902b"
+    },
+    {
+      "path": "final-build/src/bisafecode/geometry_contract.py",
+      "role": "geometry/error contract and effective clearance composition",
+      "sha256": "cc261f7fe5a9fd9b1a849054813652b0c6335f9024239d19c784ad188cae829f"
+    }
+  ],
+  "schema": "bisafecode.public-native-oracle-source-index/v1"
+}
+
