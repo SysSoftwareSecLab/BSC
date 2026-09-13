@@ -1,0 +1,48 @@
+{
+  "asset_bindings": {
+    "left_approach": "397771ebfd945851aa0cff681fe3cee96b72dc3775703aa8493803fb90c837da",
+    "left_retreat": "068689c4eedf23894addcd228602a5bffdbb82df1029b5ea24df820fcce39dac",
+    "right_approach": "6cea1dcf1a9d8ffab50422561fb5de534f0feea76d82502481c92e835615f77b",
+    "right_retreat": "27c255ba3f31abc048410b5f767d55381b7f4764b2f53e080f99616902d15816"
+  },
+  "evidence_status": "FREEZE_ONLY_NOT_FORMAL_STAGE4_EVIDENCE",
+  "families": {
+    "CTL_COLLISION_GUARDED_MOVE_V1": {"difficulty_tags": ["benign_concurrency", "branch", "long_range_dependency", "mid_trajectory_minimum", "matched_no_attachment"], "intended_oracle_class": "safe", "scientific_stratum": "C_collision", "structural_axes": ["parallel", "barrier", "branch", "loop", "move", "time"], "structural_subset": "collision", "template": "collision_guarded_move", "trajectory_pairing": "same two-arm approach trajectories as CTL_COLLISION_PARALLEL_MOVE_V1; no object attachment"},
+    "CTL_COLLISION_PARALLEL_MOVE_V1": {"difficulty_tags": ["concurrent_motion", "mid_trajectory_collision", "attached_object_other_arm", "matched_attachment_only_change"], "intended_oracle_class": "unsafe", "scientific_stratum": "C_collision", "structural_axes": ["attachment", "parallel", "barrier", "move", "time"], "structural_subset": "collision", "template": "collision_parallel_move", "trajectory_pairing": "same two-arm approach trajectories as CTL_COLLISION_GUARDED_MOVE_V1; payload_alpha is attached before motion"},
+    "CTL_HANDOVER_BRANCH_SYNC_V1": {"difficulty_tags": ["concurrency_only_failure", "dual_grasp", "authority_transfer"], "intended_oracle_class": "unsafe", "scientific_stratum": "H_grasp_control_attachment", "structural_axes": ["parallel", "barrier", "branch", "handover", "object"], "structural_subset": "handover", "template": "handover_branch_sync"},
+    "CTL_HANDOVER_LOOP_SYNC_V1": {"difficulty_tags": ["benign_concurrency", "long_range_dependency", "attachment_lifecycle"], "family_slug_note": "historical family ID retained for audit continuity; the revised template tests a safe single-owner attachment lifecycle and does not transfer authority", "intended_oracle_class": "safe", "scientific_stratum": "H_grasp_control_attachment", "structural_axes": ["loop", "parallel", "barrier", "grasp", "attachment", "time"], "structural_subset": "handover", "template": "handover_loop_sync"},
+    "CTL_RESOURCE_BRANCH_INTERLEAVE_V1": {"difficulty_tags": ["branch", "long_range_dependency", "resource_release"], "intended_oracle_class": "safe", "scientific_stratum": "R_resource_mutual_exclusion", "structural_axes": ["branch", "loop", "resource", "time"], "structural_subset": "resource", "template": "resource_branch_interleave"},
+    "CTL_RESOURCE_PARALLEL_RELEASE_V1": {"difficulty_tags": ["concurrency_only_failure", "shared_resource_conflict"], "intended_oracle_class": "unsafe", "scientific_stratum": "R_resource_mutual_exclusion", "structural_axes": ["parallel", "barrier", "resource", "branch"], "structural_subset": "resource", "template": "resource_parallel_release"}
+  },
+  "family_role_policy": "The safe/unsafe entries are preregistered controlled-scenario intentions, not oracle labels. Generator, methods, and oracle receive no computed label. Oracle disagreement is retained and never repaired, replaced, or resampled.",
+  "generator": {
+    "formal_version": "bisafecode.stage4.controlled.generator/v4-stratified-matched-collision",
+    "implementation": "src/bisafecode/stage4_controlled/generator.py",
+    "injective_ten_slot_spine": "Within each family, seed order maps injectively to primary_arm, duration_a_ns, duration_b_ns; this prevents duplicate-source replacement pressure without using any label.",
+    "label_or_verifier_inputs": false,
+    "previous_EXP_S4_001_generator_reused": false,
+    "rng": "SHA-256 counter over generator version, grammar version, family ID, seed"
+  },
+  "grammar": {
+    "arms": ["left", "right"],
+    "durations_ns": [20000000, 40000000, 80000000],
+    "finite_inputs": {"mode": ["safe", "fast"], "ready": [false, true]},
+    "loop_bounds": [2, 3, 4],
+    "max_control_depth": 2,
+    "max_parallel_width": 2,
+    "objects": ["payload_alpha", "payload_beta"],
+    "resources": ["fixture_alpha", "tool_beta"],
+    "surface_version": "bisafecode.stage4.controlled.grammar/v1"
+  },
+  "leakage_holdout": {
+    "canonical_and_fixture_catalogs": [
+      "03_experiments/results/EXP-S4-001_UNSEEN_PROGRAM_CORRECTNESS_PREP/CANONICAL_REFERENCE_SIGNATURES.json",
+      "03_experiments/results/EXP-S4-001_UNSEEN_PROGRAM_CORRECTNESS_PREP/development_fixture/FIXTURE_EXCLUSION_CATALOG.json"
+    ],
+    "identity_keys": ["source_sha256", "canonical_ast_hash retaining trajectory hash", "structural_family_signature_hash", "time_shift_structural_signature_hash", "canonical near-structure token distance"],
+    "seed_isolation_sufficient": false,
+    "strict_fail_closed": true
+  },
+  "schema": "bisafecode.stage4.controlled.grammar-family-spec/v1",
+  "time_bound": "independently recomputed structural bound; parallel is sum of per-barrier-phase maxima; underdeclaration rejects"
+}
