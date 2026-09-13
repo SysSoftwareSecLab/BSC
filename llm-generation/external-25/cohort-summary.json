@@ -1,0 +1,12 @@
+{
+  "all_generation_attempts_retained": true,
+  "assigned_generation_attempts": 12,
+  "completed_generation_attempts": 12,
+  "correctness_eligible_generation_attempts": 9,
+  "full_benchmark_funnel": {
+    "all_assigned_sources": 36,
+    "mechanically_admitted_sources": 29,
+    "oracle_valid_scored_sources": 25
+  },
+  "mechanically_admitted_generation_attempts": 10
+}

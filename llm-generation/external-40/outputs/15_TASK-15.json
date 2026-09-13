@@ -1,0 +1,4 @@
+{
+  "brief_author_note": "The left arm approaches, grasps, and carries payload_alpha while the right arm performs timed observer work before both lanes synchronize.",
+  "program_source": "def left_lane():\n    move(\"left\", \"d2061067f4b66316e861e216e433941870034c1ef0d57baad7f533a3b9d5ca26\")\n    close(\"left\", \"payload_alpha\", 40000000)\n    move(\"left\", \"952b79dbc0b450154d6910502682bcb1bb62373808550d35da80c313aba41db6\")\n    barrier(\"carry_complete\")\n\ndef right_lane():\n    wait(\"right\", 80000000)\n    barrier(\"carry_complete\")\n\ndef task():\n    parallel(left_lane, right_lane)\n"
+}

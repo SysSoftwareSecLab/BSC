@@ -1,0 +1,4 @@
+{
+  "brief_author_note": "The ready branch models a left-arm fixture operation followed by an intentional wrong-owner release from the right arm, while the alternate branch uses matching ownership.",
+  "program_source": "def task():\n    if ready:\n        acquire(\"left\", \"fixture_alpha\")\n        wait(\"left\", 40000000)\n        release(\"right\", \"fixture_alpha\")\n    else:\n        acquire(\"right\", \"fixture_alpha\")\n        wait(\"right\", 40000000)\n        release(\"right\", \"fixture_alpha\")\n"
+}

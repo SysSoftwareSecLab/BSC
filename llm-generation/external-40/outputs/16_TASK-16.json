@@ -1,0 +1,4 @@
+{
+  "brief_author_note": "The left arm grasps payload_alpha, both arms execute their matching approach trajectories concurrently and rendezvous, then the left arm releases the payload.",
+  "program_source": "def left_lane():\n    move(\"left\", \"d2061067f4b66316e861e216e433941870034c1ef0d57baad7f533a3b9d5ca26\")\n    barrier(\"approach_complete\")\n\n\ndef right_lane():\n    move(\"right\", \"3e6910a45a223961ab95f4f5e8a63ac43f95c8270bb698234abaf687963ab609\")\n    barrier(\"approach_complete\")\n\n\ndef task():\n    close(\"left\", \"payload_alpha\", 40000000)\n    parallel(left_lane, right_lane)\n    open(\"left\", \"payload_alpha\", 40000000)\n"
+}

@@ -1,0 +1,4 @@
+{
+  "brief_author_note": "The right arm acquires tool_beta, approaches and briefly handles payload_beta with timed operations, then retreats and releases the tool.",
+  "program_source": "def task():\n    acquire(\"right\", \"tool_beta\")\n    move(\"right\", \"3e6910a45a223961ab95f4f5e8a63ac43f95c8270bb698234abaf687963ab609\")\n    close(\"right\", \"payload_beta\", 80000000)\n    wait(\"right\", 40000000)\n    open(\"right\", \"payload_beta\", 80000000)\n    move(\"right\", \"1d58d45f58c932f071ca9641505e7a0a5abb03f7ed0d96b9aad5a93383fd32ea\")\n    release(\"right\", \"tool_beta\")\n"
+}

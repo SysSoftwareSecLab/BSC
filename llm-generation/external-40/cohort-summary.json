@@ -1,0 +1,14 @@
+{
+  "all_generation_attempts_retained": true,
+  "assigned_generation_attempts": 18,
+  "completed_generation_attempts": 18,
+  "excluded_generation_attempts": 2,
+  "full_benchmark_context": {
+    "admitted_prior_duplicate_excluded": 1,
+    "correctness_eligible_and_scored_sources": 40,
+    "mechanically_admitted_sources": 41,
+    "mechanically_rejected_sources": 2,
+    "total_assigned_sources": 43
+  },
+  "mechanically_admitted_generation_attempts": 16
+}

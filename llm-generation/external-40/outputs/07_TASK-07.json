@@ -1,0 +1,4 @@
+{
+  "brief_author_note": "Runs timed left- and right-arm preparation operations concurrently, then synchronizes both lanes at a shared rendezvous.",
+  "program_source": "def left_lane():\n    wait(\"left\", 40000000)\n    barrier(\"rendezvous\")\n\n\ndef right_lane():\n    wait(\"right\", 40000000)\n    barrier(\"rendezvous\")\n\n\ndef task():\n    parallel(left_lane, right_lane)\n"
+}

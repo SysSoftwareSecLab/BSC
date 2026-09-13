@@ -1,0 +1,4 @@
+{
+  "brief_author_note": "The left arm acquires fixture_alpha, performs three timed operations, and releases the fixture to finish the cycle.",
+  "program_source": "def task():\n    acquire(\"left\", \"fixture_alpha\")\n    for cycle in range(3):\n        wait(\"left\", 40000000)\n    release(\"left\", \"fixture_alpha\")\n"
+}

@@ -1,0 +1,4 @@
+{
+  "brief_author_note": "The ready input selects the left or right arm to acquire fixture_alpha, perform one timed work interval, and release it.",
+  "program_source": "def task():\n    if ready:\n        acquire(\"left\", \"fixture_alpha\")\n        wait(\"left\", 80000000)\n        release(\"left\", \"fixture_alpha\")\n    else:\n        acquire(\"right\", \"fixture_alpha\")\n        wait(\"right\", 80000000)\n        release(\"right\", \"fixture_alpha\")\n"
+}

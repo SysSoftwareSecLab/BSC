@@ -1,0 +1,143 @@
+{
+  "schema": "bisafecode.stage4.external-blind.task-cards/v1",
+  "evidence_status": "FREEZE_ONLY_NOT_FORMAL_STAGE4_EVIDENCE",
+  "assignment_rule": "Each card is independently implemented once by a natural LLM and once by a human. Cards describe task intent, never an expected safety verdict or defect.",
+  "cards": [
+    {
+      "card_id": "TASK-01",
+      "title": "Left-arm payload cycle",
+      "goal": "Use the left arm to take responsibility for payload_alpha, perform a short processing pause, and finish with the payload released.",
+      "required_elements": ["payload_alpha", "left arm", "one timed pause"],
+      "freedom": "Choose the legal API ordering and one allowed duration."
+    },
+    {
+      "card_id": "TASK-02",
+      "title": "Right-arm payload cycle",
+      "goal": "Use the right arm to take responsibility for payload_beta, perform a short processing pause, and finish with the payload released.",
+      "required_elements": ["payload_beta", "right arm", "one timed pause"],
+      "freedom": "Choose the legal API ordering and one allowed duration."
+    },
+    {
+      "card_id": "TASK-03",
+      "title": "Ready-dependent handler",
+      "goal": "When ready is true, let the left arm process payload_alpha; otherwise let the right arm process it. Each branch should complete a coherent payload cycle.",
+      "required_elements": ["if ready ... else ...", "payload_alpha", "both arm names across the two branches"],
+      "freedom": "Choose durations and branch-local ordering."
+    },
+    {
+      "card_id": "TASK-04",
+      "title": "Mode-dependent processing plan",
+      "goal": "Implement two alternative processing plans selected by whether mode equals fast. Both plans should use one arm and terminate normally, but they may use different allowed durations or repetition.",
+      "required_elements": ["if mode == \"fast\" ... else ...", "at least one timed operation in each branch"],
+      "freedom": "Choose the arm and exact plan."
+    },
+    {
+      "card_id": "TASK-05",
+      "title": "Shared tool in two turns",
+      "goal": "Let both arms use tool_beta in two distinct turns, with a timed operation during each turn, and finish with the tool available.",
+      "required_elements": ["tool_beta", "left arm", "right arm", "two timed operations"],
+      "freedom": "Choose which arm goes first and whether to express the turns sequentially or with synchronization."
+    },
+    {
+      "card_id": "TASK-06",
+      "title": "Fixture access selected by input",
+      "goal": "Use ready to choose which arm performs one fixture_alpha work cycle. The selected arm should perform a timed operation during the cycle.",
+      "required_elements": ["fixture_alpha", "if ready ... else ...", "one arm per branch"],
+      "freedom": "Choose durations and branch-local ordering."
+    },
+    {
+      "card_id": "TASK-07",
+      "title": "Parallel preparation rendezvous",
+      "goal": "Run one left-arm preparation lane and one right-arm preparation lane concurrently. Each lane performs a timed operation and both meet at one shared synchronization point.",
+      "required_elements": ["two parameterless lane functions", "parallel", "one matching barrier ID"],
+      "freedom": "Choose durations and whether any work occurs after the rendezvous."
+    },
+    {
+      "card_id": "TASK-08",
+      "title": "Parallel approach and regroup",
+      "goal": "Move each arm along its matching approach trajectory in parallel, synchronize once, and then complete a short arm-local operation.",
+      "required_elements": ["left_approach hash", "right_approach hash", "parallel", "one matching barrier ID"],
+      "freedom": "Choose the post-barrier timed operations."
+    },
+    {
+      "card_id": "TASK-09",
+      "title": "Two-phase parallel job",
+      "goal": "Create two concurrent lanes with a preparation phase, a first rendezvous, a second work phase, and a final rendezvous.",
+      "required_elements": ["parallel", "two matching barrier IDs in the same order", "timed work in both phases"],
+      "freedom": "Choose arm-local durations and operations."
+    },
+    {
+      "card_id": "TASK-10",
+      "title": "Repeated fixture operation",
+      "goal": "Let one arm perform a fixture_alpha work cycle containing a literal bounded loop of repeated timed operations, then finish the cycle.",
+      "required_elements": ["fixture_alpha", "for ... in range(2), range(3), or range(4)", "one selected arm"],
+      "freedom": "Choose the arm, loop bound and duration."
+    },
+    {
+      "card_id": "TASK-11",
+      "title": "Left-to-right payload handover",
+      "goal": "Implement a complete transfer of payload_alpha from the left arm to the right arm, ending with the sender no longer holding the payload.",
+      "required_elements": ["payload_alpha", "both arms", "transfer_authority from left to right"],
+      "freedom": "Choose durations and any synchronization structure needed by your implementation."
+    },
+    {
+      "card_id": "TASK-12",
+      "title": "Right-to-left payload handover",
+      "goal": "Implement a complete transfer of payload_beta from the right arm to the left arm, ending with the sender no longer holding the payload.",
+      "required_elements": ["payload_beta", "both arms", "transfer_authority from right to left"],
+      "freedom": "Choose durations and any synchronization structure needed by your implementation."
+    },
+    {
+      "card_id": "TASK-13",
+      "title": "Conditional collaboration",
+      "goal": "When ready is true, perform a left-to-right transfer of payload_beta; otherwise complete a coherent single-arm payload_beta cycle.",
+      "required_elements": ["if ready ... else ...", "payload_beta", "one collaborative branch and one single-arm branch"],
+      "freedom": "Choose the single-arm side and durations."
+    },
+    {
+      "card_id": "TASK-14",
+      "title": "Two payloads, two arms",
+      "goal": "Have the left arm handle payload_alpha and the right arm handle payload_beta as part of one task. Both payload workflows must terminate.",
+      "required_elements": ["payload_alpha", "payload_beta", "left arm", "right arm"],
+      "freedom": "Choose sequential or parallel organization and allowed durations."
+    },
+    {
+      "card_id": "TASK-15",
+      "title": "Carrier and observer",
+      "goal": "While one arm performs a payload_alpha carry-related workflow, let the other arm perform timed observer work and synchronize the two lanes once.",
+      "required_elements": ["payload_alpha", "parallel", "one matching barrier ID", "both arms"],
+      "freedom": "Choose which arm carries and the detailed operations."
+    },
+    {
+      "card_id": "TASK-16",
+      "title": "Carried payload with concurrent motion",
+      "goal": "One arm should hold payload_alpha while a parallel phase contains movement by both arms using their matching approach trajectories, followed by one rendezvous.",
+      "required_elements": ["payload_alpha", "left_approach hash", "right_approach hash", "parallel", "one matching barrier ID"],
+      "freedom": "Choose the carrying arm, durations and final payload operation."
+    },
+    {
+      "card_id": "TASK-17",
+      "title": "Tool-assisted payload workflow",
+      "goal": "Create one coherent task that uses tool_beta and also handles payload_beta. At least one timed operation must occur while the task is active.",
+      "required_elements": ["tool_beta", "payload_beta", "at least one timed operation"],
+      "freedom": "Choose arms, ordering, branching and whether concurrency is useful."
+    },
+    {
+      "card_id": "TASK-18",
+      "title": "Integrated bimanual workflow",
+      "goal": "Create a compact two-arm workflow that combines one shared resource, one payload, a parallel region and at least one synchronization point, then terminates.",
+      "required_elements": ["fixture_alpha or tool_beta", "payload_alpha or payload_beta", "parallel", "matching barrier ID"],
+      "freedom": "Choose all concrete identifiers, durations and operation order within the public language."
+    }
+  ],
+  "human_assignments": {
+    "AUTHOR-A": ["TASK-01", "TASK-04", "TASK-07", "TASK-10", "TASK-13", "TASK-16"],
+    "AUTHOR-B": ["TASK-02", "TASK-05", "TASK-08", "TASK-11", "TASK-14", "TASK-17"],
+    "AUTHOR-C": ["TASK-03", "TASK-06", "TASK-09", "TASK-12", "TASK-15", "TASK-18"]
+  },
+  "llm_assignment": [
+    "TASK-01", "TASK-02", "TASK-03", "TASK-04", "TASK-05", "TASK-06",
+    "TASK-07", "TASK-08", "TASK-09", "TASK-10", "TASK-11", "TASK-12",
+    "TASK-13", "TASK-14", "TASK-15", "TASK-16", "TASK-17", "TASK-18"
+  ]
+}

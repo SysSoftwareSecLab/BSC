@@ -1,0 +1,4 @@
+{
+  "brief_author_note": "The program gives each arm a distinct timed turn with tool_beta and releases the tool after both uses.",
+  "program_source": "def task():\n    acquire(\"left\", \"tool_beta\")\n    wait(\"left\", 80000000)\n    release(\"left\", \"tool_beta\")\n    acquire(\"right\", \"tool_beta\")\n    wait(\"right\", 80000000)\n    release(\"right\", \"tool_beta\")\n"
+}

@@ -1,0 +1,4 @@
+{
+  "brief_author_note": "The left arm follows a short fast-mode wait or two longer processing waits in safe mode.",
+  "program_source": "def task():\n    if mode == \"fast\":\n        wait(\"left\", 20000000)\n    else:\n        for step in range(2):\n            wait(\"left\", 40000000)\n"
+}
