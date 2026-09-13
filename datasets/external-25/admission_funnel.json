@@ -1,0 +1,107 @@
+{
+  "admitted_not_scored": [
+    {
+      "case_id": "CASE-620B2BD9E50E7A9FBD5E",
+      "disposition": "oracle-invalid/not-scored",
+      "property": "C",
+      "source_origin": "natural_llm",
+      "source_sha256": "4238c9c8fb1466d8499b71f59848bd1bc5d7ddce440a885aff443874ba460b94",
+      "task_card_id": "C-N-01"
+    },
+    {
+      "case_id": "CASE-0B13D7A82C9CD8539041",
+      "disposition": "oracle-invalid/not-scored",
+      "property": "C",
+      "source_identity": "WITHHELD_NOT_PUBLICLY_BOUND",
+      "source_origin": "independent_human",
+      "task_card_id": "C-N-04"
+    },
+    {
+      "case_id": "CASE-3086658D24807EBBEED7",
+      "disposition": "oracle-invalid/not-scored",
+      "property": "C",
+      "source_identity": "WITHHELD_NOT_PUBLICLY_BOUND",
+      "source_origin": "independent_human",
+      "task_card_id": "C-N-03"
+    },
+    {
+      "case_id": "CASE-49FED5A010F8E35AE325",
+      "disposition": "oracle-invalid/not-scored",
+      "property": "C",
+      "source_identity": "WITHHELD_NOT_PUBLICLY_BOUND",
+      "source_origin": "independent_human",
+      "task_card_id": "C-N-05"
+    }
+  ],
+  "attempted": 36,
+  "cohort": "External-25",
+  "composition_scored": {
+    "independent_human": 17,
+    "natural_llm": 8
+  },
+  "human_slice": {
+    "attempted": 24,
+    "in_reported_admission_denominator": 20,
+    "oracle_invalid": 3,
+    "outside_29_without_retained_individual_dispositions": 4,
+    "scored": 17
+  },
+  "oracle_labels_scored": {
+    "safe": 7,
+    "unsafe": 18
+  },
+  "oracle_valid_and_scored": 25,
+  "record_availability": {
+    "complete_row_level_records_for_seven_outside_29_retained": false,
+    "interpretation": "The aggregate 36-to-29-to-25 funnel is retained, but complete row-level records for all seven attempts outside the 29 were not. Individual reasons are reported only for the three LLM attempts whose records survive and are not reconstructed for the other four attempts.",
+    "retained_outside_29_row_count": 3,
+    "unretained_outside_29_row_count": 4
+  },
+  "reported_admission_denominator": 29,
+  "retained_llm_slice": {
+    "attempted": 12,
+    "completed": 12,
+    "correctness_eligible": 9,
+    "exact_prior_canonical_ast_duplicate_among_passed": 1,
+    "oracle_invalid": 1,
+    "outside_29_with_row_level_evidence": [
+      {
+        "attempt_id": "CASE-66201475BB337BF1ED7C",
+        "documented_disposition": "syntax-or-binding-rejected",
+        "documented_reasons": [
+          "PARSER:BRANCH_TRANSFER"
+        ],
+        "property": "H",
+        "source_origin": "natural_llm",
+        "source_sha256": "798e2b21ba0a7df778f557f56de42b0274e7baf425dda0be2c0ecd981fbfff71",
+        "task_card_id": "H-N-01"
+      },
+      {
+        "attempt_id": "CASE-C6A2848E45C3299D5F92",
+        "documented_disposition": "syntax-or-binding-rejected",
+        "documented_reasons": [
+          "PARSER:BRANCH_TRANSFER"
+        ],
+        "property": "H",
+        "source_origin": "natural_llm",
+        "source_sha256": "a494d5e5274fd97f9dab2c486c39479d5a796008150e7beea85411618d1a1692",
+        "task_card_id": "H-N-02"
+      },
+      {
+        "attempt_id": "CASE-C509A68546C3B706CDB7",
+        "documented_disposition": "exact-prior-canonical-ast-duplicate",
+        "documented_reasons": [
+          "recorded-prior-canonical-ast-match"
+        ],
+        "property": "C",
+        "source_origin": "natural_llm",
+        "source_sha256": "9145e7c2a52495e18462627330f387cb9bbba67afd0ae5be38d4879bc89d3323",
+        "task_card_id": "C-D-02"
+      }
+    ],
+    "scored": 8,
+    "syntax_and_binding_passed": 10
+  },
+  "schema": "bisafecode.artifact.admission-funnel/v2",
+  "source_coverage_note": "All 25 scored source files and all four admitted-but-oracle-invalid identities are included. Three of seven pre-correctness exclusion records survive in the fully retained LLM slice; four individual dispositions were not retained."
+}

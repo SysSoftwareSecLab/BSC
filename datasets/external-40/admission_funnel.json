@@ -1,0 +1,49 @@
+{
+  "admitted_but_not_scored": 1,
+  "attempted": 43,
+  "cohort": "External-40",
+  "composition_scored": {
+    "independent_human": 24,
+    "natural_llm": 16
+  },
+  "correctness_eligible_and_scored": 40,
+  "mechanical_rejections": [
+    {
+      "attempt_id": "CASE-72C2B9D16505A5D68D88",
+      "mechanical_status": "invalid_syntax_or_grammar",
+      "reasons": [
+        "PARSER:BRANCH_TRANSFER"
+      ],
+      "source_origin": "natural_llm",
+      "source_sha256": "c41d04e791a78314cbd1915805f23e47ea88a1b906ea2e8514a916992845a58a",
+      "task_card_id": "TASK-11"
+    },
+    {
+      "attempt_id": "CASE-CA1CD89E11365999BB83",
+      "mechanical_status": "invalid_syntax_or_grammar",
+      "reasons": [
+        "PARSER:BRANCH_TRANSFER"
+      ],
+      "source_origin": "natural_llm",
+      "source_sha256": "a0cf71a8c6bfc7d9d9a84db9c9ba0689c527065e23acc6634152d98ea11a3ec3",
+      "task_card_id": "TASK-18"
+    }
+  ],
+  "mechanically_admitted": 41,
+  "mechanically_rejected": 2,
+  "post_admission_exclusions": [
+    {
+      "attempt_id": "CASE-55B226E1B8B820A427DF",
+      "disposition": "exact-prior-canonical-ast-duplicate",
+      "exclusion_stage": "post-admission-prior-comparison",
+      "mechanical_status": "admitted",
+      "reasons": [
+        "recorded-prior-canonical-ast-match"
+      ],
+      "source_identity": "WITHHELD_NOT_PUBLICLY_BOUND",
+      "source_origin": "independent_human",
+      "task_card_id": "TASK-11"
+    }
+  ],
+  "schema": "bisafecode.artifact.admission-funnel/v2"
+}
