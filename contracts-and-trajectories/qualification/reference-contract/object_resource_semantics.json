@@ -1,0 +1,16 @@
+{
+  "attachment_semantics": {
+    "close": "arm grasps the named object at action completion when it is unowned",
+    "open": "arm releases the named object at action completion when it owns it",
+    "transfer_authority": "requires stationary dual grasp inside the frozen handover zone"
+  },
+  "evidence_status": "FREEZE_ONLY_NOT_FORMAL_STAGE4_EVIDENCE",
+  "objects": ["payload_alpha", "payload_beta"],
+  "resource_semantics": {
+    "acquire": "succeeds only when the named resource is unowned",
+    "release": "succeeds only for the current owner",
+    "simultaneous_acquire": "two acquisitions at the same logical instant are a violation"
+  },
+  "resources": ["fixture_alpha", "tool_beta"],
+  "schema": "bisafecode.stage4.controlled.object-resource-semantics/v1"
+}

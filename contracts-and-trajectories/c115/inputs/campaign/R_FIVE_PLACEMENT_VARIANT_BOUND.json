@@ -1,0 +1,119 @@
+{
+  "campaign_revision": "C115-PROSPECTIVE-R2",
+  "claim_boundary": {
+    "not_qualified": [
+      "physical placement accuracy",
+      "support-plane registration",
+      "BASE_SEATED categorical observer and time synchronization",
+      "robot self residual-adjusted positivity",
+      "current prospective trajectory and model identity"
+    ],
+    "qualified": "The corrected five proposed nominal foam translations preserve at least 82.430 mm of the retained robot-to-90mm-model distance before common residual deductions and at least 2.0 mm of nominal physical boundary margin on the nearest side."
+  },
+  "created_date": "2026-08-29",
+  "derivation": {
+    "distance_rule": "For a rigid translation t of one collision object, distance(A,B+t) is at least distance(A,B)-norm(t).",
+    "family_worst_nominal_robot_foam_lower_bound_m": 0.0824302609368821,
+    "maximum_translation_norm_m": 0.003,
+    "negative_nominal_bound_count": 0,
+    "self_collision_effect": "None. R placement changes the foam world pose only and does not change any robot self pair."
+  },
+  "pair_scope_candidate": {
+    "freeze_boundary": "Exact pair-table and current URDF/SRDF/world hashes remain required before C-01.",
+    "robot_foam": "all 23 robot collision bodies against r1_base_seated_foam_90x90x50mm at every R phase",
+    "robot_foam_intended_contact_exclusions": [],
+    "robot_self": "all 225 exact non-SRDF-allowed unordered robot self pairs at every R phase",
+    "support_contact": "Only foam-to-support contact while BASE_SEATED is an intended world contact; it does not exclude any robot-to-foam pair."
+  },
+  "physical_containment": {
+    "correction": "The earlier +/-5-mm draft would place a 75-mm foam edge exactly on an 85-mm boundary and therefore had zero, not 2.5-mm, nearest-side margin. Before any scored motion the draft is corrected to +/-3 mm.",
+    "decision": "Add and use an 85 x 85-mm inner polygon centred inside the existing approximately 89 x 89-mm box. The inner polygon, not the outer box, is the scored placement boundary.",
+    "existing_outer_box_mm_approximate": [
+      89,
+      89
+    ],
+    "minimum_nominal_physical_containment_on_nearest_side_mm": 2.0,
+    "model_footprint_mm": [
+      90,
+      90
+    ],
+    "open_bound": "Physical ruler/marking and centre-registration uncertainty must be strictly below the 2.0-mm nearest-side containment before final freeze.",
+    "physical_foam_at_cardinal_extreme_extent_mm": [
+      81,
+      75
+    ],
+    "proposed_inner_polygon_mm": [
+      85,
+      85
+    ]
+  },
+  "predeclared_variants": [
+    {
+      "nominal_robot_foam_lower_bound_m": 0.08543026093688211,
+      "offset_x_mm": 0,
+      "offset_y_mm": 0,
+      "slot": "R-01",
+      "translation_norm_m": 0.0
+    },
+    {
+      "nominal_robot_foam_lower_bound_m": 0.0824302609368821,
+      "offset_x_mm": -3,
+      "offset_y_mm": 0,
+      "slot": "R-02",
+      "translation_norm_m": 0.003
+    },
+    {
+      "nominal_robot_foam_lower_bound_m": 0.0824302609368821,
+      "offset_x_mm": 3,
+      "offset_y_mm": 0,
+      "slot": "R-03",
+      "translation_norm_m": 0.003
+    },
+    {
+      "nominal_robot_foam_lower_bound_m": 0.0824302609368821,
+      "offset_x_mm": 0,
+      "offset_y_mm": -3,
+      "slot": "R-04",
+      "translation_norm_m": 0.003
+    },
+    {
+      "nominal_robot_foam_lower_bound_m": 0.0824302609368821,
+      "offset_x_mm": 0,
+      "offset_y_mm": 3,
+      "slot": "R-05",
+      "translation_norm_m": 0.003
+    }
+  ],
+  "purpose": "Qualify the five predeclared R placement variants without repeating the completed actual-state FCL campaign or creating new robot motion.",
+  "review_projection_note": "Historical pre-start status fields are retained as campaign metadata; final outcomes are recorded under results/final-revalidation/c115/.",
+  "robot_boundary": {
+    "action_client_created": false,
+    "goal_send_count": 0,
+    "gripper_command_count": 0,
+    "motion_command_count": 0,
+    "ros_graph_contacted": false,
+    "ros_imported": false
+  },
+  "schema": "bisafecode.exp-s4-030.c115-prospective-r2-r-placement-variant-bound/v1",
+  "source_evidence": {
+    "historical_actual_state_fcl_summary": {
+      "path": "OMITTED_COMPACT_HISTORICAL_EVIDENCE"
+    },
+    "historical_minimum_actual_state_robot_foam_distance_m": 0.08543026093688211,
+    "historical_model_foam_dimensions_mm": [
+      90,
+      90,
+      50
+    ],
+    "measured_physical_foam_dimensions_mm": [
+      75,
+      75,
+      45
+    ],
+    "measured_physical_foam_mass_g": 10.0,
+    "physical_measurement_record": {
+      "path": "OMITTED_COMPACT_HISTORICAL_EVIDENCE"
+    }
+  },
+  "status": "PASS_NOMINAL_TRANSLATION_BOUND__BLOCKED_FINAL_PHYSICAL_PLACEMENT_AND_COMMON_RESIDUAL_BUDGET"
+}

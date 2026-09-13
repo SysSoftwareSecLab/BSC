@@ -1,0 +1,13 @@
+{
+  "backend": "bisafecode.stage4_controlled.geometry_oracle analytic-sphere-continuous/v1",
+  "collision_criterion": "certified_upper_signed_distance_m <= 0",
+  "evidence_status": "FREEZE_ONLY_NOT_FORMAL_STAGE4_EVIDENCE",
+  "interval_rule": "For each piecewise-cubic trajectory interval, recursively bound relative center speed and endpoint signed distance; certify safe only when the Lipschitz lower bound is strictly positive, certify violation on an exact sampled nonpositive distance, otherwise return unknown.",
+  "maximum_model_step_ns": 1000000,
+  "numeric_error_bound_m": 1e-12,
+  "reason_codes": ["GEOMETRY_VIOLATION_WITNESS", "GEOMETRY_INTERVAL_UNRESOLVED", "GEOMETRY_COVERAGE_INCOMPLETE", "GEOMETRY_IDENTITY_MISMATCH", "GEOMETRY_RESOURCE_TRUNCATED", "TRAJECTORY_START_BINDING_MISMATCH"],
+  "required_pair_coverage": "independently derive every checked scene pair over every complete source move interval at maximum 1 ms subintervals; caller-declared coverage is ignored",
+  "empty_coverage_rule": "never verified; unknown(NO_GEOMETRY_RELEVANT_MOVE_INTERVALS) only after the producer executes and independently proves that the complete trace contains no move interval; the total oracle may waive only this exact geometry obligation for a no-move trace",
+  "schema": "bisafecode.stage4.controlled.geometry-policy/v1",
+  "stopping_bounds": {"max_interval_subdivisions": 20, "max_query_count": 200000, "min_interval_ns": 1000000}
+}

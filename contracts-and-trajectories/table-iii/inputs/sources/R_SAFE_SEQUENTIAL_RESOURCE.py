@@ -1,0 +1,11 @@
+def task():
+    acquire("left", "fixture_hr")
+    move("left", "fead2a8a06ce9a4a42669f4ae6f8effd0af36c2b5d857b908a1d34d834e018aa")
+    wait("left", 1000000000)
+    move("left", "b505012569779866e6998ab7338599385d3cbae17653f4e12172308a25df0957")
+    release("left", "fixture_hr")
+    acquire("right", "fixture_hr")
+    move("right", "0ee347462d224fae42637f8cc2046b9790edc2dece497b1760f85cb10fef4089")
+    wait("right", 1000000000)
+    move("right", "cc63cadc732c6f8f4918647cb3deb8fae5f3e6976c7a355c2aac3bfbe6717971")
+    release("right", "fixture_hr")

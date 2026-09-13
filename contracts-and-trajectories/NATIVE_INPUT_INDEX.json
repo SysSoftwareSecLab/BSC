@@ -1,0 +1,407 @@
+{
+  "file_count": 80,
+  "files": [
+    {
+      "bytes": 780,
+      "path": "contracts-and-trajectories/table-iii/README.md",
+      "sha256": "0de467faa9eede44aa296fcfd6b9796ee250fec0307b5c762748d490091bf7b3"
+    },
+    {
+      "bytes": 533,
+      "path": "contracts-and-trajectories/table-iii/inputs/ATTACHMENTS.tsv",
+      "sha256": "669fea0994c8e1b93787a5a00a1add2f6ad16e37bce0834f917373eb82c986bd"
+    },
+    {
+      "bytes": 35803,
+      "path": "contracts-and-trajectories/table-iii/inputs/CASE_INPUT_BINDINGS.json",
+      "sha256": "7c0c6c7334f6112d2aabe075b217ae90a8737bfe59d9b9de6c814cd748ad3003"
+    },
+    {
+      "bytes": 6464,
+      "path": "contracts-and-trajectories/table-iii/inputs/FORMAL_BENCHMARK_SCHEDULE.json",
+      "sha256": "5d6fb773d2e1de5598a6f9905491383fec022294d6e4becdbcc9bd22e38a13be"
+    },
+    {
+      "bytes": 23300,
+      "path": "contracts-and-trajectories/table-iii/inputs/TRACKING_ENVELOPE_FINAL_PAIRS.tsv",
+      "sha256": "5fd7308e9e46c9bca61eeaf032aaa712bd6e38a57e91b58f7dd12acc59d460e0"
+    },
+    {
+      "bytes": 1827,
+      "path": "contracts-and-trajectories/table-iii/inputs/collision/safe/DESCRIPTOR.json",
+      "sha256": "1aa6ff005648b643e5d42c7087370de855072c49fcb4ddf9686ea57b94edb56a"
+    },
+    {
+      "bytes": 1633,
+      "path": "contracts-and-trajectories/table-iii/inputs/collision/safe/left_trajectory.json",
+      "sha256": "8d26d00d55c45de2a16581509fa7167335df0aa60314256f4c36fb55c9e70ce3"
+    },
+    {
+      "bytes": 1644,
+      "path": "contracts-and-trajectories/table-iii/inputs/collision/safe/right_trajectory.json",
+      "sha256": "1669d1bde7bfde10e0592a0fc246f764ba3f01a90377cc2ead6c011f37d8f1d7"
+    },
+    {
+      "bytes": 264,
+      "path": "contracts-and-trajectories/table-iii/inputs/collision/safe/source.py",
+      "sha256": "7f1c898e9f0dd69172b0e4f1ce984bd06877fcedd953abe2e6ab4c8471818fa3"
+    },
+    {
+      "bytes": 1831,
+      "path": "contracts-and-trajectories/table-iii/inputs/collision/unsafe/DESCRIPTOR.json",
+      "sha256": "2006db804a740ad580466b9f41820f26d7cf9112ad515d73d3f058bb17ff5860"
+    },
+    {
+      "bytes": 1637,
+      "path": "contracts-and-trajectories/table-iii/inputs/collision/unsafe/left_trajectory.json",
+      "sha256": "afec9b986e96765d8693052725b58be0973ead4b4c72d38df9121d5a3b925b48"
+    },
+    {
+      "bytes": 1640,
+      "path": "contracts-and-trajectories/table-iii/inputs/collision/unsafe/right_trajectory.json",
+      "sha256": "2b9b1c15afb9459d7312a3f2047feefd7cef8d4aee8ef60e68b80c6c14931852"
+    },
+    {
+      "bytes": 264,
+      "path": "contracts-and-trajectories/table-iii/inputs/collision/unsafe/source.py",
+      "sha256": "0882d7a0d2a769088352003494534f34552b8eb7c5397f2dc228db9e0ff3861e"
+    },
+    {
+      "bytes": 570,
+      "path": "contracts-and-trajectories/table-iii/inputs/sources/H_SAFE_HANDOVER.py",
+      "sha256": "077b286ca3af15ed074210c7aa836b848348770f6ac79ebea17af945f39152ab"
+    },
+    {
+      "bytes": 270,
+      "path": "contracts-and-trajectories/table-iii/inputs/sources/H_UNSAFE_EARLY_RELEASE.py",
+      "sha256": "2a86d17029ebccd3964b121d5d04ea5374bba21205e7b960a7af598a32f132e9"
+    },
+    {
+      "bytes": 551,
+      "path": "contracts-and-trajectories/table-iii/inputs/sources/R_SAFE_SEQUENTIAL_RESOURCE.py",
+      "sha256": "2f14193f75bf1d32a0c0868731ae1901b47b72fa79d42756116b0088fb8a223d"
+    },
+    {
+      "bytes": 214,
+      "path": "contracts-and-trajectories/table-iii/inputs/sources/R_UNSAFE_NO_OWNER.py",
+      "sha256": "f7b8d25e209f5d2640da409a38510ac0067b445450275949c402950225cc31c9"
+    },
+    {
+      "bytes": 1748,
+      "path": "contracts-and-trajectories/table-iii/inputs/trajectories/c1_left_current_model.json",
+      "sha256": "7bae2a68154a0769e0536fb81d0d2a6b4014dbb82647b555fd375a2d7aa50f0e"
+    },
+    {
+      "bytes": 1755,
+      "path": "contracts-and-trajectories/table-iii/inputs/trajectories/c1_right_current_model.json",
+      "sha256": "40d129b21a9a77432982c77cf58f323cf19f132b92161eb817c4e7ac9d794509"
+    },
+    {
+      "bytes": 5015,
+      "path": "contracts-and-trajectories/table-iii/inputs/trajectories/c3_left_current_model.json",
+      "sha256": "6b07a400de199f1077e0cdab2f6b2e41b7a894819eece10ac3da2847e3f54985"
+    },
+    {
+      "bytes": 3915,
+      "path": "contracts-and-trajectories/table-iii/inputs/trajectories/c3_right_current_model.json",
+      "sha256": "fc0824a124ff7de23125154f8212ff40ea4479d86b9742c4145c798fb4ee0914"
+    },
+    {
+      "bytes": 17908,
+      "path": "contracts-and-trajectories/table-iii/inputs/trajectories/h_carry_to_home_right_after_unload.json",
+      "sha256": "f2a9b5ca90ce996d6ec38b3a9999cd2f35290ae0336e2990abf02f83aa7aaef8"
+    },
+    {
+      "bytes": 17874,
+      "path": "contracts-and-trajectories/table-iii/inputs/trajectories/h_home_to_large_left.json",
+      "sha256": "4e0c2e016d73ef3329ddfe13dc7bc2046ab4d9eb584520257cb1398c04d7d07b"
+    },
+    {
+      "bytes": 17010,
+      "path": "contracts-and-trajectories/table-iii/inputs/trajectories/h_home_to_large_right.json",
+      "sha256": "33c20722031489a99f9eb49893c380ccfa1a5c41db2d07d868b163a1b1895307"
+    },
+    {
+      "bytes": 17882,
+      "path": "contracts-and-trajectories/table-iii/inputs/trajectories/h_large_to_home_left.json",
+      "sha256": "b0d95bf267f1e5cf76c6ef0f4a2338d404213e12ba5557e66c2b21a8d168ad9d"
+    },
+    {
+      "bytes": 21114,
+      "path": "contracts-and-trajectories/table-iii/inputs/trajectories/h_left_retreat.json",
+      "sha256": "537b986ff76af210a414bae004d2c2e759273082d9102132038cb064d7fde6b3"
+    },
+    {
+      "bytes": 21047,
+      "path": "contracts-and-trajectories/table-iii/inputs/trajectories/h_left_to_handover__r_left_enter.json",
+      "sha256": "5c89068d9c3db6c8eabec6515358508c7221897bd2d22a583fd7b9db37eaf637"
+    },
+    {
+      "bytes": 5185,
+      "path": "contracts-and-trajectories/table-iii/inputs/trajectories/h_receiver_only_carry_10mm.json",
+      "sha256": "4cefa4549c39daed14084578fe7b95381e5e0c704e736986b140456cd120a995"
+    },
+    {
+      "bytes": 21054,
+      "path": "contracts-and-trajectories/table-iii/inputs/trajectories/h_right_carry_away.json",
+      "sha256": "646189c0718558b952fdf689990dd58c723dca0be6f1ccab17854504d0374a9c"
+    },
+    {
+      "bytes": 21881,
+      "path": "contracts-and-trajectories/table-iii/inputs/trajectories/h_right_carry_joined.json",
+      "sha256": "d835727d9b4728a9e320ae240bf3b9c3aeaa813e658e19085a5c09d9ea6c06c2"
+    },
+    {
+      "bytes": 21030,
+      "path": "contracts-and-trajectories/table-iii/inputs/trajectories/h_right_to_handover__r_right_enter.json",
+      "sha256": "e9503ff3dd58c5512cda2601a048c36182b81d9995895a4ce74087091c298c47"
+    },
+    {
+      "bytes": 21072,
+      "path": "contracts-and-trajectories/table-iii/inputs/trajectories/r_left_exit.json",
+      "sha256": "a540938ca530a4a7f135b08f709143428113c3d805e9d247826bb3de4bb82bd2"
+    },
+    {
+      "bytes": 21057,
+      "path": "contracts-and-trajectories/table-iii/inputs/trajectories/r_right_exit.json",
+      "sha256": "ee29db0d63e4807347f17143dc61e7dff29b111e0416cec444c70013bd1616e7"
+    },
+    {
+      "bytes": 4046,
+      "path": "contracts-and-trajectories/c115/C115_INPUT_BINDINGS.json",
+      "sha256": "e36da67163ca52e9ad92e31e8ce8ba815d05fa8ce453c421f3b65b132fefa34e"
+    },
+    {
+      "bytes": 1239,
+      "path": "contracts-and-trajectories/c115/README.md",
+      "sha256": "ab0236c44182e81a4ee50de72cb6665f3ef19aba963911b29d3e57b3f43fd772"
+    },
+    {
+      "bytes": 3425,
+      "path": "contracts-and-trajectories/c115/inputs/campaign/CONTRACT.json",
+      "sha256": "8344b62ff340d87873393afab98b9da759d82839888bfbb96f9d70ab68931221"
+    },
+    {
+      "bytes": 4121,
+      "path": "contracts-and-trajectories/c115/inputs/campaign/ERROR_BUDGET.json",
+      "sha256": "27245c8e58058a1408f02786491667652f1168a5af1a7c67fca9162ba1e6e619"
+    },
+    {
+      "bytes": 12737,
+      "path": "contracts-and-trajectories/c115/inputs/campaign/H_R_INDEPENDENT_OBSERVER_SPEC.json",
+      "sha256": "a2558286733827fe89c7c27f4bf9676b7c4c0f56e0ea660c5bcc44308f644997"
+    },
+    {
+      "bytes": 6170,
+      "path": "contracts-and-trajectories/c115/inputs/campaign/PAIR_SCOPE.json",
+      "sha256": "9c01c6d52d0499d77af8d289dd51603b9b88f98250813acd484432ba379a483e"
+    },
+    {
+      "bytes": 4712,
+      "path": "contracts-and-trajectories/c115/inputs/campaign/R_FIVE_PLACEMENT_VARIANT_BOUND.json",
+      "sha256": "d13dcaf1eedd38a59f41fa796969c7f212fb2977f4f585a0bf20123d9db68d45"
+    },
+    {
+      "bytes": 9281,
+      "path": "contracts-and-trajectories/c115/inputs/campaign/TRIAL_SCHEDULE_15.json",
+      "sha256": "c9944560c8f371d1393fb4652ad531cd1d6a6f95a0c2f5a07c3b3e12f3e38d2f"
+    },
+    {
+      "bytes": 500,
+      "path": "contracts-and-trajectories/c115/inputs/controlled-programs/EXP-S4-002-P044.py",
+      "sha256": "ba63abadf25637123fca1bb6dd48f8517af777b2717b0aa7e65a1b16a690e81d"
+    },
+    {
+      "bytes": 470,
+      "path": "contracts-and-trajectories/c115/inputs/controlled-programs/EXP-S4-002-P053.py",
+      "sha256": "e1c3832cf753c17e3819da63c78814f3ff679a055ca5e48a78f22489da52a786"
+    },
+    {
+      "bytes": 473,
+      "path": "contracts-and-trajectories/c115/inputs/controlled-programs/EXP-S4-002-P060.py",
+      "sha256": "bd0ae80c1a6d2e9f0613666ff1a0b983bf6f97b6e07bf47b09ed5c3412c62189"
+    },
+    {
+      "bytes": 124,
+      "path": "contracts-and-trajectories/c115/inputs/far_world_sentinel.tsv",
+      "sha256": "d7246ecddc9da150e27a60ce4cb550f55f8b0964db69ef611c079e85bb184d7a"
+    },
+    {
+      "bytes": 119,
+      "path": "contracts-and-trajectories/c115/inputs/no_attachments.tsv",
+      "sha256": "ff731bd8c97844fb8dee9bb0133c687c586350b3752f251242c71c708f585f42"
+    },
+    {
+      "bytes": 37501,
+      "path": "contracts-and-trajectories/c115/model/ROBOT_DESCRIPTION.urdf",
+      "sha256": "c2b12f61c76d528805ea533714744f4778d0c71e8111efe94fa9d1477e0713fe"
+    },
+    {
+      "bytes": 8495,
+      "path": "contracts-and-trajectories/c115/model/ROBOT_DESCRIPTION_SEMANTIC.srdf",
+      "sha256": "c9ff981f67c9ece3ae75c9b3bdde6c5e5c54ac916d89b65bc9a6f44d0c504582"
+    },
+    {
+      "bytes": 13284,
+      "path": "contracts-and-trajectories/c115/model/openarm_description/assets/end_effector/parallel_link/meshes/collision/finger.stl",
+      "sha256": "8e96e1314618cf434908f70df78f68dd2b049c03538964e8d41fc99abe41564d"
+    },
+    {
+      "bytes": 18284,
+      "path": "contracts-and-trajectories/c115/model/openarm_description/assets/end_effector/parallel_link/meshes/collision/hand.stl",
+      "sha256": "8e5d373ebbd3fd001b506058644062ad71a68f1ced5ca5d5ed0f6de20137956b"
+    },
+    {
+      "bytes": 40284,
+      "path": "contracts-and-trajectories/c115/model/openarm_description/assets/robot/openarm_v1.0/mesh/arm/collision/link0_symp.stl",
+      "sha256": "baf52578e1d9e6225f3818cae82b6074a0b948d3cef8e9a3e6dfafca78507590"
+    },
+    {
+      "bytes": 17784,
+      "path": "contracts-and-trajectories/c115/model/openarm_description/assets/robot/openarm_v1.0/mesh/arm/collision/link1_symp.stl",
+      "sha256": "066113d13d5cc85098609003bc7ebb73c570015350877f5ed7162ef1b6601852"
+    },
+    {
+      "bytes": 13384,
+      "path": "contracts-and-trajectories/c115/model/openarm_description/assets/robot/openarm_v1.0/mesh/arm/collision/link2_symp.stl",
+      "sha256": "382ab32e4ae0880e8a1512e7a6ca6ce1f478a6c125db4efa977429ffb1d6b02a"
+    },
+    {
+      "bytes": 156984,
+      "path": "contracts-and-trajectories/c115/model/openarm_description/assets/robot/openarm_v1.0/mesh/arm/collision/link3_symp.stl",
+      "sha256": "00c908cefab152c00416a570a48bf9aafed1549085f19ff2d882dc3f355d9f59"
+    },
+    {
+      "bytes": 1139984,
+      "path": "contracts-and-trajectories/c115/model/openarm_description/assets/robot/openarm_v1.0/mesh/arm/collision/link4_symp.stl",
+      "sha256": "b54883b8c7c96268a68a5879f95998a53ad0b0c4fe74325fad63a6caef669c73"
+    },
+    {
+      "bytes": 751484,
+      "path": "contracts-and-trajectories/c115/model/openarm_description/assets/robot/openarm_v1.0/mesh/arm/collision/link5_symp.stl",
+      "sha256": "678a2802906eff7b45a836d2f34a2d8e51def50b6599376968f888e05c72739e"
+    },
+    {
+      "bytes": 30084,
+      "path": "contracts-and-trajectories/c115/model/openarm_description/assets/robot/openarm_v1.0/mesh/arm/collision/link6_symp.stl",
+      "sha256": "95529bec23733476dfdbbb266c7db0d25a473a568de73c8337a82440fe4a9ac3"
+    },
+    {
+      "bytes": 23884,
+      "path": "contracts-and-trajectories/c115/model/openarm_description/assets/robot/openarm_v1.0/mesh/arm/collision/link7_symp.stl",
+      "sha256": "434f207f21f75f5f0bd604e390b8e5bc7b62b619265222846770e06b3f9b5cfb"
+    },
+    {
+      "bytes": 293284,
+      "path": "contracts-and-trajectories/c115/model/openarm_description/assets/robot/openarm_v1.0/mesh/body/collision/body_link0_symp.stl",
+      "sha256": "6c18bbf7e86b03e3faf802e61e8eb438b38dcbcf146d97cffe6e808c65e9a72a"
+    },
+    {
+      "bytes": 692,
+      "path": "contracts-and-trajectories/qualification/README.md",
+      "sha256": "8627164b6b8efd4ae8a7d4b3a66611fd8c2e8891eada63a9fb9f7266a6bed63b"
+    },
+    {
+      "bytes": 1440,
+      "path": "contracts-and-trajectories/qualification/reference-contract/geometry_policy.json",
+      "sha256": "d3c52aaaacadffb2615c8f59b6feec18b23a1db4879c2ba3c801b8e0128a46a1"
+    },
+    {
+      "bytes": 1062,
+      "path": "contracts-and-trajectories/qualification/reference-contract/logical_event_schema.json",
+      "sha256": "42831b3fe884920b37156292b558ecba5db43cacc352e8614c59c459a4b370f6"
+    },
+    {
+      "bytes": 1065,
+      "path": "contracts-and-trajectories/qualification/reference-contract/logical_oracle_rules.json",
+      "sha256": "2634b198d99bc8437c98727ced73887d3293c4a5e230de0cbf116702173850ee"
+    },
+    {
+      "bytes": 1034,
+      "path": "contracts-and-trajectories/qualification/reference-contract/model.json",
+      "sha256": "681883708614c393f3372628bb399d1feab3af645135095b82ecbbebfe135a51"
+    },
+    {
+      "bytes": 767,
+      "path": "contracts-and-trajectories/qualification/reference-contract/object_resource_semantics.json",
+      "sha256": "6f9833f6c5d6671ee0a6826f9e944a8f0bac6ac97cfa72a830ed256e5294410d"
+    },
+    {
+      "bytes": 927,
+      "path": "contracts-and-trajectories/qualification/reference-contract/scene.json",
+      "sha256": "d2a3c53e7f1af887bfa3e633c280b017504c68f21fdd0289cb76ce5e841cfe97"
+    },
+    {
+      "bytes": 4811,
+      "path": "contracts-and-trajectories/qualification/reference-contract/trajectories/left_approach.json",
+      "sha256": "397771ebfd945851aa0cff681fe3cee96b72dc3775703aa8493803fb90c837da"
+    },
+    {
+      "bytes": 752,
+      "path": "contracts-and-trajectories/qualification/reference-contract/trajectories/left_approach.sidecar.json",
+      "sha256": "f66f5a13a9b03d2e5fc2fd8ea504d50799ae55b514b7e8fc29fbf412feab992a"
+    },
+    {
+      "bytes": 2684,
+      "path": "contracts-and-trajectories/qualification/reference-contract/trajectories/left_retreat.json",
+      "sha256": "068689c4eedf23894addcd228602a5bffdbb82df1029b5ea24df820fcce39dac"
+    },
+    {
+      "bytes": 751,
+      "path": "contracts-and-trajectories/qualification/reference-contract/trajectories/left_retreat.sidecar.json",
+      "sha256": "e41f0c536869acabad0cedf51b05a67e26c2fcc3317d45f1d8203d2520b97381"
+    },
+    {
+      "bytes": 4852,
+      "path": "contracts-and-trajectories/qualification/reference-contract/trajectories/right_approach.json",
+      "sha256": "6cea1dcf1a9d8ffab50422561fb5de534f0feea76d82502481c92e835615f77b"
+    },
+    {
+      "bytes": 753,
+      "path": "contracts-and-trajectories/qualification/reference-contract/trajectories/right_approach.sidecar.json",
+      "sha256": "1604a2b4cc9c0febf525ea23e030b17a413b8320c1d6387c6da6896c1a4f08d8"
+    },
+    {
+      "bytes": 2709,
+      "path": "contracts-and-trajectories/qualification/reference-contract/trajectories/right_retreat.json",
+      "sha256": "27c255ba3f31abc048410b5f767d55381b7f4764b2f53e080f99616902d15816"
+    },
+    {
+      "bytes": 752,
+      "path": "contracts-and-trajectories/qualification/reference-contract/trajectories/right_retreat.sidecar.json",
+      "sha256": "af483b014c045fc3e3a58d285f3b6b77491eb4d0888e2bd2348f9d540da9b2eb"
+    },
+    {
+      "bytes": 1908,
+      "path": "contracts-and-trajectories/external-retrieval/README.md",
+      "sha256": "f01eb0fa2e765e84c2e81f44df779f8012bc1bd54243d5d644be6f6b9f300930"
+    },
+    {
+      "bytes": 11357,
+      "path": "contracts-and-trajectories/external-retrieval/openarm_description_LICENSE.txt",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "bytes": 11358,
+      "path": "contracts-and-trajectories/external-retrieval/openarm_ros2_LICENSE.txt",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "bytes": 916,
+      "path": "final-build/native-probe-source/CMakeLists.txt",
+      "sha256": "9a390c21a8a70e3a931985faf2069ea3406dd8cb24a07f83d54ca99dcf559b97"
+    },
+    {
+      "bytes": 15299,
+      "path": "final-build/native-probe-source/openarm_fcl_pair_probe.cpp",
+      "sha256": "20556f76fa61d3f8925f267bb8de439653a2f22a9e0f9160178406b14412450b"
+    },
+    {
+      "bytes": 7067,
+      "path": "final-build/native-probe-source/openarm_fcl_pair_probe_server.cpp",
+      "sha256": "8a149032b12f190d3ce1d96669d873dd17468fc1f60d7e77f140f753decc5fbc"
+    }
+  ],
+  "schema": "bisafecode.public.native-input-index/v1",
+  "selection_boundary": "Includes reviewer-useful frozen programs, schedules, trajectories, contracts, model assets, licenses, and native probe source. Private raw records, archive identities, Git identities, and duplicated engineering logs are omitted."
+}

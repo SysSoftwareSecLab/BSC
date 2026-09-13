@@ -1,0 +1,28 @@
+{
+  "evidence_status": "FREEZE_ONLY_NOT_FORMAL_STAGE4_EVIDENCE",
+  "frame": "controlled_world",
+  "handover_zone": {
+    "max_xyz_m": [0.12, 0.42, 0.62],
+    "min_xyz_m": [-0.12, 0.18, 0.28]
+  },
+  "initial_object_centers_m": {
+    "payload_alpha": [0.0, -0.35, 0.30],
+    "payload_beta": [0.0, -0.50, 0.30]
+  },
+  "pair_policy": {
+    "allowed_contact": [],
+    "checked_pairs": [
+      ["left_tool_sphere", "right_tool_sphere"],
+      ["left_tool_sphere", "payload_alpha"],
+      ["left_tool_sphere", "payload_beta"],
+      ["payload_alpha", "right_tool_sphere"],
+      ["payload_beta", "right_tool_sphere"]
+    ]
+  },
+  "resource_regions": {
+    "fixture_alpha": {"max_xyz_m": [0.18, 0.30, 0.40], "min_xyz_m": [-0.18, 0.10, 0.20]},
+    "tool_beta": {"max_xyz_m": [0.50, 0.20, 0.50], "min_xyz_m": [0.28, -0.05, 0.20]}
+  },
+  "scene_id": "bisafecode-controlled-scene-v1",
+  "schema": "bisafecode.stage4.controlled.scene/v1"
+}

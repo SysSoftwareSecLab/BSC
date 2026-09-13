@@ -1,0 +1,83 @@
+{
+  "arm": "right",
+  "duration_ns": 1000000000,
+  "interpolation": "quintic",
+  "joint_names": [
+    "openarm_right_joint1",
+    "openarm_right_joint2",
+    "openarm_right_joint3",
+    "openarm_right_joint4",
+    "openarm_right_joint5",
+    "openarm_right_joint6",
+    "openarm_right_joint7"
+  ],
+  "label": "C1_right_CURRENT_MODEL",
+  "point_count": 2,
+  "points": [
+    {
+      "accelerations_rad_s2": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "positions_rad": [
+        -0.09826644262526693,
+        1.220198580141041,
+        -1.0530837128710313,
+        1.86269564320559,
+        -0.25004085635813855,
+        0.6104526707197764,
+        -0.48227706397778264
+      ],
+      "time_from_start_ns": 0,
+      "velocities_rad_s": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "accelerations_rad_s2": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "positions_rad": [
+        -0.09826644262526693,
+        1.220198580141041,
+        -1.0530837128710313,
+        1.86269564320559,
+        -0.35004085635813853,
+        0.7104526707197764,
+        -0.5822770639777827
+      ],
+      "time_from_start_ns": 1000000000,
+      "velocities_rad_s": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "public_model_file_sha256": "c2b12f61c76d528805ea533714744f4778d0c71e8111efe94fa9d1477e0713fe",
+  "schema": "bisafecode.frozen-joint-trajectory.v1",
+  "source_phase": "C1",
+  "trajectory_content_id": "50de688ec88b670b446af7c855dccb83f532919357d7093abc645c87f0348fbe",
+  "units": "rad,rad/s,rad/s^2,ns"
+}

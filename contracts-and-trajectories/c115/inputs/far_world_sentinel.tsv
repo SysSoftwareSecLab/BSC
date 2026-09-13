@@ -1,0 +1,2 @@
+scenario	object_id	center_x	center_y	center_z	size_x	size_y	size_z
+*	empty_world_far_sentinel	100	100	100	0.001	0.001	0.001

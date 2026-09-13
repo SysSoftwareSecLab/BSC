@@ -1,0 +1,84 @@
+{
+  "families": {
+    "C": {
+      "controlled_safe_program": {
+        "path": "contracts-and-trajectories/c115/inputs/controlled-programs/EXP-S4-002-P044.py",
+        "public_file_sha256": "ba63abadf25637123fca1bb6dd48f8517af777b2717b0aa7e65a1b16a690e81d"
+      },
+      "dense_reference_summary": {
+        "path": "results/final-revalidation/c115/dense-summary/summary.json",
+        "public_file_sha256": "53c7e2b8476bc23e26f2a914a5c5d0e1e3e5b016ef2afbb2b20ec9243c080192"
+      },
+      "slot_count": 5
+    },
+    "H": {
+      "observer_specification": {
+        "path": "contracts-and-trajectories/c115/inputs/campaign/H_R_INDEPENDENT_OBSERVER_SPEC.json",
+        "public_file_sha256": "a2558286733827fe89c7c27f4bf9676b7c4c0f56e0ea660c5bcc44308f644997"
+      },
+      "safe_program": {
+        "path": "contracts-and-trajectories/table-iii/inputs/sources/H_SAFE_HANDOVER.py",
+        "public_file_sha256": "077b286ca3af15ed074210c7aa836b848348770f6ac79ebea17af945f39152ab"
+      },
+      "slot_count": 5,
+      "table_iii_case_inputs": {
+        "case_id": "I4F-H-SAFE-T3",
+        "path": "contracts-and-trajectories/table-iii/inputs/CASE_INPUT_BINDINGS.json",
+        "public_file_sha256": "7c0c6c7334f6112d2aabe075b217ae90a8737bfe59d9b9de6c814cd748ad3003"
+      }
+    },
+    "R": {
+      "historical_model_relative_clearance": {
+        "path": "hardware-evidence/R_MODEL_RELATIVE_CLEARANCE_BOUND.json",
+        "public_file_sha256": "87a7681779b69a546bd2e399b82e18611c6b1e37e082deecbe95cde6a6f173cf"
+      },
+      "placement_bound": {
+        "path": "contracts-and-trajectories/c115/inputs/campaign/R_FIVE_PLACEMENT_VARIANT_BOUND.json",
+        "public_file_sha256": "d13dcaf1eedd38a59f41fa796969c7f212fb2977f4f585a0bf20123d9db68d45"
+      },
+      "safe_program": {
+        "path": "contracts-and-trajectories/table-iii/inputs/sources/R_SAFE_SEQUENTIAL_RESOURCE.py",
+        "public_file_sha256": "2f14193f75bf1d32a0c0868731ae1901b47b72fa79d42756116b0088fb8a223d"
+      },
+      "slot_count": 5,
+      "table_iii_case_inputs": {
+        "case_id": "I4F-R-SAFE-T4",
+        "path": "contracts-and-trajectories/table-iii/inputs/CASE_INPUT_BINDINGS.json",
+        "public_file_sha256": "7c0c6c7334f6112d2aabe075b217ae90a8737bfe59d9b9de6c814cd748ad3003"
+      }
+    }
+  },
+  "fixed_slot_denominator": 15,
+  "schedule": {
+    "path": "contracts-and-trajectories/c115/inputs/campaign/TRIAL_SCHEDULE_15.json",
+    "public_file_sha256": "c9944560c8f371d1393fb4652ad531cd1d6a6f95a0c2f5a07c3b3e12f3e38d2f"
+  },
+  "schema": "bisafecode.public.c115-input-bindings/v1",
+  "shared_inputs": {
+    "contract": {
+      "path": "contracts-and-trajectories/c115/inputs/campaign/CONTRACT.json",
+      "public_file_sha256": "8344b62ff340d87873393afab98b9da759d82839888bfbb96f9d70ab68931221"
+    },
+    "error_budget": {
+      "path": "contracts-and-trajectories/c115/inputs/campaign/ERROR_BUDGET.json",
+      "public_file_sha256": "27245c8e58058a1408f02786491667652f1168a5af1a7c67fca9162ba1e6e619"
+    },
+    "geometry_policy": {
+      "path": "contracts-and-trajectories/qualification/reference-contract/geometry_policy.json",
+      "public_file_sha256": "d3c52aaaacadffb2615c8f59b6feec18b23a1db4879c2ba3c801b8e0128a46a1"
+    },
+    "pair_scope": {
+      "path": "contracts-and-trajectories/c115/inputs/campaign/PAIR_SCOPE.json",
+      "public_file_sha256": "9c01c6d52d0499d77af8d289dd51603b9b88f98250813acd484432ba379a483e"
+    },
+    "srdf": {
+      "path": "contracts-and-trajectories/c115/model/ROBOT_DESCRIPTION_SEMANTIC.srdf",
+      "public_file_sha256": "c9ff981f67c9ece3ae75c9b3bdde6c5e5c54ac916d89b65bc9a6f44d0c504582"
+    },
+    "urdf": {
+      "path": "contracts-and-trajectories/c115/model/ROBOT_DESCRIPTION.urdf",
+      "public_file_sha256": "c2b12f61c76d528805ea533714744f4778d0c71e8111efe94fa9d1477e0713fe"
+    }
+  },
+  "wrapper_boundary": "The internal campaign wrapper and its runtime-generated gripper trajectory digests are not distributed. This map binds included inputs and accepted records; it is not a turnkey campaign runner."
+}

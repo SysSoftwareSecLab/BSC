@@ -1,0 +1,159 @@
+{
+  "H": {
+    "claim_limit": "No force or grasp-force claim; receiver grasp is evidenced by ordered gripper telemetry plus independent receiver-only board retention, not by video force inference.",
+    "fail_events": [
+      "sender release before receiver close",
+      "drop or visible board escape",
+      "wrong authority order",
+      "gripper front edge is visibly outside a required physical insertion band",
+      "controller/gripper failure or residual-adjusted pair failure"
+    ],
+    "pass_boundary": "All required events, ordering, durations, board-pose envelope, controller/gripper dispositions, trace coverage and residual-adjusted non-intentional pair bounds pass.",
+    "required_scored_events": [
+      "sender grasp established before receiver close",
+      "the original video shows a continuous dual-grasp interval spanning at least 45 frame transitions, while the controller/gripper trace independently shows the frozen dual-grasp hold",
+      "receiver close precedes sender release",
+      "after sender release the original video shows receiver-only retention spanning at least 75 frame transitions, while the controller/gripper trace independently shows the frozen receiver-only hold",
+      "qualified carry/retreat completes without visible drop",
+      "sender front edge is visibly inside the frozen 34-to-36-mm physical band before close, and receiver front edge is visibly inside the frozen 58-to-62-mm physical band before authority transfer"
+    ],
+    "required_visible_entities": [
+      "complete paperboard, its 119-mm centreline and its prospectively frozen insertion-depth marks",
+      "both grippers at transfer",
+      "fixed support marker",
+      "receiver-only carry observation region"
+    ],
+    "unknown_events": [
+      "required entity or event is occluded",
+      "required marks, gripper edge or retention interval are occluded",
+      "the original video frame sequence or duration metadata is discontinuous or unreadable",
+      "board attachment cannot be bounded by the required physical bands",
+      "trace or pair coverage is incomplete without an independently observed failure"
+    ]
+  },
+  "R": {
+    "claim_limit": "Operator placement alone is not an independent BASE_SEATED PASS. The fixed phone independently records visible containment, support, ownership order and stationary dwell, but does not produce a metric 6-DoF pose.",
+    "fail_events": [
+      "wrong ownership order or simultaneous occupancy",
+      "foam outside the frozen placement/support envelope",
+      "foam crosses the physical polygon, visibly tilts, slips or loses support",
+      "controller failure or residual-adjusted pair failure"
+    ],
+    "pass_boundary": "The fixed owner sequence, BASE_SEATED observer bounds, no-simultaneous-occupancy rule, controller traces and residual-adjusted non-intentional pair bounds all pass.",
+    "required_scored_events": [
+      "left-only occupancy",
+      "clear interval with no arm occupying the resource zone",
+      "foam bottom remains on the qualified support plane and inside the frozen placement polygon",
+      "foam remains visibly inside the frozen physical polygon, bottom face visibly supported, and visibly stationary for at least 30 consecutive frame transitions; the controller trace independently shows the frozen resource dwell",
+      "right-only occupancy begins only after qualified BASE_SEATED"
+    ],
+    "required_visible_entities": [
+      "complete foam resource",
+      "frozen physical placement polygon and the visible support edge",
+      "left and right occupancy regions"
+    ],
+    "unknown_events": [
+      "support contact, polygon or required foam edge is occluded",
+      "the original video frame sequence or duration metadata is discontinuous or unreadable",
+      "BASE_SEATED containment/stationary duration cannot be bounded",
+      "trace or pair coverage is incomplete without an independently observed failure"
+    ]
+  },
+  "analyzer": {
+    "path": "WITHHELD_NOT_PUBLICLY_BOUND",
+    "qualification": "Synthetic metric-camera qualification is retained as tool evidence only. Real intrinsic attempts failed; this analyzer is not part of the final metric error budget."
+  },
+  "camera_metric_calibration_disposition": {
+    "attempt_1_rms_px": 2.4072583112924124,
+    "attempt_2_rms_px": 1.9337192549396238,
+    "attempt_3_original_1080p_rms_px": 5.89151595654957,
+    "attempt_3_path": "OMITTED_COMPACT_HISTORICAL_EVIDENCE",
+    "decision": "Metric camera calibration is closed NOT_QUALIFIED. No further checkerboard capture, camera-calibration tool work or pixel-to-millimetre claim is allowed for this campaign.",
+    "pre_frozen_metric_gate_px": 0.8
+  },
+  "campaign_revision": "C115-PROSPECTIVE-R2",
+  "categorical_boundary_rule": {
+    "PASS_visibility_condition": "The required edge/object is clearly visible and strictly inside the applicable physical boundary throughout the scored observation interval.",
+    "UNKNOWN_condition": "Any required edge touches a boundary line, is blurred across it, is occluded, or cannot be visually separated from it.",
+    "metric_camera_required": false,
+    "repeat_or_replacement_after_unknown": false
+  },
+  "common_identity": {
+    "camera": "one fixed Apple iPhone 16 Pro Max, rear main camera, original 1080x1920 at 30 fps, unchanged lens/zoom/focus/exposure and mounting within a family block",
+    "payload_resource_marker": "optional identity marker only; its mass remains part of object identity if attached, but no marker-derived metric pose enters a scored gate",
+    "raw_media": "original, unedited and uncompressed video retained for every H/R slot",
+    "scored_combination": "Observer evidence, controller/gripper traces and actual-state FCL must each pass their own frozen rule; no millisecond-level cross-device fusion is claimed, and video alone never certifies hidden-surface collision or force",
+    "support_marker": "optional identity marker only; no ArUco-derived metric pose enters a scored gate",
+    "time_alignment": "No metric phone-to-host alignment is used. Original video adjudicates visible order, retention, occupancy and within-video duration; controller/gripper/joint traces are adjudicated on their own host timeline. A visible slot identity/start slate binds media identity but does not claim sub-frame synchronization."
+  },
+  "created_date": "2026-08-29",
+  "evidence_protocol_boundary": "The evidence protocol does not treat a camera as required metric instrumentation. After three retained checkerboard analyses failed the pre-frozen metric intrinsic gate, this campaign uses one fixed external phone only as an independent categorical H/R event, retention and occupancy observer. Metric placement bounds come from prospectively frozen physical marks or boxes plus robot/controller telemetry, not pixel-to-millimetre conversion.",
+  "freeze_rule": "No checkerboard, pixel-to-mm, card-pair retuning or new camera protocol is permitted. Occlusion or boundary ambiguity is UNKNOWN and is not replaced.",
+  "h_camera_view_entry": {
+    "final_condition": "both arms stationary at the retained H sender/receiver view pose and both grippers open",
+    "path": "OMITTED_COMPACT_HISTORICAL_EVIDENCE",
+    "remaining": "Completed by h_static_view_qualification; no additional robot motion was needed for the image.",
+    "scored_trial": false,
+    "status": "PASS_EMPTY_H_CAMERA_VIEW_POSE_REACHED_AND_STOPPED"
+  },
+  "h_static_view_qualification": {
+    "accepted_fact": "One original 5712 x 4284 JPEG simultaneously shows both open grippers and the complete horizontal transfer region, without personal or school identifiers.",
+    "paperboard_disposition": "No board is present in the still. The six insertion marks therefore remain a per-slot staged-frame and continuous-video visibility gate; occlusion or blur is UNKNOWN.",
+    "path": "OMITTED_COMPACT_HISTORICAL_EVIDENCE",
+    "remaining": "Keep this direction fixed for the original continuous H video and hash-bind it to the slot.",
+    "status": "PASS_EMPTY_STATIC_VIEW_GEOMETRY__CONTINUOUS_VIDEO_MARK_VISIBILITY_PENDING"
+  },
+  "open_inputs": [
+    "runtime-only: before each H/R slot, the fixed view and visible slot slate must pass",
+    "runtime-only: after each H/R slot, retain and hash the original continuous video"
+  ],
+  "physical_marking_receipt": {
+    "effect": "physical addition is no longer an open preparation action; H/R static view geometry is qualified and only final continuous-media identity rules remain",
+    "h_marks": "left 34/35/36 mm and right 58/60/62 mm receiver-edge bands operator-reported complete",
+    "path": "OMITTED_COMPACT_HISTORICAL_EVIDENCE",
+    "r_polygon": "centered nominal 85 x 85 mm inner square operator-reported complete",
+    "status": "PROVISIONAL_OPERATOR_REPORTED_COMPLETE__NOT_INDEPENDENTLY_VERIFIED"
+  },
+  "physical_metric_inputs": {
+    "boundary": "Retained measurements are design inputs. The operator reports that the six H receiver-edge lines and centered nominal 85 x 85 mm R inner square are physically complete. Video remains categorical: visibly inside is classifiable; boundary contact, blur or occlusion is UNKNOWN. No pixel-to-millimetre uncertainty is inferred.",
+    "foam": "75 x 75 x 45 mm, 10.0 g; existing outer placement box approximately 89 x 89 mm; ruler resolution reported as 1 mm for these retained measurements",
+    "paperboard": "237 x 170 x 1 mm, 20.0 g; left insertion observations 36,36,36,34,36 mm; receiver front-edge observation 60 mm; ruler resolution reported as 1 mm for these retained measurements",
+    "right_gripper_closed_home": "Validated live-feedback identity band [-0.0005, 0.0001] m; the underlying calibration record is omitted from this compact projection."
+  },
+  "privacy_and_publication_boundary": {
+    "accidental_identity_rule": "If a pre-campaign calibration recording captures identifying information, repeat the no-motion recording before campaign freeze instead of editing the file and calling it original.",
+    "capture_rule": "Exclude faces, names, school names/logos, badges, student IDs, room signs, readable screens, email/terminal content and identifying reflections before recording. A hand may briefly operate the black/white sync card without showing identifying clothing or features.",
+    "publication_rule": "Any published frame/video is a separately derived crop or redacted copy linked to the private original by hash; the derived copy never replaces the original evidence.",
+    "raw_evidence_rule": "Original scored evidence remains unedited in controlled storage and is not automatically a publication artifact."
+  },
+  "r_static_view_qualification": {
+    "accepted_fact": "One near-overhead frame simultaneously shows the complete foam, all four 85-mm square boundaries and the paper support area.",
+    "foam_thickness_disposition": "The 45-mm foam thickness creates a visible shadow but does not invalidate categorical boundary visibility.",
+    "path": "OMITTED_COMPACT_HISTORICAL_EVIDENCE",
+    "remaining": "Use this fixed direction for the original continuous R video and hash-bind it to the slot.",
+    "status": "PASS_STATIC_VIEW_GEOMETRY__CONTINUOUS_VIDEO_IDENTITY_PENDING"
+  },
+  "r_view_attempt_01": {
+    "next_adjustment": "Clamp the phone nearly overhead, keep the entire square and front support edge in frame, and record once without moving the phone or robot.",
+    "path": "OMITTED_COMPACT_HISTORICAL_EVIDENCE",
+    "reason": "The 22.218-s phone video is handheld and does not keep all four square boundaries visible in one fixed view.",
+    "status": "NOT_QUALIFIED_AS_FIXED_OBSERVER__VALID_FRAMING_PREVIEW"
+  },
+  "review_projection_note": "Historical pre-start status fields are retained as campaign metadata; final outcomes are recorded under results/final-revalidation/c115/.",
+  "robot_boundary": {
+    "action_client_created": false,
+    "authorized": false,
+    "goal_send_count": 0,
+    "gripper_command_count": 0,
+    "motion_command_count": 0,
+    "ros_contacted": false
+  },
+  "schema": "bisafecode.exp-s4-030.c115-prospective-r2-hr-independent-observer/v1",
+  "status": "FROZEN_CATEGORICAL_FIXED_PHONE_AND_PHYSICAL_MARK_RULES__PER_SLOT_MEDIA_PENDING",
+  "technology_change_rule": "An equivalent fixture, switch or other observer may replace this draft only before all 15 conditions are frozen and before C-01. After the first scored motion the observer technology and rules are immutable.",
+  "time_sync_attempt_01_disposition": {
+    "effect": "No detector retuning or repeat capture. Within-video categorical evidence and host controller evidence are evaluated separately.",
+    "path": "OMITTED_COMPACT_HISTORICAL_EVIDENCE",
+    "status": "RETAINED_UNQUALIFIED_NOT_USED_BY_SCORED_GATE__NO_REPEAT"
+  }
+}

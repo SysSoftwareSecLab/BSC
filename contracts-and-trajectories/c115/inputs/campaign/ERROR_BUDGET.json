@@ -1,0 +1,75 @@
+{
+  "campaign_revision": "C115-PROSPECTIVE-R2",
+  "claim_boundary": {
+    "not_permitted": "Manufacturer-certified absolute robot accuracy, accredited dimensional metrology, force sensing, arbitrary payloads or generalization beyond these 15 conditions.",
+    "paper_disclosure": "The 0.75-mm C and 1.0-mm H/R allowances are pretrial engineering bounds derived from retained ruler-scale cross-checks and deliberate upward rounding; they are not manufacturer specifications. All raw readings, actual-state minima and limitations must be reported.",
+    "permitted": "Prospectively residual-adjusted model/telemetry evidence under the fixed robot, meshes, physical marks, payload/resource identities and observer rules in this package."
+  },
+  "common_rules": {
+    "actual_joint_tracking": "evaluated by actual-state FCL and reported directly; never double-subtracted from the same actual-state distance",
+    "backend_numeric": "included inside each rounded family residual rather than added as a hidden extra term",
+    "controller": "0.09-rad first-point acceptance, 0.10-rad path tolerance and 0.12-rad goal tolerance are distinct; controller success never overrides a geometry or observer failure",
+    "sample_interval": "host gap must be <=25 ms; every retained endpoint plus 0.01-rad dense interpolation is checked; any incomplete coverage is UNKNOWN",
+    "scene_change": "any reassembly, changed link shell, changed support, changed object identity or unplanned obstacle invalidates the bound before send"
+  },
+  "created_date": "2026-08-29",
+  "families": {
+    "C": {
+      "derivation": {
+        "absolute_readout_model_difference_mm": 0.051014163819452,
+        "frozen_total_mm": 0.75,
+        "half_division_mm": 0.5,
+        "model_cross_check_mm": 10.948985836180547,
+        "ruler_smallest_division_mm": 1.0,
+        "ten_physical_readings_mm": [
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11
+        ],
+        "unallocated_upward_rounding_mm": 0.198985836180548
+      },
+      "frozen_residual_m": 0.00075,
+      "nominal_full_transition_minimum_m": 0.010797686,
+      "pass_precondition": "the live-matched full desired transition and each actual-state trace must independently retain >10 mm after this fixed deduction",
+      "payload": "NONE",
+      "required_clearance_m": 0.01,
+      "residual_adjusted_lower_bound_m": 0.010047686
+    },
+    "H": {
+      "frozen_residual_m": 0.001,
+      "nominal_limiting_clearance_m": 0.0033848063126562748,
+      "object_pose_rule": "the five 34..36-mm sender and 58..62-mm receiver variants are explicit screened sets; physical marks and categorical video bind placement instead of adding an unmeasured 6-DoF claim",
+      "payload": "237x170x1-mm paperboard, measured 20.0 g",
+      "required_non_intentional_clearance_m": 0.0,
+      "residual_adjusted_lower_bound_m": 0.0023848063126562747
+    },
+    "R": {
+      "frozen_residual_m": 0.001,
+      "nominal_robot_foam_minimum_m": 0.08302007036030645,
+      "nominal_self_minimum_m": 0.005880100712494785,
+      "object_pose_rule": "the 75x75x45-mm foam and all +/-3-mm placements remain inside the already screened conservative 90x90x50-mm world envelope; categorical fixed video verifies support and containment",
+      "payload": "75x75x45-mm foam, measured 10.0 g",
+      "required_non_intentional_clearance_m": 0.0,
+      "residual_adjusted_robot_foam_lower_bound_m": 0.08202007036030645,
+      "residual_adjusted_self_lower_bound_m": 0.004880100712494785
+    }
+  },
+  "review_projection_note": "Historical pre-start status fields are retained as campaign metadata; final outcomes are recorded under results/final-revalidation/c115/.",
+  "robot_boundary": {
+    "action_client_created": false,
+    "goal_send_count": 0,
+    "motion_command_count": 0,
+    "ros_graph_contacted": false,
+    "ros_imported": false,
+    "scored_slots_started": 0
+  },
+  "schema": "bisafecode.exp-s4-030.c115-prospective-r2-error-budget/v1",
+  "status": "FROZEN_NUMERIC_ENGINEERING_RESIDUALS__NO_NULLS__PENDING_LIVE_ZERO_SEND"
+}

@@ -1,0 +1,28 @@
+{
+  "common_budget_per_program_per_method": {
+    "max_model_time_ns": 5000000000,
+    "max_resident_memory_bytes": 4294967296,
+    "max_states": 100000,
+    "max_transitions": 500000,
+    "wall_timeout_seconds": 120
+  },
+  "evidence_status": "FREEZE_ONLY_NOT_FORMAL_STAGE4_EVIDENCE",
+  "methods": [
+    {"implementation": "src/bisafecode/stage4_controlled/methods.py::run_full_method", "method_id": "bisafecode_full", "property_adapters": "src/bisafecode/stage4_controlled/property_adapters.py", "role": "full", "semantics": "S3-002 frozen parser, Timed IR, explicit-state BMC, and separately hash-bound Stage 4 point/interval property adapters"},
+    {"implementation": "src/bisafecode/stage4_controlled/methods.py::run_non_timed_baseline", "method_id": "non_timed_action_boundary", "role": "baseline", "semantics": "duration and joint timeline removed; action boundaries only"},
+    {"draws_per_program": 100, "implementation": "src/bisafecode/stage4_controlled/methods.py::run_random_dynamic_testing", "method_id": "random_dynamic_testing", "role": "baseline", "seed_rule": "SHA-256 of experiment ID, method ID, program ID, and draw index", "semantics": "exactly 100 retained finite sampled input/action-prefix executions; no exhaustive claim"},
+    {"aggregation": "llm/AGGREGATION_POLICY.json", "api_key_env_removed": "OPENAI_API_KEY", "authentication": "chatgpt_subscription", "blind_inputs": "program source plus frozen model summary only; no method output, oracle label, oracle evidence, or counterexample", "cli_invocation_schema": "llm/cli_invocation.schema.json", "current_codex_conversation_allowed": false, "implementation": "src/bisafecode/stage4_controlled/codex_cli_adapter.py", "isolation": "each judgment starts a fresh non-resumed ephemeral codex exec in an empty temporary directory with user config/rules, MCP servers, web, shell, and subagents disabled", "judge_output_schema": "llm/judge_output.schema.json", "judgments_per_program": 5, "method_id": "llm_as_judge", "model_id": "gpt-5.5", "paper_label": "Codex-CLI-mediated GPT-5.5 LLM-as-judge baseline", "prompt": "llm/LLM_JUDGE_PROMPT.txt", "provider_adapter_ids": ["codex_cli_jsonl_v1"], "reasoning_effort": "high", "repair_or_rejudge_loop": false, "reproducibility_wording": "model-family-pinned and protocol-reproducible", "role": "baseline", "source_locations_required_by_schema": true, "wall_budget_rule": "all five judgments share one 120-second deadline; no retry or replacement; timeout, refusal, malformed response, CLI/service error, and quota-window interruption are separately retained"}
+  ],
+  "enforcement": {
+    "isolation": "one fresh subprocess for each program×method",
+    "memory": "Linux enforces the 4 GiB limit with child RLIMIT_AS plus parent peak-RSS monitoring. macOS intentionally does not set RLIMIT_AS because it can fail during Python/loader startup; it enforces the same 4 GiB resident-memory budget through parent ps RSS monitoring. Linux ru_maxrss KiB and macOS ru_maxrss bytes are normalized to bytes.",
+    "model_limits": "full method receives frozen states, transitions, and model-time bounds; parent rejects reported overruns for every method",
+    "timeout": "parent hard-kills the process group at the shared wall deadline",
+    "logs": "stdout and stderr are created in Raw, closed, then SHA-256 hashed; Popen, pre-exec, stdin, and worker-initialization failures are retained per program as exception/null-verdict records and do not abort later records"
+  },
+  "paired_population": "All four methods receive the identical sealed 60-program manifest in program ID order. No method-specific deletion, replacement, retry, or successful-pairs-only denominator.",
+  "full_method_interval_speed_bound": "For each active move, load the exact content-addressed frozen trajectory, use outward-rounded polynomial derivative bounds, apply the frozen analytic model's joint-to-tool coefficients, and sum active-arm bounds as a conservative checked-pair relative-speed bound; empirical constants are prohibited.",
+  "required_record_fields": ["program_id", "method_id", "status", "verdict", "runtime_ms", "peak_memory_bytes", "states", "transitions", "model_time_ns", "timeout", "reason_codes", "stdout_path", "stderr_path", "stdout_sha256", "stderr_sha256", "budget", "run_manifest"],
+  "resource_accounting": "timeout, refusal, malformed_response, cli_or_service_error, quota_window_interruption, missing, exception, resource_truncated, unknown, and invalid remain explicit. End-to-end coverage retains them; LLM conditional judgment accuracy excludes non-completed outcomes and reports every category separately.",
+  "schema": "bisafecode.stage4.controlled.method-baseline-budget/v6-codex-cli"
+}

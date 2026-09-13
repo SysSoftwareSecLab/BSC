@@ -1,0 +1,12 @@
+{
+  "duration_ns": 400000000,
+  "evidence_status": "FREEZE_ONLY_NOT_FORMAL_STAGE4_EVIDENCE",
+  "frame_convention": "controlled_world; arm-local joint order as listed in trajectory",
+  "interpolation": "cubic Hermite from endpoint positions and velocities",
+  "model_sha256": "681883708614c393f3372628bb399d1feab3af645135095b82ecbbebfe135a51",
+  "schema": "bisafecode.stage4.controlled.trajectory-sidecar/v1",
+  "trajectory_artifact_sha256": "6cea1dcf1a9d8ffab50422561fb5de534f0feea76d82502481c92e835615f77b",
+  "trajectory_content_sha256": "3e6910a45a223961ab95f4f5e8a63ac43f95c8270bb698234abaf687963ab609",
+  "trajectory_path": "contracts-and-trajectories/qualification/reference-contract/trajectories/right_approach.json",
+  "units": "rad,rad/s,ns"
+}

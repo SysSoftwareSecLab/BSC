@@ -1,0 +1,124 @@
+{
+  "C": {
+    "checked_pairs": "all 225 robot self pairs at every setup, action, hold and return interval",
+    "intended_task_contact_exclusions": [],
+    "required_clearance_m": 0.01,
+    "status": "SEMANTIC_SCOPE_COMPLETE_PENDING_FINAL_TABLE_HASH"
+  },
+  "H": {
+    "backend_name_mapping": {
+      "left_gripper_internal_fcl_bodies": [
+        "openarm_left_link7",
+        "openarm_left_hand",
+        "openarm_left_left_finger",
+        "openarm_left_right_finger"
+      ],
+      "mujoco_geometry_suffix_rule": "The construction screen uses the same names with _collision suffix; final FCL tables use the FCL body names above.",
+      "right_gripper_internal_fcl_bodies": [
+        "openarm_right_link7",
+        "openarm_right_hand",
+        "openarm_right_left_finger",
+        "openarm_right_right_finger"
+      ]
+    },
+    "checked_non_intentional_pairs": "all 225 robot self pairs plus paperboard against every robot collision body not excluded by the exact current phase",
+    "payload_dimensions_xyz_m": [
+      0.001,
+      0.17,
+      0.237
+    ],
+    "payload_fcl_name": "h1_exact_paperboard",
+    "phase_rules": [
+      {
+        "boundary": "Ends immediately before the prospectively named RECEIVER_SEATING transition. Paperboard-right_hand remains checked throughout free approach.",
+        "intended_payload_contacts": "paperboard against the four left gripper internal bodies only",
+        "phase": "sender_grasp_and_receiver_free_approach",
+        "right_gripper_payload_contacts_excluded": false
+      },
+      {
+        "intended_payload_contacts": "paperboard against the four left and four right gripper internal bodies",
+        "phase": "receiver_seating_close_and_dual_grasp",
+        "reason": "The paperboard is prospectively seated inside the receiver and held by both grippers; the previously observed paperboard-right_hand zero is treated as this named terminal task contact, not a broad approach exclusion."
+      },
+      {
+        "boundary": "Ends at the first prospectively logged sender-clear state after the left gripper has opened; subsequent left payload pairs are checked.",
+        "intended_payload_contacts": "paperboard against the four right gripper bodies and transiently the four left gripper bodies",
+        "phase": "sender_release_transition"
+      },
+      {
+        "candidate_payload_minimum_m": 0.05501546213932226,
+        "candidate_source": "OMITTED_COMPACT_HISTORICAL_EVIDENCE",
+        "intended_payload_contacts": "paperboard against the four right gripper internal bodies only",
+        "left_payload_contacts_excluded": false,
+        "phase": "receiver_only_withdraw_and_carry"
+      }
+    ],
+    "required_clearance_m_for_non_intentional_pairs": 0.0,
+    "status": "SEMANTIC_PHASE_SCOPE_COMPLETE_PENDING_FINAL_PHASE_BOUNDARIES_AND_TABLE_HASHES"
+  },
+  "R": {
+    "candidate_robot_foam_lower_bound_m": 0.0824302609368821,
+    "candidate_source": "contracts-and-trajectories/c115/inputs/campaign/R_FIVE_PLACEMENT_VARIANT_BOUND.json",
+    "checked_pairs": "all 225 robot self pairs plus each of the 23 robot collision bodies against the foam in every R phase",
+    "required_clearance_m_for_non_intentional_pairs": 0.0,
+    "resource_fcl_name": "r1_base_seated_foam_90x90x50mm",
+    "resource_physical_dimensions_m": [
+      0.075,
+      0.075,
+      0.045
+    ],
+    "robot_foam_intended_contact_exclusions": [],
+    "status": "SEMANTIC_SCOPE_COMPLETE_PENDING_FINAL_WORLD_AND_TABLE_HASHES",
+    "world_contact_rule": "Only foam-to-qualified-support contact while BASE_SEATED is an intended world contact. It excludes no robot-to-foam pair."
+  },
+  "campaign_revision": "C115-PROSPECTIVE-R2",
+  "created_date": "2026-08-29",
+  "current_model_identity": {
+    "final_freeze_rule": "Live runtime canonical XML, resolved meshes and collision object names must match the final zero-send package. These current paths are design identities, not a waiver of the final live identity check.",
+    "srdf_path": "contracts-and-trajectories/c115/model/ROBOT_DESCRIPTION_SEMANTIC.srdf",
+    "urdf_path": "contracts-and-trajectories/c115/model/ROBOT_DESCRIPTION.urdf"
+  },
+  "frozen_geometry_sources": {
+    "c_dense_screen": {
+      "path": "WITHHELD_NOT_PUBLICLY_BOUND",
+      "size_bytes": 3853
+    },
+    "h_carry": {
+      "path": "WITHHELD_NOT_PUBLICLY_BOUND",
+      "size_bytes": 7674
+    },
+    "h_payload_phases": {
+      "path": "WITHHELD_NOT_PUBLICLY_BOUND",
+      "size_bytes": 2881
+    },
+    "h_task_path": {
+      "path": "WITHHELD_NOT_PUBLICLY_BOUND",
+      "size_bytes": 86784
+    },
+    "r_task_path": {
+      "path": "WITHHELD_NOT_PUBLICLY_BOUND",
+      "size_bytes": 61378
+    }
+  },
+  "global_rule": "Every collision pair is unordered. All 225 non-SRDF-allowed robot self pairs remain active in every H/R/C phase. A task contact is excluded only for the named payload/resource pair and named phase below; no observed result may create a new exclusion after C-01 starts.",
+  "live_reproduction_rule": "The final zero-send must reproduce the 225 self-pair universe, exact H phase exclusions and R world identity against the live-matched runtime. Mismatch blocks action-client creation.",
+  "remaining_before_freeze": [],
+  "review_projection_note": "Historical pre-start status fields are retained as campaign metadata; final outcomes are recorded under results/final-revalidation/c115/.",
+  "robot_boundary": {
+    "action_client_created": false,
+    "goal_send_count": 0,
+    "motion_command_count": 0,
+    "ros_graph_contacted": false,
+    "ros_imported": false
+  },
+  "robot_self_universe": {
+    "all_unordered_pairs_before_acm": 253,
+    "checked_pair_count": 225,
+    "collision_body_count": 23,
+    "semantic_reuse": "The same robot and SRDF pair universe is used by all three families; final package generation must reproduce the exact 225 rows from the final runtime identity.",
+    "source_table_path": "contracts-and-trajectories/table-iii/inputs/TRACKING_ENVELOPE_FINAL_PAIRS.tsv",
+    "srdf_acm_allowed_pairs_removed": 28
+  },
+  "schema": "bisafecode.exp-s4-030.c115-prospective-r2-pair-scope/v1",
+  "status": "FROZEN_SEMANTIC_SCOPE_AND_SOURCE_TABLES__PENDING_LIVE_REPRODUCTION"
+}

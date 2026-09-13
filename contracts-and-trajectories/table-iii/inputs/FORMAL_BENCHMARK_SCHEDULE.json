@@ -1,0 +1,224 @@
+{
+  "claim_id": "C121",
+  "experiment_id": "EXP-S4-036_ITEM4_NATIVE_OPENARM_HRC_FORMAL_TARGET_STRESS_BENCHMARK",
+  "formal_denominator": 30,
+  "formal_order_rule": "For repetition block r=1..5, sort the six fixed case IDs lexicographically by SHA256('EXP-S4-036|formal-block-' + r + '|' + case_id). Execute blocks in ascending r.",
+  "formal_repetitions_per_case": 5,
+  "formal_schedule": [
+    {
+      "case_id": "I4F-R-SAFE-T4",
+      "repetition": 1,
+      "sequence": 1,
+      "sort_key": "46c189dd6b47ccdd6636a4d0a7b8d2f4c2a3f9149a56b8bf8426513644904d27"
+    },
+    {
+      "case_id": "I4F-H-SAFE-T3",
+      "repetition": 1,
+      "sequence": 2,
+      "sort_key": "4725e71e630836748a93e088b479e9d9a7975750f72b2461fcfa745e70902f91"
+    },
+    {
+      "case_id": "I4F-C-UNSAFE-T0",
+      "repetition": 1,
+      "sequence": 3,
+      "sort_key": "6f18e97006c7d8fef74ea18e99f7bce334617aac6dc3a523ce72adb4e2a3196b"
+    },
+    {
+      "case_id": "I4F-C-SAFE-T1",
+      "repetition": 1,
+      "sequence": 4,
+      "sort_key": "7d71c364a9556ec5e2877d5cea871d290f4344fb9f0e9ec11625953270d8943d"
+    },
+    {
+      "case_id": "I4F-R-UNSAFE-T0",
+      "repetition": 1,
+      "sequence": 5,
+      "sort_key": "c1b09a4bb49d28a6d4165cf3734690e1322cf8271e7b00ad9e91c46357c1e70c"
+    },
+    {
+      "case_id": "I4F-H-UNSAFE-T2",
+      "repetition": 1,
+      "sequence": 6,
+      "sort_key": "efca2051debaebb43d2e9529a16c1521021353be0724b9dcdc0d0e48710a8bd7"
+    },
+    {
+      "case_id": "I4F-H-UNSAFE-T2",
+      "repetition": 2,
+      "sequence": 7,
+      "sort_key": "318a5ae61a56f0f6307b4717308e4e191acc87a3655e44a7fbebacf8633f2c01"
+    },
+    {
+      "case_id": "I4F-R-SAFE-T4",
+      "repetition": 2,
+      "sequence": 8,
+      "sort_key": "6a32a87771b55ad1684a7c19cbeb12f09327b022791c5fa361a2ba5f03a1b77b"
+    },
+    {
+      "case_id": "I4F-H-SAFE-T3",
+      "repetition": 2,
+      "sequence": 9,
+      "sort_key": "bd226a6573dd3304b7674c128746a22ca173feff5867a30590ff2f1f934563ae"
+    },
+    {
+      "case_id": "I4F-R-UNSAFE-T0",
+      "repetition": 2,
+      "sequence": 10,
+      "sort_key": "cb01af7dcccefbe854efd3447a5dbabbbdf4c1017f89167e030fdd02af12c8e8"
+    },
+    {
+      "case_id": "I4F-C-UNSAFE-T0",
+      "repetition": 2,
+      "sequence": 11,
+      "sort_key": "dcf16cf8a62144fea45ad36693d9a0004480e01ac045d664f7b52107bd249f05"
+    },
+    {
+      "case_id": "I4F-C-SAFE-T1",
+      "repetition": 2,
+      "sequence": 12,
+      "sort_key": "dd72a5b96a60e762784bb43fb946673301ba8b89797b2206a4c5b2b200467a08"
+    },
+    {
+      "case_id": "I4F-H-SAFE-T3",
+      "repetition": 3,
+      "sequence": 13,
+      "sort_key": "54bb5bcba01a6120c26928daeab52d3386eeca9f44c32d43ef4cafe0306e5140"
+    },
+    {
+      "case_id": "I4F-R-SAFE-T4",
+      "repetition": 3,
+      "sequence": 14,
+      "sort_key": "76fa50bf0ad2a85354b0742f59dd94359b305af49eac6771b164344fb31bda99"
+    },
+    {
+      "case_id": "I4F-C-UNSAFE-T0",
+      "repetition": 3,
+      "sequence": 15,
+      "sort_key": "9aeaf06494bbb9427a52d6af4d85c446ac7fa708ac47b0d2808e576afe5791c6"
+    },
+    {
+      "case_id": "I4F-C-SAFE-T1",
+      "repetition": 3,
+      "sequence": 16,
+      "sort_key": "d3939a81486af24cda6200e2afe8945b3b93cc0ef927cd5e3eb9a6e83a45ae4f"
+    },
+    {
+      "case_id": "I4F-R-UNSAFE-T0",
+      "repetition": 3,
+      "sequence": 17,
+      "sort_key": "f894224b70a254b77dc4cad6222d73d4c952f3d8a71eee5303f89296c64ed612"
+    },
+    {
+      "case_id": "I4F-H-UNSAFE-T2",
+      "repetition": 3,
+      "sequence": 18,
+      "sort_key": "fbd13d30d599517d1bd40e599a659fbcd4640163ed9621b6870bbfa405dc5e2a"
+    },
+    {
+      "case_id": "I4F-H-SAFE-T3",
+      "repetition": 4,
+      "sequence": 19,
+      "sort_key": "0a20e830156c8eb43719cec2ad995c20be39cc29c80c2d25f15ace6bc17f6f17"
+    },
+    {
+      "case_id": "I4F-C-SAFE-T1",
+      "repetition": 4,
+      "sequence": 20,
+      "sort_key": "31bd6354387ee6fe6ea4c7f09694066775d01dfaf4cf6d95f11d7c49ff7d617c"
+    },
+    {
+      "case_id": "I4F-C-UNSAFE-T0",
+      "repetition": 4,
+      "sequence": 21,
+      "sort_key": "4524f3f9cf9323b5b8786cf22b890bbdaaccc511c45428c96f98c3111e9b4644"
+    },
+    {
+      "case_id": "I4F-H-UNSAFE-T2",
+      "repetition": 4,
+      "sequence": 22,
+      "sort_key": "480aa2a0a90b5b683a411e4a70bf6d09fac6cde811285885ffb0d649dc08b2d4"
+    },
+    {
+      "case_id": "I4F-R-UNSAFE-T0",
+      "repetition": 4,
+      "sequence": 23,
+      "sort_key": "7a449ed7e9f9509fafa5c81e88a0ba6ea287f5e898b0375b3529f7dba7834ac7"
+    },
+    {
+      "case_id": "I4F-R-SAFE-T4",
+      "repetition": 4,
+      "sequence": 24,
+      "sort_key": "849977c03f128c6f21fe2eed8615d8255e6ae67cfea2dec8032cb84a141660b3"
+    },
+    {
+      "case_id": "I4F-H-UNSAFE-T2",
+      "repetition": 5,
+      "sequence": 25,
+      "sort_key": "0acee45b3a1b57620263d04834260320f677c99229bc7642d78234b52f3bd6d9"
+    },
+    {
+      "case_id": "I4F-C-UNSAFE-T0",
+      "repetition": 5,
+      "sequence": 26,
+      "sort_key": "2255c2416741acb9bb3966173799c8b919ea6c318301bc1545e4bed73c6a0eee"
+    },
+    {
+      "case_id": "I4F-H-SAFE-T3",
+      "repetition": 5,
+      "sequence": 27,
+      "sort_key": "d20cbdba51a2ac7057f6a2bea7cdac0f340dbb6476309b5aec677fff199ba742"
+    },
+    {
+      "case_id": "I4F-R-SAFE-T4",
+      "repetition": 5,
+      "sequence": 28,
+      "sort_key": "e0a7fe0e04c8f0e8e023402c41414ea415aec7ded23ad8fd7f8d4222e5d25af0"
+    },
+    {
+      "case_id": "I4F-C-SAFE-T1",
+      "repetition": 5,
+      "sequence": 29,
+      "sort_key": "e45da9db7e464eccd2a752405c60c9cec0659b04f79b3fed7651f078bb36e81a"
+    },
+    {
+      "case_id": "I4F-R-UNSAFE-T0",
+      "repetition": 5,
+      "sequence": 30,
+      "sort_key": "ff6c8ce951f761a1431b0cc9b2217c93ae589671324030544d7c9f3401a329b6"
+    }
+  ],
+  "schedule_status": "FROZEN_BEFORE_FORMAL_EXECUTION",
+  "schema": "bisafecode.item4-native-openarm-hrc-formal-schedule/v1",
+  "warmup_denominator": 0,
+  "warmup_schedule": [
+    {
+      "case_id": "I4F-C-UNSAFE-T0",
+      "phase": "warmup",
+      "sequence": 1
+    },
+    {
+      "case_id": "I4F-R-UNSAFE-T0",
+      "phase": "warmup",
+      "sequence": 2
+    },
+    {
+      "case_id": "I4F-C-SAFE-T1",
+      "phase": "warmup",
+      "sequence": 3
+    },
+    {
+      "case_id": "I4F-H-UNSAFE-T2",
+      "phase": "warmup",
+      "sequence": 4
+    },
+    {
+      "case_id": "I4F-H-SAFE-T3",
+      "phase": "warmup",
+      "sequence": 5
+    },
+    {
+      "case_id": "I4F-R-SAFE-T4",
+      "phase": "warmup",
+      "sequence": 6
+    }
+  ]
+}

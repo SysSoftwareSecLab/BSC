@@ -1,0 +1,38 @@
+{
+  "asset_manifest": "ASSET_MANIFEST.json",
+  "canonical_oracle_nontransferability": "S3-002 canonical labels do not label any EXP-S4-002 program.",
+  "evidence_status": "FREEZE_ONLY_NOT_FORMAL_STAGE4_EVIDENCE",
+  "fail_closed": {
+    "incomplete_or_missing_evidence": "unknown with reason",
+    "malformed_identity_or_schema": "invalid",
+    "oracle_exception": "exception",
+    "resource_or_time_limit": "resource_truncated",
+    "safe_with_missing_required_item": "prohibited"
+  },
+  "execution_isolation": "one hard-budgeted subprocess per program; ok, timeout, exception, and resource_truncated records are retained, and a failed program cannot suppress later program records or prevent a complete phase seal",
+  "geometry_oracle": {
+    "backend": "bisafecode.stage4_controlled.geometry_oracle analytic-sphere-continuous/v1",
+    "implementation": "src/bisafecode/stage4_controlled/geometry_oracle.py",
+    "maximum_model_step_ns": 1000000,
+    "model": "assets/model.json",
+    "policy": "assets/geometry_policy.json",
+    "required_coverage_derivation": "The oracle recomputes coverage from the frozen scene checked-pair policy and complete source move start/end bindings; evidence input cannot declare required coverage.",
+    "trajectory_start_binding": "The independent oracle replays frozen trajectory endpoints from zero initial joints and requires each move current joint state to equal the content-addressed trajectory start; mismatch is invalid(TRAJECTORY_START_BINDING_MISMATCH).",
+    "safe_rule": "nonempty complete independently derived checked-pair continuous interval coverage with strictly positive conservative lower bounds; no-move geometry returns unknown, never verified, and only the total oracle may waive that exact independently proven no-move obligation",
+    "scene": "assets/scene.json",
+    "sampled_endpoint_only_safe_label": false
+  },
+  "logical_oracle": {
+    "event_schema": "assets/logical_event_schema.json",
+    "forbidden_imports_or_inputs": ["explicit_state successor logic", "model_checking transition/worklist", "verifier property implementation", "verifier result", "counterexample", "target class"],
+    "implementation": "src/bisafecode/stage4_controlled/logical_oracle.py",
+    "rules": "assets/logical_oracle_rules.json",
+    "trace_extractor": "src/bisafecode/stage4_controlled/trace_extractor.py",
+    "trace_source": "sealed source-event trace produced by the independent AST interpreter from immutable program source and asset durations; every source action has start/end, source span, canonical and execution ordinals, a unique terminal record, and all four mode×ready valuations",
+    "program_verdict": "invalid dominates; otherwise any logical or geometry violation is unsafe; otherwise any missing, unresolved, or incomplete component is unknown; safe requires logical verification and geometry verification for every move-bearing trace, with only exact producer-proven no-move geometry unknown waived"
+  },
+  "oracle_phase_input_allowlist": ["sealed program manifest", "program source", "asset manifest", "source-event trace", "geometry interval evidence"],
+  "oracle_phase_input_denylist": ["verifier directory", "baseline directory", "verifier verdict", "verifier counterexample", "method status"],
+  "per_program_identity": ["program ID", "source and strict AST hashes", "model", "scene", "trajectory file", "trajectory sidecar", "object/resource semantics", "logical event schema/rules", "geometry policy"],
+  "schema": "bisafecode.stage4.controlled.oracle-asset-contract/v3"
+}

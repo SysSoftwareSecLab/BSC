@@ -1,0 +1,14 @@
+{
+  "action_binding_fields": ["action_execution_ordinal", "canonical_action_ordinal", "source_span", "action_kind"],
+  "evidence_status": "FREEZE_ONLY_NOT_FORMAL_STAGE4_EVIDENCE",
+  "event_kinds": ["action_start", "action_end", "acquire", "release", "close", "open", "transfer_authority", "barrier", "terminal"],
+  "finite_input_coverage": {"mode": ["fast", "safe"], "ready": [false, true], "required_trace_count": 4},
+  "ordering": "ascending integer time_ns, then immutable insertion-derived event_ordinal",
+  "required_event_fields": ["program_id", "event_ordinal", "time_ns", "event_kind", "arm", "object_id", "resource_id"],
+  "schema": "bisafecode.stage4.controlled.logical-event-trace/v2",
+  "trace_completeness": {
+    "complete": "exactly one last normal terminal record and start/end records for every executed source action",
+    "missing_or_duplicate_action": "oracle unknown; fail closed",
+    "source_action_binding": "exact source span, static canonical action ordinal, and dynamic execution ordinal independently reconstructed from source"
+  }
+}

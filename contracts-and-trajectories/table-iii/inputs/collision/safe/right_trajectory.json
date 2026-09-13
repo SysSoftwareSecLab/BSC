@@ -1,0 +1,78 @@
+{
+  "arm": "right",
+  "interpolation": "quintic-minimum-jerk",
+  "joint_names": [
+    "openarm_right_joint1",
+    "openarm_right_joint2",
+    "openarm_right_joint3",
+    "openarm_right_joint4",
+    "openarm_right_joint5",
+    "openarm_right_joint6",
+    "openarm_right_joint7"
+  ],
+  "points": [
+    {
+      "accelerations_rad_s2": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "positions_rad": [
+        -0.3982664426252669,
+        0.6201985801410411,
+        -1.3530837128710314,
+        1.5626956432055898,
+        -0.7000408563581386,
+        0.46045267071977636,
+        -0.03227706397778263
+      ],
+      "time_from_start_ns": 0,
+      "velocities_rad_s": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "accelerations_rad_s2": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "positions_rad": [
+        -0.3982664426252669,
+        0.6201985801410411,
+        -1.3530837128710314,
+        1.5626956432055898,
+        -0.7500408563581387,
+        0.41045267071977637,
+        -0.03227706397778263
+      ],
+      "time_from_start_ns": 2000000000,
+      "velocities_rad_s": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "public_model_file_sha256": "c2b12f61c76d528805ea533714744f4778d0c71e8111efe94fa9d1477e0713fe",
+  "schema": "bisafecode.item4-native-c-purpose-built-trajectory/v1",
+  "trajectory_content_id": "a0a851d2e440802ffaa00fd40bd2043d27ca6c07fa8f6a51a9152f13c911a76d"
+}

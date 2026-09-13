@@ -1,0 +1,30 @@
+{
+  "evidence_status": "FREEZE_ONLY_NOT_FORMAL_STAGE4_EVIDENCE",
+  "handover_rules": [
+    "sender owns object before receiver close",
+    "both arms grasp the object before transfer_authority",
+    "both arms are stationary and inside handover_zone at transfer_authority",
+    "sender opens only after authority transfer"
+  ],
+  "reason_codes": [
+    "TRACE_INCOMPLETE",
+    "TRACE_ACTION_COUNT_MISMATCH",
+    "TRACE_SOURCE_ACTION_BINDING_MISMATCH",
+    "TRACE_TERMINAL_MISMATCH",
+    "FINITE_INPUT_COVERAGE_INCOMPLETE",
+    "RESOURCE_DOUBLE_ACQUIRE",
+    "RESOURCE_RELEASE_BY_NONOWNER",
+    "OBJECT_DOUBLE_CLOSE",
+    "OBJECT_OPEN_BY_NONOWNER",
+    "TRANSFER_WITHOUT_DUAL_GRASP",
+    "TRANSFER_OUTSIDE_HANDOVER_ZONE",
+    "TRANSFER_WHILE_MOVING",
+    "SENDER_RELEASE_BEFORE_TRANSFER"
+  ],
+  "resource_rules": [
+    "one owner or no owner per resource",
+    "release must be performed by current owner",
+    "simultaneous acquisition attempts on the same free resource violate exclusivity"
+  ],
+  "schema": "bisafecode.stage4.controlled.logical-oracle-rules/v1"
+}

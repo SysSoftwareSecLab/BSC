@@ -1,0 +1,22 @@
+{
+  "algorithm": "sha256-canonical-file-manifest/v1",
+  "asset_root_sha256": "8d2125b7b5d47b31d9723b879bd384398f0eee5780acb1cae1d7700a34f77203",
+  "evidence_status": "FREEZE_ONLY_NOT_FORMAL_STAGE4_EVIDENCE",
+  "files": [
+    {"path": "03_experiments/contracts/EXP-S4-002_CONTROLLED_UNSEEN_FORMAL_FREEZE/assets/geometry_policy.json", "sha256": "d3c52aaaacadffb2615c8f59b6feec18b23a1db4879c2ba3c801b8e0128a46a1"},
+    {"path": "03_experiments/contracts/EXP-S4-002_CONTROLLED_UNSEEN_FORMAL_FREEZE/assets/logical_event_schema.json", "sha256": "42831b3fe884920b37156292b558ecba5db43cacc352e8614c59c459a4b370f6"},
+    {"path": "03_experiments/contracts/EXP-S4-002_CONTROLLED_UNSEEN_FORMAL_FREEZE/assets/logical_oracle_rules.json", "sha256": "2634b198d99bc8437c98727ced73887d3293c4a5e230de0cbf116702173850ee"},
+    {"path": "03_experiments/contracts/EXP-S4-002_CONTROLLED_UNSEEN_FORMAL_FREEZE/assets/model.json", "sha256": "681883708614c393f3372628bb399d1feab3af645135095b82ecbbebfe135a51"},
+    {"path": "03_experiments/contracts/EXP-S4-002_CONTROLLED_UNSEEN_FORMAL_FREEZE/assets/object_resource_semantics.json", "sha256": "6f9833f6c5d6671ee0a6826f9e944a8f0bac6ac97cfa72a830ed256e5294410d"},
+    {"path": "03_experiments/contracts/EXP-S4-002_CONTROLLED_UNSEEN_FORMAL_FREEZE/assets/scene.json", "sha256": "d2a3c53e7f1af887bfa3e633c280b017504c68f21fdd0289cb76ce5e841cfe97"},
+    {"path": "03_experiments/contracts/EXP-S4-002_CONTROLLED_UNSEEN_FORMAL_FREEZE/assets/trajectories/left_approach.json", "sha256": "397771ebfd945851aa0cff681fe3cee96b72dc3775703aa8493803fb90c837da"},
+    {"path": "03_experiments/contracts/EXP-S4-002_CONTROLLED_UNSEEN_FORMAL_FREEZE/assets/trajectories/left_approach.sidecar.json", "sha256": "5ea395af84149dff2570c52c08cafc928e2e4592a53da27c6c4d7490e6510ed8"},
+    {"path": "03_experiments/contracts/EXP-S4-002_CONTROLLED_UNSEEN_FORMAL_FREEZE/assets/trajectories/left_retreat.json", "sha256": "068689c4eedf23894addcd228602a5bffdbb82df1029b5ea24df820fcce39dac"},
+    {"path": "03_experiments/contracts/EXP-S4-002_CONTROLLED_UNSEEN_FORMAL_FREEZE/assets/trajectories/left_retreat.sidecar.json", "sha256": "e043605d14a78effc12bcdba6ec17b2cccfade40e3d974e8788861e5c0b1fdf9"},
+    {"path": "03_experiments/contracts/EXP-S4-002_CONTROLLED_UNSEEN_FORMAL_FREEZE/assets/trajectories/right_approach.json", "sha256": "6cea1dcf1a9d8ffab50422561fb5de534f0feea76d82502481c92e835615f77b"},
+    {"path": "03_experiments/contracts/EXP-S4-002_CONTROLLED_UNSEEN_FORMAL_FREEZE/assets/trajectories/right_approach.sidecar.json", "sha256": "411d8da414f4e4900715c361246d239036adf3586dfe15d715237d6f8aa51564"},
+    {"path": "03_experiments/contracts/EXP-S4-002_CONTROLLED_UNSEEN_FORMAL_FREEZE/assets/trajectories/right_retreat.json", "sha256": "27c255ba3f31abc048410b5f767d55381b7f4764b2f53e080f99616902d15816"},
+    {"path": "03_experiments/contracts/EXP-S4-002_CONTROLLED_UNSEEN_FORMAL_FREEZE/assets/trajectories/right_retreat.sidecar.json", "sha256": "ff21eb4dcd9c7e170f98d4f6450410e94e0b09bc96b594b200684874eac1baef"}
+  ],
+  "schema": "bisafecode.stage4.controlled.asset-manifest/v2"
+}

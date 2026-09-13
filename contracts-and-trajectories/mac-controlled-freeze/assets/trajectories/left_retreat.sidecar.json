@@ -1,0 +1,12 @@
+{
+  "duration_ns": 400000000,
+  "evidence_status": "FREEZE_ONLY_NOT_FORMAL_STAGE4_EVIDENCE",
+  "frame_convention": "controlled_world; arm-local joint order as listed in trajectory",
+  "interpolation": "cubic Hermite from endpoint positions and velocities",
+  "model_sha256": "681883708614c393f3372628bb399d1feab3af645135095b82ecbbebfe135a51",
+  "schema": "bisafecode.stage4.controlled.trajectory-sidecar/v1",
+  "trajectory_path": "03_experiments/contracts/EXP-S4-002_CONTROLLED_UNSEEN_FORMAL_FREEZE/assets/trajectories/left_retreat.json",
+  "trajectory_artifact_sha256": "068689c4eedf23894addcd228602a5bffdbb82df1029b5ea24df820fcce39dac",
+  "trajectory_content_sha256": "952b79dbc0b450154d6910502682bcb1bb62373808550d35da80c313aba41db6",
+  "units": "rad,rad/s,ns"
+}

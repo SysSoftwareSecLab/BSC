@@ -1,0 +1,58 @@
+{
+  "case_id": "I4C-UNSAFE-01",
+  "duration_ns": 1000000000,
+  "formal_paper_denominator": false,
+  "left_end_q_rad": [
+    0.18602122486155276,
+    -0.8332100013736993,
+    0.7413133276794485,
+    1.5483087449806268,
+    -0.015799578371875178,
+    -0.08960049781760084,
+    -0.3177275821395286
+  ],
+  "left_start_q_rad": [
+    -3.486408877786853,
+    -2.483724897694548,
+    -1.5556626964795484,
+    1.5626960748066265,
+    -0.49135552948543254,
+    0.08018422753212406,
+    0.13182691486927206
+  ],
+  "oracle_role": "unsafe",
+  "public_projection_note": "Paths and model-file identity use the reviewer-facing layout; trajectory points and retained reference content IDs are unchanged. The content IDs are semantic experiment joins, not digests of the path-normalized public files.",
+  "retained_reference_trajectory_content_ids": [
+    "6214567b08f99b7c8337e2d76f3e3839fc5a9ffac68eb3c80748b4237a598d92",
+    "8542047265b7e94fd520ddcba9ef087739ac3e6cfd9444862fbd52c01954cafe"
+  ],
+  "right_end_q_rad": [
+    0.613303210943977,
+    0.10108512944295962,
+    -1.5707989999999998,
+    0.9635988382035423,
+    -1.5707989999999998,
+    0.7853969999999999,
+    0.6429719729214667
+  ],
+  "right_start_q_rad": [
+    -0.3982664426252669,
+    0.6201985801410411,
+    -1.3530837128710314,
+    1.5626956432055898,
+    -0.7000408563581386,
+    0.46045267071977636,
+    -0.03227706397778263
+  ],
+  "schema": "bisafecode.item4-native-c-purpose-built-candidate/v1",
+  "source_path": "source.py",
+  "source_sha256": "0882d7a0d2a769088352003494534f34552b8eb7c5397f2dc228db9e0ff3861e",
+  "trajectory_file_sha256": [
+    "afec9b986e96765d8693052725b58be0973ead4b4c72d38df9121d5a3b925b48",
+    "2b9b1c15afb9459d7312a3f2047feefd7cef8d4aee8ef60e68b80c6c14931852"
+  ],
+  "trajectory_paths": [
+    "left_trajectory.json",
+    "right_trajectory.json"
+  ]
+}

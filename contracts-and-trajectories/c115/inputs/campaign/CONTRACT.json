@@ -1,0 +1,54 @@
+{
+  "campaign_revision": "C115-PROSPECTIVE-R2",
+  "campaign_start_barrier": [
+    "the hash-bound frozen files in this package remain unchanged",
+    "the live robot/controller/URDF/SRDF/scene identity matches",
+    "all 15 desired trajectories and all unsafe controls pass zero-send",
+    "the correct fixed phone view is recording for H/R and the slot slate is visible",
+    "the user explicitly authorizes the exact next motion sequence"
+  ],
+  "claim_id": "C115",
+  "controlling_artifacts": {
+    "error_budget": "ERROR_BUDGET.json",
+    "manifest": "FREEZE_MANIFEST.json",
+    "observer": "H_R_INDEPENDENT_OBSERVER_SPEC.json",
+    "pair_scope": "PAIR_SCOPE.json",
+    "trial_schedule": "TRIAL_SCHEDULE_15.json"
+  },
+  "created_date": "2026-08-29",
+  "experiment_id": "EXP-S4-030_ITEM3_MEASUREMENT_BOUND_HRC_PREP_ONLY",
+  "extends_contract": "WITHHELD_NOT_PUBLICLY_BOUND",
+  "finalization_rule": "This draft may become FROZEN only after every campaign-start barrier is evidenced and every referenced final artifact is hash-bound. A draft or placeholder file never authorizes ROS or hardware action.",
+  "historical_boundary": "The 2026-08-28 H/R/C cycles and R2 retrospective closeout remain immutable design/retrospective evidence. They are not the current endpoint and do not occupy this revision's scored slots.",
+  "independent_intake_boundary": "The previously accepted EXP-S4-030/C115 identity and 15-slot denominator remain unchanged. This local condition/geometry revision is included for independent final intake; no scored result is hidden or substituted.",
+  "review_projection_note": "Historical pre-start status fields are retained as campaign metadata; final outcomes are recorded under results/final-revalidation/c115/.",
+  "robot_boundary": {
+    "action_client_created": false,
+    "authorized": false,
+    "goal_send_count": 0,
+    "gripper_command_count": 0,
+    "motion_command_count": 0,
+    "ros_graph_contacted": false,
+    "ros_imported": false
+  },
+  "schema": "bisafecode.exp-s4-030.c115-prospective-r2-contract/v1",
+  "selected_scientific_endpoint": {
+    "claim_if_completed": "Report all H/R/C outcomes under the fixed denominator. A 15/15 statement is permitted only if every preallocated slot independently satisfies every prospectively frozen gate.",
+    "families": [
+      "H",
+      "R",
+      "C"
+    ],
+    "fixed_total_denominator": 15,
+    "forbidden_shortcut": "Do not replace this endpoint with a C-only or easiest-task supplement, and do not select a favorable family subset after viewing any outcome.",
+    "formal_results_at_creation": "0/15",
+    "slots_per_family": 5
+  },
+  "selection_bias_control": {
+    "after_first_motion": "No family, condition, slot, threshold, pair scope, observer rule or denominator may be removed, relaxed or substituted in response to results.",
+    "before_first_motion": "Failure to close any one family blocks the whole 15-slot campaign at 0/15; it does not authorize starting an easier family.",
+    "outcome_retention": "PASS, FAIL, UNKNOWN and ABORT remain immutable under their original slot; no favorable rerun replaces them.",
+    "recovery_boundary": "A separately authorized reset or suffix may preserve physical safety and collect missing evidence, but it cannot rewrite the scored disposition of an already ended slot."
+  },
+  "status": "FROZEN_LOCAL_PRESTART__ZERO_OF_FIFTEEN__PENDING_LIVE_ZERO_SEND_AND_EXACT_USER_AUTHORIZATION"
+}

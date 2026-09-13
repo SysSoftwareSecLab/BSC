@@ -1,0 +1,23 @@
+{
+  "evidence_status": "FREEZE_ONLY_NOT_FORMAL_STAGE4_EVIDENCE",
+  "model_id": "bisafecode-controlled-analytic-bimanual-v1",
+  "representation": "independent analytic sphere model",
+  "schema": "bisafecode.stage4.controlled.model/v1",
+  "semantics": {
+    "arm_center_from_joint_position": {
+      "left": ["-0.45 + 0.20*q0", "0.30 + 0.20*q1", "0.45 + 0.20*q2"],
+      "right": ["0.45 + 0.20*q0", "0.30 + 0.20*q1", "0.45 + 0.20*q2"]
+    },
+    "attached_object_center": "center of the owning arm",
+    "collision_criterion": "signed_distance_m <= 0",
+    "distance_convention": "positive-separated-zero-touching-negative-penetrating",
+    "entities": [
+      {"entity_id": "left_tool_sphere", "radius_m": 0.08},
+      {"entity_id": "right_tool_sphere", "radius_m": 0.08},
+      {"entity_id": "payload_alpha", "radius_m": 0.11},
+      {"entity_id": "payload_beta", "radius_m": 0.05}
+    ],
+    "numeric_type": "IEEE-754 binary64",
+    "scope_boundary": "controlled synthetic geometry only; no OpenArm or hardware validity claim"
+  }
+}

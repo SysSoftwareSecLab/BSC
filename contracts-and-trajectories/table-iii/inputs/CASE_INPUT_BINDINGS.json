@@ -1,0 +1,561 @@
+{
+  "case_count": 6,
+  "cases": [
+    {
+      "accepted_loaded_registry_content_id_count": 2,
+      "accepted_loaded_registry_content_ids": [
+        "54c56ee6ba95989616f0c6290de6885d5124c0ba25dfe560a392506e86fdea2b",
+        "a0a851d2e440802ffaa00fd40bd2043d27ca6c07fa8f6a51a9152f13c911a76d"
+      ],
+      "accepted_loaded_registry_file_count": 2,
+      "accepted_loaded_registry_files": [
+        {
+          "path": "contracts-and-trajectories/table-iii/inputs/collision/safe/left_trajectory.json",
+          "public_file_sha256": "8d26d00d55c45de2a16581509fa7167335df0aa60314256f4c36fb55c9e70ce3",
+          "retained_reference_trajectory_content_id": "54c56ee6ba95989616f0c6290de6885d5124c0ba25dfe560a392506e86fdea2b"
+        },
+        {
+          "path": "contracts-and-trajectories/table-iii/inputs/collision/safe/right_trajectory.json",
+          "public_file_sha256": "1669d1bde7bfde10e0592a0fc246f764ba3f01a90377cc2ead6c011f37d8f1d7",
+          "retained_reference_trajectory_content_id": "a0a851d2e440802ffaa00fd40bd2043d27ca6c07fa8f6a51a9152f13c911a76d"
+        }
+      ],
+      "case_id": "I4F-C-SAFE-T1",
+      "expected_deployment_decision": "RELEASE",
+      "expected_verdict": "verified-within-bounds",
+      "source": {
+        "path": "contracts-and-trajectories/table-iii/inputs/collision/safe/source.py",
+        "public_file_sha256": "7f1c898e9f0dd69172b0e4f1ce984bd06877fcedd953abe2e6ab4c8471818fa3",
+        "retained_reference_program_content_id": "b5fb8387e8a65bdc69ba62ec70e57eacc65ad8fec4b901d32ee1c27e53b12b0a"
+      },
+      "source_referenced_trajectory_content_ids": [
+        "54c56ee6ba95989616f0c6290de6885d5124c0ba25dfe560a392506e86fdea2b",
+        "a0a851d2e440802ffaa00fd40bd2043d27ca6c07fa8f6a51a9152f13c911a76d"
+      ]
+    },
+    {
+      "accepted_loaded_registry_content_id_count": 2,
+      "accepted_loaded_registry_content_ids": [
+        "6214567b08f99b7c8337e2d76f3e3839fc5a9ffac68eb3c80748b4237a598d92",
+        "8542047265b7e94fd520ddcba9ef087739ac3e6cfd9444862fbd52c01954cafe"
+      ],
+      "accepted_loaded_registry_file_count": 2,
+      "accepted_loaded_registry_files": [
+        {
+          "path": "contracts-and-trajectories/table-iii/inputs/collision/unsafe/left_trajectory.json",
+          "public_file_sha256": "afec9b986e96765d8693052725b58be0973ead4b4c72d38df9121d5a3b925b48",
+          "retained_reference_trajectory_content_id": "6214567b08f99b7c8337e2d76f3e3839fc5a9ffac68eb3c80748b4237a598d92"
+        },
+        {
+          "path": "contracts-and-trajectories/table-iii/inputs/collision/unsafe/right_trajectory.json",
+          "public_file_sha256": "2b9b1c15afb9459d7312a3f2047feefd7cef8d4aee8ef60e68b80c6c14931852",
+          "retained_reference_trajectory_content_id": "8542047265b7e94fd520ddcba9ef087739ac3e6cfd9444862fbd52c01954cafe"
+        }
+      ],
+      "case_id": "I4F-C-UNSAFE-T0",
+      "expected_deployment_decision": "BLOCK",
+      "expected_verdict": "violated",
+      "source": {
+        "path": "contracts-and-trajectories/table-iii/inputs/collision/unsafe/source.py",
+        "public_file_sha256": "0882d7a0d2a769088352003494534f34552b8eb7c5397f2dc228db9e0ff3861e",
+        "retained_reference_program_content_id": "7cc6cf3b0303ada80ccdabdda8314b05fdf3f198225493885c797467028a8f95"
+      },
+      "source_referenced_trajectory_content_ids": [
+        "6214567b08f99b7c8337e2d76f3e3839fc5a9ffac68eb3c80748b4237a598d92",
+        "8542047265b7e94fd520ddcba9ef087739ac3e6cfd9444862fbd52c01954cafe"
+      ]
+    },
+    {
+      "accepted_loaded_registry_content_id_count": 14,
+      "accepted_loaded_registry_content_ids": [
+        "0ee347462d224fae42637f8cc2046b9790edc2dece497b1760f85cb10fef4089",
+        "2c3f48e539e0a1718f402f36530100bfb824ba5eb7859ae634361eed32efa9b3",
+        "2f5344da91166064178a4e57f96b9dde56340acb95f3ecb43bf0931107e89bef",
+        "31f2003ecb418fad3e4ad623fae158b862faf9d29329a310fa2271aa5a3343fc",
+        "333d6ad9e4bf882fdd9aa996b1e961b00d7f97b45f1b4941b35eb0619c23e148",
+        "3c34bd88f417f858cbc26e8f05300fee1f2dbf1a1d6c5aa80049dab211a4cd86",
+        "50de688ec88b670b446af7c855dccb83f532919357d7093abc645c87f0348fbe",
+        "7be3219fe03ea7f53f702f0c9bf1533fc2aadb1568f5b550622542f66ae360c8",
+        "b505012569779866e6998ab7338599385d3cbae17653f4e12172308a25df0957",
+        "cc63cadc732c6f8f4918647cb3deb8fae5f3e6976c7a355c2aac3bfbe6717971",
+        "e48f63cf62dc8bf74536a33549ce0d50aeadf13e81a05aac0f5878ae5b0ee6db",
+        "ecb0307d1a586b282480f5c29bd5dd9a2fe1386a96de8a4f3ec514fd8ab097a3",
+        "ee0ff2a5f831c20515ba2476420872dd681a0d4a23d842b76463e88737f8fc04",
+        "fead2a8a06ce9a4a42669f4ae6f8effd0af36c2b5d857b908a1d34d834e018aa"
+      ],
+      "accepted_loaded_registry_file_count": 16,
+      "accepted_loaded_registry_files": [
+        {
+          "path": "contracts-and-trajectories/table-iii/inputs/trajectories/c1_left_current_model.json",
+          "public_file_sha256": "7bae2a68154a0769e0536fb81d0d2a6b4014dbb82647b555fd375a2d7aa50f0e",
+          "retained_reference_trajectory_content_id": "ecb0307d1a586b282480f5c29bd5dd9a2fe1386a96de8a4f3ec514fd8ab097a3"
+        },
+        {
+          "path": "contracts-and-trajectories/table-iii/inputs/trajectories/c1_right_current_model.json",
+          "public_file_sha256": "40d129b21a9a77432982c77cf58f323cf19f132b92161eb817c4e7ac9d794509",
+          "retained_reference_trajectory_content_id": "50de688ec88b670b446af7c855dccb83f532919357d7093abc645c87f0348fbe"
+        },
+        {
+          "path": "contracts-and-trajectories/table-iii/inputs/trajectories/c3_left_current_model.json",
+          "public_file_sha256": "6b07a400de199f1077e0cdab2f6b2e41b7a894819eece10ac3da2847e3f54985",
+          "retained_reference_trajectory_content_id": "333d6ad9e4bf882fdd9aa996b1e961b00d7f97b45f1b4941b35eb0619c23e148"
+        },
+        {
+          "path": "contracts-and-trajectories/table-iii/inputs/trajectories/c3_right_current_model.json",
+          "public_file_sha256": "fc0824a124ff7de23125154f8212ff40ea4479d86b9742c4145c798fb4ee0914",
+          "retained_reference_trajectory_content_id": "e48f63cf62dc8bf74536a33549ce0d50aeadf13e81a05aac0f5878ae5b0ee6db"
+        },
+        {
+          "path": "contracts-and-trajectories/table-iii/inputs/trajectories/h_carry_to_home_right_after_unload.json",
+          "public_file_sha256": "f2a9b5ca90ce996d6ec38b3a9999cd2f35290ae0336e2990abf02f83aa7aaef8",
+          "retained_reference_trajectory_content_id": "7be3219fe03ea7f53f702f0c9bf1533fc2aadb1568f5b550622542f66ae360c8"
+        },
+        {
+          "path": "contracts-and-trajectories/table-iii/inputs/trajectories/h_home_to_large_left.json",
+          "public_file_sha256": "4e0c2e016d73ef3329ddfe13dc7bc2046ab4d9eb584520257cb1398c04d7d07b",
+          "retained_reference_trajectory_content_id": "2f5344da91166064178a4e57f96b9dde56340acb95f3ecb43bf0931107e89bef"
+        },
+        {
+          "path": "contracts-and-trajectories/table-iii/inputs/trajectories/h_home_to_large_right.json",
+          "public_file_sha256": "33c20722031489a99f9eb49893c380ccfa1a5c41db2d07d868b163a1b1895307",
+          "retained_reference_trajectory_content_id": "2c3f48e539e0a1718f402f36530100bfb824ba5eb7859ae634361eed32efa9b3"
+        },
+        {
+          "path": "contracts-and-trajectories/table-iii/inputs/trajectories/h_large_to_home_left.json",
+          "public_file_sha256": "b0d95bf267f1e5cf76c6ef0f4a2338d404213e12ba5557e66c2b21a8d168ad9d",
+          "retained_reference_trajectory_content_id": "ee0ff2a5f831c20515ba2476420872dd681a0d4a23d842b76463e88737f8fc04"
+        },
+        {
+          "path": "contracts-and-trajectories/table-iii/inputs/trajectories/h_left_retreat.json",
+          "public_file_sha256": "537b986ff76af210a414bae004d2c2e759273082d9102132038cb064d7fde6b3",
+          "retained_reference_trajectory_content_id": "b505012569779866e6998ab7338599385d3cbae17653f4e12172308a25df0957"
+        },
+        {
+          "path": "contracts-and-trajectories/table-iii/inputs/trajectories/h_left_to_handover__r_left_enter.json",
+          "public_file_sha256": "5c89068d9c3db6c8eabec6515358508c7221897bd2d22a583fd7b9db37eaf637",
+          "retained_reference_trajectory_content_id": "fead2a8a06ce9a4a42669f4ae6f8effd0af36c2b5d857b908a1d34d834e018aa"
+        },
+        {
+          "path": "contracts-and-trajectories/table-iii/inputs/trajectories/h_receiver_only_carry_10mm.json",
+          "public_file_sha256": "4cefa4549c39daed14084578fe7b95381e5e0c704e736986b140456cd120a995",
+          "retained_reference_trajectory_content_id": "3c34bd88f417f858cbc26e8f05300fee1f2dbf1a1d6c5aa80049dab211a4cd86"
+        },
+        {
+          "path": "contracts-and-trajectories/table-iii/inputs/trajectories/h_right_carry_away.json",
+          "public_file_sha256": "646189c0718558b952fdf689990dd58c723dca0be6f1ccab17854504d0374a9c",
+          "retained_reference_trajectory_content_id": "cc63cadc732c6f8f4918647cb3deb8fae5f3e6976c7a355c2aac3bfbe6717971"
+        },
+        {
+          "path": "contracts-and-trajectories/table-iii/inputs/trajectories/h_right_carry_joined.json",
+          "public_file_sha256": "d835727d9b4728a9e320ae240bf3b9c3aeaa813e658e19085a5c09d9ea6c06c2",
+          "retained_reference_trajectory_content_id": "31f2003ecb418fad3e4ad623fae158b862faf9d29329a310fa2271aa5a3343fc"
+        },
+        {
+          "path": "contracts-and-trajectories/table-iii/inputs/trajectories/h_right_to_handover__r_right_enter.json",
+          "public_file_sha256": "e9503ff3dd58c5512cda2601a048c36182b81d9995895a4ce74087091c298c47",
+          "retained_reference_trajectory_content_id": "0ee347462d224fae42637f8cc2046b9790edc2dece497b1760f85cb10fef4089"
+        },
+        {
+          "path": "contracts-and-trajectories/table-iii/inputs/trajectories/r_left_exit.json",
+          "public_file_sha256": "a540938ca530a4a7f135b08f709143428113c3d805e9d247826bb3de4bb82bd2",
+          "retained_reference_trajectory_content_id": "b505012569779866e6998ab7338599385d3cbae17653f4e12172308a25df0957"
+        },
+        {
+          "path": "contracts-and-trajectories/table-iii/inputs/trajectories/r_right_exit.json",
+          "public_file_sha256": "ee29db0d63e4807347f17143dc61e7dff29b111e0416cec444c70013bd1616e7",
+          "retained_reference_trajectory_content_id": "cc63cadc732c6f8f4918647cb3deb8fae5f3e6976c7a355c2aac3bfbe6717971"
+        }
+      ],
+      "case_id": "I4F-H-SAFE-T3",
+      "expected_deployment_decision": "RELEASE",
+      "expected_verdict": "verified-within-bounds",
+      "source": {
+        "path": "contracts-and-trajectories/table-iii/inputs/sources/H_SAFE_HANDOVER.py",
+        "public_file_sha256": "077b286ca3af15ed074210c7aa836b848348770f6ac79ebea17af945f39152ab",
+        "retained_reference_program_content_id": "f1f1351cb7da26502eca9ac3ba2336d8f36dfaf00417e0620a80e681cecc0689"
+      },
+      "source_referenced_trajectory_content_ids": [
+        "2c3f48e539e0a1718f402f36530100bfb824ba5eb7859ae634361eed32efa9b3",
+        "2f5344da91166064178a4e57f96b9dde56340acb95f3ecb43bf0931107e89bef",
+        "31f2003ecb418fad3e4ad623fae158b862faf9d29329a310fa2271aa5a3343fc",
+        "ee0ff2a5f831c20515ba2476420872dd681a0d4a23d842b76463e88737f8fc04"
+      ]
+    },
+    {
+      "accepted_loaded_registry_content_id_count": 14,
+      "accepted_loaded_registry_content_ids": [
+        "0ee347462d224fae42637f8cc2046b9790edc2dece497b1760f85cb10fef4089",
+        "2c3f48e539e0a1718f402f36530100bfb824ba5eb7859ae634361eed32efa9b3",
+        "2f5344da91166064178a4e57f96b9dde56340acb95f3ecb43bf0931107e89bef",
+        "31f2003ecb418fad3e4ad623fae158b862faf9d29329a310fa2271aa5a3343fc",
+        "333d6ad9e4bf882fdd9aa996b1e961b00d7f97b45f1b4941b35eb0619c23e148",
+        "3c34bd88f417f858cbc26e8f05300fee1f2dbf1a1d6c5aa80049dab211a4cd86",
+        "50de688ec88b670b446af7c855dccb83f532919357d7093abc645c87f0348fbe",
+        "7be3219fe03ea7f53f702f0c9bf1533fc2aadb1568f5b550622542f66ae360c8",
+        "b505012569779866e6998ab7338599385d3cbae17653f4e12172308a25df0957",
+        "cc63cadc732c6f8f4918647cb3deb8fae5f3e6976c7a355c2aac3bfbe6717971",
+        "e48f63cf62dc8bf74536a33549ce0d50aeadf13e81a05aac0f5878ae5b0ee6db",
+        "ecb0307d1a586b282480f5c29bd5dd9a2fe1386a96de8a4f3ec514fd8ab097a3",
+        "ee0ff2a5f831c20515ba2476420872dd681a0d4a23d842b76463e88737f8fc04",
+        "fead2a8a06ce9a4a42669f4ae6f8effd0af36c2b5d857b908a1d34d834e018aa"
+      ],
+      "accepted_loaded_registry_file_count": 16,
+      "accepted_loaded_registry_files": [
+        {
+          "path": "contracts-and-trajectories/table-iii/inputs/trajectories/c1_left_current_model.json",
+          "public_file_sha256": "7bae2a68154a0769e0536fb81d0d2a6b4014dbb82647b555fd375a2d7aa50f0e",
+          "retained_reference_trajectory_content_id": "ecb0307d1a586b282480f5c29bd5dd9a2fe1386a96de8a4f3ec514fd8ab097a3"
+        },
+        {
+          "path": "contracts-and-trajectories/table-iii/inputs/trajectories/c1_right_current_model.json",
+          "public_file_sha256": "40d129b21a9a77432982c77cf58f323cf19f132b92161eb817c4e7ac9d794509",
+          "retained_reference_trajectory_content_id": "50de688ec88b670b446af7c855dccb83f532919357d7093abc645c87f0348fbe"
+        },
+        {
+          "path": "contracts-and-trajectories/table-iii/inputs/trajectories/c3_left_current_model.json",
+          "public_file_sha256": "6b07a400de199f1077e0cdab2f6b2e41b7a894819eece10ac3da2847e3f54985",
+          "retained_reference_trajectory_content_id": "333d6ad9e4bf882fdd9aa996b1e961b00d7f97b45f1b4941b35eb0619c23e148"
+        },
+        {
+          "path": "contracts-and-trajectories/table-iii/inputs/trajectories/c3_right_current_model.json",
+          "public_file_sha256": "fc0824a124ff7de23125154f8212ff40ea4479d86b9742c4145c798fb4ee0914",
+          "retained_reference_trajectory_content_id": "e48f63cf62dc8bf74536a33549ce0d50aeadf13e81a05aac0f5878ae5b0ee6db"
+        },
+        {
+          "path": "contracts-and-trajectories/table-iii/inputs/trajectories/h_carry_to_home_right_after_unload.json",
+          "public_file_sha256": "f2a9b5ca90ce996d6ec38b3a9999cd2f35290ae0336e2990abf02f83aa7aaef8",
+          "retained_reference_trajectory_content_id": "7be3219fe03ea7f53f702f0c9bf1533fc2aadb1568f5b550622542f66ae360c8"
+        },
+        {
+          "path": "contracts-and-trajectories/table-iii/inputs/trajectories/h_home_to_large_left.json",
+          "public_file_sha256": "4e0c2e016d73ef3329ddfe13dc7bc2046ab4d9eb584520257cb1398c04d7d07b",
+          "retained_reference_trajectory_content_id": "2f5344da91166064178a4e57f96b9dde56340acb95f3ecb43bf0931107e89bef"
+        },
+        {
+          "path": "contracts-and-trajectories/table-iii/inputs/trajectories/h_home_to_large_right.json",
+          "public_file_sha256": "33c20722031489a99f9eb49893c380ccfa1a5c41db2d07d868b163a1b1895307",
+          "retained_reference_trajectory_content_id": "2c3f48e539e0a1718f402f36530100bfb824ba5eb7859ae634361eed32efa9b3"
+        },
+        {
+          "path": "contracts-and-trajectories/table-iii/inputs/trajectories/h_large_to_home_left.json",
+          "public_file_sha256": "b0d95bf267f1e5cf76c6ef0f4a2338d404213e12ba5557e66c2b21a8d168ad9d",
+          "retained_reference_trajectory_content_id": "ee0ff2a5f831c20515ba2476420872dd681a0d4a23d842b76463e88737f8fc04"
+        },
+        {
+          "path": "contracts-and-trajectories/table-iii/inputs/trajectories/h_left_retreat.json",
+          "public_file_sha256": "537b986ff76af210a414bae004d2c2e759273082d9102132038cb064d7fde6b3",
+          "retained_reference_trajectory_content_id": "b505012569779866e6998ab7338599385d3cbae17653f4e12172308a25df0957"
+        },
+        {
+          "path": "contracts-and-trajectories/table-iii/inputs/trajectories/h_left_to_handover__r_left_enter.json",
+          "public_file_sha256": "5c89068d9c3db6c8eabec6515358508c7221897bd2d22a583fd7b9db37eaf637",
+          "retained_reference_trajectory_content_id": "fead2a8a06ce9a4a42669f4ae6f8effd0af36c2b5d857b908a1d34d834e018aa"
+        },
+        {
+          "path": "contracts-and-trajectories/table-iii/inputs/trajectories/h_receiver_only_carry_10mm.json",
+          "public_file_sha256": "4cefa4549c39daed14084578fe7b95381e5e0c704e736986b140456cd120a995",
+          "retained_reference_trajectory_content_id": "3c34bd88f417f858cbc26e8f05300fee1f2dbf1a1d6c5aa80049dab211a4cd86"
+        },
+        {
+          "path": "contracts-and-trajectories/table-iii/inputs/trajectories/h_right_carry_away.json",
+          "public_file_sha256": "646189c0718558b952fdf689990dd58c723dca0be6f1ccab17854504d0374a9c",
+          "retained_reference_trajectory_content_id": "cc63cadc732c6f8f4918647cb3deb8fae5f3e6976c7a355c2aac3bfbe6717971"
+        },
+        {
+          "path": "contracts-and-trajectories/table-iii/inputs/trajectories/h_right_carry_joined.json",
+          "public_file_sha256": "d835727d9b4728a9e320ae240bf3b9c3aeaa813e658e19085a5c09d9ea6c06c2",
+          "retained_reference_trajectory_content_id": "31f2003ecb418fad3e4ad623fae158b862faf9d29329a310fa2271aa5a3343fc"
+        },
+        {
+          "path": "contracts-and-trajectories/table-iii/inputs/trajectories/h_right_to_handover__r_right_enter.json",
+          "public_file_sha256": "e9503ff3dd58c5512cda2601a048c36182b81d9995895a4ce74087091c298c47",
+          "retained_reference_trajectory_content_id": "0ee347462d224fae42637f8cc2046b9790edc2dece497b1760f85cb10fef4089"
+        },
+        {
+          "path": "contracts-and-trajectories/table-iii/inputs/trajectories/r_left_exit.json",
+          "public_file_sha256": "a540938ca530a4a7f135b08f709143428113c3d805e9d247826bb3de4bb82bd2",
+          "retained_reference_trajectory_content_id": "b505012569779866e6998ab7338599385d3cbae17653f4e12172308a25df0957"
+        },
+        {
+          "path": "contracts-and-trajectories/table-iii/inputs/trajectories/r_right_exit.json",
+          "public_file_sha256": "ee29db0d63e4807347f17143dc61e7dff29b111e0416cec444c70013bd1616e7",
+          "retained_reference_trajectory_content_id": "cc63cadc732c6f8f4918647cb3deb8fae5f3e6976c7a355c2aac3bfbe6717971"
+        }
+      ],
+      "case_id": "I4F-H-UNSAFE-T2",
+      "expected_deployment_decision": "BLOCK",
+      "expected_verdict": "violated",
+      "source": {
+        "path": "contracts-and-trajectories/table-iii/inputs/sources/H_UNSAFE_EARLY_RELEASE.py",
+        "public_file_sha256": "2a86d17029ebccd3964b121d5d04ea5374bba21205e7b960a7af598a32f132e9",
+        "retained_reference_program_content_id": "67c0b9dfd95b114ef5e12c0a0d3ae0221d32851e7b2b6835554ae3347e53d9a8"
+      },
+      "source_referenced_trajectory_content_ids": [
+        "2c3f48e539e0a1718f402f36530100bfb824ba5eb7859ae634361eed32efa9b3",
+        "2f5344da91166064178a4e57f96b9dde56340acb95f3ecb43bf0931107e89bef"
+      ]
+    },
+    {
+      "accepted_loaded_registry_content_id_count": 14,
+      "accepted_loaded_registry_content_ids": [
+        "0ee347462d224fae42637f8cc2046b9790edc2dece497b1760f85cb10fef4089",
+        "2c3f48e539e0a1718f402f36530100bfb824ba5eb7859ae634361eed32efa9b3",
+        "2f5344da91166064178a4e57f96b9dde56340acb95f3ecb43bf0931107e89bef",
+        "31f2003ecb418fad3e4ad623fae158b862faf9d29329a310fa2271aa5a3343fc",
+        "333d6ad9e4bf882fdd9aa996b1e961b00d7f97b45f1b4941b35eb0619c23e148",
+        "3c34bd88f417f858cbc26e8f05300fee1f2dbf1a1d6c5aa80049dab211a4cd86",
+        "50de688ec88b670b446af7c855dccb83f532919357d7093abc645c87f0348fbe",
+        "7be3219fe03ea7f53f702f0c9bf1533fc2aadb1568f5b550622542f66ae360c8",
+        "b505012569779866e6998ab7338599385d3cbae17653f4e12172308a25df0957",
+        "cc63cadc732c6f8f4918647cb3deb8fae5f3e6976c7a355c2aac3bfbe6717971",
+        "e48f63cf62dc8bf74536a33549ce0d50aeadf13e81a05aac0f5878ae5b0ee6db",
+        "ecb0307d1a586b282480f5c29bd5dd9a2fe1386a96de8a4f3ec514fd8ab097a3",
+        "ee0ff2a5f831c20515ba2476420872dd681a0d4a23d842b76463e88737f8fc04",
+        "fead2a8a06ce9a4a42669f4ae6f8effd0af36c2b5d857b908a1d34d834e018aa"
+      ],
+      "accepted_loaded_registry_file_count": 16,
+      "accepted_loaded_registry_files": [
+        {
+          "path": "contracts-and-trajectories/table-iii/inputs/trajectories/c1_left_current_model.json",
+          "public_file_sha256": "7bae2a68154a0769e0536fb81d0d2a6b4014dbb82647b555fd375a2d7aa50f0e",
+          "retained_reference_trajectory_content_id": "ecb0307d1a586b282480f5c29bd5dd9a2fe1386a96de8a4f3ec514fd8ab097a3"
+        },
+        {
+          "path": "contracts-and-trajectories/table-iii/inputs/trajectories/c1_right_current_model.json",
+          "public_file_sha256": "40d129b21a9a77432982c77cf58f323cf19f132b92161eb817c4e7ac9d794509",
+          "retained_reference_trajectory_content_id": "50de688ec88b670b446af7c855dccb83f532919357d7093abc645c87f0348fbe"
+        },
+        {
+          "path": "contracts-and-trajectories/table-iii/inputs/trajectories/c3_left_current_model.json",
+          "public_file_sha256": "6b07a400de199f1077e0cdab2f6b2e41b7a894819eece10ac3da2847e3f54985",
+          "retained_reference_trajectory_content_id": "333d6ad9e4bf882fdd9aa996b1e961b00d7f97b45f1b4941b35eb0619c23e148"
+        },
+        {
+          "path": "contracts-and-trajectories/table-iii/inputs/trajectories/c3_right_current_model.json",
+          "public_file_sha256": "fc0824a124ff7de23125154f8212ff40ea4479d86b9742c4145c798fb4ee0914",
+          "retained_reference_trajectory_content_id": "e48f63cf62dc8bf74536a33549ce0d50aeadf13e81a05aac0f5878ae5b0ee6db"
+        },
+        {
+          "path": "contracts-and-trajectories/table-iii/inputs/trajectories/h_carry_to_home_right_after_unload.json",
+          "public_file_sha256": "f2a9b5ca90ce996d6ec38b3a9999cd2f35290ae0336e2990abf02f83aa7aaef8",
+          "retained_reference_trajectory_content_id": "7be3219fe03ea7f53f702f0c9bf1533fc2aadb1568f5b550622542f66ae360c8"
+        },
+        {
+          "path": "contracts-and-trajectories/table-iii/inputs/trajectories/h_home_to_large_left.json",
+          "public_file_sha256": "4e0c2e016d73ef3329ddfe13dc7bc2046ab4d9eb584520257cb1398c04d7d07b",
+          "retained_reference_trajectory_content_id": "2f5344da91166064178a4e57f96b9dde56340acb95f3ecb43bf0931107e89bef"
+        },
+        {
+          "path": "contracts-and-trajectories/table-iii/inputs/trajectories/h_home_to_large_right.json",
+          "public_file_sha256": "33c20722031489a99f9eb49893c380ccfa1a5c41db2d07d868b163a1b1895307",
+          "retained_reference_trajectory_content_id": "2c3f48e539e0a1718f402f36530100bfb824ba5eb7859ae634361eed32efa9b3"
+        },
+        {
+          "path": "contracts-and-trajectories/table-iii/inputs/trajectories/h_large_to_home_left.json",
+          "public_file_sha256": "b0d95bf267f1e5cf76c6ef0f4a2338d404213e12ba5557e66c2b21a8d168ad9d",
+          "retained_reference_trajectory_content_id": "ee0ff2a5f831c20515ba2476420872dd681a0d4a23d842b76463e88737f8fc04"
+        },
+        {
+          "path": "contracts-and-trajectories/table-iii/inputs/trajectories/h_left_retreat.json",
+          "public_file_sha256": "537b986ff76af210a414bae004d2c2e759273082d9102132038cb064d7fde6b3",
+          "retained_reference_trajectory_content_id": "b505012569779866e6998ab7338599385d3cbae17653f4e12172308a25df0957"
+        },
+        {
+          "path": "contracts-and-trajectories/table-iii/inputs/trajectories/h_left_to_handover__r_left_enter.json",
+          "public_file_sha256": "5c89068d9c3db6c8eabec6515358508c7221897bd2d22a583fd7b9db37eaf637",
+          "retained_reference_trajectory_content_id": "fead2a8a06ce9a4a42669f4ae6f8effd0af36c2b5d857b908a1d34d834e018aa"
+        },
+        {
+          "path": "contracts-and-trajectories/table-iii/inputs/trajectories/h_receiver_only_carry_10mm.json",
+          "public_file_sha256": "4cefa4549c39daed14084578fe7b95381e5e0c704e736986b140456cd120a995",
+          "retained_reference_trajectory_content_id": "3c34bd88f417f858cbc26e8f05300fee1f2dbf1a1d6c5aa80049dab211a4cd86"
+        },
+        {
+          "path": "contracts-and-trajectories/table-iii/inputs/trajectories/h_right_carry_away.json",
+          "public_file_sha256": "646189c0718558b952fdf689990dd58c723dca0be6f1ccab17854504d0374a9c",
+          "retained_reference_trajectory_content_id": "cc63cadc732c6f8f4918647cb3deb8fae5f3e6976c7a355c2aac3bfbe6717971"
+        },
+        {
+          "path": "contracts-and-trajectories/table-iii/inputs/trajectories/h_right_carry_joined.json",
+          "public_file_sha256": "d835727d9b4728a9e320ae240bf3b9c3aeaa813e658e19085a5c09d9ea6c06c2",
+          "retained_reference_trajectory_content_id": "31f2003ecb418fad3e4ad623fae158b862faf9d29329a310fa2271aa5a3343fc"
+        },
+        {
+          "path": "contracts-and-trajectories/table-iii/inputs/trajectories/h_right_to_handover__r_right_enter.json",
+          "public_file_sha256": "e9503ff3dd58c5512cda2601a048c36182b81d9995895a4ce74087091c298c47",
+          "retained_reference_trajectory_content_id": "0ee347462d224fae42637f8cc2046b9790edc2dece497b1760f85cb10fef4089"
+        },
+        {
+          "path": "contracts-and-trajectories/table-iii/inputs/trajectories/r_left_exit.json",
+          "public_file_sha256": "a540938ca530a4a7f135b08f709143428113c3d805e9d247826bb3de4bb82bd2",
+          "retained_reference_trajectory_content_id": "b505012569779866e6998ab7338599385d3cbae17653f4e12172308a25df0957"
+        },
+        {
+          "path": "contracts-and-trajectories/table-iii/inputs/trajectories/r_right_exit.json",
+          "public_file_sha256": "ee29db0d63e4807347f17143dc61e7dff29b111e0416cec444c70013bd1616e7",
+          "retained_reference_trajectory_content_id": "cc63cadc732c6f8f4918647cb3deb8fae5f3e6976c7a355c2aac3bfbe6717971"
+        }
+      ],
+      "case_id": "I4F-R-SAFE-T4",
+      "expected_deployment_decision": "RELEASE",
+      "expected_verdict": "verified-within-bounds",
+      "source": {
+        "path": "contracts-and-trajectories/table-iii/inputs/sources/R_SAFE_SEQUENTIAL_RESOURCE.py",
+        "public_file_sha256": "2f14193f75bf1d32a0c0868731ae1901b47b72fa79d42756116b0088fb8a223d",
+        "retained_reference_program_content_id": "3a590b6b969ca084811747a1404a612e384af711b4dcd17e2066a32262a1277f"
+      },
+      "source_referenced_trajectory_content_ids": [
+        "0ee347462d224fae42637f8cc2046b9790edc2dece497b1760f85cb10fef4089",
+        "b505012569779866e6998ab7338599385d3cbae17653f4e12172308a25df0957",
+        "cc63cadc732c6f8f4918647cb3deb8fae5f3e6976c7a355c2aac3bfbe6717971",
+        "fead2a8a06ce9a4a42669f4ae6f8effd0af36c2b5d857b908a1d34d834e018aa"
+      ]
+    },
+    {
+      "accepted_loaded_registry_content_id_count": 14,
+      "accepted_loaded_registry_content_ids": [
+        "0ee347462d224fae42637f8cc2046b9790edc2dece497b1760f85cb10fef4089",
+        "2c3f48e539e0a1718f402f36530100bfb824ba5eb7859ae634361eed32efa9b3",
+        "2f5344da91166064178a4e57f96b9dde56340acb95f3ecb43bf0931107e89bef",
+        "31f2003ecb418fad3e4ad623fae158b862faf9d29329a310fa2271aa5a3343fc",
+        "333d6ad9e4bf882fdd9aa996b1e961b00d7f97b45f1b4941b35eb0619c23e148",
+        "3c34bd88f417f858cbc26e8f05300fee1f2dbf1a1d6c5aa80049dab211a4cd86",
+        "50de688ec88b670b446af7c855dccb83f532919357d7093abc645c87f0348fbe",
+        "7be3219fe03ea7f53f702f0c9bf1533fc2aadb1568f5b550622542f66ae360c8",
+        "b505012569779866e6998ab7338599385d3cbae17653f4e12172308a25df0957",
+        "cc63cadc732c6f8f4918647cb3deb8fae5f3e6976c7a355c2aac3bfbe6717971",
+        "e48f63cf62dc8bf74536a33549ce0d50aeadf13e81a05aac0f5878ae5b0ee6db",
+        "ecb0307d1a586b282480f5c29bd5dd9a2fe1386a96de8a4f3ec514fd8ab097a3",
+        "ee0ff2a5f831c20515ba2476420872dd681a0d4a23d842b76463e88737f8fc04",
+        "fead2a8a06ce9a4a42669f4ae6f8effd0af36c2b5d857b908a1d34d834e018aa"
+      ],
+      "accepted_loaded_registry_file_count": 16,
+      "accepted_loaded_registry_files": [
+        {
+          "path": "contracts-and-trajectories/table-iii/inputs/trajectories/c1_left_current_model.json",
+          "public_file_sha256": "7bae2a68154a0769e0536fb81d0d2a6b4014dbb82647b555fd375a2d7aa50f0e",
+          "retained_reference_trajectory_content_id": "ecb0307d1a586b282480f5c29bd5dd9a2fe1386a96de8a4f3ec514fd8ab097a3"
+        },
+        {
+          "path": "contracts-and-trajectories/table-iii/inputs/trajectories/c1_right_current_model.json",
+          "public_file_sha256": "40d129b21a9a77432982c77cf58f323cf19f132b92161eb817c4e7ac9d794509",
+          "retained_reference_trajectory_content_id": "50de688ec88b670b446af7c855dccb83f532919357d7093abc645c87f0348fbe"
+        },
+        {
+          "path": "contracts-and-trajectories/table-iii/inputs/trajectories/c3_left_current_model.json",
+          "public_file_sha256": "6b07a400de199f1077e0cdab2f6b2e41b7a894819eece10ac3da2847e3f54985",
+          "retained_reference_trajectory_content_id": "333d6ad9e4bf882fdd9aa996b1e961b00d7f97b45f1b4941b35eb0619c23e148"
+        },
+        {
+          "path": "contracts-and-trajectories/table-iii/inputs/trajectories/c3_right_current_model.json",
+          "public_file_sha256": "fc0824a124ff7de23125154f8212ff40ea4479d86b9742c4145c798fb4ee0914",
+          "retained_reference_trajectory_content_id": "e48f63cf62dc8bf74536a33549ce0d50aeadf13e81a05aac0f5878ae5b0ee6db"
+        },
+        {
+          "path": "contracts-and-trajectories/table-iii/inputs/trajectories/h_carry_to_home_right_after_unload.json",
+          "public_file_sha256": "f2a9b5ca90ce996d6ec38b3a9999cd2f35290ae0336e2990abf02f83aa7aaef8",
+          "retained_reference_trajectory_content_id": "7be3219fe03ea7f53f702f0c9bf1533fc2aadb1568f5b550622542f66ae360c8"
+        },
+        {
+          "path": "contracts-and-trajectories/table-iii/inputs/trajectories/h_home_to_large_left.json",
+          "public_file_sha256": "4e0c2e016d73ef3329ddfe13dc7bc2046ab4d9eb584520257cb1398c04d7d07b",
+          "retained_reference_trajectory_content_id": "2f5344da91166064178a4e57f96b9dde56340acb95f3ecb43bf0931107e89bef"
+        },
+        {
+          "path": "contracts-and-trajectories/table-iii/inputs/trajectories/h_home_to_large_right.json",
+          "public_file_sha256": "33c20722031489a99f9eb49893c380ccfa1a5c41db2d07d868b163a1b1895307",
+          "retained_reference_trajectory_content_id": "2c3f48e539e0a1718f402f36530100bfb824ba5eb7859ae634361eed32efa9b3"
+        },
+        {
+          "path": "contracts-and-trajectories/table-iii/inputs/trajectories/h_large_to_home_left.json",
+          "public_file_sha256": "b0d95bf267f1e5cf76c6ef0f4a2338d404213e12ba5557e66c2b21a8d168ad9d",
+          "retained_reference_trajectory_content_id": "ee0ff2a5f831c20515ba2476420872dd681a0d4a23d842b76463e88737f8fc04"
+        },
+        {
+          "path": "contracts-and-trajectories/table-iii/inputs/trajectories/h_left_retreat.json",
+          "public_file_sha256": "537b986ff76af210a414bae004d2c2e759273082d9102132038cb064d7fde6b3",
+          "retained_reference_trajectory_content_id": "b505012569779866e6998ab7338599385d3cbae17653f4e12172308a25df0957"
+        },
+        {
+          "path": "contracts-and-trajectories/table-iii/inputs/trajectories/h_left_to_handover__r_left_enter.json",
+          "public_file_sha256": "5c89068d9c3db6c8eabec6515358508c7221897bd2d22a583fd7b9db37eaf637",
+          "retained_reference_trajectory_content_id": "fead2a8a06ce9a4a42669f4ae6f8effd0af36c2b5d857b908a1d34d834e018aa"
+        },
+        {
+          "path": "contracts-and-trajectories/table-iii/inputs/trajectories/h_receiver_only_carry_10mm.json",
+          "public_file_sha256": "4cefa4549c39daed14084578fe7b95381e5e0c704e736986b140456cd120a995",
+          "retained_reference_trajectory_content_id": "3c34bd88f417f858cbc26e8f05300fee1f2dbf1a1d6c5aa80049dab211a4cd86"
+        },
+        {
+          "path": "contracts-and-trajectories/table-iii/inputs/trajectories/h_right_carry_away.json",
+          "public_file_sha256": "646189c0718558b952fdf689990dd58c723dca0be6f1ccab17854504d0374a9c",
+          "retained_reference_trajectory_content_id": "cc63cadc732c6f8f4918647cb3deb8fae5f3e6976c7a355c2aac3bfbe6717971"
+        },
+        {
+          "path": "contracts-and-trajectories/table-iii/inputs/trajectories/h_right_carry_joined.json",
+          "public_file_sha256": "d835727d9b4728a9e320ae240bf3b9c3aeaa813e658e19085a5c09d9ea6c06c2",
+          "retained_reference_trajectory_content_id": "31f2003ecb418fad3e4ad623fae158b862faf9d29329a310fa2271aa5a3343fc"
+        },
+        {
+          "path": "contracts-and-trajectories/table-iii/inputs/trajectories/h_right_to_handover__r_right_enter.json",
+          "public_file_sha256": "e9503ff3dd58c5512cda2601a048c36182b81d9995895a4ce74087091c298c47",
+          "retained_reference_trajectory_content_id": "0ee347462d224fae42637f8cc2046b9790edc2dece497b1760f85cb10fef4089"
+        },
+        {
+          "path": "contracts-and-trajectories/table-iii/inputs/trajectories/r_left_exit.json",
+          "public_file_sha256": "a540938ca530a4a7f135b08f709143428113c3d805e9d247826bb3de4bb82bd2",
+          "retained_reference_trajectory_content_id": "b505012569779866e6998ab7338599385d3cbae17653f4e12172308a25df0957"
+        },
+        {
+          "path": "contracts-and-trajectories/table-iii/inputs/trajectories/r_right_exit.json",
+          "public_file_sha256": "ee29db0d63e4807347f17143dc61e7dff29b111e0416cec444c70013bd1616e7",
+          "retained_reference_trajectory_content_id": "cc63cadc732c6f8f4918647cb3deb8fae5f3e6976c7a355c2aac3bfbe6717971"
+        }
+      ],
+      "case_id": "I4F-R-UNSAFE-T0",
+      "expected_deployment_decision": "BLOCK",
+      "expected_verdict": "violated",
+      "source": {
+        "path": "contracts-and-trajectories/table-iii/inputs/sources/R_UNSAFE_NO_OWNER.py",
+        "public_file_sha256": "f7b8d25e209f5d2640da409a38510ac0067b445450275949c402950225cc31c9",
+        "retained_reference_program_content_id": "693add26fa754a9d3490185eff247347c4a0b7bf24a96792582b4db7898cfe43"
+      },
+      "source_referenced_trajectory_content_ids": [
+        "0ee347462d224fae42637f8cc2046b9790edc2dece497b1760f85cb10fef4089",
+        "cc63cadc732c6f8f4918647cb3deb8fae5f3e6976c7a355c2aac3bfbe6717971"
+      ]
+    }
+  ],
+  "identity_boundary": "Public file SHA-256 values identify included bytes. Retained reference content IDs are accepted-run semantic joins and are named separately. H/R loaded a 16-file registry that deduplicated to 14 semantic IDs; each source references only the listed subset, so registry size is not trajectory use.",
+  "schema": "bisafecode.public.table-iii-case-input-bindings/v1",
+  "shared_inputs": {
+    "attachments": {
+      "path": "contracts-and-trajectories/table-iii/inputs/ATTACHMENTS.tsv",
+      "public_file_sha256": "669fea0994c8e1b93787a5a00a1add2f6ad16e37bce0834f917373eb82c986bd"
+    },
+    "checked_pair_table": {
+      "path": "contracts-and-trajectories/table-iii/inputs/TRACKING_ENVELOPE_FINAL_PAIRS.tsv",
+      "public_file_sha256": "5fd7308e9e46c9bca61eeaf032aaa712bd6e38a57e91b58f7dd12acc59d460e0"
+    },
+    "formal_schedule": {
+      "path": "contracts-and-trajectories/table-iii/inputs/FORMAL_BENCHMARK_SCHEDULE.json",
+      "public_file_sha256": "5d6fb773d2e1de5598a6f9905491383fec022294d6e4becdbcc9bd22e38a13be"
+    },
+    "geometry_policy": {
+      "path": "contracts-and-trajectories/qualification/reference-contract/geometry_policy.json",
+      "public_file_sha256": "d3c52aaaacadffb2615c8f59b6feec18b23a1db4879c2ba3c801b8e0128a46a1"
+    },
+    "native_server_source": {
+      "path": "final-build/native-probe-source/openarm_fcl_pair_probe_server.cpp",
+      "public_file_sha256": "8a149032b12f190d3ce1d96669d873dd17468fc1f60d7e77f140f753decc5fbc"
+    },
+    "srdf": {
+      "path": "contracts-and-trajectories/c115/model/ROBOT_DESCRIPTION_SEMANTIC.srdf",
+      "public_file_sha256": "c9ff981f67c9ece3ae75c9b3bdde6c5e5c54ac916d89b65bc9a6f44d0c504582"
+    },
+    "urdf": {
+      "path": "contracts-and-trajectories/c115/model/ROBOT_DESCRIPTION.urdf",
+      "public_file_sha256": "c2b12f61c76d528805ea533714744f4778d0c71e8111efe94fa9d1477e0713fe"
+    }
+  }
+}

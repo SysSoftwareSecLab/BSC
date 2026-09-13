@@ -1,0 +1,10 @@
+def task():
+    close("left", "payload_hr", 3000000000)
+    move("left", "2f5344da91166064178a4e57f96b9dde56340acb95f3ecb43bf0931107e89bef")
+    move("right", "2c3f48e539e0a1718f402f36530100bfb824ba5eb7859ae634361eed32efa9b3")
+    close("right", "payload_hr", 3000000000)
+    wait("right", 1000000000)
+    transfer_authority("payload_hr", "left", "right")
+    open("left", "payload_hr", 3000000000)
+    move("left", "ee0ff2a5f831c20515ba2476420872dd681a0d4a23d842b76463e88737f8fc04")
+    move("right", "31f2003ecb418fad3e4ad623fae158b862faf9d29329a310fa2271aa5a3343fc")

@@ -1,0 +1,136 @@
+{
+  "file_count": 18,
+  "files": [
+    {
+      "artifact_path": "contracts-and-trajectories/mac-controlled-freeze/ASSET_MANIFEST.json",
+      "candidate_path": "03_experiments/contracts/EXP-S4-002_CONTROLLED_UNSEEN_FORMAL_FREEZE/ASSET_MANIFEST.json",
+      "path": "ASSET_MANIFEST.json",
+      "sha256": "05fdb9983298638f6c4f822f96c0118be23d572192d2fba8b40a8fca3fb7674e",
+      "size_bytes": 3082
+    },
+    {
+      "artifact_path": "contracts-and-trajectories/mac-controlled-freeze/GRAMMAR_AND_FAMILY_SPEC.json",
+      "candidate_path": "03_experiments/contracts/EXP-S4-002_CONTROLLED_UNSEEN_FORMAL_FREEZE/GRAMMAR_AND_FAMILY_SPEC.json",
+      "path": "GRAMMAR_AND_FAMILY_SPEC.json",
+      "sha256": "899812b31f71db398ddd53c05efee65e227e6ffaba08e0793d5da3c7ed47115a",
+      "size_bytes": 5115
+    },
+    {
+      "artifact_path": "contracts-and-trajectories/mac-controlled-freeze/METHOD_AND_BASELINE_BUDGET_CONTRACT.json",
+      "candidate_path": "03_experiments/contracts/EXP-S4-002_CONTROLLED_UNSEEN_FORMAL_FREEZE/METHOD_AND_BASELINE_BUDGET_CONTRACT.json",
+      "path": "METHOD_AND_BASELINE_BUDGET_CONTRACT.json",
+      "sha256": "aa15c75582194c89f02dd5aa753e9a052c6432cc68e8b0f83a9a54330c3f23cf",
+      "size_bytes": 4706
+    },
+    {
+      "artifact_path": "contracts-and-trajectories/mac-controlled-freeze/ORACLE_AND_ASSET_CONTRACT.json",
+      "candidate_path": "03_experiments/contracts/EXP-S4-002_CONTROLLED_UNSEEN_FORMAL_FREEZE/ORACLE_AND_ASSET_CONTRACT.json",
+      "path": "ORACLE_AND_ASSET_CONTRACT.json",
+      "sha256": "82c2eb87c5a6cbe6bc8e5191fd4bfd728f2281f350ad2afdce50c186f8e6ffa0",
+      "size_bytes": 3546
+    },
+    {
+      "artifact_path": "contracts-and-trajectories/mac-controlled-freeze/assets/geometry_policy.json",
+      "candidate_path": "03_experiments/contracts/EXP-S4-002_CONTROLLED_UNSEEN_FORMAL_FREEZE/assets/geometry_policy.json",
+      "path": "assets/geometry_policy.json",
+      "sha256": "d3c52aaaacadffb2615c8f59b6feec18b23a1db4879c2ba3c801b8e0128a46a1",
+      "size_bytes": 1440
+    },
+    {
+      "artifact_path": "contracts-and-trajectories/mac-controlled-freeze/assets/logical_event_schema.json",
+      "candidate_path": "03_experiments/contracts/EXP-S4-002_CONTROLLED_UNSEEN_FORMAL_FREEZE/assets/logical_event_schema.json",
+      "path": "assets/logical_event_schema.json",
+      "sha256": "42831b3fe884920b37156292b558ecba5db43cacc352e8614c59c459a4b370f6",
+      "size_bytes": 1062
+    },
+    {
+      "artifact_path": "contracts-and-trajectories/mac-controlled-freeze/assets/logical_oracle_rules.json",
+      "candidate_path": "03_experiments/contracts/EXP-S4-002_CONTROLLED_UNSEEN_FORMAL_FREEZE/assets/logical_oracle_rules.json",
+      "path": "assets/logical_oracle_rules.json",
+      "sha256": "2634b198d99bc8437c98727ced73887d3293c4a5e230de0cbf116702173850ee",
+      "size_bytes": 1065
+    },
+    {
+      "artifact_path": "contracts-and-trajectories/mac-controlled-freeze/assets/model.json",
+      "candidate_path": "03_experiments/contracts/EXP-S4-002_CONTROLLED_UNSEEN_FORMAL_FREEZE/assets/model.json",
+      "path": "assets/model.json",
+      "sha256": "681883708614c393f3372628bb399d1feab3af645135095b82ecbbebfe135a51",
+      "size_bytes": 1034
+    },
+    {
+      "artifact_path": "contracts-and-trajectories/mac-controlled-freeze/assets/object_resource_semantics.json",
+      "candidate_path": "03_experiments/contracts/EXP-S4-002_CONTROLLED_UNSEEN_FORMAL_FREEZE/assets/object_resource_semantics.json",
+      "path": "assets/object_resource_semantics.json",
+      "sha256": "6f9833f6c5d6671ee0a6826f9e944a8f0bac6ac97cfa72a830ed256e5294410d",
+      "size_bytes": 767
+    },
+    {
+      "artifact_path": "contracts-and-trajectories/mac-controlled-freeze/assets/scene.json",
+      "candidate_path": "03_experiments/contracts/EXP-S4-002_CONTROLLED_UNSEEN_FORMAL_FREEZE/assets/scene.json",
+      "path": "assets/scene.json",
+      "sha256": "d2a3c53e7f1af887bfa3e633c280b017504c68f21fdd0289cb76ce5e841cfe97",
+      "size_bytes": 927
+    },
+    {
+      "artifact_path": "contracts-and-trajectories/mac-controlled-freeze/assets/trajectories/left_approach.json",
+      "candidate_path": "03_experiments/contracts/EXP-S4-002_CONTROLLED_UNSEEN_FORMAL_FREEZE/assets/trajectories/left_approach.json",
+      "path": "assets/trajectories/left_approach.json",
+      "sha256": "397771ebfd945851aa0cff681fe3cee96b72dc3775703aa8493803fb90c837da",
+      "size_bytes": 4811
+    },
+    {
+      "artifact_path": "contracts-and-trajectories/mac-controlled-freeze/assets/trajectories/left_approach.sidecar.json",
+      "candidate_path": "03_experiments/contracts/EXP-S4-002_CONTROLLED_UNSEEN_FORMAL_FREEZE/assets/trajectories/left_approach.sidecar.json",
+      "path": "assets/trajectories/left_approach.sidecar.json",
+      "sha256": "5ea395af84149dff2570c52c08cafc928e2e4592a53da27c6c4d7490e6510ed8",
+      "size_bytes": 767
+    },
+    {
+      "artifact_path": "contracts-and-trajectories/mac-controlled-freeze/assets/trajectories/left_retreat.json",
+      "candidate_path": "03_experiments/contracts/EXP-S4-002_CONTROLLED_UNSEEN_FORMAL_FREEZE/assets/trajectories/left_retreat.json",
+      "path": "assets/trajectories/left_retreat.json",
+      "sha256": "068689c4eedf23894addcd228602a5bffdbb82df1029b5ea24df820fcce39dac",
+      "size_bytes": 2684
+    },
+    {
+      "artifact_path": "contracts-and-trajectories/mac-controlled-freeze/assets/trajectories/left_retreat.sidecar.json",
+      "candidate_path": "03_experiments/contracts/EXP-S4-002_CONTROLLED_UNSEEN_FORMAL_FREEZE/assets/trajectories/left_retreat.sidecar.json",
+      "path": "assets/trajectories/left_retreat.sidecar.json",
+      "sha256": "e043605d14a78effc12bcdba6ec17b2cccfade40e3d974e8788861e5c0b1fdf9",
+      "size_bytes": 766
+    },
+    {
+      "artifact_path": "contracts-and-trajectories/mac-controlled-freeze/assets/trajectories/right_approach.json",
+      "candidate_path": "03_experiments/contracts/EXP-S4-002_CONTROLLED_UNSEEN_FORMAL_FREEZE/assets/trajectories/right_approach.json",
+      "path": "assets/trajectories/right_approach.json",
+      "sha256": "6cea1dcf1a9d8ffab50422561fb5de534f0feea76d82502481c92e835615f77b",
+      "size_bytes": 4852
+    },
+    {
+      "artifact_path": "contracts-and-trajectories/mac-controlled-freeze/assets/trajectories/right_approach.sidecar.json",
+      "candidate_path": "03_experiments/contracts/EXP-S4-002_CONTROLLED_UNSEEN_FORMAL_FREEZE/assets/trajectories/right_approach.sidecar.json",
+      "path": "assets/trajectories/right_approach.sidecar.json",
+      "sha256": "411d8da414f4e4900715c361246d239036adf3586dfe15d715237d6f8aa51564",
+      "size_bytes": 768
+    },
+    {
+      "artifact_path": "contracts-and-trajectories/mac-controlled-freeze/assets/trajectories/right_retreat.json",
+      "candidate_path": "03_experiments/contracts/EXP-S4-002_CONTROLLED_UNSEEN_FORMAL_FREEZE/assets/trajectories/right_retreat.json",
+      "path": "assets/trajectories/right_retreat.json",
+      "sha256": "27c255ba3f31abc048410b5f767d55381b7f4764b2f53e080f99616902d15816",
+      "size_bytes": 2709
+    },
+    {
+      "artifact_path": "contracts-and-trajectories/mac-controlled-freeze/assets/trajectories/right_retreat.sidecar.json",
+      "candidate_path": "03_experiments/contracts/EXP-S4-002_CONTROLLED_UNSEEN_FORMAL_FREEZE/assets/trajectories/right_retreat.sidecar.json",
+      "path": "assets/trajectories/right_retreat.sidecar.json",
+      "sha256": "ff21eb4dcd9c7e170f98d4f6450410e94e0b09bc96b594b200684874eac1baef",
+      "size_bytes": 767
+    }
+  ],
+  "note": "Reviewer-facing byte-identical mirror; the candidate-runtime copy remains under final-build/.",
+  "public_projection_root_sha256": "28866e84438e8e72e46b5a8a0724587aaea2b6f46bbb37450c0860c38fd7d419",
+  "redistribution_status": "REVIEW_ONLY_DISCLOSURE__NO_PROJECT_WIDE_LICENSE",
+  "schema": "bisafecode.anonymous-controlled-contract-mirror/v1",
+  "status": "PASS"
+}

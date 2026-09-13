@@ -1,0 +1,232 @@
+{
+  "campaign_revision": "C115-PROSPECTIVE-R2",
+  "condition_design_basis": {
+    "C": "Five predeclared mirrored Joint2 anchors sample the high-clearance end of the completed 0.001-rad dense screen while retaining the same P044 Joint3 action. These remain blocked by the direct-transition residual bound.",
+    "H": "Five predeclared sender/receiver insertion-depth combinations cover both observed/screened extremes and the centre. All use the same corrected 237 x 170 x 1-mm, 20.0-g paperboard and the same frozen handover event order.",
+    "R": "Five predeclared placements cover the centre and four +/-3-mm cardinal offsets of the same 75 x 75 x 45-mm, 10.0-g foam inside the 85 x 85-mm inner polygon. The earlier +/-5-mm draft was corrected before any scored motion because it would put the nearest foam edge exactly on the boundary.",
+    "cross_family_variation": "The fixed set covers empty collision motion, a 20.0-g handover payload and a 10.0-g resource, plus initial-pose and near-boundary variants. It does not claim a force sweep or arbitrary-load generalization."
+  },
+  "created_date": "2026-08-29",
+  "draft_boundary": "All identities and conditions are frozen before the first scored motion. The schedule is not an authorization; live zero-send and the user's exact next-motion authorization remain mandatory.",
+  "family_order": [
+    "C",
+    "H",
+    "R"
+  ],
+  "fixed_denominator": 15,
+  "global_start_barrier": "No slot, including C-01, may start until the condition_variant and run_instance_id of all 15 slots are non-null and frozen; all H/R/C observer, pair-scope, error-budget, trajectory, logger and zero-send gates must already pass as one package.",
+  "no_replacement": true,
+  "post_start_immutability": "After C-01 starts, no family, slot, condition, threshold, observer, pair scope or denominator may be removed or weakened because of any observed result.",
+  "reset_rule": "Reset is outside the scored slot, separately logged and separately authorized; it cannot replace or repair a scored outcome.",
+  "review_projection_note": "Historical pre-start status fields are retained as campaign metadata; final outcomes are recorded under results/final-revalidation/c115/.",
+  "robot_boundary": {
+    "action_client_created": false,
+    "goal_send_count": 0,
+    "motion_command_count": 0,
+    "ros_graph_contacted": false,
+    "ros_imported": false
+  },
+  "schema": "bisafecode.exp-s4-030.c115-prospective-r2-trial-schedule/v1",
+  "selected_claim_coverage": "H_AND_R_AND_C_EACH_HAVE_FIVE_PREALLOCATED_SCORED_SLOTS; NO_C_ONLY_OR_POST_RESULT_SUBSET_CLAIM",
+  "slot_identity_rule": "official_slot_id remains H-01..H-05, R-01..R-05, C-01..C-05 under EXP-S4-030/C115; each new immutable run instance will be prefixed C115-PROSPECTIVE-R2 to avoid collision with 2026-08-28 local directory aliases",
+  "slots": [
+    {
+      "condition_variant": {
+        "joint3_relative_action_rad": 0.04,
+        "mirrored_joint2_offset_rad": 0.5,
+        "nominal_action_minimum_clearance_m": 0.011553175011052083,
+        "payload": "NONE"
+      },
+      "official_slot_id": "C-01",
+      "run_instance_id": "C115-PROSPECTIVE-R2-C-01-Q2P500",
+      "sequence": 1,
+      "status": "NOT_STARTED_FROZEN"
+    },
+    {
+      "condition_variant": {
+        "joint3_relative_action_rad": 0.04,
+        "mirrored_joint2_offset_rad": 0.505,
+        "nominal_action_minimum_clearance_m": 0.01159016728013871,
+        "payload": "NONE"
+      },
+      "official_slot_id": "C-02",
+      "run_instance_id": "C115-PROSPECTIVE-R2-C-02-Q2P505",
+      "sequence": 2,
+      "status": "NOT_STARTED_FROZEN"
+    },
+    {
+      "condition_variant": {
+        "joint3_relative_action_rad": 0.04,
+        "mirrored_joint2_offset_rad": 0.51,
+        "nominal_action_minimum_clearance_m": 0.011628369798720724,
+        "payload": "NONE"
+      },
+      "official_slot_id": "C-03",
+      "run_instance_id": "C115-PROSPECTIVE-R2-C-03-Q2P510",
+      "sequence": 3,
+      "status": "NOT_STARTED_FROZEN"
+    },
+    {
+      "condition_variant": {
+        "joint3_relative_action_rad": 0.04,
+        "mirrored_joint2_offset_rad": 0.515,
+        "nominal_action_minimum_clearance_m": 0.011667781611737427,
+        "payload": "NONE"
+      },
+      "official_slot_id": "C-04",
+      "run_instance_id": "C115-PROSPECTIVE-R2-C-04-Q2P515",
+      "sequence": 4,
+      "status": "NOT_STARTED_FROZEN"
+    },
+    {
+      "condition_variant": {
+        "joint3_relative_action_rad": 0.04,
+        "mirrored_joint2_offset_rad": 0.52,
+        "nominal_action_minimum_clearance_m": 0.011633554640236372,
+        "payload": "NONE"
+      },
+      "official_slot_id": "C-05",
+      "run_instance_id": "C115-PROSPECTIVE-R2-C-05-Q2P520",
+      "sequence": 5,
+      "status": "NOT_STARTED_FROZEN"
+    },
+    {
+      "condition_variant": {
+        "handover_order": "LEFT_SENDER__DUAL_GRASP__LEFT_RELEASE__RIGHT_CARRY",
+        "paperboard_identity": "237x170x1-mm__20.0-g",
+        "receiver_front_edge_depth_mm": 58,
+        "sender_front_edge_depth_mm": 34
+      },
+      "official_slot_id": "H-01",
+      "run_instance_id": "C115-PROSPECTIVE-R2-H-01-L34-R58",
+      "sequence": 6,
+      "status": "NOT_STARTED_FROZEN"
+    },
+    {
+      "condition_variant": {
+        "handover_order": "LEFT_SENDER__DUAL_GRASP__LEFT_RELEASE__RIGHT_CARRY",
+        "paperboard_identity": "237x170x1-mm__20.0-g",
+        "receiver_front_edge_depth_mm": 62,
+        "sender_front_edge_depth_mm": 34
+      },
+      "official_slot_id": "H-02",
+      "run_instance_id": "C115-PROSPECTIVE-R2-H-02-L34-R62",
+      "sequence": 7,
+      "status": "NOT_STARTED_FROZEN"
+    },
+    {
+      "condition_variant": {
+        "handover_order": "LEFT_SENDER__DUAL_GRASP__LEFT_RELEASE__RIGHT_CARRY",
+        "paperboard_identity": "237x170x1-mm__20.0-g",
+        "receiver_front_edge_depth_mm": 60,
+        "sender_front_edge_depth_mm": 35
+      },
+      "official_slot_id": "H-03",
+      "run_instance_id": "C115-PROSPECTIVE-R2-H-03-L35-R60",
+      "sequence": 8,
+      "status": "NOT_STARTED_FROZEN"
+    },
+    {
+      "condition_variant": {
+        "handover_order": "LEFT_SENDER__DUAL_GRASP__LEFT_RELEASE__RIGHT_CARRY",
+        "paperboard_identity": "237x170x1-mm__20.0-g",
+        "receiver_front_edge_depth_mm": 58,
+        "sender_front_edge_depth_mm": 36
+      },
+      "official_slot_id": "H-04",
+      "run_instance_id": "C115-PROSPECTIVE-R2-H-04-L36-R58",
+      "sequence": 9,
+      "status": "NOT_STARTED_FROZEN"
+    },
+    {
+      "condition_variant": {
+        "handover_order": "LEFT_SENDER__DUAL_GRASP__LEFT_RELEASE__RIGHT_CARRY",
+        "paperboard_identity": "237x170x1-mm__20.0-g",
+        "receiver_front_edge_depth_mm": 62,
+        "sender_front_edge_depth_mm": 36
+      },
+      "official_slot_id": "H-05",
+      "run_instance_id": "C115-PROSPECTIVE-R2-H-05-L36-R62",
+      "sequence": 10,
+      "status": "NOT_STARTED_FROZEN"
+    },
+    {
+      "condition_variant": {
+        "foam_identity": "75x75x45-mm__10.0-g",
+        "placement_offset_x_mm": 0,
+        "placement_offset_y_mm": 0,
+        "proposed_inner_polygon_mm": [
+          85,
+          85
+        ]
+      },
+      "official_slot_id": "R-01",
+      "run_instance_id": "C115-PROSPECTIVE-R2-R-01-CENTER",
+      "sequence": 11,
+      "status": "NOT_STARTED_FROZEN"
+    },
+    {
+      "condition_variant": {
+        "foam_identity": "75x75x45-mm__10.0-g",
+        "placement_offset_x_mm": -3,
+        "placement_offset_y_mm": 0,
+        "proposed_inner_polygon_mm": [
+          85,
+          85
+        ]
+      },
+      "official_slot_id": "R-02",
+      "run_instance_id": "C115-PROSPECTIVE-R2-R-02-XM3",
+      "sequence": 12,
+      "status": "NOT_STARTED_FROZEN"
+    },
+    {
+      "condition_variant": {
+        "foam_identity": "75x75x45-mm__10.0-g",
+        "placement_offset_x_mm": 3,
+        "placement_offset_y_mm": 0,
+        "proposed_inner_polygon_mm": [
+          85,
+          85
+        ]
+      },
+      "official_slot_id": "R-03",
+      "run_instance_id": "C115-PROSPECTIVE-R2-R-03-XP3",
+      "sequence": 13,
+      "status": "NOT_STARTED_FROZEN"
+    },
+    {
+      "condition_variant": {
+        "foam_identity": "75x75x45-mm__10.0-g",
+        "placement_offset_x_mm": 0,
+        "placement_offset_y_mm": -3,
+        "proposed_inner_polygon_mm": [
+          85,
+          85
+        ]
+      },
+      "official_slot_id": "R-04",
+      "run_instance_id": "C115-PROSPECTIVE-R2-R-04-YM3",
+      "sequence": 14,
+      "status": "NOT_STARTED_FROZEN"
+    },
+    {
+      "condition_variant": {
+        "foam_identity": "75x75x45-mm__10.0-g",
+        "placement_offset_x_mm": 0,
+        "placement_offset_y_mm": 3,
+        "proposed_inner_polygon_mm": [
+          85,
+          85
+        ]
+      },
+      "official_slot_id": "R-05",
+      "run_instance_id": "C115-PROSPECTIVE-R2-R-05-YP3",
+      "sequence": 15,
+      "status": "NOT_STARTED_FROZEN"
+    }
+  ],
+  "status": "FROZEN_15_IDENTITIES_AND_CONDITIONS__ZERO_OF_FIFTEEN__PENDING_LIVE_ZERO_SEND_AND_USER_AUTHORIZATION",
+  "trial_end_rule": "A slot ends after its complete scored observation window or the first FAIL/UNKNOWN/ABORT condition.",
+  "trial_start_rule": "A slot starts immediately before the first authorized safe-source command after every identity, geometry, logger and observer gate passes."
+}
